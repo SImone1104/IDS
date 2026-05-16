@@ -1,0 +1,115 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage[italian]{babel}
+\usepackage{hyphenat}
+\usepackage[table]{xcolor}
+
+\definecolor{lightblue}{RGB}{10,160,255}
+
+\geometry{margin=2.5cm}
+
+\title{\textbf{Modelli dei casi d'uso}}\author{Simone Sottile,Matteo Duca,Giuseppe Giacomarra,Gilberto Mogavero}
+
+
+\begin{document}
+
+\maketitle
+
+% =========================
+% PDF RIDOTTO (NON OCCUPA PAGINA INTERA)
+% =========================
+\section*{Vista d’insieme }
+
+\begin{center}    
+\includegraphics[width=0.9\textwidth,page=1]{/Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RAD/pdf/VistaD'insiemeProgetto-vista d'insieme OFFICIAL.drawio.pdf}
+\end{center}
+
+% =========================
+% TESTO SOTTO
+% =========================
+\newpage
+\section*{Macro casi d’uso}
+
+\renewcommand{\arraystretch}{1.4}
+
+\begin{longtable}{|
+>{\columncolor{lightblue}\color{white}\raggedright\arraybackslash}p{3.5cm}|
+>{\raggedright\arraybackslash}p{11cm}|}
+
+\hline
+
+Gestione  autenticazione &
+Questo caso d’uso permette allo studente di potersi registrare/accedere alla propria area personale e di inserire i propri dati anagrafici. Inoltre permette l’eventuale recupero della password e la disconnessione dall’area personale.Permette inoltre l'autenticazione tramite Spid/eIdas \\
+\hline
+
+
+
+Gestione profilo &
+Questo caso d’uso permette allo studente di modificare i propri dati personali e aggiungere certificati accademici. \\
+\hline
+
+Gestione contenuti &
+Questo caso d’uso permette allo studente di modificare la propria area contenuti, caricandone di nuovi suddivisi per categoria (strumenti, file audio, file video, immagini, certificazioni), eliminando contenuti già esistenti e gestendone la visualizzazione  \\
+\hline
+
+Gestione condivisione tramite link&
+Questo caso d’uso permette allo studente di selezionare alcuni dei contenuti caricati nella propria area personale e di poter generale un link utile per la diffusione del materiale selezionato ad utenti esterni alla istituzione AFAM. Inoltre consente al mittente di verificare se i contenuti inviati sono stati visualizzati dai destinatari. \\
+\hline
+
+Consulta profilo studente &
+Questo caso d'uso permette allo studente di visualizzare il profilo di un altro studente registrato alla piattaforma AFAM, in modo da consultare la loro identità digitale.   \\
+\hline
+
+Gestione condivisione extra link&
+Questo caso d’uso permette allo studente di condividere parte del profilo o una selezione dei contenuti con un altro studente della stessa istituzione AFAM, senza generare un link .La condivisione avviene internamente al sistema e non effettuta alcuna verifica di riscontro della ricezione dei contenuti. \\
+\hline
+
+
+
+Visualizza contenuto extra link &
+Questo caso d'uso consente allo studente destinatario di ricevere e visualizzare i contenuti condivisi direttamente da un altro studente AFAM.  \\
+\hline
+
+
+Visualizza contenuto tramite link &
+Questo caso d’uso permette all’utente di aprire il link condiviso dallo studente e di visualizzare tutti i file selezionati \\
+\hline
+
+\end{longtable}
+
+\newpage
+
+\section*{Caso d'uso : Gestione Autenticazione}
+
+
+\includegraphics[width=0.9\textwidth,page=1]{/Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RAD/pdf/VistaD'insiemeProgetto-Gestione autenticazione.drawio.pdf}
+
+\section*{Login}
+Il sguente caso d'uso permette allo studente di essere autenticato ,consentendo l'accesso alla propria area personale
+
+\includegraphics[width=0.9\textwidth,page=1]{/Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RAD/pdf/VistaD'insiemeProgetto-Pagina-21.drawio.pdf}
+
+\section*{Registrazione Studente}
+Il sguente caso d'uso permette allo studente di registrarsi alla piattaforma
+
+\includegraphics[width=0.9\textwidth,page=1]{/Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RAD/pdf/VistaD'insiemeProgetto-Pagina-21.drawio-2.pdf}
+
+\newpage
+\section*{Recupera Password}
+Il seguente caso d'uso permette allo studente di recuperare la propria password per accedere nuovamente alla propria area personale
+
+
+
+\includegraphics[width=0.9\textwidth,page=1]{/Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RAD/pdf/VistaD'insiemeProgetto-Pagina-21.drawio-3.pdf}
+\newpage
+\section*{Relativo alla domanda n.2}
+
+\includegraphics[width=0.9\textwidth,page=1]{/Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RAD/pdf/VistaD'insiemeProgetto-DOMANDE.drawio.pdf}
+
+
+\end{document}
