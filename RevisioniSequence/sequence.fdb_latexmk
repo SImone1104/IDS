@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1779036854.38868 "/Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RevisioniSequence/sequence.tex" "sequence.pdf" "sequence" 1779036854.88921 0
-  "/Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RevisioniSequence/sequence.tex" 1779036854.16785 1718 b28025762796a610229a263a663f0dd0 ""
+["pdflatex"] 1779096728.61657 "/Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RevisioniSequence/sequence.tex" "sequence.pdf" "sequence" 1779096729.06417 0
+  "/Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RevisioniSequence/sequence.tex" 1779096728.41165 632 31094472dceaf34b16f2fee9bc4ff541 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -37,17 +37,9 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1741451696 8221438 f09fb34c696a05ecfa02d35754562218 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "casiUso/Login-2.pdf" 1779034928.17528 40085 7db3f5e3c7c26f4bcbefbad2d70a6956 ""
-  "casiUso/LoginSpid.pdf" 1779035081.6278 40982 52907c1e40b46beeda289b3e736fe8ff ""
-  "casiUso/Logout.pdf" 1779034994.58504 30236 e078f00abd0b3e0f1169b49879d588f2 ""
-  "casiUso/RecupeaPassword.pdf" 1779035126.94658 35273 369fa5de8dfab935d01af86e27e10663 ""
-  "casiUso/Registrazione.pdf" 1779035042.22051 39564 56718a7a8e558a3fde86fc9959cb3a26 ""
-  "sequence.aux" 1779036854.85575 693 fe931f09c819aadeb45fcf6a1e1354b1 "pdflatex"
-  "sequence.tex" 1779036854.16785 1718 b28025762796a610229a263a663f0dd0 ""
-  "sequence/Login tramite SPID_eIDAS.pdf" 1779028928 186009 4d5884a9efddfb06406ead64f0df9b41 ""
-  "sequence/Login.pdf" 1779028928 302450 5d4c006555058bdbffbc8db0bbae0334 ""
-  "sequence/Logout.pdf" 1779028928 77731 c88d258d9db16b5b37ebb3423bdad964 ""
-  "sequence/RecuperaPassword.pdf" 1779028928 338455 fbfefa41c4e2765b52f9aaf45e722b24 ""
-  "sequence/Registrazione.pdf" 1779028928 408710 a4e91d4909ca7c7d4b79487a13a510d2 ""
+  "sequence.aux" 1779096729.03534 239 990cbc5025ecf608362705c77926f695 "pdflatex"
+  "sequence.tex" 1779096728.41165 632 31094472dceaf34b16f2fee9bc4ff541 ""
+  "sequence/Login-3.pdf" 1779096621.72188 328115 56a7ae70959db1979b9bff3710f7e22a ""
   (generated)
   "sequence.aux"
   "sequence.log"

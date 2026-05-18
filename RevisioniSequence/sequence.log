@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.3.8)  17 MAY 2026 18:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.3.8)  18 MAY 2026 11:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -187,93 +187,35 @@ File: casiUso/Login-2.pdf Graphic file (type pdf)
 <use casiUso/Login-2.pdf>
 Package pdftex.def Info: casiUso/Login-2.pdf  used on input line 22.
 (pdftex.def)             Requested size: 435.32422pt x 306.45149pt.
-<sequence/Login.pdf, id=2, 1704.3675pt x 3322.16156pt>
-File: sequence/Login.pdf Graphic file (type pdf)
-<use sequence/Login.pdf>
-Package pdftex.def Info: sequence/Login.pdf  used on input line 24.
-(pdftex.def)             Requested size: 386.95897pt x 754.24684pt.
+<sequence/Login-3.pdf, id=2, 1704.3675pt x 6198.65813pt>
+File: sequence/Login-3.pdf Graphic file (type pdf)
+<use sequence/Login-3.pdf>
+Package pdftex.def Info: sequence/Login-3.pdf  used on input line 24.
+(pdftex.def)             Requested size: 338.58632pt x 1231.38632pt.
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./casiUso/Login-2.pdf>]
-Overfull \vbox (23.011pt too high) has occurred while \output is active []
+Overfull \vbox (500.15048pt too high) has occurred while \output is active []
 
- [2 <./sequence/Login.pdf>]
-
-pdfTeX warning: pdflatex (file ./casiUso/Logout.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<casiUso/Logout.pdf, id=1124, 673.55638pt x 305.22029pt>
-File: casiUso/Logout.pdf Graphic file (type pdf)
-<use casiUso/Logout.pdf>
-Package pdftex.def Info: casiUso/Logout.pdf  used on input line 31.
-(pdftex.def)             Requested size: 435.32422pt x 197.26843pt.
-<sequence/Logout.pdf, id=1125, 831.105pt x 722.7pt>
-File: sequence/Logout.pdf Graphic file (type pdf)
-<use sequence/Logout.pdf>
-Package pdftex.def Info: sequence/Logout.pdf  used on input line 33.
-(pdftex.def)             Requested size: 435.32422pt x 378.54099pt.
-[3 <./casiUso/Logout.pdf> <./sequence/Logout.pdf>]
-
-pdfTeX warning: pdflatex (file ./casiUso/Registrazione.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<casiUso/Registrazione.pdf, id=1465, 673.55638pt x 602.25pt>
-File: casiUso/Registrazione.pdf Graphic file (type pdf)
-<use casiUso/Registrazione.pdf>
-Package pdftex.def Info: casiUso/Registrazione.pdf  used on input line 40.
-(pdftex.def)             Requested size: 435.32422pt x 389.24316pt.
-<sequence/Registrazione.pdf, id=1466, 2058.18938pt x 4715.6175pt>
-File: sequence/Registrazione.pdf Graphic file (type pdf)
-<use sequence/Registrazione.pdf>
-Package pdftex.def Info: sequence/Registrazione.pdf  used on input line 42.
-(pdftex.def)             Requested size: 338.58632pt x 775.74078pt.
-[4 <./casiUso/Registrazione.pdf>]
-Overfull \vbox (44.50494pt too high) has occurred while \output is active []
-
- [5 <./sequence/Registrazione.pdf>]
-
-pdfTeX warning: pdflatex (file ./casiUso/LoginSpid.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<casiUso/LoginSpid.pdf, id=2900, 695.7192pt x 431.69278pt>
-File: casiUso/LoginSpid.pdf Graphic file (type pdf)
-<use casiUso/LoginSpid.pdf>
-Package pdftex.def Info: casiUso/LoginSpid.pdf  used on input line 49.
-(pdftex.def)             Requested size: 386.95897pt x 240.1127pt.
-<sequence/Login tramite SPID_eIDAS.pdf, id=2901, 1752.5475pt x 2202.72937pt>
-File: sequence/Login tramite SPID_eIDAS.pdf Graphic file (type pdf)
-<use sequence/Login tramite SPID_eIDAS.pdf>
-Package pdftex.def Info: sequence/Login tramite SPID_eIDAS.pdf  used on input line 52.
-(pdftex.def)             Requested size: 338.58632pt x 425.5476pt.
-[6 <./casiUso/LoginSpid.pdf> <./sequence/Login tramite SPID_eIDAS.pdf>]
-
-pdfTeX warning: pdflatex (file ./casiUso/RecupeaPassword.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<casiUso/RecupeaPassword.pdf, id=3599, 673.55638pt x 587.3142pt>
-File: casiUso/RecupeaPassword.pdf Graphic file (type pdf)
-<use casiUso/RecupeaPassword.pdf>
-Package pdftex.def Info: casiUso/RecupeaPassword.pdf  used on input line 59.
-(pdftex.def)             Requested size: 435.32422pt x 379.58994pt.
-<sequence/RecuperaPassword.pdf, id=3600, 2098.84125pt x 3728.68031pt>
-File: sequence/RecuperaPassword.pdf Graphic file (type pdf)
-<use sequence/RecuperaPassword.pdf>
-Package pdftex.def Info: sequence/RecuperaPassword.pdf  used on input line 61.
-(pdftex.def)             Requested size: 435.32422pt x 773.37384pt.
-[7 <./casiUso/RecupeaPassword.pdf>]
-Overfull \vbox (42.138pt too high) has occurred while \output is active []
-
- [8 <./sequence/RecuperaPassword.pdf>] (./sequence.aux)
+ [2 <./sequence/Login-3.pdf>] (./sequence.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3441 strings out of 474116
- 57954 string characters out of 5743683
+ 3385 strings out of 474116
+ 55978 string characters out of 5743683
  1927187 words of memory out of 5000000
- 25806 multiletter control sequences out of 15000+600000
+ 25750 multiletter control sequences out of 15000+600000
  560492 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,6n,65p,312b,199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on sequence.pdf (8 pages, 1272787 bytes).
+Output written on sequence.pdf (2 pages, 328322 bytes).
 PDF statistics:
- 4786 PDF objects out of 5155 (max. 8388607)
- 3168 compressed objects within 32 object streams
+ 1240 PDF objects out of 1440 (max. 8388607)
+ 819 compressed objects within 9 object streams
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

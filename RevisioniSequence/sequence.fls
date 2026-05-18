@@ -74,52 +74,12 @@ INPUT ./casiUso/Login-2.pdf
 INPUT ./casiUso/Login-2.pdf
 OUTPUT sequence.pdf
 INPUT ./casiUso/Login-2.pdf
-INPUT ./sequence/Login.pdf
-INPUT ./sequence/Login.pdf
-INPUT ./sequence/Login.pdf
-INPUT ./sequence/Login.pdf
-INPUT ./sequence/Login.pdf
+INPUT ./sequence/Login-3.pdf
+INPUT ./sequence/Login-3.pdf
+INPUT ./sequence/Login-3.pdf
+INPUT ./sequence/Login-3.pdf
+INPUT ./sequence/Login-3.pdf
 INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./casiUso/Logout.pdf
-INPUT ./casiUso/Logout.pdf
-INPUT ./casiUso/Logout.pdf
-INPUT ./casiUso/Logout.pdf
-INPUT ./casiUso/Logout.pdf
-INPUT ./sequence/Logout.pdf
-INPUT ./sequence/Logout.pdf
-INPUT ./sequence/Logout.pdf
-INPUT ./sequence/Logout.pdf
-INPUT ./sequence/Logout.pdf
-INPUT ./casiUso/Registrazione.pdf
-INPUT ./casiUso/Registrazione.pdf
-INPUT ./casiUso/Registrazione.pdf
-INPUT ./casiUso/Registrazione.pdf
-INPUT ./casiUso/Registrazione.pdf
-INPUT ./sequence/Registrazione.pdf
-INPUT ./sequence/Registrazione.pdf
-INPUT ./sequence/Registrazione.pdf
-INPUT ./sequence/Registrazione.pdf
-INPUT ./sequence/Registrazione.pdf
-INPUT ./casiUso/LoginSpid.pdf
-INPUT ./casiUso/LoginSpid.pdf
-INPUT ./casiUso/LoginSpid.pdf
-INPUT ./casiUso/LoginSpid.pdf
-INPUT ./casiUso/LoginSpid.pdf
-INPUT ./sequence/Login tramite SPID_eIDAS.pdf
-INPUT ./sequence/Login tramite SPID_eIDAS.pdf
-INPUT ./sequence/Login tramite SPID_eIDAS.pdf
-INPUT ./sequence/Login tramite SPID_eIDAS.pdf
-INPUT ./sequence/Login tramite SPID_eIDAS.pdf
-INPUT ./casiUso/RecupeaPassword.pdf
-INPUT ./casiUso/RecupeaPassword.pdf
-INPUT ./casiUso/RecupeaPassword.pdf
-INPUT ./casiUso/RecupeaPassword.pdf
-INPUT ./casiUso/RecupeaPassword.pdf
-INPUT ./sequence/RecuperaPassword.pdf
-INPUT ./sequence/RecuperaPassword.pdf
-INPUT ./sequence/RecuperaPassword.pdf
-INPUT ./sequence/RecuperaPassword.pdf
-INPUT ./sequence/RecuperaPassword.pdf
 INPUT sequence.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
