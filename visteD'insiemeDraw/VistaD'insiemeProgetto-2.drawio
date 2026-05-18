@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="20">
+<mxfile host="app.diagrams.net" pages="21">
   <diagram id="NdmA81U7a45j4368E-3g" name="DOMANDE">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -852,7 +852,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NWPvOExdg23FyhshGvr5" name="Pagina-13">
-    <mxGraphModel dx="4938" dy="1729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6063" dy="2513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -932,7 +932,7 @@
             <mxRectangle height="80" width="435" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8SbLwt13gkpwfgpMEwOS-19" parent="8SbLwt13gkpwfgpMEwOS-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1.&lt;/b&gt;Il sistema ha mostrato la schermata di login&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;2.&lt;/b&gt;Il sistema ha mostrato il form per il recupero della password&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="8SbLwt13gkpwfgpMEwOS-19" parent="8SbLwt13gkpwfgpMEwOS-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1.&lt;/b&gt;Il sistema mostra la schermata di login&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;2.&lt;/b&gt;Il sistema mostra il form per il recupero della password&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="495" x="435" as="geometry">
             <mxRectangle height="80" width="495" as="alternateBounds" />
           </mxGeometry>
@@ -1013,7 +1013,7 @@
             <mxRectangle height="80" width="435" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pybLTMQL8zqX4GUhbAeI-19" parent="pybLTMQL8zqX4GUhbAeI-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp; Il Sistema ha mostrato a video la schermata principale&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="pybLTMQL8zqX4GUhbAeI-19" parent="pybLTMQL8zqX4GUhbAeI-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp; Il Sistema mostra a video la schermata principale&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="495" x="435" as="geometry">
             <mxRectangle height="80" width="495" as="alternateBounds" />
           </mxGeometry>
@@ -1094,7 +1094,7 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="48mQKfHj96o4jcNBYrxQ-19" parent="48mQKfHj96o4jcNBYrxQ-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1. &lt;/b&gt;Il sistema ha mostrato la schermata Home AFAM&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;2. &lt;/b&gt;Il sistema ha mostrato a video la schermata di login&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="48mQKfHj96o4jcNBYrxQ-19" parent="48mQKfHj96o4jcNBYrxQ-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1. &lt;/b&gt;Il sistema mostra la schermata Home AFAM&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;2. &lt;/b&gt;Il sistema mostra a video la schermata di login&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="580" x="380" as="geometry">
             <mxRectangle height="75" width="580" as="alternateBounds" />
           </mxGeometry>
@@ -1175,7 +1175,7 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="48mQKfHj96o4jcNBYrxQ-38" parent="48mQKfHj96o4jcNBYrxQ-36" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1. &lt;/b&gt;Il sistema ha mostrato la schermata Home AFAM&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;2. &lt;/b&gt;Il sistema ha mostrato a video la schermata di login&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="48mQKfHj96o4jcNBYrxQ-38" parent="48mQKfHj96o4jcNBYrxQ-36" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1. &lt;/b&gt;Il sistema mostra la schermata Home AFAM&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;2. &lt;/b&gt;Il sistema mostra a video la schermata di login&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="580" x="380" as="geometry">
             <mxRectangle height="75" width="580" as="alternateBounds" />
           </mxGeometry>
@@ -1256,7 +1256,7 @@
             <mxRectangle height="151" width="430" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="48mQKfHj96o4jcNBYrxQ-57" parent="48mQKfHj96o4jcNBYrxQ-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1.&lt;/b&gt;Il sistema ha mostrato a video la schermata di login&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;2. Il sistema ha mostrato&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;a video la schermata per la registrazione&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="48mQKfHj96o4jcNBYrxQ-57" parent="48mQKfHj96o4jcNBYrxQ-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1.&lt;/b&gt;Il sistema mostra a video la schermata di login&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;2. Il sistema mostra&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;a video la schermata per la registrazione&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="151" width="500" x="430" as="geometry">
             <mxRectangle height="151" width="500" as="alternateBounds" />
           </mxGeometry>
@@ -3023,6 +3023,14 @@
             <mxRectangle height="75" width="410" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="eyeHxfMlvMoMzlrp7JzJ" name="prova">
+    <mxGraphModel dx="1607" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
