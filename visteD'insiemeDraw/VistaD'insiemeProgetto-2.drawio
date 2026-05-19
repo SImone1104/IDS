@@ -1195,7 +1195,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="f9LOFpCgruJOSxP5PgEd-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="515" width="820" x="-220" y="2680" as="geometry" />
+          <mxGeometry height="425.00000000000045" width="820" x="-220" y="2680" as="geometry" />
         </mxCell>
         <mxCell id="f9LOFpCgruJOSxP5PgEd-2" parent="f9LOFpCgruJOSxP5PgEd-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="820" as="geometry" />
@@ -1250,20 +1250,20 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="f9LOFpCgruJOSxP5PgEd-14" parent="f9LOFpCgruJOSxP5PgEd-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="280" width="820" y="160" as="geometry" />
+          <mxGeometry height="190" width="820" y="160" as="geometry" />
         </mxCell>
         <mxCell id="f9LOFpCgruJOSxP5PgEd-15" parent="f9LOFpCgruJOSxP5PgEd-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Flusso degli eventi&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="280" width="380" as="geometry">
-            <mxRectangle height="280" width="380" as="alternateBounds" />
+          <mxGeometry height="190" width="380" as="geometry">
+            <mxRectangle height="190" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="f9LOFpCgruJOSxP5PgEd-16" parent="f9LOFpCgruJOSxP5PgEd-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &lt;/font&gt;&lt;b style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;1&lt;/b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;.&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Lo studente clicca su &quot;+&quot; accanto al file che vuole modificare&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &lt;b&gt;2&lt;/b&gt;. Il sistema mostra a schermo un menu con varie voci&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &lt;b&gt;3&lt;/b&gt;. Lo studente seleziona &quot;MODIFICA FILE&quot;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &lt;b&gt;4&lt;/b&gt;. Il sistema interagisce con il DBMS &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &lt;b&gt;5&lt;/b&gt;. Il sistema mostra a schermo il form contenente descrizione e titolo precedente del file &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;selezionato e un pulsante conferma modifica&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &lt;b&gt;6&lt;/b&gt;. Lo studente effettua le modifiche scelte&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &lt;b&gt;7&lt;/b&gt;. Lo studente clicca su &quot;CONFERMA MODIFICA&quot;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &lt;b&gt;8&lt;/b&gt;. Il sistema invia i nuovi dati inseriti al DBMS&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="280" width="440" x="380" as="geometry">
-            <mxRectangle height="280" width="440" as="alternateBounds" />
+          <mxGeometry height="190" width="440" x="380" as="geometry">
+            <mxRectangle height="190" width="440" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="f9LOFpCgruJOSxP5PgEd-17" parent="f9LOFpCgruJOSxP5PgEd-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="75" width="820" y="440" as="geometry" />
+          <mxGeometry height="75" width="820" y="350" as="geometry" />
         </mxCell>
         <mxCell id="f9LOFpCgruJOSxP5PgEd-18" parent="f9LOFpCgruJOSxP5PgEd-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Postcondizioni&lt;/font&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="75" width="380" as="geometry">
