@@ -106,7 +106,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Vista d&#39;insieme generale OFFICIAL" id="fuN1FXlc8kxLoOw25CKG">
-    <mxGraphModel dx="1387" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-0" />
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-1" parent="WXJHqH-YGc8_e_Hh1K20-0" />
@@ -190,6 +190,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-22" edge="1" parent="WXJHqH-YGc8_e_Hh1K20-1" source="WXJHqH-YGc8_e_Hh1K20-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="WXJHqH-YGc8_e_Hh1K20-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rAuclaunwYLW7eIQTlYY-0" edge="1" parent="WXJHqH-YGc8_e_Hh1K20-1" source="WXJHqH-YGc8_e_Hh1K20-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="WXJHqH-YGc8_e_Hh1K20-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-23" parent="WXJHqH-YGc8_e_Hh1K20-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Utente esterno" vertex="1">
@@ -1491,7 +1494,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jPyZoqNKRGVDwETcYIyH" name="Pagina-16">
-    <mxGraphModel dx="2434" dy="2289" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1742,7 +1745,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="-hv1ydPjTFw_xr4ZYiYC" name="Consulta profilo studente">
-    <mxGraphModel dx="1040" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="964" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1753,7 +1756,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rgsBx9bbL2zL2NRtoskX-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;div&gt;Studente&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="30" x="90" y="260" as="geometry" />
+          <mxGeometry height="60" width="30" x="90" y="210" as="geometry" />
         </mxCell>
         <mxCell id="rgsBx9bbL2zL2NRtoskX-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Visualizza profilo" vertex="1">
           <mxGeometry height="80" width="120" x="365" y="380" as="geometry" />
@@ -1790,6 +1793,15 @@
         </mxCell>
         <mxCell id="_h7tfucuiKvEYOJp4EHF-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;b&gt;FINITO&lt;/b&gt;" vertex="1">
           <mxGeometry height="80" width="120" x="20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rDF8RvYtRXP2gQCZV1b0-6" edge="1" parent="1" source="rDF8RvYtRXP2gQCZV1b0-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="rgsBx9bbL2zL2NRtoskX-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rDF8RvYtRXP2gQCZV1b0-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Utente esterno" vertex="1">
+          <mxGeometry height="60" width="30" x="90" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="rDF8RvYtRXP2gQCZV1b0-5" edge="1" parent="1" source="rDF8RvYtRXP2gQCZV1b0-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.025;entryY=0.613;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="TVwzWaCSzJ3wH3TjA9CG-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
