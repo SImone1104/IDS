@@ -1494,7 +1494,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jPyZoqNKRGVDwETcYIyH" name="Pagina-16">
-    <mxGraphModel dx="1015" dy="1876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1807,7 +1807,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WHRERQ4m-o8UDZv-nhfG" name="Pagina-17">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1134" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2164,7 +2164,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="pXpnqGpuRr61GkhgfGvc" name="Pagina-19">
-    <mxGraphModel dx="1731" dy="508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1665" dy="508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2413,6 +2413,87 @@
         </mxCell>
         <mxCell id="osdNNbbj8-gINeRc0T4m-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="FLUSSO DEGLI EVENTI GENERALE&lt;div&gt;I singoli casi d&#39;uso sono sotto&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="410" x="-240" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
+          <mxGeometry height="834.9999999999995" width="800" x="-435" y="2220" as="geometry" />
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--2" parent="rBFPTPXUp2qlC89oPuT--1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="29" width="800" as="geometry" />
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--3" collapsed="1" parent="rBFPTPXUp2qlC89oPuT--2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;container=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Caso d&#39;uso&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="29" width="380" as="geometry">
+            <mxRectangle height="29" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--4" parent="rBFPTPXUp2qlC89oPuT--2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;RICERCA STUDENTE&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="29" width="420" x="380" as="geometry">
+            <mxRectangle height="29" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--5" parent="rBFPTPXUp2qlC89oPuT--1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="51" width="800" y="29" as="geometry" />
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--6" parent="rBFPTPXUp2qlC89oPuT--5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;ID&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="51" width="380" as="geometry">
+            <mxRectangle height="51" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--7" parent="rBFPTPXUp2qlC89oPuT--5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;1.1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="51" width="420" x="380" as="geometry">
+            <mxRectangle height="51" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--8" parent="rBFPTPXUp2qlC89oPuT--1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="50" width="800" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--9" parent="rBFPTPXUp2qlC89oPuT--8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Attori&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="380" as="geometry">
+            <mxRectangle height="50" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--10" parent="rBFPTPXUp2qlC89oPuT--8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Studente&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;DBMS&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="50" width="420" x="380" as="geometry">
+            <mxRectangle height="50" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--11" parent="rBFPTPXUp2qlC89oPuT--1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="40" width="800" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--12" parent="rBFPTPXUp2qlC89oPuT--11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Precondizioni&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="380" as="geometry">
+            <mxRectangle height="40" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--13" parent="rBFPTPXUp2qlC89oPuT--11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;font face=&quot;Times New Roman&quot;&gt;Il sistema ha mostrato a schermo il file che lo studente vuole condividere&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="420" x="380" as="geometry">
+            <mxRectangle height="40" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--14" parent="rBFPTPXUp2qlC89oPuT--1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="590" width="800" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--15" parent="rBFPTPXUp2qlC89oPuT--14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Flusso degli eventi&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="590" width="380" as="geometry">
+            <mxRectangle height="590" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--16" parent="rBFPTPXUp2qlC89oPuT--14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. Lo studente clicca sul pulsante &quot;Ricerca studente 🔍&quot;.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;2. &lt;/span&gt;Il sistema mostra a video una schermata dove poter inserire nome e cognome e &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;    &lt;/span&gt;il pulsante &quot;Conferma Condivisione Finale&quot;.&lt;br&gt;&lt;b data-path-to-node=&quot;3,2,0&quot; data-index-in-node=&quot;0&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;3. &lt;/span&gt;Finché&lt;/b&gt;&amp;nbsp;lo studente non decide di procedere con la condivisione:&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.1. Lo studente digita il nome e cognome di un altro studente AFAM nella &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;       &lt;/span&gt;barra di ricerca.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.2. Lo studente clicca sul pulsante &quot;Cerca&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.3. Il sistema interagisce con il DBMS per verificare la presenza dello &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;       &lt;/span&gt;studente cercato.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.4.&amp;nbsp;&lt;b data-path-to-node=&quot;3,2,0&quot; data-index-in-node=&quot;336&quot;&gt;SE&lt;/b&gt;&amp;nbsp;la ricerca non va a buon fine (nessun risultato trovato):&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.4.1. Il sistema mostra a video il messaggio di errore: &quot;Nessun &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;  &lt;/span&gt;risultato trovato&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.4.2. Lo studente clicca su &quot;OK&quot; sul messaggio di errore.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.4.3. Il sistema mostra nuovamente la barra di ricerca vuota.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.5.&amp;nbsp;&lt;b data-path-to-node=&quot;3,2,0&quot; data-index-in-node=&quot;609&quot;&gt;ALTRIMENTI&lt;/b&gt;&amp;nbsp;(lo studente cercato esiste):&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.5.1. Il sistema mostra a video lo studente cercato con una casellina &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;  &lt;/span&gt;(checkbox) accanto al nome.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.5.2. Lo studente spunta la checkbox relativa allo studente individuato. &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.5.3. Il sistema salva in memoria temporanea lo studente selezionato, &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;  &lt;/span&gt;aggiungendolo alla lista dei destinatari visibile a schermo.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.5.4. Lo studente svuota la barra di ricerca per cercare un altro nome.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;4. &lt;/span&gt;Lo studente clicca sul pulsante &quot;Conferma Condivisione Finale&quot;.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;5. &lt;/span&gt;Il sistema mostra a video il messaggio informativo:&amp;nbsp;&lt;i data-path-to-node=&quot;3,4,0&quot; data-index-in-node=&quot;52&quot;&gt;&quot;Selezionando questa &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;    &lt;/span&gt;opzione permetterai agli studenti selezionati di accedere al file impostato con &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;    &lt;/span&gt;privacy privata, CONFERMI?&quot;&lt;/i&gt;&amp;nbsp;con le opzioni &quot;SI&quot; e &quot;NO&quot;.&lt;br&gt;&lt;b data-path-to-node=&quot;3,5,0&quot; data-index-in-node=&quot;0&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;6. &lt;/span&gt;SE&lt;/b&gt;&amp;nbsp;lo studente clicca su &quot;NO&quot;:&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6.1. Il sistema svuota la memoria temporanea.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6.2. Il sistema mostra a video il file che lo studente voleva condividere &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;       &lt;/span&gt;(annullamento operazione).&lt;br&gt;&lt;b data-path-to-node=&quot;3,6,0&quot; data-index-in-node=&quot;0&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;7. &lt;/span&gt;ALTRIMENTI&lt;/b&gt;&amp;nbsp;(lo studente clicca su &quot;SI&quot;):&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;7.1. Il sistema interagisce con il DBMS per salvare i permessi di accesso per &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;       &lt;/span&gt;gli studenti selezionati.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;7.2. Il sistema mostra a video un messaggio di conferma: &quot;CONDIVISIONE &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;       &lt;/span&gt;CONFERMATA&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;7.3. Lo studente clicca su &quot;OK&quot; sul messaggio.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;7.4. Il sistema mostra a video la propria area personale con tutti gli strumenti &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;       &lt;/span&gt;e i file caricati.&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="590" width="420" x="380" as="geometry">
+            <mxRectangle height="590" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--17" parent="rBFPTPXUp2qlC89oPuT--1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="75" width="800" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--18" parent="rBFPTPXUp2qlC89oPuT--17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Postcondizioni&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="75" width="380" as="geometry">
+            <mxRectangle height="75" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rBFPTPXUp2qlC89oPuT--19" parent="rBFPTPXUp2qlC89oPuT--17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1&lt;/b&gt;.&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il sistema mostra a schermo una schermata dove poter inserire nome e&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;cognome&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;2&lt;/b&gt;. Il sistema ha mostrato a schermo la propria area personale con tutti gli strumenti con file caricati&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="420" x="380" as="geometry">
+            <mxRectangle height="75" width="420" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
