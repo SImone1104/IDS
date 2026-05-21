@@ -1494,12 +1494,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jPyZoqNKRGVDwETcYIyH" name="Pagina-16">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2755" dy="2513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="TO8d5Gn-HpzWrPPVHk-r-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="635" width="840" x="-6" y="630" as="geometry" />
+          <mxGeometry height="635" width="840" x="-580" y="250" as="geometry" />
         </mxCell>
         <mxCell id="TO8d5Gn-HpzWrPPVHk-r-2" parent="TO8d5Gn-HpzWrPPVHk-r-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="840" as="geometry" />
@@ -1574,7 +1574,7 @@
             <mxRectangle height="75" width="350" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TO8d5Gn-HpzWrPPVHk-r-19" parent="TO8d5Gn-HpzWrPPVHk-r-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1. &lt;/b&gt;Il sistema ha mostrato a video il link creato&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="TO8d5Gn-HpzWrPPVHk-r-19" parent="TO8d5Gn-HpzWrPPVHk-r-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1. &lt;/b&gt;Il sistema mostra a video&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;la schermata “Gestione Condivisione tramite Link”&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="490" x="350" as="geometry">
             <mxRectangle height="75" width="490" as="alternateBounds" />
           </mxGeometry>
@@ -1661,7 +1661,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="xUExc_uHkSSaTUF6_huf-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="690" width="940" x="-40" y="-140" as="geometry" />
+          <mxGeometry height="690" width="940" x="250" y="-600" as="geometry" />
         </mxCell>
         <mxCell id="xUExc_uHkSSaTUF6_huf-2" parent="xUExc_uHkSSaTUF6_huf-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="30" width="940" as="geometry" />
@@ -1745,7 +1745,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="-hv1ydPjTFw_xr4ZYiYC" name="Consulta profilo studente">
-    <mxGraphModel dx="964" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
