@@ -860,7 +860,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="vSfsdYNmXw_itwZXSVy-" name="Gestione contenuti">
-    <mxGraphModel dx="1134" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="964" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -890,16 +890,6 @@
         </mxCell>
         <mxCell id="Y1hBo7iuCOLtGG4tMqXP-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Upload file" vertex="1">
           <mxGeometry height="80" width="120" x="390" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="Y1hBo7iuCOLtGG4tMqXP-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="controllo dimensione file" vertex="1">
-          <mxGeometry height="80" width="120" x="570" y="70" as="geometry" />
-        </mxCell>
-        <mxCell id="6IaZMn_UPSor4goB_eeb-1" edge="1" parent="1" source="Y1hBo7iuCOLtGG4tMqXP-6" style="endArrow=open;endSize=16;endFill=0;html=1;rounded=0;entryX=0.075;entryY=0.725;entryDx=0;entryDy=0;exitX=0.975;exitY=0.313;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;entryPerimeter=0;" target="Y1hBo7iuCOLtGG4tMqXP-7" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
-          <mxGeometry relative="1" width="160" x="0.3207" y="-13" as="geometry">
-            <mxPoint as="offset" />
-            <mxPoint x="540" y="340" as="sourcePoint" />
-            <mxPoint x="490" y="300" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="6IaZMn_UPSor4goB_eeb-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Elimina file" vertex="1">
           <mxGeometry height="80" width="120" x="390" y="345" as="geometry" />
@@ -1807,7 +1797,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WHRERQ4m-o8UDZv-nhfG" name="Pagina-17">
-    <mxGraphModel dx="1134" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2164,7 +2154,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="pXpnqGpuRr61GkhgfGvc" name="Pagina-19">
-    <mxGraphModel dx="2580" dy="1062" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
