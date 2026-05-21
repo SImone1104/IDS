@@ -947,7 +947,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WGKcBUwiOowaoTuwLOZo" name="Pagina-15">
-    <mxGraphModel dx="1791" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1441,7 +1441,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="T6QobUBKZ28bgmpvCsso" name="Gest. condivisione con link">
-    <mxGraphModel dx="1040" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1040" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1467,7 +1467,7 @@
           <mxGeometry height="80" width="120" x="370" y="120" as="geometry" />
         </mxCell>
         <mxCell id="OrnhWETK3iRyNQg_b7Q1-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Genera link" vertex="1">
-          <mxGeometry height="80" width="120" x="370" y="230" as="geometry" />
+          <mxGeometry height="80" width="120" x="370" y="240" as="geometry" />
         </mxCell>
         <mxCell id="OrnhWETK3iRyNQg_b7Q1-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Gestione Link" vertex="1">
           <mxGeometry height="80" width="120" x="370" y="370" as="geometry" />
