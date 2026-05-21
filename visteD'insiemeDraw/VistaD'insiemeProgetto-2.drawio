@@ -947,7 +947,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WGKcBUwiOowaoTuwLOZo" name="Pagina-15">
-    <mxGraphModel dx="1791" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1491,7 +1491,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jPyZoqNKRGVDwETcYIyH" name="Pagina-16">
-    <mxGraphModel dx="2051" dy="1901" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2764" dy="2329" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1736,6 +1736,87 @@
         <mxCell id="CBy3kFYD3NVFpVAmzLiz-19" parent="CBy3kFYD3NVFpVAmzLiz-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;1. &lt;/b&gt;Il sistema ha mostrato a schermo la sezione Gestisci Link" vertex="1">
           <mxGeometry height="75" width="490" x="320" as="geometry">
             <mxRectangle height="75" width="490" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
+          <mxGeometry height="630" width="870" x="890" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-2" parent="xUExc_uHkSSaTUF6_huf-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="30" width="870" as="geometry" />
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-3" collapsed="1" parent="xUExc_uHkSSaTUF6_huf-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;container=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Caso d&#39;uso&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="350" as="geometry">
+            <mxRectangle height="30" width="350" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-4" parent="xUExc_uHkSSaTUF6_huf-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Selezione contenuti&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="520" x="350" as="geometry">
+            <mxRectangle height="30" width="520" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-5" parent="xUExc_uHkSSaTUF6_huf-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="51" width="870" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-6" parent="xUExc_uHkSSaTUF6_huf-5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;ID&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="51" width="350" as="geometry">
+            <mxRectangle height="51" width="350" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-7" parent="xUExc_uHkSSaTUF6_huf-5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;4.1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="51" width="520" x="350" as="geometry">
+            <mxRectangle height="51" width="520" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-8" parent="xUExc_uHkSSaTUF6_huf-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="50" width="870" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-9" parent="xUExc_uHkSSaTUF6_huf-8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Attori&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="350" as="geometry">
+            <mxRectangle height="50" width="350" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-10" parent="xUExc_uHkSSaTUF6_huf-8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Studente&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;DBMS&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="50" width="520" x="350" as="geometry">
+            <mxRectangle height="50" width="520" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-11" parent="xUExc_uHkSSaTUF6_huf-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="30" width="870" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-12" parent="xUExc_uHkSSaTUF6_huf-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Precondizioni&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="350" as="geometry">
+            <mxRectangle height="30" width="350" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-13" parent="xUExc_uHkSSaTUF6_huf-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;font face=&quot;Times New Roman&quot;&gt;Il sistema ha mostaro a video la schermata Home Afam&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="520" x="350" as="geometry">
+            <mxRectangle height="30" width="520" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-14" parent="xUExc_uHkSSaTUF6_huf-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="329" width="870" y="161" as="geometry" />
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-15" parent="xUExc_uHkSSaTUF6_huf-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Flusso degli eventi&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="329" width="350" as="geometry">
+            <mxRectangle height="329" width="350" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-16" parent="xUExc_uHkSSaTUF6_huf-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;1. Lo studente clicca sulla sezione “Gestione Contenuti”.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Il Sistema mostra a video la schermata “Gestione Condivisione tramite Link”.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Lo studente clicca sul pulsante “Seleziona Contenuti”.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4. Il Sistema interroga il DBMS.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5. SE lo studente non dispone di alcun contenuto caricato:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;5.1. Il Sistema mostra a video un messaggio di avviso che indica l’assenza di contenuti caricati.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;5.2. Lo studente clicca sul pulsante “OK”.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;5.3. Il Sistema mostra nuovamente la schermata “Gestione Condivisione tramite Link”.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;6. ALTRIMENTI:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.1. Il Sistema mostra a video i contenuti caricati.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.2. Lo studente seleziona la tipologia di strumento.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.3. Il Sistema mostra le tipologie di file disponibili (audio, video, testo).&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.4. Lo studente seleziona la tipologia di file desiderata.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.5. Il Sistema mostra tutti i file caricati appartenenti alla tipologia selezionata.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.6. Lo studente seleziona i file da condividere.&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;" vertex="1">
+          <mxGeometry height="329" width="520" x="350" as="geometry">
+            <mxRectangle height="329" width="520" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-17" parent="xUExc_uHkSSaTUF6_huf-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="140" width="870" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-18" parent="xUExc_uHkSSaTUF6_huf-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Postcondizioni&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="140" width="350" as="geometry">
+            <mxRectangle height="140" width="350" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUExc_uHkSSaTUF6_huf-19" parent="xUExc_uHkSSaTUF6_huf-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1.&amp;nbsp;&lt;/b&gt;&amp;nbsp;Lo studente ha selezionato i file che desidera condividere&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="520" x="350" as="geometry">
+            <mxRectangle height="140" width="520" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
       </root>
