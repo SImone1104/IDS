@@ -323,7 +323,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NWPvOExdg23FyhshGvr5" name="Pagina-13">
-    <mxGraphModel dx="4686" dy="1553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -947,7 +947,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WGKcBUwiOowaoTuwLOZo" name="Pagina-15">
-    <mxGraphModel dx="2112" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1491,7 +1491,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jPyZoqNKRGVDwETcYIyH" name="Pagina-16">
-    <mxGraphModel dx="1961" dy="1960" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2422" dy="2124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1801,7 +1801,7 @@
             <mxRectangle height="329" width="350" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xUExc_uHkSSaTUF6_huf-16" parent="xUExc_uHkSSaTUF6_huf-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;1. Lo studente clicca sulla sezione “Gestione Contenuti”.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Il Sistema mostra a video la schermata “Gestione Condivisione tramite Link”.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Lo studente clicca sul pulsante “Seleziona Contenuti”.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4. Il Sistema interroga il DBMS.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5. SE lo studente non dispone di alcun contenuto caricato:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;5.1. Il Sistema mostra a video un messaggio di avviso che indica l’assenza di contenuti caricati.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;5.2. Lo studente clicca sul pulsante “OK”.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;5.3. Il Sistema mostra nuovamente la schermata “Gestione Condivisione tramite Link”.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;6. ALTRIMENTI:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.1. Il Sistema mostra a video i contenuti caricati.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.2. Lo studente seleziona la tipologia di strumento.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.3. Il Sistema mostra le tipologie di file disponibili (audio, video, testo).&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.4. Lo studente seleziona la tipologia di file desiderata.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.5. Il Sistema mostra tutti i file caricati appartenenti alla tipologia selezionata.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.6. Lo studente seleziona i file da condividere.&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;" vertex="1">
+        <mxCell id="xUExc_uHkSSaTUF6_huf-16" parent="xUExc_uHkSSaTUF6_huf-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;1. Lo studente clicca sulla sezione “Gestione Contenuti”.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Il Sistema mostra a video la schermata “Gestione Condivisione tramite Link”.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Lo studente clicca sul pulsante “Seleziona Contenuti”.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4. Il Sistema interroga il DBMS per richiedere i contenuti.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5. SE lo studente non dispone di alcun contenuto caricato:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;5.1. Il Sistema mostra a video un messaggio di avviso che indica l’assenza di contenuti caricati.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;5.2. Lo studente clicca sul pulsante “OK”.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;5.3. Il Sistema mostra nuovamente la schermata “Gestione Condivisione tramite Link”.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;6. ALTRIMENTI:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.1. Il Sistema mostra a video i contenuti caricati.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.2. Lo studente seleziona la tipologia di strumento.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.3. Il Sistema mostra le tipologie di file disponibili (audio, video, testo).&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.4. Lo studente seleziona la tipologia di file desiderata.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.5. Il Sistema mostra tutti i file caricati appartenenti alla tipologia selezionata.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;6.6. Lo studente seleziona i file da condividere.&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;" vertex="1">
           <mxGeometry height="329" width="520" x="350" as="geometry">
             <mxRectangle height="329" width="520" as="alternateBounds" />
           </mxGeometry>
