@@ -106,7 +106,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Vista d&#39;insieme generale OFFICIAL" id="fuN1FXlc8kxLoOw25CKG">
-    <mxGraphModel dx="1387" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1285" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-0" />
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-1" parent="WXJHqH-YGc8_e_Hh1K20-0" />
@@ -190,6 +190,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-22" edge="1" parent="WXJHqH-YGc8_e_Hh1K20-1" source="WXJHqH-YGc8_e_Hh1K20-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="WXJHqH-YGc8_e_Hh1K20-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbJjasWty4d6JidF9NMs-0" edge="1" parent="WXJHqH-YGc8_e_Hh1K20-1" source="WXJHqH-YGc8_e_Hh1K20-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=none;endFill=0;" target="WXJHqH-YGc8_e_Hh1K20-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-23" parent="WXJHqH-YGc8_e_Hh1K20-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Utente esterno" vertex="1">
@@ -1491,7 +1494,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jPyZoqNKRGVDwETcYIyH" name="Pagina-16">
-    <mxGraphModel dx="1961" dy="1856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
