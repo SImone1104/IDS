@@ -1577,7 +1577,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TO8d5Gn-HpzWrPPVHk-r-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="445" width="840" x="-90" y="480" as="geometry" />
+          <mxGeometry height="635" width="840" x="-730" y="480" as="geometry" />
         </mxCell>
         <mxCell id="TO8d5Gn-HpzWrPPVHk-r-2" parent="TO8d5Gn-HpzWrPPVHk-r-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="840" as="geometry" />
@@ -1626,26 +1626,26 @@
             <mxRectangle height="30" width="350" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TO8d5Gn-HpzWrPPVHk-r-13" parent="TO8d5Gn-HpzWrPPVHk-r-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;font face=&quot;Times New Roman&quot;&gt;Lo studente ha selezionato i file che desidera condividere&lt;/font&gt;" vertex="1">
+        <mxCell id="TO8d5Gn-HpzWrPPVHk-r-13" parent="TO8d5Gn-HpzWrPPVHk-r-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il Sistema ha mostrato a video la schermata “Generazione Link”&lt;/font&gt;&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="490" x="350" as="geometry">
             <mxRectangle height="30" width="490" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TO8d5Gn-HpzWrPPVHk-r-14" parent="TO8d5Gn-HpzWrPPVHk-r-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="210" width="840" y="160" as="geometry" />
+          <mxGeometry height="400" width="840" y="160" as="geometry" />
         </mxCell>
         <mxCell id="TO8d5Gn-HpzWrPPVHk-r-15" parent="TO8d5Gn-HpzWrPPVHk-r-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Flusso degli eventi&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="210" width="350" as="geometry">
-            <mxRectangle height="210" width="350" as="alternateBounds" />
+          <mxGeometry height="400" width="350" as="geometry">
+            <mxRectangle height="400" width="350" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TO8d5Gn-HpzWrPPVHk-r-16" parent="TO8d5Gn-HpzWrPPVHk-r-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1.&lt;/b&gt;&amp;nbsp;Lo studente clicca sul tasto condividi&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;2. &lt;/b&gt;Il sistema genera il link&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;3. &lt;/b&gt;Il sistema mostra a schermo il link creato con la possibilita di copiarlo&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;" vertex="1">
-          <mxGeometry height="210" width="490" x="350" as="geometry">
-            <mxRectangle height="210" width="490" as="alternateBounds" />
+        <mxCell id="TO8d5Gn-HpzWrPPVHk-r-16" parent="TO8d5Gn-HpzWrPPVHk-r-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;6,0,0&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Lo studente clicca sul pulsante “Genera Link”.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;6,1,0&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il Sistema recupera dalla memoria temporanea l&#39;elenco dei file precedentemente selezionati dallo studente.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;6,2,0&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il Sistema genera un link di condivisione univoco associato ai file selezionati.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;6,3,0&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il Sistema invia i dati del link generato, l&#39;elenco dei file associati e l&#39;identificativo dello studente al DBMS per la memorizzazione definitiva.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;6,4,0&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il Sistema mostra a video un messaggio di conferma: “Link generato con successo”, contenente il link testuale creato e i pulsanti “Copia Link” e “ok”.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;6,5,0&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Lo studente clicca sul pulsante “Copia Link”.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;6,6,0&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il Sistema copia il link generato negli appunti del dispositivo dello studente.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;6,7,0&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Lo studente clicca sul pulsante “ok” per chiudere il messaggio di conferma.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;6,8,0&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il Sistema mostra a video la schermata “Gestione Condivisione tramite Link”&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/div&gt;&lt;/blockquote&gt;" vertex="1">
+          <mxGeometry height="400" width="490" x="350" as="geometry">
+            <mxRectangle height="400" width="490" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TO8d5Gn-HpzWrPPVHk-r-17" parent="TO8d5Gn-HpzWrPPVHk-r-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="75" width="840" y="370" as="geometry" />
+          <mxGeometry height="75" width="840" y="560" as="geometry" />
         </mxCell>
         <mxCell id="TO8d5Gn-HpzWrPPVHk-r-18" parent="TO8d5Gn-HpzWrPPVHk-r-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Postcondizioni&lt;/font&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="75" width="350" as="geometry">
@@ -1658,7 +1658,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="CBy3kFYD3NVFpVAmzLiz-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="445" width="810" x="-75" y="1030" as="geometry" />
+          <mxGeometry height="445" width="810" x="-40" y="1370" as="geometry" />
         </mxCell>
         <mxCell id="CBy3kFYD3NVFpVAmzLiz-2" parent="CBy3kFYD3NVFpVAmzLiz-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="810" as="geometry" />
