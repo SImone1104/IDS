@@ -1807,7 +1807,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WHRERQ4m-o8UDZv-nhfG" name="Pagina-17">
-    <mxGraphModel dx="1134" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="964" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1942,7 +1942,7 @@
             <mxRectangle height="30" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kfqNNyIC8x4uFTzeHV9c-13" parent="kfqNNyIC8x4uFTzeHV9c-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;font face=&quot;Times New Roman&quot;&gt;Il sistema ha mostrato a schermo il/i&amp;nbsp;risultati della ricerca&lt;/font&gt;" vertex="1">
+        <mxCell id="kfqNNyIC8x4uFTzeHV9c-13" parent="kfqNNyIC8x4uFTzeHV9c-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;font face=&quot;Times New Roman&quot;&gt;Il sistema ha mostrato a schermo i&amp;nbsp;risultati correlati alla ricerca&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="460" x="380" as="geometry">
             <mxRectangle height="30" width="460" as="alternateBounds" />
           </mxGeometry>
