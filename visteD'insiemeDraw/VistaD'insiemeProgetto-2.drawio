@@ -748,7 +748,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="eGC2cA3NUpgSvZc--kTg" name="Gestione profilo">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1195" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -789,7 +789,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K7QUrHlJVGKSW9rOtUK7" name="Pagina-14">
-    <mxGraphModel dx="4735" dy="3193" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2426,7 +2426,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="pXpnqGpuRr61GkhgfGvc" name="Pagina-19">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2022" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2672,9 +2672,6 @@
           <mxGeometry height="75" width="420" x="380" as="geometry">
             <mxRectangle height="75" width="420" as="alternateBounds" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="osdNNbbj8-gINeRc0T4m-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="FLUSSO DEGLI EVENTI GENERALE&lt;div&gt;I singoli casi d&#39;uso sono sotto&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="410" x="-240" y="70" as="geometry" />
         </mxCell>
         <mxCell id="rBFPTPXUp2qlC89oPuT--1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
           <mxGeometry height="834.9999999999995" width="800" x="-435" y="2220" as="geometry" />
