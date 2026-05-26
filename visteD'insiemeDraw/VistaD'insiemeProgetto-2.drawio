@@ -106,7 +106,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Vista d&#39;insieme generale OFFICIAL" id="fuN1FXlc8kxLoOw25CKG">
-    <mxGraphModel dx="1205" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-0" />
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-1" parent="WXJHqH-YGc8_e_Hh1K20-0" />
@@ -789,7 +789,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K7QUrHlJVGKSW9rOtUK7" name="Pagina-14">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4487" dy="3044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1533,7 +1533,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="T6QobUBKZ28bgmpvCsso" name="Gest. condivisione con link">
-    <mxGraphModel dx="964" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1601,7 +1601,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jPyZoqNKRGVDwETcYIyH" name="Pagina-16">
-    <mxGraphModel dx="1205" dy="2009" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1998,7 +1998,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WHRERQ4m-o8UDZv-nhfG" name="Pagina-17">
-    <mxGraphModel dx="803" dy="1729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2168,7 +2168,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="bzvxV_oc5PbJ0gqNqvW1" name="Visualizza contenuto con link">
-    <mxGraphModel dx="964" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
