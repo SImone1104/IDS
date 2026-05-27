@@ -2357,7 +2357,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="kfqNNyIC8x4uFTzeHV9c-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="535.0000000000007" width="840" x="-1440" y="-260" as="geometry" />
+          <mxGeometry height="530.0000000000007" width="840" x="-1440" y="-260" as="geometry" />
         </mxCell>
         <mxCell id="kfqNNyIC8x4uFTzeHV9c-2" parent="kfqNNyIC8x4uFTzeHV9c-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="840" as="geometry" />
@@ -2425,16 +2425,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="kfqNNyIC8x4uFTzeHV9c-17" parent="kfqNNyIC8x4uFTzeHV9c-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="75" width="840" y="460" as="geometry" />
+          <mxGeometry height="70" width="840" y="460" as="geometry" />
         </mxCell>
         <mxCell id="kfqNNyIC8x4uFTzeHV9c-18" parent="kfqNNyIC8x4uFTzeHV9c-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Postcondizioni&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="75" width="380" as="geometry">
-            <mxRectangle height="75" width="380" as="alternateBounds" />
+          <mxGeometry height="70" width="380" as="geometry">
+            <mxRectangle height="70" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kfqNNyIC8x4uFTzeHV9c-19" parent="kfqNNyIC8x4uFTzeHV9c-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ol&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il sistema ha mostrato la schermata Riproduttore Multimediale&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il sistema ha mostrato la schermata Visualizzatore Documenti&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="75" width="460" x="380" as="geometry">
-            <mxRectangle height="75" width="460" as="alternateBounds" />
+        <mxCell id="kfqNNyIC8x4uFTzeHV9c-19" parent="kfqNNyIC8x4uFTzeHV9c-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;. Il Sistema ha interrogato il DBMS per recuperare il file fisico&lt;/span&gt;&lt;br style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="460" x="380" as="geometry">
+            <mxRectangle height="70" width="460" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4w0ADnACsig2TGe-8dwN-16" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
@@ -2513,7 +2513,7 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4w0ADnACsig2TGe-8dwN-34" parent="4w0ADnACsig2TGe-8dwN-32" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ol&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il sistema ha mostrato la schermata Contenuti privati&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il sistema ha mostrato la schermata Profilo Studente&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="4w0ADnACsig2TGe-8dwN-34" parent="4w0ADnACsig2TGe-8dwN-32" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;Il Sistema ha interrogato il DBMS per recuperare il file fisico&lt;/span&gt;&lt;br style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="460" x="380" as="geometry">
             <mxRectangle height="75" width="460" as="alternateBounds" />
           </mxGeometry>
