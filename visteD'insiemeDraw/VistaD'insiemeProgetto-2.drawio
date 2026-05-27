@@ -486,7 +486,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NWPvOExdg23FyhshGvr5" name="Pagina-13">
-    <mxGraphModel dx="5463" dy="1818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -940,7 +940,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K7QUrHlJVGKSW9rOtUK7" name="Pagina-14">
-    <mxGraphModel dx="4566" dy="4122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1190,7 +1190,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WGKcBUwiOowaoTuwLOZo" name="Pagina-15">
-    <mxGraphModel dx="2420" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1836,7 +1836,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jPyZoqNKRGVDwETcYIyH" name="Pagina-16">
-    <mxGraphModel dx="2085" dy="1784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2171,7 +2171,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="-hv1ydPjTFw_xr4ZYiYC" name="Consulta profilo studente">
-    <mxGraphModel dx="1195" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2227,7 +2227,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="RyoRmdsVpKSE11oDxVOq-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;font face=&quot;Helvetica&quot;&gt;Mostra Contenuti pubblici&lt;/font&gt;" vertex="1">
-          <mxGeometry height="70" width="125" x="387.5" y="295" as="geometry" />
+          <mxGeometry height="70" width="125" x="387.5" y="290" as="geometry" />
         </mxCell>
         <mxCell id="RyoRmdsVpKSE11oDxVOq-2" edge="1" parent="1" source="Xoiv9Ff1ivxSPSbIxocM-1" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="RyoRmdsVpKSE11oDxVOq-1">
           <mxGeometry relative="1" as="geometry">
@@ -2271,7 +2271,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WHRERQ4m-o8UDZv-nhfG" name="Pagina-17">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2618" dy="1841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2419,7 +2419,7 @@
             <mxRectangle height="280" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kfqNNyIC8x4uFTzeHV9c-16" parent="kfqNNyIC8x4uFTzeHV9c-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&#x9;1.L&#39;utete clicca sul pulsante mostra contenuti pubblici&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;    2. Il sistema mostra a. video la schermata&lt;/span&gt;&amp;nbsp;Contenuti pubblici&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;1&lt;/b&gt;. L&#39;utente clicca sulla categoria artistica di cui vuole vedere i file.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;2&lt;/b&gt;. Il Sistema interroga il DBMS per recuperare le tipologie di file disponibili .&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;3&lt;/b&gt;. Il Sistema mostra a video la schermata &quot;Categorie Contenuti&quot; elencando le &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;tipologie &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;    &lt;/span&gt;trovate.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;4&lt;/b&gt;. L&#39;utente clicca sulla tipologia di interesse.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;5&lt;/b&gt;. Il Sistema interroga il DBMS per recuperare l&#39;elenco dei file caricati dallo studente &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;    &lt;/span&gt;per quella specifica tipologia.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;6&lt;/b&gt;. Il Sistema mostra a video la schermata &quot;Elenco File&quot; con i risultati trovati.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;7&lt;/b&gt;. L&#39;utente clicca su uno specifico file di interesse dall&#39;elenco.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;8&lt;/b&gt;. Il Sistema interroga il DBMS per recuperare il file fisico&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;9&lt;/b&gt; Il Sistema invoca il caso d&#39;uso incluso &quot;Visualizza Contenuto&quot;,&lt;br&gt;   &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fornendo come informazioni il file selezionato e il relativo formato.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="kfqNNyIC8x4uFTzeHV9c-16" parent="kfqNNyIC8x4uFTzeHV9c-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&#x9;1.L&#39;utete clicca sul pulsante mostra contenuti pubblici&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;    2. Il sistema mostra a. video la schermata&lt;/span&gt;&amp;nbsp;Contenuti pubblici&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;1&lt;/b&gt;. L&#39;utente clicca sulla categoria artistica di cui vuole vedere i file.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;2&lt;/b&gt;. Il Sistema interroga il DBMS per recuperare le tipologie di file disponibili .&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;3&lt;/b&gt;. Il Sistema mostra a video la schermata &quot;Categorie Contenuti&quot; elencando le &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;tipologie &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;    &lt;/span&gt;trovate.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;4&lt;/b&gt;. L&#39;utente clicca sulla tipologia di interesse.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;5&lt;/b&gt;. Il Sistema interroga il DBMS per recuperare l&#39;elenco dei file caricati dallo studente &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;    &lt;/span&gt;per quella specifica tipologia.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;6&lt;/b&gt;. Il Sistema mostra a video la schermata &quot;Elenco File&quot; con i risultati trovati.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;7&lt;/b&gt;. L&#39;utente clicca su uno specifico file di interesse dall&#39;elenco.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;8&lt;/b&gt;. Il Sistema interroga il DBMS per recuperare il file fisico&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;9&lt;/b&gt;&amp;nbsp;Vieno invocato il caso d&#39;uso &quot;Visualizza Contenuto&quot;,&lt;br&gt;   &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="280" width="460" x="380" as="geometry">
             <mxRectangle height="280" width="460" as="alternateBounds" />
           </mxGeometry>
@@ -2500,7 +2500,7 @@
             <mxRectangle height="280" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4w0ADnACsig2TGe-8dwN-31" parent="4w0ADnACsig2TGe-8dwN-29" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;1. L&#39;utente clicca sul pulsante &quot;Visualizza Contenuti Privati&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;2. Il Sistema mostra a video la schermata &quot;Inserimento Codice&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;3. L&#39;utente inserisce il codice e clicca sul pulsante &quot;Conferma&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;4. Il Sistema interroga il DBMS per verificare la validità del codice inserito.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;5. SE il codice non è valido:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; 5.1. Il Sistema mostra a video il messaggio di errore &quot;Codice errato&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; 5.2. L&#39;utente clicca sul pulsante &quot;ok&quot; per chiudere il messaggio.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; 5.3. Il Sistema mostra nuovamente a video la schermata &quot;Profilo Studente&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;6. ALTRIMENTI (il codice è valido):&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; 6.1. Il Sistema interroga il DBMS per recuperare l&#39;elenco dei file privati.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; 6.2. Il Sistema mostra a video la schermata &quot;Contenuti Privati&quot; contenente i file recuperati.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;6.3L&#39;utente clicca su uno specifico file di interesse dall&#39;elenco.&lt;/font&gt;&lt;/div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;    6.4&lt;/span&gt;. Il Sistema interroga il DBMS per recuperare il file fisico&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;     6.5&lt;/span&gt;&amp;nbsp;Il Sistema invoca il caso d&#39;uso incluso &quot;Visualizza Contenuto&quot;,&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fornendo come informazioni il file selezionato e il relativo formato.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="4w0ADnACsig2TGe-8dwN-31" parent="4w0ADnACsig2TGe-8dwN-29" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;1. L&#39;utente clicca sul pulsante &quot;Visualizza Contenuti Privati&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;2. Il Sistema mostra a video la schermata &quot;Inserimento Codice&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;3. L&#39;utente inserisce il codice e clicca sul pulsante &quot;Conferma&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;4. Il Sistema interroga il DBMS per verificare la validità del codice inserito.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;5. SE il codice non è valido:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; 5.1. Il Sistema mostra a video il messaggio di errore &quot;Codice errato&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; 5.2. L&#39;utente clicca sul pulsante &quot;ok&quot; per chiudere il messaggio.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; 5.3. Il Sistema mostra nuovamente a video la schermata &quot;Profilo Studente&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;6. ALTRIMENTI (il codice è valido):&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; 6.1. Il Sistema interroga il DBMS per recuperare l&#39;elenco dei file privati.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; 6.2. Il Sistema mostra a video la schermata &quot;Contenuti Privati&quot; contenente i file recuperati.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;6.3L&#39;utente clicca su uno specifico file di interesse dall&#39;elenco.&lt;/font&gt;&lt;/div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;    6.4&lt;/span&gt;. Il Sistema interroga il DBMS per recuperare il file fisico&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;     6.5&lt;/span&gt;&amp;nbsp;Viene invocato il caso d&#39;uso &quot;Visualizza Contenuto&quot;,&lt;br&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="280" width="460" x="380" as="geometry">
             <mxRectangle height="280" width="460" as="alternateBounds" />
           </mxGeometry>
@@ -2823,7 +2823,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="QnjrTUGSt3T6jabHz3Y6" name="Gest cond extra link">
-    <mxGraphModel dx="1195" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3292,13 +3292,10 @@
     </mxGraphModel>
   </diagram>
   <diagram id="eyeHxfMlvMoMzlrp7JzJ" name="prova">
-    <mxGraphModel dx="1195" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1607" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="PCE2cLiJp9FJCnBrGcfi-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 40px;&quot;&gt;PINAAA&lt;/font&gt;" vertex="1">
-          <mxGeometry height="230" width="320" x="230" y="190" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
