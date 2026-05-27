@@ -2185,7 +2185,7 @@
           <mxGeometry height="60" width="30" x="120" y="130" as="geometry" />
         </mxCell>
         <mxCell id="rgsBx9bbL2zL2NRtoskX-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Visualizza profilo" vertex="1">
-          <mxGeometry height="80" width="120" x="435" y="380" as="geometry" />
+          <mxGeometry height="80" width="120" x="435" y="270" as="geometry" />
         </mxCell>
         <mxCell id="TVwzWaCSzJ3wH3TjA9CG-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Cerca studente" vertex="1">
           <mxGeometry height="80" width="120" x="435" y="140" as="geometry" />
@@ -2212,7 +2212,7 @@
           <mxGeometry height="60" width="30" x="120" y="400" as="geometry" />
         </mxCell>
         <mxCell id="LXX6YtMzIiywQrpR8AY9-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Visualizza contenuti privati&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="70" width="140" x="435" y="270" as="geometry" />
+          <mxGeometry height="70" width="125" x="430" y="395" as="geometry" />
         </mxCell>
         <mxCell id="LXX6YtMzIiywQrpR8AY9-4" edge="1" parent="1" source="LXX6YtMzIiywQrpR8AY9-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="rgsBx9bbL2zL2NRtoskX-1">
           <mxGeometry relative="1" as="geometry" />
@@ -2245,7 +2245,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WHRERQ4m-o8UDZv-nhfG" name="Pagina-17">
-    <mxGraphModel dx="2196" dy="2017" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1717" dy="1720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2422,7 +2422,7 @@
             <mxRectangle height="29" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4w0ADnACsig2TGe-8dwN-19" parent="4w0ADnACsig2TGe-8dwN-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;VISUALIZZA CONTENUTI PRIVATI&lt;/b&gt;&lt;/font&gt;" vertex="1">
+        <mxCell id="4w0ADnACsig2TGe-8dwN-19" parent="4w0ADnACsig2TGe-8dwN-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;MOSTRA CONTENUTI PRIVATI&lt;/b&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry height="29" width="460" x="380" as="geometry">
             <mxRectangle height="29" width="460" as="alternateBounds" />
           </mxGeometry>
@@ -2474,7 +2474,7 @@
             <mxRectangle height="280" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4w0ADnACsig2TGe-8dwN-31" parent="4w0ADnACsig2TGe-8dwN-29" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. Lo studente clicca sulla categoria artistica di cui vuole vedere i file.&lt;/div&gt;&lt;div&gt;2. Il Sistema interroga il DBMS per recuperare le tipologie di file disponibili .&lt;/div&gt;&lt;div&gt;3. Il Sistema mostra a video la schermata &quot;Categorie Contenuti&quot; elencando le &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;tipologie trovate.&lt;/div&gt;&lt;div&gt;4. Lo studente clicca sulla tipologia di interesse.&lt;/div&gt;&lt;div&gt;5. Il Sistema interroga il DBMS per recuperare l&#39;elenco dei file caricati dallo studente &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;per quella specifica tipologia.&lt;/div&gt;&lt;div&gt;6. Il Sistema mostra a video la schermata &quot;Elenco File&quot; con i risultati trovati.&lt;/div&gt;&lt;div&gt;7. L&#39;utente clicca su uno specifico file di interesse dall&#39;elenco.&lt;/div&gt;&lt;div&gt;8. Il Sistema interroga il DBMS per recuperare il file fisico&lt;/div&gt;&lt;div&gt;9 Il sistema verifica il formato del file&lt;/div&gt;&lt;div&gt;10. SE il contenuto è un file multimediale riproducibile (es. traccia audio o video):&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 10.1. Il Sistema mostra a video la schermata &quot;Riproduttore Multimediale&quot; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;contenente &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;il player attivo e le informazioni descrittive.&lt;/div&gt;&lt;div&gt;11. ALTRIMENTI (il contenuto è un file statico, es. PDF o immagine):&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 11.1. Il Sistema mostra a video la schermata &quot;Visualizzatore Documenti&quot; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;contenente il file aperto e le informazioni descrittive.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="4w0ADnACsig2TGe-8dwN-31" parent="4w0ADnACsig2TGe-8dwN-29" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. L&#39; utente clicca sul pulsante visualizza contenut privati.&lt;/div&gt;&lt;div&gt;2. Il Sistema mostra a video una schermata dove inserire un codice.&lt;/div&gt;&lt;div&gt;3. L&#39;utente inserisce il codice e clicca sul pulsante conferma&lt;/div&gt;&lt;div&gt;4. Il sistema verifica la correttezza del codice inserito dall&#39; utente interrogando il DBMS&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;5. &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;SE &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;il codice non è valido&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;5.1 Il sistema mostra a video una Schermata di Errore:Codice errato&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;5.2 L utente clicca sul pulsante ok per chiudere il messaggio&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;5.3 Il sistema mostra a video la Schermata Profilo Studente&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;6. &lt;b&gt;ALTRIMENTI &lt;/b&gt;(codice valido)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6.1 Il sistema recupera i file dal DBMS&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6.2 Il sistema mostra a videdo una schermata di conferma:Codice Inserito Correttamente&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6.3 L&#39; utente cliccla sul pulsante ok per chiudere il messaggio&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6.4 Il sistema mostra a video la schermata &quot;Contenuti privati&quot;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="280" width="460" x="380" as="geometry">
             <mxRectangle height="280" width="460" as="alternateBounds" />
           </mxGeometry>
@@ -2487,7 +2487,7 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4w0ADnACsig2TGe-8dwN-34" parent="4w0ADnACsig2TGe-8dwN-32" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Il sistema ha mostrato la schermata Riproduttore Multimediale&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Il sistema ha mostrato la schermata Visualizzatore Documenti&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="4w0ADnACsig2TGe-8dwN-34" parent="4w0ADnACsig2TGe-8dwN-32" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Il sistema ha mostrato la schermata Contenuti privati&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Il sistema ha mostrato la schermata Profilo Studente&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="460" x="380" as="geometry">
             <mxRectangle height="75" width="460" as="alternateBounds" />
           </mxGeometry>
@@ -2720,7 +2720,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="lLZNDCJGVyg4dRDn0hPx-3" edge="1" parent="1" source="n8OSyBllI7fspiQRiKzC-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;">
+        <mxCell id="lLZNDCJGVyg4dRDn0hPx-3" edge="1" parent="1" source="n8OSyBllI7fspiQRiKzC-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="D3viczSGPG4miCTav6DL-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="330" y="390" as="targetPoint" />
           </mxGeometry>
@@ -2734,7 +2734,7 @@
         <mxCell id="n8OSyBllI7fspiQRiKzC-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Selezione contenuti" vertex="1">
           <mxGeometry height="80" width="120" x="330" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="lLZNDCJGVyg4dRDn0hPx-9" edge="1" parent="1" source="n8OSyBllI7fspiQRiKzC-6" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;">
+        <mxCell id="lLZNDCJGVyg4dRDn0hPx-9" edge="1" parent="1" source="n8OSyBllI7fspiQRiKzC-6" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="D3viczSGPG4miCTav6DL-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="450" y="390" as="targetPoint" />
           </mxGeometry>
@@ -2752,7 +2752,7 @@
           <mxGeometry height="80" width="120" x="30" y="65" as="geometry" />
         </mxCell>
         <mxCell id="D3viczSGPG4miCTav6DL-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Genera Codice" vertex="1">
-          <mxGeometry height="70" width="140" x="320" y="360" as="geometry" />
+          <mxGeometry height="70" width="140" x="335" y="320" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
