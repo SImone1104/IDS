@@ -106,7 +106,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Vista d&#39;insieme generale OFFICIAL" id="fuN1FXlc8kxLoOw25CKG">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1369" dy="848" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-0" />
         <mxCell id="WXJHqH-YGc8_e_Hh1K20-1" parent="WXJHqH-YGc8_e_Hh1K20-0" />
@@ -486,7 +486,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NWPvOExdg23FyhshGvr5" name="Pagina-13">
-    <mxGraphModel dx="5206" dy="1916" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -940,7 +940,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K7QUrHlJVGKSW9rOtUK7" name="Pagina-14">
-    <mxGraphModel dx="4442" dy="3129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1190,12 +1190,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WGKcBUwiOowaoTuwLOZo" name="Pagina-15">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1957" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="qjwe2l2yQAcPtlV3d2Hg-2" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="365" width="790" x="-230" y="850" as="geometry" />
+          <mxGeometry height="365" width="790" x="-200" y="1230" as="geometry" />
         </mxCell>
         <mxCell id="qjwe2l2yQAcPtlV3d2Hg-3" parent="qjwe2l2yQAcPtlV3d2Hg-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="790" as="geometry" />
@@ -1270,13 +1270,13 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qjwe2l2yQAcPtlV3d2Hg-20" parent="qjwe2l2yQAcPtlV3d2Hg-18" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;Il sistema &amp;nbsp;mostra a schermo la schermata contenente i file&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="qjwe2l2yQAcPtlV3d2Hg-20" parent="qjwe2l2yQAcPtlV3d2Hg-18" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;Il sistema &amp;nbsp;ha mostrato a schermo la schermata contenente i file&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="410" x="380" as="geometry">
             <mxRectangle height="75" width="410" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="QUuvt9lHnHT5mBKgE8wx-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="525" width="790" x="-250" y="2050" as="geometry" />
+          <mxGeometry height="525" width="790" x="-210" y="2310" as="geometry" />
         </mxCell>
         <mxCell id="QUuvt9lHnHT5mBKgE8wx-2" parent="QUuvt9lHnHT5mBKgE8wx-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="790" as="geometry" />
@@ -1351,13 +1351,13 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QUuvt9lHnHT5mBKgE8wx-19" parent="QUuvt9lHnHT5mBKgE8wx-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;Il sistema mostra a schermo la schermata contenente i file&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="QUuvt9lHnHT5mBKgE8wx-19" parent="QUuvt9lHnHT5mBKgE8wx-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;Il sistema ha mostrato a schermo la schermata contenente i file&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="410" x="380" as="geometry">
             <mxRectangle height="75" width="410" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="f9LOFpCgruJOSxP5PgEd-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="475.0000000000009" width="820" x="-220" y="2680" as="geometry" />
+          <mxGeometry height="475.0000000000009" width="820" x="-210" y="2920" as="geometry" />
         </mxCell>
         <mxCell id="f9LOFpCgruJOSxP5PgEd-2" parent="f9LOFpCgruJOSxP5PgEd-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="820" as="geometry" />
@@ -1432,13 +1432,13 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="f9LOFpCgruJOSxP5PgEd-19" parent="f9LOFpCgruJOSxP5PgEd-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;Il sistema mostra a schermo la schermata contenente i file&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="f9LOFpCgruJOSxP5PgEd-19" parent="f9LOFpCgruJOSxP5PgEd-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;Il sistema ha mostrato a schermo la schermata contenente i file&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="440" x="380" as="geometry">
             <mxRectangle height="75" width="440" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="6aRgRBSg-gLDWoQgza2K-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="544.9999999999989" width="890" x="-280" y="1400" as="geometry" />
+          <mxGeometry height="544.9999999999989" width="890" x="-280" y="1630" as="geometry" />
         </mxCell>
         <mxCell id="6aRgRBSg-gLDWoQgza2K-2" parent="6aRgRBSg-gLDWoQgza2K-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="890" as="geometry" />
@@ -1513,13 +1513,13 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6aRgRBSg-gLDWoQgza2K-19" parent="6aRgRBSg-gLDWoQgza2K-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;Il sistema &amp;nbsp;mostra a schermo la schermata contenente i file&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="6aRgRBSg-gLDWoQgza2K-19" parent="6aRgRBSg-gLDWoQgza2K-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;Il sistema &amp;nbsp;ha mostrato a schermo la schermata contenente i file&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="510" x="380" as="geometry">
             <mxRectangle height="75" width="510" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="7dIMYuqPTDdoQe8BtzZ4-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="555.0000000000014" width="790" x="-190" y="3260" as="geometry" />
+          <mxGeometry height="555.0000000000014" width="790" x="-194" y="3470" as="geometry" />
         </mxCell>
         <mxCell id="7dIMYuqPTDdoQe8BtzZ4-2" parent="7dIMYuqPTDdoQe8BtzZ4-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="790" as="geometry" />
@@ -1594,7 +1594,7 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7dIMYuqPTDdoQe8BtzZ4-19" parent="7dIMYuqPTDdoQe8BtzZ4-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;Il sistema mostra a schermo la schermata contenente i file&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="7dIMYuqPTDdoQe8BtzZ4-19" parent="7dIMYuqPTDdoQe8BtzZ4-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;Il sistema ha mostrato a schermo la schermata contenente i file&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="410" x="380" as="geometry">
             <mxRectangle height="75" width="410" as="alternateBounds" />
           </mxGeometry>
@@ -1603,7 +1603,7 @@
           <mxGeometry height="110" width="220" x="-414" y="80" as="geometry" />
         </mxCell>
         <mxCell id="pT3C6hA5ZdsImX64dRsF-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="485" width="790" x="-140" y="140" as="geometry" />
+          <mxGeometry height="485" width="790" x="-140" y="30" as="geometry" />
         </mxCell>
         <mxCell id="pT3C6hA5ZdsImX64dRsF-2" parent="pT3C6hA5ZdsImX64dRsF-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="790" as="geometry" />
@@ -1665,7 +1665,7 @@
             <mxRectangle height="250" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pT3C6hA5ZdsImX64dRsF-16" parent="pT3C6hA5ZdsImX64dRsF-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;1. L&#39;utente clicca sul pulsante &quot;Gestione Contenuti&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;2. Il Sistema interroga il DBMS per recuperare la lista delle Categorie Artistiche (es. Pianoforte, Danza Classica, Pittura) associate all&#39;utente.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;3. Il Sistema mostra a video la schermata &quot;Gestione Contenuti&quot;, elencando le Categorie Artistiche esistenti e il pulsante &quot;Crea Nuova Categoria Artistica&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;4. L&#39;utente clicca sulla Categoria Artistica desiderata.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;5. Il Sistema mostra a video la schermata &quot;Scelta Tipologia File&quot; relativa a quella categoria.&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="pT3C6hA5ZdsImX64dRsF-16" parent="pT3C6hA5ZdsImX64dRsF-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;1. Lo studente clicca sul pulsante &quot;Gestione Contenuti&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;2. Il Sistema interroga il DBMS per recuperare la lista delle Categorie Artistiche (es. Pianoforte, Danza Classica, Pittura) associate allo studente.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;3. Il Sistema mostra a video la schermata &quot;Gestione Contenuti&quot;, elencando le Categorie Artistiche esistenti e il pulsante &quot;Crea Nuova Categoria Artistica&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;4. L&#39;utente clicca sulla Categoria Artistica desiderata.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;5. Il Sistema mostra a video la schermata &quot;Scelta Tipologia File&quot; relativa a quella categoria.&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="250" width="410" x="380" as="geometry">
             <mxRectangle height="250" width="410" as="alternateBounds" />
           </mxGeometry>
@@ -1678,13 +1678,13 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pT3C6hA5ZdsImX64dRsF-19" parent="pT3C6hA5ZdsImX64dRsF-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il sistema &amp;nbsp;mostra a schermo la schermata per la scelta della tipologia dei file&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="pT3C6hA5ZdsImX64dRsF-19" parent="pT3C6hA5ZdsImX64dRsF-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il sistema&amp;nbsp; ha mostrato a schermo la schermata per la scelta della tipologia dei file&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="410" x="380" as="geometry">
             <mxRectangle height="75" width="410" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="MaxNqh8uD9rA1T1gAg1p-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="545" width="790" x="710" y="130" as="geometry" />
+          <mxGeometry height="545" width="790" x="-120" y="624" as="geometry" />
         </mxCell>
         <mxCell id="MaxNqh8uD9rA1T1gAg1p-2" parent="MaxNqh8uD9rA1T1gAg1p-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="790" as="geometry" />
@@ -1746,7 +1746,7 @@
             <mxRectangle height="310" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MaxNqh8uD9rA1T1gAg1p-16" parent="MaxNqh8uD9rA1T1gAg1p-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;1. L&#39;utente clicca sul pulsante &quot;Gestione Contenuti&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;2. Il Sistema interroga il DBMS per recuperare la lista delle Categorie Artistiche associate all&#39;utente.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;3. Il Sistema mostra a video la schermata &quot;Gestione Contenuti&quot;, elencando le Categorie Artistiche esistenti e il pulsante &quot;Crea Nuova Categoria Artistica&quot;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;4. L&#39;utente clicca sul pulsante &quot;Crea Nuova Categoria Artistica&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;5. Il Sistema mostra a video il form di inserimento &quot;Nuova Categoria Artistica&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;6. L&#39;utente inserisce il nome della nuova Categoria Artistica e clicca sul pulsante &quot;Salva&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;7. Il Sistema invia il nome della nuova Categoria Artistica al DBMS per il salvataggio permanente.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;8. Il Sistema mostra a video il messaggio di conferma &quot;Categoria Artistica creata con successo&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;9. L&#39;utente clicca sul pulsante &quot;ok&quot; per chiudere il messaggio.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;10. Il Sistema mostra a video la schermata &quot;Scelta Tipologia File&quot; relativa alla categoria appena creata.&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="MaxNqh8uD9rA1T1gAg1p-16" parent="MaxNqh8uD9rA1T1gAg1p-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;1. Lo studente clicca sul pulsante &quot;Gestione Contenuti&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;2. Il Sistema interroga il DBMS per recuperare la lista delle Categorie Artistiche associate allo studente.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;3. Il Sistema mostra a video la schermata &quot;Gestione Contenuti&quot;, elencando le Categorie Artistiche esistenti e il pulsante &quot;Crea Nuova Categoria Artistica&quot;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;4. Lo studente clicca sul pulsante &quot;Crea Nuova Categoria Artistica&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;5. Il Sistema mostra a video il form di inserimento &quot;Nuova Categoria Artistica&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;6. Lo studente inserisce il nome della nuova Categoria Artistica e clicca sul pulsante &quot;Salva&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;7. Il Sistema invia il nome della nuova Categoria Artistica al DBMS per il salvataggio permanente.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;8. Il Sistema mostra a video il messaggio di conferma &quot;Categoria Artistica creata con successo&quot;.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;9. Lo studente clicca sul pulsante &quot;ok&quot; per chiudere il messaggio.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;10. Il Sistema mostra a video la schermata &quot;Scelta Tipologia File&quot; relativa alla categoria appena creata.&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="310" width="410" x="380" as="geometry">
             <mxRectangle height="310" width="410" as="alternateBounds" />
           </mxGeometry>
@@ -1759,7 +1759,7 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MaxNqh8uD9rA1T1gAg1p-19" parent="MaxNqh8uD9rA1T1gAg1p-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il sistema &amp;nbsp;mostra a schermo la schermata per la scelta della tipologia dei file&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="MaxNqh8uD9rA1T1gAg1p-19" parent="MaxNqh8uD9rA1T1gAg1p-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il sistema &amp;nbsp;ha mostrato schermo la schermata per la scelta della tipologia dei file&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="410" x="380" as="geometry">
             <mxRectangle height="75" width="410" as="alternateBounds" />
           </mxGeometry>
@@ -2171,7 +2171,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="-hv1ydPjTFw_xr4ZYiYC" name="Consulta profilo studente">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1356" dy="812" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2546,7 +2546,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2S3qjl9HkMm9kvhww0MR" name="Pagina-18">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1816" dy="1781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2716,7 +2716,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="QnjrTUGSt3T6jabHz3Y6" name="Gest cond extra link">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="890" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
