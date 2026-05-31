@@ -645,7 +645,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="eGC2cA3NUpgSvZc--kTg" name="Gestione profilo">
-    <mxGraphModel dx="964" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="803" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -664,7 +664,7 @@
         <mxCell id="OGt4Os9jbvzhqqq4VTil-6" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="DBMS" vertex="1">
           <mxGeometry height="60" width="30" x="690" y="265" as="geometry" />
         </mxCell>
-        <mxCell id="OGt4Os9jbvzhqqq4VTil-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Gestione Dati Profilo" vertex="1">
+        <mxCell id="OGt4Os9jbvzhqqq4VTil-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Modifica Dati Personali" vertex="1">
           <mxGeometry height="80" width="120" x="354" y="185" as="geometry" />
         </mxCell>
         <mxCell id="OGt4Os9jbvzhqqq4VTil-17" edge="1" parent="1" source="OGt4Os9jbvzhqqq4VTil-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="OGt4Os9jbvzhqqq4VTil-6">
@@ -673,7 +673,7 @@
         <mxCell id="OGt4Os9jbvzhqqq4VTil-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;b&gt;Gestione profilo&lt;/b&gt;" vertex="1">
           <mxGeometry height="40" width="130" x="185" y="70" as="geometry" />
         </mxCell>
-        <mxCell id="21eYPbk-8yFRohd8VFVO-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Gestione Portfolio" vertex="1">
+        <mxCell id="21eYPbk-8yFRohd8VFVO-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Modifica Background Artistico" vertex="1">
           <mxGeometry height="80" width="120" x="354" y="325" as="geometry" />
         </mxCell>
         <mxCell id="21eYPbk-8yFRohd8VFVO-3" edge="1" parent="1" source="21eYPbk-8yFRohd8VFVO-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="OGt4Os9jbvzhqqq4VTil-6">
@@ -683,7 +683,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K7QUrHlJVGKSW9rOtUK7" name="Pagina-14">
-    <mxGraphModel dx="3284" dy="5236" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3445" dy="5348" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
