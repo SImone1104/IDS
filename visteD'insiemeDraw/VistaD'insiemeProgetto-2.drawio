@@ -1588,7 +1588,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jPyZoqNKRGVDwETcYIyH" name="Pagina-16">
-    <mxGraphModel dx="1842" dy="1876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2669" dy="1876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1836,7 +1836,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="i_ED-nLKWD0300X7O_kz-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="749" width="940" x="-500" y="-150" as="geometry" />
+          <mxGeometry height="749" width="940" x="-1120" y="-150" as="geometry" />
         </mxCell>
         <mxCell id="i_ED-nLKWD0300X7O_kz-2" parent="i_ED-nLKWD0300X7O_kz-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="30" width="940" as="geometry" />
@@ -2504,12 +2504,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2S3qjl9HkMm9kvhww0MR" name="Pagina-18">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1842" dy="1876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="AgxdmlxoWYPFieNQjfDI-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="455" width="820" x="-230" y="-160" as="geometry" />
+          <mxGeometry height="630" width="820" x="-230" y="-160" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-2" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="820" as="geometry" />
@@ -2564,33 +2564,33 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-14" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="170" width="820" y="210" as="geometry" />
+          <mxGeometry height="350" width="820" y="210" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-15" parent="AgxdmlxoWYPFieNQjfDI-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Flusso degli eventi&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="170" width="380" as="geometry">
-            <mxRectangle height="170" width="380" as="alternateBounds" />
+          <mxGeometry height="350" width="380" as="geometry">
+            <mxRectangle height="350" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AgxdmlxoWYPFieNQjfDI-16" parent="AgxdmlxoWYPFieNQjfDI-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &lt;b&gt;1&lt;/b&gt;. L&#39; utente esterno&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;apre il link ricevuto.&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &lt;b&gt;2&lt;/b&gt;. Il sistema intercetta la richiesta di accesso.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&amp;nbsp; 3.&amp;nbsp;&lt;/b&gt;Il sistema interroga il DBMS per verificare l’esistenza del link.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &lt;b&gt;4&lt;/b&gt;. Il sistema esegue il caso d&#39;uso &quot;Verifica validità link&quot;.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &lt;b&gt;5&lt;/b&gt;.&amp;nbsp;&lt;b&gt;SE&lt;/b&gt; il link è valido&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;5.1. &lt;/b&gt;Il sistema recupera dal DBMS i contenuti associati al link&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;5.2. &lt;/b&gt;Il sistema mostra a video la schermata &quot;Contenuti Condivisi&quot;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;6. &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;ALTRIMENTI&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6.1&lt;/b&gt;&amp;nbsp;Il sistema mostra a video un Schermata di errore&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="170" width="440" x="380" as="geometry">
-            <mxRectangle height="170" width="440" as="alternateBounds" />
+        <mxCell id="AgxdmlxoWYPFieNQjfDI-16" parent="AgxdmlxoWYPFieNQjfDI-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;h3 data-path-to-node=&quot;4&quot;&gt;&lt;/h3&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b data-path-to-node=&quot;6,0,0&quot; data-index-in-node=&quot;0&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;1.L&#39;Utente Esterno&lt;/b&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;incolla o clicca sull&#39;URL ricevuto dallo studente.&lt;/span&gt;&lt;br&gt;&lt;b data-path-to-node=&quot;6,1,0&quot; data-index-in-node=&quot;0&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;2.Il Sistema&lt;/b&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;estrae il codice univoco dal link e interroga il DBMS per verificarne lo stato.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b data-path-to-node=&quot;6,2,0&quot; data-index-in-node=&quot;0&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;3.SE il codice non esiste, il link risulta &quot;Revocato&quot; (punto 4.2.4 del tuo flusso) o la data è scaduta (punto 2.2.1 del tuo flusso):&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;3.1. Il Sistema mostra a video una schermata di errore: &quot;Spiacenti, questo link non è più attivo o è stato rimosso dallo studente&quot;.&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;3.2. Il caso d&#39;uso termina.&lt;/span&gt;&lt;br&gt;&lt;p data-path-to-node=&quot;6,3,0&quot;&gt;&lt;b data-path-to-node=&quot;6,3,0&quot; data-index-in-node=&quot;0&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;ALTRIMENTI (Link attivo):&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;4.1. Il Sistema interroga il DBMS per recuperare l&#39;elenco dei contenuti (file) associati a quel link specifico.&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;4.2. Il Sistema aggiorna lo stato del link nel DBMS per segnalare l&#39;avvenuta visualizzazione (quello che permetterà allo studente di vedere la &quot;spunta&quot; nel tuo flusso &quot;Gestisci Link&quot;).&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;4.3. Il Sistema mostra a video la schermata&amp;nbsp;&lt;/span&gt;&lt;b data-path-to-node=&quot;6,3,1,2,0&quot; data-index-in-node=&quot;44&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&quot;Contenuti Condivisi&quot;&lt;/b&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;, visualizzando l&#39;elenco dei file con i relativi titoli e descrizioni.&lt;/span&gt;&lt;br&gt;&lt;b data-path-to-node=&quot;6,4,0&quot; data-index-in-node=&quot;0&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;L&#39;Utente Esterno&lt;/b&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;seleziona i file di interesse per visualizzarli o scaricarli&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="350" width="440" x="380" as="geometry">
+            <mxRectangle height="350" width="440" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-17" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="75" width="820" y="380" as="geometry" />
+          <mxGeometry height="70" width="820" y="560" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-18" parent="AgxdmlxoWYPFieNQjfDI-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Postcondizioni&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="75" width="380" as="geometry">
-            <mxRectangle height="75" width="380" as="alternateBounds" />
+          <mxGeometry height="70" width="380" as="geometry">
+            <mxRectangle height="70" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-19" parent="AgxdmlxoWYPFieNQjfDI-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp;Il sistema ha mostrato la schermata “Contenuti condivisi”.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;Il sistema ha mostrato la Schermata di errore&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="75" width="440" x="380" as="geometry">
-            <mxRectangle height="75" width="440" as="alternateBounds" />
+          <mxGeometry height="70" width="440" x="380" as="geometry">
+            <mxRectangle height="70" width="440" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XZnhHnxkuHzMYk2wjN4R-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="455" width="860" x="-230" y="370" as="geometry" />
+          <mxGeometry height="455" width="860" x="-240" y="640" as="geometry" />
         </mxCell>
         <mxCell id="XZnhHnxkuHzMYk2wjN4R-2" parent="XZnhHnxkuHzMYk2wjN4R-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="860" as="geometry" />
@@ -2722,7 +2722,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="pXpnqGpuRr61GkhgfGvc" name="Pagina-19">
-    <mxGraphModel dx="1703" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1898" dy="747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
