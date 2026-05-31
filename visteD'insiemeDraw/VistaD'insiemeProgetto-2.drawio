@@ -1588,7 +1588,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jPyZoqNKRGVDwETcYIyH" name="Pagina-16">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2669" dy="1876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2454,18 +2454,18 @@
     </mxGraphModel>
   </diagram>
   <diagram id="bzvxV_oc5PbJ0gqNqvW1" name="Visualizza contenuto con link">
-    <mxGraphModel dx="1106" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="964" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="YE101DToYevEcXybJ_wK-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Utente" vertex="1">
           <mxGeometry height="60" width="30" x="130" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="YE101DToYevEcXybJ_wK-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Mostra Contenuti tramite link" vertex="1">
+        <mxCell id="YE101DToYevEcXybJ_wK-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Accesso tramite link" vertex="1">
           <mxGeometry height="80" width="120" x="395" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="YE101DToYevEcXybJ_wK-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Visualizza tramite link" vertex="1">
-          <mxGeometry height="80" width="120" x="395" y="300" as="geometry" />
+        <mxCell id="YE101DToYevEcXybJ_wK-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Consulta contenuti" vertex="1">
+          <mxGeometry height="80" width="120" x="400" y="330" as="geometry" />
         </mxCell>
         <mxCell id="YE101DToYevEcXybJ_wK-7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="DBMS" vertex="1">
           <mxGeometry height="60" width="30" x="750" y="240" as="geometry" />
@@ -2504,12 +2504,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2S3qjl9HkMm9kvhww0MR" name="Pagina-18">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2492" dy="1753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="AgxdmlxoWYPFieNQjfDI-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="630" width="820" x="-230" y="-160" as="geometry" />
+          <mxGeometry height="630" width="820" x="-870" y="-160" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-2" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="820" as="geometry" />
@@ -2519,7 +2519,7 @@
             <mxRectangle height="29" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AgxdmlxoWYPFieNQjfDI-4" parent="AgxdmlxoWYPFieNQjfDI-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;ACCESSO TRAMITE LINK&lt;/b&gt;&lt;/font&gt;" vertex="1">
+        <mxCell id="AgxdmlxoWYPFieNQjfDI-4" parent="AgxdmlxoWYPFieNQjfDI-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;MOSTRA CONTENUTI TRAMITE LINK&lt;/b&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry height="29" width="440" x="380" as="geometry">
             <mxRectangle height="29" width="440" as="alternateBounds" />
           </mxGeometry>
@@ -2589,85 +2589,85 @@
             <mxRectangle height="70" width="440" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="455" width="860" x="-240" y="640" as="geometry" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
+          <mxGeometry height="535" width="870" x="-920" y="560" as="geometry" />
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-2" parent="XZnhHnxkuHzMYk2wjN4R-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="29" width="860" as="geometry" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-2" parent="HMwBMvl7QLKPFnnAClKq-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="29" width="870" as="geometry" />
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-3" collapsed="1" parent="XZnhHnxkuHzMYk2wjN4R-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;container=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Caso d&#39;uso&lt;/b&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="29" width="380" as="geometry">
-            <mxRectangle height="29" width="380" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-3" collapsed="1" parent="HMwBMvl7QLKPFnnAClKq-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;container=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Caso d&#39;uso&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="29" width="394" as="geometry">
+            <mxRectangle height="29" width="394" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-4" parent="XZnhHnxkuHzMYk2wjN4R-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;CONSULTA CONTENUTI&lt;/b&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="29" width="480" x="380" as="geometry">
-            <mxRectangle height="29" width="480" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-4" parent="HMwBMvl7QLKPFnnAClKq-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;VISUALIZZA CONTENUTO TRAMITE LINK&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="29" width="476" x="394" as="geometry">
+            <mxRectangle height="29" width="476" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-5" parent="XZnhHnxkuHzMYk2wjN4R-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="51" width="860" y="29" as="geometry" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-5" parent="HMwBMvl7QLKPFnnAClKq-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="51" width="870" y="29" as="geometry" />
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-6" parent="XZnhHnxkuHzMYk2wjN4R-5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;ID&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="51" width="380" as="geometry">
-            <mxRectangle height="51" width="380" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-6" parent="HMwBMvl7QLKPFnnAClKq-5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;ID&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="51" width="394" as="geometry">
+            <mxRectangle height="51" width="394" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-7" parent="XZnhHnxkuHzMYk2wjN4R-5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;6.2&lt;/font&gt;" vertex="1">
-          <mxGeometry height="51" width="480" x="380" as="geometry">
-            <mxRectangle height="51" width="480" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-7" parent="HMwBMvl7QLKPFnnAClKq-5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;5.2&lt;/font&gt;" vertex="1">
+          <mxGeometry height="51" width="476" x="394" as="geometry">
+            <mxRectangle height="51" width="476" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-8" parent="XZnhHnxkuHzMYk2wjN4R-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="50" width="860" y="80" as="geometry" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-8" parent="HMwBMvl7QLKPFnnAClKq-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="70" width="870" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-9" parent="XZnhHnxkuHzMYk2wjN4R-8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Attori&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="50" width="380" as="geometry">
-            <mxRectangle height="50" width="380" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-9" parent="HMwBMvl7QLKPFnnAClKq-8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Attori&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="394" as="geometry">
+            <mxRectangle height="70" width="394" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-10" parent="XZnhHnxkuHzMYk2wjN4R-8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Utente&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;DBMS&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
-          <mxGeometry height="50" width="480" x="380" as="geometry">
-            <mxRectangle height="50" width="480" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-10" parent="HMwBMvl7QLKPFnnAClKq-8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Utente esterno&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;DBMS&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="70" width="476" x="394" as="geometry">
+            <mxRectangle height="70" width="476" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-11" parent="XZnhHnxkuHzMYk2wjN4R-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="80" width="860" y="130" as="geometry" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-11" parent="HMwBMvl7QLKPFnnAClKq-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="30" width="870" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-12" parent="XZnhHnxkuHzMYk2wjN4R-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Precondizioni&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="380" as="geometry">
-            <mxRectangle height="80" width="380" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-12" parent="HMwBMvl7QLKPFnnAClKq-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Precondizioni&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="394" as="geometry">
+            <mxRectangle height="30" width="394" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-13" parent="XZnhHnxkuHzMYk2wjN4R-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="L&#39;utente ha effettuato l&#39;accesso tramite un link valido e si trova&amp;nbsp;&lt;div&gt;nella pagina del profilo condiviso.&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="480" x="380" as="geometry">
-            <mxRectangle height="80" width="480" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-13" parent="HMwBMvl7QLKPFnnAClKq-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;Il sistema ha mostrato la schermata “Contenuti condivisi”.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="476" x="394" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-14" parent="XZnhHnxkuHzMYk2wjN4R-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="170" width="860" y="210" as="geometry" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-14" parent="HMwBMvl7QLKPFnnAClKq-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="280" width="870" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-15" parent="XZnhHnxkuHzMYk2wjN4R-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Flusso degli eventi&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="170" width="380" as="geometry">
-            <mxRectangle height="170" width="380" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-15" parent="HMwBMvl7QLKPFnnAClKq-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Flusso degli eventi&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="280" width="394" as="geometry">
+            <mxRectangle height="280" width="394" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-16" parent="XZnhHnxkuHzMYk2wjN4R-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp; &lt;b&gt;1&lt;/b&gt;.&amp;nbsp;&lt;/span&gt;&lt;span data-path-to-node=&quot;12,5,1,0,2&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;L&#39;utente seleziona e visualizza la produzione artistica&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span data-path-to-node=&quot;12,5,1,0,2&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;condivisa (es. registrazioni audio, video, spartiti, curriculum)&lt;/span&gt;&lt;span data-path-to-node=&quot;12,5,1,0,3&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;&lt;span class=&quot;citation-43 citation-end-43&quot;&gt;&lt;sup class=&quot;superscript&quot; data-turn-source-index=&quot;9&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;span data-path-to-node=&quot;12,5,1,0,4&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;&amp;nbsp; 2.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;Il sistema richiede i file multimediali al DBMS.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;&amp;nbsp; 3. Il DBMS fornisce file richiesti, applicando eventuali protocolli&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; per la protezione dei dati personali e la tutela dei materiali.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;&amp;nbsp;4.&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;Il sistema espone il contenuto all&#39;utente.&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;&amp;nbsp;5.Il sistema registra attivamente l&#39;avvenuta interazione con il&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;&amp;nbsp; &amp;nbsp; contenuto nel DBMS, salvando i dati di visualizzazione.&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="170" width="480" x="380" as="geometry">
-            <mxRectangle height="170" width="480" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-16" parent="HMwBMvl7QLKPFnnAClKq-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;&lt;b style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;1&lt;/b&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;. L&#39;utente clicca su uno specifico file di interesse dall&#39;elenco.&lt;/span&gt;&lt;/div&gt;&lt;b style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;/b&gt;&lt;/div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2&lt;/b&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;. Il Sistema interroga il DBMS per recuperare il file fisico&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;3&lt;/b&gt;. Il Sistema controlla il formato del file selezionato.&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;3&lt;/b&gt;. &lt;b&gt;SE&lt;/b&gt; il contenuto è un file multimediale riproducibile, ad esempio una traccia audio o un &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;          &lt;/span&gt;video:&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;3.1&lt;/b&gt;. Il Sistema mostra a video la schermata &quot;Riproduttore Multimediale&quot;,&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;contenente il player attivo e le informazioni descrittive del contenuto.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 3.2 L&#39;utente clicca sul pulsante &quot;chiudi contenuto&quot;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;3.3&lt;/span&gt;Il sistema ha mostrato la schermata “Contenuti condivisi”.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;4&lt;/b&gt;. &lt;b&gt;ALTRIMENTI&lt;/b&gt; (file PDF, immagini)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;&lt;b&gt;4.1&lt;/b&gt;. Il Sistema mostra a video la schermata &quot;Visualizzatore Documenti&quot;,&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;contenente il file aperto e le informazioni descrittive del contenuto.&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;4&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;.2 L&#39;utente clicca sul pulsante &quot;chiudi contenuto&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9; 4.3&lt;/span&gt;Il sistema ha mostrato la schermata “Contenuti condivisi”.&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="476" x="394" as="geometry">
+            <mxRectangle height="280" width="476" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-17" parent="XZnhHnxkuHzMYk2wjN4R-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="75" width="860" y="380" as="geometry" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-17" parent="HMwBMvl7QLKPFnnAClKq-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="75" width="870" y="460" as="geometry" />
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-18" parent="XZnhHnxkuHzMYk2wjN4R-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Postcondizioni&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="75" width="380" as="geometry">
-            <mxRectangle height="75" width="380" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-18" parent="HMwBMvl7QLKPFnnAClKq-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Postcondizioni&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="75" width="394" as="geometry">
+            <mxRectangle height="75" width="394" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZnhHnxkuHzMYk2wjN4R-19" parent="XZnhHnxkuHzMYk2wjN4R-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;L&#39;utente ha consultato il materiale. Nel database è stato salvato&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;il tracciamento della visualizzazione, fornendo allo studente un&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;riscontro sull&#39;efficacia della propria candidatura.&lt;/div&gt;" vertex="1">
-          <mxGeometry height="75" width="480" x="380" as="geometry">
-            <mxRectangle height="75" width="480" as="alternateBounds" />
+        <mxCell id="HMwBMvl7QLKPFnnAClKq-19" parent="HMwBMvl7QLKPFnnAClKq-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il sistema ha mostrato a schermo la schermata&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&quot;Elenco File&quot;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="476" x="394" as="geometry">
+            <mxRectangle height="75" width="476" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
       </root>
@@ -2722,7 +2722,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="pXpnqGpuRr61GkhgfGvc" name="Pagina-19">
-    <mxGraphModel dx="1703" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1898" dy="747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
