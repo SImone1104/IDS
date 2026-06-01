@@ -1523,7 +1523,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="T6QobUBKZ28bgmpvCsso" name="Gest. condivisione con link">
-    <mxGraphModel dx="964" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1603,7 +1603,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jPyZoqNKRGVDwETcYIyH" name="Pagina-16">
-    <mxGraphModel dx="2112" dy="2065" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2128" dy="1817" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1945,7 +1945,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="KCTiOsrNAVvBlqUMDYxz-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="420" width="810" x="-380" y="1890" as="geometry" />
+          <mxGeometry height="420" width="810" x="-450" y="1900" as="geometry" />
         </mxCell>
         <mxCell id="KCTiOsrNAVvBlqUMDYxz-2" parent="KCTiOsrNAVvBlqUMDYxz-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="17" width="810" as="geometry" />
@@ -1994,7 +1994,7 @@
             <mxRectangle height="42" width="320" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KCTiOsrNAVvBlqUMDYxz-13" parent="KCTiOsrNAVvBlqUMDYxz-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;font face=&quot;Times New Roman&quot;&gt;Il sistema&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; text-align: left;&quot;&gt;&amp;nbsp;ha mostrato&lt;/span&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;a video la schermata Gestione Condivisione Link&lt;/font&gt;" vertex="1">
+        <mxCell id="KCTiOsrNAVvBlqUMDYxz-13" parent="KCTiOsrNAVvBlqUMDYxz-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;font face=&quot;Times New Roman&quot;&gt;Il sistema&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; text-align: left;&quot;&gt;&amp;nbsp;ha mostrato&lt;/span&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;a video la schermata Elenco File&lt;/font&gt;" vertex="1">
           <mxGeometry height="42" width="490" x="320" as="geometry">
             <mxRectangle height="42" width="490" as="alternateBounds" />
           </mxGeometry>
@@ -2456,7 +2456,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="bzvxV_oc5PbJ0gqNqvW1" name="Visualizza contenuto con link">
-    <mxGraphModel dx="964" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2686,7 +2686,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="QnjrTUGSt3T6jabHz3Y6" name="Gest cond interna">
-    <mxGraphModel dx="964" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2749,7 +2749,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="pXpnqGpuRr61GkhgfGvc" name="Pagina-19">
-    <mxGraphModel dx="2434" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
