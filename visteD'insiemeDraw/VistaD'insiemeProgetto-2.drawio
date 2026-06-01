@@ -2725,13 +2725,13 @@
           <mxGeometry height="70" width="140" x="330" y="250" as="geometry" />
         </mxCell>
         <mxCell id="OdeJThSFkB5g8sETjC4l-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Visualizza elenco codici" vertex="1">
-          <mxGeometry height="70" width="140" x="330" y="400" as="geometry" />
+          <mxGeometry height="70" width="140" x="330" y="380" as="geometry" />
         </mxCell>
         <mxCell id="GQlc8IPR5RxX1czFwSDi-2" edge="1" parent="1" source="OdeJThSFkB5g8sETjC4l-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="n8OSyBllI7fspiQRiKzC-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LqUiGUF_R1joNoaFPLRJ-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Revoca codice" vertex="1">
-          <mxGeometry height="70" width="140" x="330" y="515" as="geometry" />
+          <mxGeometry height="70" width="140" x="330" y="514.5" as="geometry" />
         </mxCell>
         <mxCell id="LqUiGUF_R1joNoaFPLRJ-2" edge="1" parent="1" source="LqUiGUF_R1joNoaFPLRJ-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="n8OSyBllI7fspiQRiKzC-6">
           <mxGeometry relative="1" as="geometry">
