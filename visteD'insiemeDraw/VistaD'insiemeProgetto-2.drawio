@@ -909,7 +909,7 @@
             <mxRectangle height="75" width="375" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tEDmOm_wyh_iotFyMEsv-6" parent="tEDmOm_wyh_iotFyMEsv-4" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;ol&gt;&lt;li&gt;I campi di testo utili all&#39;inserimento della scuola/università frequentata, collaborazioni fatte, collaborazioni con autori, partecipazioni deve avere una lunghezza massima di 700 caratteri.&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+        <mxCell id="tEDmOm_wyh_iotFyMEsv-6" parent="tEDmOm_wyh_iotFyMEsv-4" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;ol&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;I campi di testo utili all&#39;inserimento della scuola/università frequentata, collaborazioni fatte, collaborazioni con autori, partecipazioni deve avere una lunghezza massima di 700 caratteri.&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
           <mxGeometry height="75" width="415" x="375" as="geometry">
             <mxRectangle height="75" width="415" as="alternateBounds" />
           </mxGeometry>
