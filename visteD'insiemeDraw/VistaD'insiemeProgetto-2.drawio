@@ -232,7 +232,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NWPvOExdg23FyhshGvr5" name="Pagina-13">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6525" dy="5848" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -325,7 +325,7 @@
             <mxRectangle height="80" width="435" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TmYVkivZTI0G09BoXZ-_-29" parent="TmYVkivZTI0G09BoXZ-_-27" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;ol style=&quot;text-align: left;&quot;&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;La password deve contenere da un minimo di 8 a un massimo di 16 caratteri e contenere almeno una lettere maiuscola e un numero&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+        <mxCell id="TmYVkivZTI0G09BoXZ-_-29" parent="TmYVkivZTI0G09BoXZ-_-27" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;ol style=&quot;text-align: left;&quot;&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;L&#39;email deve contenere una &quot;@&quot; e almeno un &quot;.&quot;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;La password deve contenere da un minimo di 8 a un massimo di 16 caratteri e contenere almeno una lettere maiuscola e un numero&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
           <mxGeometry height="80" width="495" x="435" as="geometry">
             <mxRectangle height="80" width="495" as="alternateBounds" />
           </mxGeometry>
@@ -581,13 +581,13 @@
             <mxRectangle height="110" width="430" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TmYVkivZTI0G09BoXZ-_-26" parent="TmYVkivZTI0G09BoXZ-_-24" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il nome deve essere diverso dal cognome&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il codice fiscale deve contenere 16 caratteri&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;La password deve contenere da un minimo di 8 a un massimo di 16 caratteri e contenere almeno una lettere maiuscola e un numero&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="TmYVkivZTI0G09BoXZ-_-26" parent="TmYVkivZTI0G09BoXZ-_-24" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ol&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il nome deve essere diverso dal cognome&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il codice fiscale deve contenere 16 caratteri&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;L&#39;email deve contenere una &quot;@&quot; e almeno un &quot;.&quot;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;La password deve contenere da un minimo di 8 a un massimo di 16 caratteri e contenere almeno una lettere maiuscola e un numero&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="110" width="500" x="430" as="geometry">
             <mxRectangle height="110" width="500" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="48mQKfHj96o4jcNBYrxQ-20" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="750" width="960" x="-3840" y="-2320" as="geometry" />
+          <mxGeometry height="750" width="960" x="-3830" y="-2190" as="geometry" />
         </mxCell>
         <mxCell id="48mQKfHj96o4jcNBYrxQ-21" parent="48mQKfHj96o4jcNBYrxQ-20" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="20" width="960" as="geometry" />
@@ -675,7 +675,7 @@
             <mxRectangle height="75" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rqrPWixbL8TD1RPQtmer-3" parent="rqrPWixbL8TD1RPQtmer-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;ol&gt;&lt;li&gt;La password deve contenere da un minimo di 8 a un massimo di 16 caratteri&amp;nbsp;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+        <mxCell id="rqrPWixbL8TD1RPQtmer-3" parent="rqrPWixbL8TD1RPQtmer-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;ol&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;L&#39;email deve contenere una &quot;@&quot; e almeno un &quot;.&quot;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;La password deve contenere da un minimo di 8 a un massimo di 16 caratteri&amp;nbsp;&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
           <mxGeometry height="75" width="580" x="380" as="geometry">
             <mxRectangle height="75" width="580" as="alternateBounds" />
           </mxGeometry>
@@ -722,7 +722,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K7QUrHlJVGKSW9rOtUK7" name="Pagina-14">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4319" dy="5578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1010,12 +1010,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WGKcBUwiOowaoTuwLOZo" name="Pagina-15">
-    <mxGraphModel dx="2434" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2420" dy="781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="qjwe2l2yQAcPtlV3d2Hg-2" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="375" width="790" x="-200" y="1230" as="geometry" />
+          <mxGeometry height="375" width="790" x="-170" y="1230" as="geometry" />
         </mxCell>
         <mxCell id="qjwe2l2yQAcPtlV3d2Hg-3" parent="qjwe2l2yQAcPtlV3d2Hg-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="790" as="geometry" />
@@ -1501,7 +1501,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="MaxNqh8uD9rA1T1gAg1p-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="545" width="790" x="-170" y="585" as="geometry" />
+          <mxGeometry height="620" width="790" x="-170" y="585" as="geometry" />
         </mxCell>
         <mxCell id="MaxNqh8uD9rA1T1gAg1p-2" parent="MaxNqh8uD9rA1T1gAg1p-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="790" as="geometry" />
@@ -1577,6 +1577,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="MaxNqh8uD9rA1T1gAg1p-19" parent="MaxNqh8uD9rA1T1gAg1p-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; text-align: center;&quot;&gt;Il sistema &amp;nbsp;ha mostrato schermo la schermata per la scelta della tipologia dei file&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="410" x="380" as="geometry">
+            <mxRectangle height="75" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srs1qrMmc9TRxSqe3j-M-1" parent="MaxNqh8uD9rA1T1gAg1p-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="75" width="790" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="srs1qrMmc9TRxSqe3j-M-2" parent="srs1qrMmc9TRxSqe3j-M-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Requisiti speciali" vertex="1">
+          <mxGeometry height="75" width="380" as="geometry">
+            <mxRectangle height="75" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srs1qrMmc9TRxSqe3j-M-3" parent="srs1qrMmc9TRxSqe3j-M-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;ol&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il campo dove inserire il nome della categoria artistica non può essere vuoto&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il nome della categoria artistica deve essere univoco&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
           <mxGeometry height="75" width="410" x="380" as="geometry">
             <mxRectangle height="75" width="410" as="alternateBounds" />
           </mxGeometry>
@@ -2568,7 +2581,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2S3qjl9HkMm9kvhww0MR" name="Pagina-18">
-    <mxGraphModel dx="2818" dy="1749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
