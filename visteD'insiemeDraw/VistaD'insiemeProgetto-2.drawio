@@ -232,7 +232,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NWPvOExdg23FyhshGvr5" name="Pagina-13">
-    <mxGraphModel dx="5973" dy="5578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6791" dy="5978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1010,7 +1010,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WGKcBUwiOowaoTuwLOZo" name="Pagina-15">
-    <mxGraphModel dx="2665" dy="902" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2534" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1346,7 +1346,7 @@
             <mxRectangle height="95" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="srs1qrMmc9TRxSqe3j-M-6" parent="srs1qrMmc9TRxSqe3j-M-4" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il campo di testo per il titolo non può essere vuoto&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il campo di testo per il titolo può contenere al massimo 200 caratteri&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;I file caricati non devono superare 1GB di dimensione&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;I file caricati devono avere formato idoneo al categoria selezionata(es. : mp4 per i video, png per la immagini, mp3 per file audio)&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="srs1qrMmc9TRxSqe3j-M-6" parent="srs1qrMmc9TRxSqe3j-M-4" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il campo di testo per il titolo non può essere vuoto&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il campo di testo per il titolo può contenere al massimo 200 caratteri&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;I file caricati non devono superare 1GB di dimensione&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;I file caricati devono avere formato idoneo alla categoria selezionata(es. : mp4 per i video, png per la immagini, mp3 per file audio)&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="95" width="510" x="380" as="geometry">
             <mxRectangle height="95" width="510" as="alternateBounds" />
           </mxGeometry>
