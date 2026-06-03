@@ -722,12 +722,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K7QUrHlJVGKSW9rOtUK7" name="Pagina-14">
-    <mxGraphModel dx="3445" dy="5348" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4319" dy="5578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="-HUbU5_3fMQypcDHfZAv-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="605" width="790" x="-2462" y="-3800" as="geometry" />
+          <mxGeometry height="700" width="790" x="-2450" y="-4490" as="geometry" />
         </mxCell>
         <mxCell id="-HUbU5_3fMQypcDHfZAv-2" parent="-HUbU5_3fMQypcDHfZAv-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="790" as="geometry" />
@@ -807,8 +807,21 @@
             <mxRectangle height="75" width="410" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="tEDmOm_wyh_iotFyMEsv-1" parent="-HUbU5_3fMQypcDHfZAv-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="95" width="790" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="tEDmOm_wyh_iotFyMEsv-2" parent="tEDmOm_wyh_iotFyMEsv-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Requisiti speciali&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="95" width="380" as="geometry">
+            <mxRectangle height="95" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tEDmOm_wyh_iotFyMEsv-3" parent="tEDmOm_wyh_iotFyMEsv-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;La nuova email deve contenere una &quot;@&quot; e almeno un &quot;.&quot;&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il numero di telefono deve contenere esclusivamente caratteri numerici&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il numero di telefono deve contenere esattamente 10 caratteri&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;La foto deve avere formato .png o .jpg&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="95" width="410" x="380" as="geometry">
+            <mxRectangle height="95" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="NjzHbujkAoP8RgKD8_Af-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="605" width="790" x="-2470" y="-2810" as="geometry" />
+          <mxGeometry height="680" width="790" x="-2470" y="-3320" as="geometry" />
         </mxCell>
         <mxCell id="NjzHbujkAoP8RgKD8_Af-2" parent="NjzHbujkAoP8RgKD8_Af-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="790" as="geometry" />
@@ -884,6 +897,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="NjzHbujkAoP8RgKD8_Af-19" parent="NjzHbujkAoP8RgKD8_Af-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;1&lt;/b&gt;.Il sistema ha mostrato la schermata&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;BackgroundArtistico&lt;/span&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="415" x="375" as="geometry">
+            <mxRectangle height="75" width="415" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tEDmOm_wyh_iotFyMEsv-4" parent="NjzHbujkAoP8RgKD8_Af-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="75" width="790" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="tEDmOm_wyh_iotFyMEsv-5" parent="tEDmOm_wyh_iotFyMEsv-4" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Requisiti speciali&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="75" width="375" as="geometry">
+            <mxRectangle height="75" width="375" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tEDmOm_wyh_iotFyMEsv-6" parent="tEDmOm_wyh_iotFyMEsv-4" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;ol&gt;&lt;li&gt;I campi di testo utili all&#39;inserimento della scuola/università frequentata, collaborazioni fatte, collaborazioni con autori, partecipazioni deve avere una lunghezza massima di 700 caratteri.&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
           <mxGeometry height="75" width="415" x="375" as="geometry">
             <mxRectangle height="75" width="415" as="alternateBounds" />
           </mxGeometry>
