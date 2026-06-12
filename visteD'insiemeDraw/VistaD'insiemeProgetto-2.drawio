@@ -2606,23 +2606,23 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="AgxdmlxoWYPFieNQjfDI-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="540.0000000000002" width="820" x="-960" y="-830" as="geometry" />
+          <mxGeometry height="560.0000000000005" width="820" x="-960" y="-830" as="geometry" />
         </mxCell>
         <mxCell id="ts-h3HwbzejYJ7hbQEoJ-1" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="820" as="geometry" />
+          <mxGeometry height="60" width="820" as="geometry" />
         </mxCell>
         <mxCell id="ts-h3HwbzejYJ7hbQEoJ-2" collapsed="1" parent="ts-h3HwbzejYJ7hbQEoJ-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;container=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Note&lt;/b&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="40" width="380" as="geometry">
-            <mxRectangle height="40" width="380" as="alternateBounds" />
+          <mxGeometry height="60" width="380" as="geometry">
+            <mxRectangle height="60" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ts-h3HwbzejYJ7hbQEoJ-3" parent="ts-h3HwbzejYJ7hbQEoJ-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;font face=&quot;Times New Roman&quot;&gt;questo caso d&#39;uso rappresenta una sistema esterno che manda un messaggio al sistema per trasmettere il link condiviso, per questo si suppone che non ci sia un attore iniziatore&lt;/font&gt;" vertex="1">
-          <mxGeometry height="40" width="440" x="380" as="geometry">
-            <mxRectangle height="40" width="440" as="alternateBounds" />
+        <mxCell id="ts-h3HwbzejYJ7hbQEoJ-3" parent="ts-h3HwbzejYJ7hbQEoJ-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;font face=&quot;Times New Roman&quot;&gt;Questo caso d&#39;uso rappresenta una sistema esterno che manda un messaggio al sistema per trasmettere il link condiviso, per questo si suppone che non ci sia un attore iniziatore&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="440" x="380" as="geometry">
+            <mxRectangle height="60" width="440" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-2" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="29" width="820" y="40" as="geometry" />
+          <mxGeometry height="29" width="820" y="60" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-3" collapsed="1" parent="AgxdmlxoWYPFieNQjfDI-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;container=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Caso d&#39;uso&lt;/b&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry height="29" width="380" as="geometry">
@@ -2635,7 +2635,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-5" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="51" width="820" y="69" as="geometry" />
+          <mxGeometry height="51" width="820" y="89" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-6" parent="AgxdmlxoWYPFieNQjfDI-5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;ID&lt;/font&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="51" width="380" as="geometry">
@@ -2648,7 +2648,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-8" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="50" width="820" y="120" as="geometry" />
+          <mxGeometry height="50" width="820" y="140" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-9" parent="AgxdmlxoWYPFieNQjfDI-8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Attori&lt;/font&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="50" width="380" as="geometry">
@@ -2661,7 +2661,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-11" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="80" width="820" y="170" as="geometry" />
+          <mxGeometry height="80" width="820" y="190" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-12" parent="AgxdmlxoWYPFieNQjfDI-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Precondizioni&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="380" as="geometry">
@@ -2674,7 +2674,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-14" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="220" width="820" y="250" as="geometry" />
+          <mxGeometry height="220" width="820" y="270" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-15" parent="AgxdmlxoWYPFieNQjfDI-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Flusso degli eventi&lt;/font&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="220" width="380" as="geometry">
@@ -2687,7 +2687,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-17" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="70" width="820" y="470" as="geometry" />
+          <mxGeometry height="70" width="820" y="490" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-18" parent="AgxdmlxoWYPFieNQjfDI-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Postcondizioni&lt;/font&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="70" width="380" as="geometry">
