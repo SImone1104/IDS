@@ -2606,7 +2606,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="AgxdmlxoWYPFieNQjfDI-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="670.0000000000002" width="820" x="-960" y="-830" as="geometry" />
+          <mxGeometry height="540.0000000000002" width="820" x="-960" y="-830" as="geometry" />
         </mxCell>
         <mxCell id="ts-h3HwbzejYJ7hbQEoJ-1" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="40" width="820" as="geometry" />
@@ -2674,27 +2674,27 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-14" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="350" width="820" y="250" as="geometry" />
+          <mxGeometry height="220" width="820" y="250" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-15" parent="AgxdmlxoWYPFieNQjfDI-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Flusso degli eventi&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="350" width="380" as="geometry">
-            <mxRectangle height="350" width="380" as="alternateBounds" />
+          <mxGeometry height="220" width="380" as="geometry">
+            <mxRectangle height="220" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-16" parent="AgxdmlxoWYPFieNQjfDI-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;h3 data-path-to-node=&quot;4&quot;&gt;&lt;/h3&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b data-path-to-node=&quot;6,0,0&quot; data-index-in-node=&quot;0&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;1.&amp;nbsp;&lt;/b&gt;&lt;span data-path-to-node=&quot;6,0,0&quot; data-index-in-node=&quot;0&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il Sistema riceve una richiesta di accesso tramite un link condiviso.(found message)&lt;/span&gt;&lt;br&gt;&lt;b data-path-to-node=&quot;6,1,0&quot; data-index-in-node=&quot;0&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;2.&amp;nbsp;&lt;/b&gt;&lt;span data-path-to-node=&quot;6,1,0&quot; data-index-in-node=&quot;0&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il Sistema&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;estrae il codice univoco dal link&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;3.&amp;nbsp;&lt;/span&gt;&lt;span data-path-to-node=&quot;6,1,0&quot; data-index-in-node=&quot;0&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il Sistema&lt;/span&gt;&lt;b data-path-to-node=&quot;6,1,0&quot; data-index-in-node=&quot;0&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;interroga il DBMS per verificarne lo stato.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;4. Il Sistema interroga il DBMS per recuperare l&#39;elenco dei contenuti (file) associati a quel &lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;   &lt;/span&gt;link specifico.&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;5. Il Sistema aggiorna lo stato del link nel DBMS per segnalare l&#39;avvenuta visualizzazione&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;6. Il Sistema mostra a video la schermata&amp;nbsp;&lt;/span&gt;&lt;b data-path-to-node=&quot;6,3,1,2,0&quot; data-index-in-node=&quot;44&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&quot;Contenuti Condivisi&quot;&lt;/b&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;, visualizzando l&#39;elenco dei file con i relativi titoli e descrizioni.&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="350" width="440" x="380" as="geometry">
-            <mxRectangle height="350" width="440" as="alternateBounds" />
+          <mxGeometry height="220" width="440" x="380" as="geometry">
+            <mxRectangle height="220" width="440" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-17" parent="AgxdmlxoWYPFieNQjfDI-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="70" width="820" y="600" as="geometry" />
+          <mxGeometry height="70" width="820" y="470" as="geometry" />
         </mxCell>
         <mxCell id="AgxdmlxoWYPFieNQjfDI-18" parent="AgxdmlxoWYPFieNQjfDI-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Postcondizioni&lt;/font&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="70" width="380" as="geometry">
             <mxRectangle height="70" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AgxdmlxoWYPFieNQjfDI-19" parent="AgxdmlxoWYPFieNQjfDI-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;Il sistema ha mostrato la schermata “Contenuti condivisi”.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;Il sistema ha mostrato a video la Schermata di errore&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="AgxdmlxoWYPFieNQjfDI-19" parent="AgxdmlxoWYPFieNQjfDI-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;Il sistema ha mostrato la schermata “Contenuti condivisi”.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="440" x="380" as="geometry">
             <mxRectangle height="70" width="440" as="alternateBounds" />
           </mxGeometry>
