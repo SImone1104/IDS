@@ -684,7 +684,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="eGC2cA3NUpgSvZc--kTg" name="Gestione profilo">
-    <mxGraphModel dx="964" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -692,6 +692,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="21eYPbk-8yFRohd8VFVO-2" edge="1" parent="1" source="OGt4Os9jbvzhqqq4VTil-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="21eYPbk-8yFRohd8VFVO-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GLv9jx7iJNOUFji1AFf5-5" edge="1" parent="1" source="OGt4Os9jbvzhqqq4VTil-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=none;endFill=0;" target="GLv9jx7iJNOUFji1AFf5-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GLv9jx7iJNOUFji1AFf5-8" edge="1" parent="1" source="OGt4Os9jbvzhqqq4VTil-1" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="GLv9jx7iJNOUFji1AFf5-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OGt4Os9jbvzhqqq4VTil-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Studente" vertex="1">
@@ -718,17 +724,29 @@
         <mxCell id="21eYPbk-8yFRohd8VFVO-3" edge="1" parent="1" source="21eYPbk-8yFRohd8VFVO-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="OGt4Os9jbvzhqqq4VTil-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="GLv9jx7iJNOUFji1AFf5-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Aggiungi Background Artistico&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="365" y="245" as="geometry" />
+        </mxCell>
         <mxCell id="9Bm5DFANcURWJwnj11m--1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Aggiungi Background Artistico" vertex="1">
           <mxGeometry height="80" width="120" x="354" y="325" as="geometry" />
         </mxCell>
+        <mxCell id="GLv9jx7iJNOUFji1AFf5-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Elimina Background Artistico&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="365" y="340" as="geometry" />
+        </mxCell>
         <mxCell id="9Bm5DFANcURWJwnj11m--2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Elimina Background Artistico" vertex="1">
           <mxGeometry height="80" width="120" x="354" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="GLv9jx7iJNOUFji1AFf5-7" edge="1" parent="1" source="GLv9jx7iJNOUFji1AFf5-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="OGt4Os9jbvzhqqq4VTil-6">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9Bm5DFANcURWJwnj11m--3" edge="1" parent="1" source="OGt4Os9jbvzhqqq4VTil-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="9Bm5DFANcURWJwnj11m--1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="160" y="325" as="sourcePoint" />
             <mxPoint x="369" y="290" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="GLv9jx7iJNOUFji1AFf5-9" edge="1" parent="1" source="GLv9jx7iJNOUFji1AFf5-4" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.02;exitY=0.419;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;exitPerimeter=0;" target="OGt4Os9jbvzhqqq4VTil-6">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9Bm5DFANcURWJwnj11m--4" edge="1" parent="1" source="9Bm5DFANcURWJwnj11m--1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;entryPerimeter=0;" target="OGt4Os9jbvzhqqq4VTil-6">
           <mxGeometry relative="1" as="geometry">
@@ -752,7 +770,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K7QUrHlJVGKSW9rOtUK7" name="Pagina-14">
-    <mxGraphModel dx="4513" dy="5551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4297" dy="5288" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1819,7 +1837,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="T6QobUBKZ28bgmpvCsso" name="Gest. condivisione con link">
-    <mxGraphModel dx="964" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="989" dy="612" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1842,7 +1860,7 @@
           <mxGeometry height="590" width="590" x="135" y="80" as="geometry" />
         </mxCell>
         <mxCell id="OrnhWETK3iRyNQg_b7Q1-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Seleziona contenuti" vertex="1">
-          <mxGeometry height="80" width="120" x="370" y="120" as="geometry" />
+          <mxGeometry height="80" width="120" x="370" y="130" as="geometry" />
         </mxCell>
         <mxCell id="OrnhWETK3iRyNQg_b7Q1-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Genera link" vertex="1">
           <mxGeometry height="80" width="120" x="370" y="240" as="geometry" />
