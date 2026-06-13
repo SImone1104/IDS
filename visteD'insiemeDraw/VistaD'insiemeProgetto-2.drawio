@@ -752,12 +752,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K7QUrHlJVGKSW9rOtUK7" name="Pagina-14">
-    <mxGraphModel dx="4593" dy="5609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4146" dy="5285" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="-HUbU5_3fMQypcDHfZAv-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="700" width="790" x="-2450" y="-4490" as="geometry" />
+          <mxGeometry height="700" width="790" x="-3000" y="-4520" as="geometry" />
         </mxCell>
         <mxCell id="-HUbU5_3fMQypcDHfZAv-2" parent="-HUbU5_3fMQypcDHfZAv-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="29" width="790" as="geometry" />
@@ -900,7 +900,7 @@
             <mxRectangle height="30" width="375" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NjzHbujkAoP8RgKD8_Af-13" parent="NjzHbujkAoP8RgKD8_Af-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;Il Sistema mostra a video la schermata &quot;BackgroundArtistico&quot;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="NjzHbujkAoP8RgKD8_Af-13" parent="NjzHbujkAoP8RgKD8_Af-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&amp;nbsp;&lt;/span&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il Sistema ha mostrato a video la schermata &quot;BackgroundArtistico&quot;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;e ha recuperato i dati dello studente&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="415" x="375" as="geometry">
             <mxRectangle height="30" width="415" as="alternateBounds" />
           </mxGeometry>
@@ -1088,7 +1088,7 @@
             <mxRectangle height="30" width="380" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SYPmMZBAYiDEHE_GHWSD-35" parent="SYPmMZBAYiDEHE_GHWSD-33" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&amp;nbsp;&lt;/span&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il Sistema ha mostrato a video la schermata &quot;BackgroundArtistico&quot;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="SYPmMZBAYiDEHE_GHWSD-35" parent="SYPmMZBAYiDEHE_GHWSD-33" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&amp;nbsp;&lt;/span&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Il Sistema ha mostrato a video la schermata &quot;BackgroundArtistico&quot;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;e ha recuperato i dati dello studente&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="415" x="380" as="geometry">
             <mxRectangle height="30" width="415" as="alternateBounds" />
           </mxGeometry>
