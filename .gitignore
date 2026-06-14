@@ -1,2 +1,10 @@
-sequence/Login.asta.lock
 .DS_Store
+*.asta.lock
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.synctex(busy)
+*.toc
