@@ -438,8 +438,6 @@ Questo caso d'uso descrive la procedura di autenticazione a due fattori (2FA) es
 \end{enumerate} \\ \hline
 \textbf{Requisiti speciali} &
 \begin{itemize}
-    \item Il nome deve contenere solo caratteri alfabetici.
-    \item Il cognome deve contenere solo caratteri alfabetici.
     \item L'e-mail deve contenere una ``@'' e almeno un ``.''.
     \item La password deve contenere da un minimo di 8 a un massimo di 16 caratteri.
 \end{itemize} \\ \hline
@@ -834,8 +832,8 @@ Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
 Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
-    \item Lo studente clicca sul pulsante ``Gestione Portfolio''.
-    \item Il Sistema mostra a video la schermata ``Gestione Portfolio''.
+    \item Lo studente clicca sul pulsante ``Gestione Profilo''.
+    \item Il Sistema mostra a video la schermata ``Gestione Profilo''.
     \item Lo studente clicca sul pulsante ``BACKGROUND ARTISTICO''.
     \item Il Sistema recupera dalla memoria i dati dello studente.
     \item Il Sistema mostra a video la schermata ``BackgroundArtistico'', contenente i dati attuali dello studente (Scuola/Università frequentata, Collaborazioni fatte, Collaborazioni con autori e Partecipazioni).
@@ -1165,7 +1163,7 @@ Flusso degli eventi &
     \item Lo studente clicca su ``+'' accanto al file di interesse.
     \item Il Sistema mostra a schermo un menu a tendina con varie voci.
     \item Lo studente seleziona la voce ``PRIVACY''.
-    \item Il Sistema mostra a video la schermata ``Modifica Privacy'' contenente le opzioni di visualizzazione del file (Pubblico, Privato, Non in elenco) e il pulsante ``Conferma Modifica''.
+    \item Il Sistema mostra a video la schermata ``Modifica Privacy'' contenente le opzioni di visualizzazione del file (Pubblico, Privato) e il pulsante ``Conferma Modifica''.
     \item Lo studente seleziona l'opzione desiderata.
     \item Lo studente clicca sul pulsante ``CONFERMA MODIFICA''.
     \item Il Sistema recupera dalla memoria temporanea l'identificativo dello studente.
@@ -1340,7 +1338,7 @@ Questo caso d'uso descrive la procedura con cui lo studente revoca un link speci
 Caso d’uso & Revoca Link \\ \hline
 ID & 4.4 \\ \hline
 Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``Elenco File''. \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``Elenco Link''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca sul pulsante ``Revoca'' in corrispondenza di un link specifico.
@@ -1494,7 +1492,7 @@ Postcondizioni & Il Sistema ha mostrato la schermata ``Elenco File''. \\ \hline
 Caso d'uso & Mostra Contenuti Privati \\ \hline
 ID & 5.3 \\ \hline
 Attori & Utente, DBMS \\ \hline
-Precondizioni & Il Sistema ha mostrato la schermata ``Elenco File'' con i risultati. \\ \hline
+Precondizioni & Il Sistema ha mostrato la schermata "Profilo Studente". \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item L'utente clicca sul pulsante ``Visualizza Contenuti Privati''.
