@@ -1,7 +1,10 @@
-PWD c:\Users\Simone\Desktop\IDS\RAD
-INPUT C:\Users\Simone\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Simone\Desktop\IDS\RAD\Rad.tex
+PWD /Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RAD
+INPUT /usr/local/texlive/2024/texmf.cnf
+INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/simonesottile/Desktop/unipa_materiale_ing_inf/Ingegneria del software/Progetto/RAD/Rad.tex
 OUTPUT Rad.log
+<<<<<<< HEAD
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
@@ -10,33 +13,9 @@ INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\tools\longtable.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\tools\longtable.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\babel\txtbabel.def
@@ -52,8 +31,33 @@ INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\babel-italian\ital
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\babel-italian\italian.ldf
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyphenat\hyphenat.sty
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\tools\longtable.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\tools\longtable.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
@@ -65,6 +69,67 @@ INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\colortbl\colortbl.sty
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\colortbl\colortbl.sty
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\stringenc\stringenc.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\stringenc\stringenc.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\Rad.aux
@@ -79,53 +144,785 @@ INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epsto
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\pdf\VistaD'insiemeProgetto-vista d'insieme OFFICIAL.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-vista d'insieme OFFICIAL.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-vista d'insieme OFFICIAL.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-vista d'insieme OFFICIAL.drawio.pdf
+INPUT .\Rad.out
+INPUT .\Rad.out
+INPUT Rad.out
+INPUT Rad.out
 OUTPUT Rad.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-vista d'insieme OFFICIAL.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-vista d'insieme OFFICIAL.drawio.pdf
+INPUT .\Rad.out
+INPUT .\Rad.out
+OUTPUT Rad.out
+INPUT .\logo-unipa.png
+INPUT .\logo-unipa.png
+INPUT .\logo-unipa.png
+INPUT .\logo-unipa.png
+INPUT .\logo-unipa.png
+INPUT .\logo-unipa.png
+INPUT .\logo-unipa.png
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\eccc1440.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1095.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\eccc1095.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
+INPUT .\pdf\logoIDS.png
+INPUT .\pdf\logoIDS.png
+INPUT .\pdf\logoIDS.png
+INPUT .\pdf\logoIDS.png
+INPUT .\pdf\logoIDS.png
+INPUT .\pdf\logoIDS.png
+INPUT .\pdf\logoIDS.png
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
 INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT .\pdf\VistaD'insiemeProgetto-Gestione autenticazione.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Gestione autenticazione.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Gestione autenticazione.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Gestione autenticazione.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Gestione autenticazione.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Gestione autenticazione.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-2.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-2.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-2.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-2.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-2.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-2.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-3.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-3.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-3.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-3.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-3.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-Pagina-21.drawio-3.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-DOMANDE.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-DOMANDE.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-DOMANDE.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-DOMANDE.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-DOMANDE.drawio.pdf
-INPUT .\pdf\VistaD'insiemeProgetto-DOMANDE.drawio.pdf
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1728.tfm
+INPUT .\Rad.toc
+INPUT .\Rad.toc
+INPUT Rad.toc
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1095.tfm
+OUTPUT Rad.toc
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1095.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1200.tfm
+INPUT .\pdf\VistaAttori.pdf
+INPUT .\pdf\VistaAttori.pdf
+INPUT .\pdf\VistaAttori.pdf
+INPUT .\pdf\VistaAttori.pdf
+INPUT .\pdf\VistaAttori.pdf
+INPUT .\pdf\VistaAttori.pdf
+INPUT .\pdf\Vistad'insieme-crop.pdf
+INPUT .\pdf\Vistad'insieme-crop.pdf
+INPUT .\pdf\Vistad'insieme-crop.pdf
+INPUT .\pdf\Vistad'insieme-crop.pdf
+INPUT .\pdf\Vistad'insieme-crop.pdf
+INPUT .\pdf\Vistad'insieme-crop.pdf
+INPUT .\pdf\GestioneAutenticazione\GestioneAutenticazione.pdf
+INPUT .\pdf\GestioneAutenticazione\GestioneAutenticazione.pdf
+INPUT .\pdf\GestioneAutenticazione\GestioneAutenticazione.pdf
+INPUT .\pdf\GestioneAutenticazione\GestioneAutenticazione.pdf
+INPUT .\pdf\GestioneAutenticazione\GestioneAutenticazione.pdf
+INPUT .\pdf\GestioneAutenticazione\GestioneAutenticazione.pdf
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1095.tfm
+INPUT .\pdf\GestioneProfilo\Gestione profilo.pdf
+INPUT .\pdf\GestioneProfilo\Gestione profilo.pdf
+INPUT .\pdf\GestioneProfilo\Gestione profilo.pdf
+INPUT .\pdf\GestioneProfilo\Gestione profilo.pdf
+INPUT .\pdf\GestioneProfilo\Gestione profilo.pdf
+INPUT .\pdf\GestioneProfilo\Gestione profilo.pdf
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1000.tfm
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
+INPUT .\pdf\GestioneContenuti\GestioneContenuti.pdf
+INPUT .\pdf\GestioneContenuti\GestioneContenuti.pdf
+INPUT .\pdf\GestioneContenuti\GestioneContenuti.pdf
+INPUT .\pdf\GestioneContenuti\GestioneContenuti.pdf
+INPUT .\pdf\GestioneContenuti\GestioneContenuti.pdf
+INPUT .\pdf\GestioneContenuti\GestioneContenuti.pdf
+INPUT .\pdf\GestioneCondLink\Gestcondivisioneconlink.pdf
+INPUT .\pdf\GestioneCondLink\Gestcondivisioneconlink.pdf
+INPUT .\pdf\GestioneCondLink\Gestcondivisioneconlink.pdf
+INPUT .\pdf\GestioneCondLink\Gestcondivisioneconlink.pdf
+INPUT .\pdf\GestioneCondLink\Gestcondivisioneconlink.pdf
+INPUT .\pdf\GestioneCondLink\Gestcondivisioneconlink.pdf
+INPUT .\pdf\ConsultaProfStudente\Consultaprofilostudente.pdf
+INPUT .\pdf\ConsultaProfStudente\Consultaprofilostudente.pdf
+INPUT .\pdf\ConsultaProfStudente\Consultaprofilostudente.pdf
+INPUT .\pdf\ConsultaProfStudente\Consultaprofilostudente.pdf
+INPUT .\pdf\ConsultaProfStudente\Consultaprofilostudente.pdf
+INPUT .\pdf\ConsultaProfStudente\Consultaprofilostudente.pdf
+INPUT .\pdf\VisualizzaContenutoTramiteLink\VistaD'insiemeProgetto-2-Visualizza contenuto con link.drawio.pdf
+INPUT .\pdf\VisualizzaContenutoTramiteLink\VistaD'insiemeProgetto-2-Visualizza contenuto con link.drawio.pdf
+INPUT .\pdf\VisualizzaContenutoTramiteLink\VistaD'insiemeProgetto-2-Visualizza contenuto con link.drawio.pdf
+INPUT .\pdf\VisualizzaContenutoTramiteLink\VistaD'insiemeProgetto-2-Visualizza contenuto con link.drawio.pdf
+INPUT .\pdf\VisualizzaContenutoTramiteLink\VistaD'insiemeProgetto-2-Visualizza contenuto con link.drawio.pdf
+INPUT .\pdf\VisualizzaContenutoTramiteLink\VistaD'insiemeProgetto-2-Visualizza contenuto con link.drawio.pdf
+INPUT .\pdf\GestioneCondivisioneInterna\VistaD'insiemeProgetto-2-Gest cond interna.drawio.pdf
+INPUT .\pdf\GestioneCondivisioneInterna\VistaD'insiemeProgetto-2-Gest cond interna.drawio.pdf
+INPUT .\pdf\GestioneCondivisioneInterna\VistaD'insiemeProgetto-2-Gest cond interna.drawio.pdf
+INPUT .\pdf\GestioneCondivisioneInterna\VistaD'insiemeProgetto-2-Gest cond interna.drawio.pdf
+INPUT .\pdf\GestioneCondivisioneInterna\VistaD'insiemeProgetto-2-Gest cond interna.drawio.pdf
+INPUT .\pdf\GestioneCondivisioneInterna\VistaD'insiemeProgetto-2-Gest cond interna.drawio.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login tramite SPID_eIDAS.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login tramite SPID_eIDAS.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login tramite SPID_eIDAS.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login tramite SPID_eIDAS.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login tramite SPID_eIDAS.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Login tramite SPID_eIDAS.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Registrazione.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Registrazione.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Registrazione.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Registrazione.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Registrazione.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Registrazione.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\RecuperaPassword.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\RecuperaPassword.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\RecuperaPassword.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\RecuperaPassword.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\RecuperaPassword.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\RecuperaPassword.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Logout.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Logout.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Logout.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Logout.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Logout.pdf
+INPUT .\pdf\sequence\Gestione autenticazione\Logout.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaDatiPersonali.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaDatiPersonali.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaDatiPersonali.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaDatiPersonali.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaDatiPersonali.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaDatiPersonali.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Aggiungi Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Aggiungi Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Aggiungi Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Aggiungi Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Aggiungi Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Aggiungi Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Elimina Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Elimina Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Elimina Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Elimina Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Elimina Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE PROFILO\Elimina Background Artistico.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Crea Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Crea Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Crea Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Crea Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Crea Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Crea Categoria Artistica.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona tipologia file.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona tipologia file.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona tipologia file.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona tipologia file.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona tipologia file.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Seleziona tipologia file.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\UploadFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\UploadFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\UploadFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\UploadFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\UploadFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\UploadFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Elimina File.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Elimina File.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Elimina File.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Elimina File.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Elimina File.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\Elimina File.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\ModificaFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\ModificaFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\ModificaFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\ModificaFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\ModificaFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\ModificaFile.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONTENUTI\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\SelezionaContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\SelezionaContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\SelezionaContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\SelezionaContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\SelezionaContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\SelezionaContenuti.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\GeneraLink.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\GeneraLink.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\GeneraLink.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\GeneraLink.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\GeneraLink.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\GeneraLink.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Revoca Link.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Revoca Link.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Revoca Link.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Revoca Link.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Revoca Link.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Revoca Link.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Verifica validità link.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Verifica validità link.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Verifica validità link.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Verifica validità link.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Verifica validità link.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE LINK\Verifica validità link.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Cerca Studente.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Cerca Studente.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Cerca Studente.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Cerca Studente.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Cerca Studente.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Cerca Studente.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Pubblici.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Pubblici.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Pubblici.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Pubblici.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Pubblici.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Pubblici.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Privati.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Privati.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Privati.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Privati.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Privati.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\Mostra Contenuti Privati.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\VisualizzaContenuto.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\VisualizzaContenuto.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\VisualizzaContenuto.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\VisualizzaContenuto.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\VisualizzaContenuto.pdf
+INPUT .\pdf\sequence\CONSULTA PROFILO STUDENTE\VisualizzaContenuto.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\Mostra Contenuti tramite Link.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\Mostra Contenuti tramite Link.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\Mostra Contenuti tramite Link.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\Mostra Contenuti tramite Link.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\Mostra Contenuti tramite Link.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\Mostra Contenuti tramite Link.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\sequence\VISUALIZZA CONTENUTO TRAMITE LINK\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\GeneraCodice.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\GeneraCodice.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\GeneraCodice.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\GeneraCodice.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\GeneraCodice.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\GeneraCodice.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\VisualizzaElencoCodici.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\RevocaCodice.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\RevocaCodice.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\RevocaCodice.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\RevocaCodice.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\RevocaCodice.pdf
+INPUT .\pdf\sequence\GESTIONE CONDIVISIONE INTERNA\RevocaCodice.pdf
+INPUT .\pdf\classdiagram\classi\Entity.pdf
+INPUT .\pdf\classdiagram\classi\Entity.pdf
+INPUT .\pdf\classdiagram\classi\Entity.pdf
+INPUT .\pdf\classdiagram\classi\Entity.pdf
+INPUT .\pdf\classdiagram\classi\Entity.pdf
+INPUT .\pdf\classdiagram\classi\Entity.pdf
+INPUT .\pdf\classdiagram\classi\Login.pdf
+INPUT .\pdf\classdiagram\classi\Login.pdf
+INPUT .\pdf\classdiagram\classi\Login.pdf
+INPUT .\pdf\classdiagram\classi\Login.pdf
+INPUT .\pdf\classdiagram\classi\Login.pdf
+INPUT .\pdf\classdiagram\classi\Login.pdf
+INPUT .\pdf\classdiagram\classi\LoginTramiteSPID.pdf
+INPUT .\pdf\classdiagram\classi\LoginTramiteSPID.pdf
+INPUT .\pdf\classdiagram\classi\LoginTramiteSPID.pdf
+INPUT .\pdf\classdiagram\classi\LoginTramiteSPID.pdf
+INPUT .\pdf\classdiagram\classi\LoginTramiteSPID.pdf
+INPUT .\pdf\classdiagram\classi\LoginTramiteSPID.pdf
+INPUT .\pdf\classdiagram\classi\Registrazione.pdf
+INPUT .\pdf\classdiagram\classi\Registrazione.pdf
+INPUT .\pdf\classdiagram\classi\Registrazione.pdf
+INPUT .\pdf\classdiagram\classi\Registrazione.pdf
+INPUT .\pdf\classdiagram\classi\Registrazione.pdf
+INPUT .\pdf\classdiagram\classi\Registrazione.pdf
+INPUT .\pdf\classdiagram\classi\RecuperaPassword.pdf
+INPUT .\pdf\classdiagram\classi\RecuperaPassword.pdf
+INPUT .\pdf\classdiagram\classi\RecuperaPassword.pdf
+INPUT .\pdf\classdiagram\classi\RecuperaPassword.pdf
+INPUT .\pdf\classdiagram\classi\RecuperaPassword.pdf
+INPUT .\pdf\classdiagram\classi\RecuperaPassword.pdf
+INPUT .\pdf\classdiagram\classi\Logout.pdf
+INPUT .\pdf\classdiagram\classi\Logout.pdf
+INPUT .\pdf\classdiagram\classi\Logout.pdf
+INPUT .\pdf\classdiagram\classi\Logout.pdf
+INPUT .\pdf\classdiagram\classi\Logout.pdf
+INPUT .\pdf\classdiagram\classi\Logout.pdf
+INPUT .\pdf\classdiagram\classi\ModificaDatiPersonali.pdf
+INPUT .\pdf\classdiagram\classi\ModificaDatiPersonali.pdf
+INPUT .\pdf\classdiagram\classi\ModificaDatiPersonali.pdf
+INPUT .\pdf\classdiagram\classi\ModificaDatiPersonali.pdf
+INPUT .\pdf\classdiagram\classi\ModificaDatiPersonali.pdf
+INPUT .\pdf\classdiagram\classi\ModificaDatiPersonali.pdf
+INPUT .\pdf\classdiagram\classi\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\ModificaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\AggiungiBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\AggiungiBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\AggiungiBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\AggiungiBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\AggiungiBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\AggiungiBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\EliminaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\EliminaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\EliminaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\EliminaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\EliminaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\EliminaBackgroundArtistico.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\CreaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\CreaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\CreaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\CreaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\CreaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\CreaCategoriaArtistica.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaTipFile.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaTipFile.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaTipFile.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaTipFile.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaTipFile.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaTipFile.pdf
+INPUT .\pdf\classdiagram\classi\UploadFile.pdf
+INPUT .\pdf\classdiagram\classi\UploadFile.pdf
+INPUT .\pdf\classdiagram\classi\UploadFile.pdf
+INPUT .\pdf\classdiagram\classi\UploadFile.pdf
+INPUT .\pdf\classdiagram\classi\UploadFile.pdf
+INPUT .\pdf\classdiagram\classi\UploadFile.pdf
+INPUT .\pdf\classdiagram\classi\EliminaFile.pdf
+INPUT .\pdf\classdiagram\classi\EliminaFile.pdf
+INPUT .\pdf\classdiagram\classi\EliminaFile.pdf
+INPUT .\pdf\classdiagram\classi\EliminaFile.pdf
+INPUT .\pdf\classdiagram\classi\EliminaFile.pdf
+INPUT .\pdf\classdiagram\classi\EliminaFile.pdf
+INPUT .\pdf\classdiagram\classi\ModificaFile.pdf
+INPUT .\pdf\classdiagram\classi\ModificaFile.pdf
+INPUT .\pdf\classdiagram\classi\ModificaFile.pdf
+INPUT .\pdf\classdiagram\classi\ModificaFile.pdf
+INPUT .\pdf\classdiagram\classi\ModificaFile.pdf
+INPUT .\pdf\classdiagram\classi\ModificaFile.pdf
+INPUT .\pdf\classdiagram\classi\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\classdiagram\classi\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\classdiagram\classi\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\classdiagram\classi\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\classdiagram\classi\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\classdiagram\classi\GestisciPrivacyContenuti.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenuti.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenuti.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenuti.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenuti.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenuti.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenuti.pdf
+INPUT .\pdf\classdiagram\classi\GeneraLink.pdf
+INPUT .\pdf\classdiagram\classi\GeneraLink.pdf
+INPUT .\pdf\classdiagram\classi\GeneraLink.pdf
+INPUT .\pdf\classdiagram\classi\GeneraLink.pdf
+INPUT .\pdf\classdiagram\classi\GeneraLink.pdf
+INPUT .\pdf\classdiagram\classi\GeneraLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoLink.pdf
+INPUT .\pdf\classdiagram\classi\RevocaLink.pdf
+INPUT .\pdf\classdiagram\classi\RevocaLink.pdf
+INPUT .\pdf\classdiagram\classi\RevocaLink.pdf
+INPUT .\pdf\classdiagram\classi\RevocaLink.pdf
+INPUT .\pdf\classdiagram\classi\RevocaLink.pdf
+INPUT .\pdf\classdiagram\classi\RevocaLink.pdf
+INPUT .\pdf\classdiagram\classi\VerificaValiditaLink.pdf
+INPUT .\pdf\classdiagram\classi\VerificaValiditaLink.pdf
+INPUT .\pdf\classdiagram\classi\VerificaValiditaLink.pdf
+INPUT .\pdf\classdiagram\classi\VerificaValiditaLink.pdf
+INPUT .\pdf\classdiagram\classi\VerificaValiditaLink.pdf
+INPUT .\pdf\classdiagram\classi\VerificaValiditaLink.pdf
+INPUT .\pdf\classdiagram\classi\CercaStudente.pdf
+INPUT .\pdf\classdiagram\classi\CercaStudente.pdf
+INPUT .\pdf\classdiagram\classi\CercaStudente.pdf
+INPUT .\pdf\classdiagram\classi\CercaStudente.pdf
+INPUT .\pdf\classdiagram\classi\CercaStudente.pdf
+INPUT .\pdf\classdiagram\classi\CercaStudente.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPubblici.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPubblici.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPubblici.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPubblici.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPubblici.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPubblici.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenuto.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenuto.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenuto.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenuto.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenuto.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenuto.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\MostraContenutiTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaContenutoTramiteLink.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\SelezionaContenutiPrivati.pdf
+INPUT .\pdf\classdiagram\classi\GeneraCodice.pdf
+INPUT .\pdf\classdiagram\classi\GeneraCodice.pdf
+INPUT .\pdf\classdiagram\classi\GeneraCodice.pdf
+INPUT .\pdf\classdiagram\classi\GeneraCodice.pdf
+INPUT .\pdf\classdiagram\classi\GeneraCodice.pdf
+INPUT .\pdf\classdiagram\classi\GeneraCodice.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoCodici.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoCodici.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoCodici.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoCodici.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoCodici.pdf
+INPUT .\pdf\classdiagram\classi\VisualizzaElencoCodici.pdf
+INPUT .\pdf\classdiagram\classi\RevocaCodice.pdf
+INPUT .\pdf\classdiagram\classi\RevocaCodice.pdf
+INPUT .\pdf\classdiagram\classi\RevocaCodice.pdf
+INPUT .\pdf\classdiagram\classi\RevocaCodice.pdf
+INPUT .\pdf\classdiagram\classi\RevocaCodice.pdf
+INPUT .\pdf\classdiagram\classi\RevocaCodice.pdf
 INPUT Rad.aux
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT .\Rad.out
+INPUT .\Rad.out
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk
+INPUT C:\Users\Simone\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\Simone\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+=======
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel-italian/italian.ldf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel-italian/italian.ldf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel-italian/italian.ldf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/it/babel-it.ini
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/atveryend/atveryend.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT ./Rad.aux
+INPUT ./Rad.aux
+INPUT Rad.aux
+OUTPUT Rad.aux
+INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT ./Rad.out
+INPUT ./Rad.out
+INPUT Rad.out
+INPUT Rad.out
+OUTPUT Rad.pdf
+INPUT ./Rad.out
+INPUT ./Rad.out
+OUTPUT Rad.out
+INPUT ./logo-unipa.png
+INPUT ./logo-unipa.png
+INPUT ./logo-unipa.png
+INPUT ./logo-unipa.png
+INPUT ./logo-unipa.png
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/eccc1440.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/eccc1095.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT ./pdf/logoIDS.png
+INPUT ./pdf/logoIDS.png
+INPUT ./pdf/logoIDS.png
+INPUT ./pdf/logoIDS.png
+INPUT ./pdf/logoIDS.png
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
+INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1728.tfm
+INPUT ./Rad.toc
+INPUT ./Rad.toc
+INPUT Rad.toc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
+OUTPUT Rad.toc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
+INPUT ./pdf/VistaAttori.pdf
+INPUT ./pdf/VistaAttori.pdf
+INPUT ./pdf/VistaAttori.pdf
+INPUT ./pdf/VistaAttori.pdf
+INPUT ./pdf/VistaAttori.pdf
+INPUT ./pdf/Vistad'insieme-crop.pdf
+INPUT ./pdf/Vistad'insieme-crop.pdf
+INPUT ./pdf/Vistad'insieme-crop.pdf
+INPUT ./pdf/Vistad'insieme-crop.pdf
+INPUT ./pdf/Vistad'insieme-crop.pdf
+INPUT ./pdf/GestioneAutenticazione/GestioneAutenticazione.pdf
+INPUT ./pdf/GestioneAutenticazione/GestioneAutenticazione.pdf
+INPUT ./pdf/GestioneAutenticazione/GestioneAutenticazione.pdf
+INPUT ./pdf/GestioneAutenticazione/GestioneAutenticazione.pdf
+INPUT ./pdf/GestioneAutenticazione/GestioneAutenticazione.pdf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
+INPUT ./pdf/GestioneProfilo/Gestione profilo.pdf
+INPUT ./pdf/GestioneProfilo/Gestione profilo.pdf
+INPUT ./pdf/GestioneProfilo/Gestione profilo.pdf
+INPUT ./pdf/GestioneProfilo/Gestione profilo.pdf
+INPUT ./pdf/GestioneProfilo/Gestione profilo.pdf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT ./pdf/GestioneContenuti/GestioneContenuti.pdf
+INPUT ./pdf/GestioneContenuti/GestioneContenuti.pdf
+INPUT ./pdf/GestioneContenuti/GestioneContenuti.pdf
+INPUT ./pdf/GestioneContenuti/GestioneContenuti.pdf
+INPUT ./pdf/GestioneContenuti/GestioneContenuti.pdf
+INPUT ./pdf/GestioneCondLink/Gestcondivisioneconlink.pdf
+INPUT ./pdf/GestioneCondLink/Gestcondivisioneconlink.pdf
+INPUT ./pdf/GestioneCondLink/Gestcondivisioneconlink.pdf
+INPUT ./pdf/GestioneCondLink/Gestcondivisioneconlink.pdf
+INPUT ./pdf/GestioneCondLink/Gestcondivisioneconlink.pdf
+INPUT ./pdf/ConsultaProfStudente/Consultaprofilostudente.pdf
+INPUT ./pdf/ConsultaProfStudente/Consultaprofilostudente.pdf
+INPUT ./pdf/ConsultaProfStudente/Consultaprofilostudente.pdf
+INPUT ./pdf/ConsultaProfStudente/Consultaprofilostudente.pdf
+INPUT ./pdf/ConsultaProfStudente/Consultaprofilostudente.pdf
+INPUT ./pdf/VisualizzaContenutoTramiteLink/VistaD'insiemeProgetto-2-Visualizza contenuto con link.drawio.pdf
+INPUT ./pdf/VisualizzaContenutoTramiteLink/VistaD'insiemeProgetto-2-Visualizza contenuto con link.drawio.pdf
+INPUT ./pdf/VisualizzaContenutoTramiteLink/VistaD'insiemeProgetto-2-Visualizza contenuto con link.drawio.pdf
+INPUT ./pdf/VisualizzaContenutoTramiteLink/VistaD'insiemeProgetto-2-Visualizza contenuto con link.drawio.pdf
+INPUT ./pdf/VisualizzaContenutoTramiteLink/VistaD'insiemeProgetto-2-Visualizza contenuto con link.drawio.pdf
+INPUT ./pdf/GestioneCondivisioneInterna/VistaD'insiemeProgetto-2-Gest cond interna.drawio.pdf
+INPUT ./pdf/GestioneCondivisioneInterna/VistaD'insiemeProgetto-2-Gest cond interna.drawio.pdf
+INPUT ./pdf/GestioneCondivisioneInterna/VistaD'insiemeProgetto-2-Gest cond interna.drawio.pdf
+INPUT ./pdf/GestioneCondivisioneInterna/VistaD'insiemeProgetto-2-Gest cond interna.drawio.pdf
+INPUT ./pdf/GestioneCondivisioneInterna/VistaD'insiemeProgetto-2-Gest cond interna.drawio.pdf
+INPUT Rad.aux
+INPUT ./Rad.out
+INPUT ./Rad.out
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
+>>>>>>> c6f0f826b1925d48c62d6573fb3b81bec0b14eee

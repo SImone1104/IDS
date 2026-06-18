@@ -134,12 +134,12 @@ Questo documento descrive il software in termini di requisiti funzionali e non f
 Studente & Utilizzatore autenticato del Sistema, appartenente a un'istituzione AFAM, che gestisce il proprio profilo e portfolio artistico. \\ \hline
 Utente Esterno & Soggetto terzo non registrato (es. membro di commissione, ente valutatore) che consulta i materiali autorizzati dallo studente. \\ \hline
 Credenziali locali & Insieme di dati personali necessari allo studente per autenticarsi direttamente sulla piattaforma, composti da e-mail e password. \\ \hline
-Identità Digitale & Sistema di autenticazione federata nazionale ed europea (\textbf{SPID} e \textbf{eIDAS}) che permette la verifica e l'accesso sicuro dell'utente tramite Identity Provider esterni. \\ \hline
+Identità Digitale & Insieme di attributi e credenziali digitali che identificano univocamente una persona online e ne consentono l'autenticazione sicura tramite provider esterni, come \textbf{SPID} ed \textbf{eIDAS}. \\ \hline
 Portfolio Artistico & Raccolta digitalizzata e centralizzata della produzione d'ingegno dello studente, comprendente asset multimediali, spartiti e curriculum. \\ \hline
 Categoria Artistica & Raggruppamento logico e categoriale (es. Pianoforte, Danza) creato dallo studente per organizzare i propri file nel sistema. \\ \hline
-Contenuto Pubblico & Stato di privacy di un file che lo rende visibile a chiunque effettui una ricerca standard sulla piattaforma o acceda tramite link esterno. \\ \hline
-Contenuto Privato & Stato di privacy di un file che lo rende invisibile alla ricerca standard, sbloccabile esclusivamente tramite inserimento di un codice univoco. \\ \hline
-Link di Condivisione & URL univoco e temporizzato generato dallo studente per consentire ai valutatori esterni l'accesso sincrono e asincrono ai soli file pubblici selezionati. \\ \hline
+Contenuto Pubblico & Stato di privacy di un file che lo rende visibile a chiunque effettui una ricerca standard sulla piattaforma. \\ \hline
+Contenuto Privato & Stato di privacy di un file che lo rende invisibile alla ricerca standard, consultabile tramite codice univoco oppure tramite link temporizzato se selezionato esplicitamente dallo studente. \\ \hline
+Link di Condivisione & URL univoco e temporizzato generato dallo studente per consentire ai valutatori esterni l'accesso ai file selezionati tra tutti i contenuti caricati, sia pubblici sia privati. \\ \hline
 Codice di Sblocco & Token testuale generato dallo studente per abilitare la consultazione protetta di contenuti privati a specifici destinatari interni all'istituzione. \\ \hline
 Ricevuta di Lettura & Indicatore visivo automatizzato che notifica allo studente l'avvenuta apertura e consultazione di un link inviato all'esterno. \\ \hline
 Streaming controllato & Modalità di fruizione inline dei flussi audio/video e dei documenti PDF che inibisce nativamente qualsiasi operazione di download del file fisico. \\ \hline
@@ -192,7 +192,7 @@ Di seguito sono illustrate le interfacce che consentono di svolgere le funzional
     \item \textbf{Schermata di Login / Autenticazione:} Interfaccia che permette di effettuare l'accesso sicuro al sistema tramite credenziali locali standard (protette da codice OTP inviato via e-mail) o, in alternativa, tramite i sistemi di identità digitale \textbf{SPID} ed \textbf{eIDAS} previa selezione del proprio Provider dall'apposito menu a tendina. Include anche il form di registrazione e di recupero password.
     \item \textbf{Area Personale (Home AFAM / Dashboard Studente):} Interfaccia principale a cui accede lo studente una volta autenticato. Da qui l'utente può navigare verso la gestione del proprio profilo anagrafico e del background artistico, oppure accedere alla gestione dei contenuti e delle condivisioni.
     \item \textbf{Schermata Gestione Contenuti ed Elenco File:} Interfaccia che permette di visualizzare e creare le Categorie Artistiche e di effettuare l'upload dei file (audio, video, PDF) entro il limite di 1 GB. Tramite menu a tendina contestuali (attivati dal pulsante "+"), consente di modificare, eliminare o regolare lo stato di privacy (Pubblico/Privato) di ciascun asset.
-    \item \textbf{Schermata Gestione Condivisione (Link e Codici):} Interfaccia sdoppiata che permette allo studente di selezionare i materiali e generare URL univoci temporizzati per l'esterno (della durata di 14 giorni con indicatore di avvenuta lettura) attingendo dai file pubblici, oppure codici di sblocco univoci per la condivisione interna di file privati, con relative funzioni di revoca manuale immediata.
+    \item \textbf{Schermata Gestione Condivisione (Link e Codici):} Interfaccia sdoppiata che permette allo studente di selezionare i materiali e generare URL univoci temporizzati per l'esterno (della durata di 14 giorni con indicatore di avvenuta lettura) attingendo da tutti i file caricati, sia pubblici sia privati, oppure codici di sblocco univoci per la condivisione interna di file privati, con relative funzioni di revoca manuale immediata.
     \item \textbf{Schermata di Ricerca e Consultazione Profilo:} Interfaccia dedicata agli utenti della piattaforma e ai valutatori esterni. Permette di cercare uno studente per nome e cognome per consultarne il profilo pubblico o, tramite l'inserimento di un codice valido o la risoluzione di un link di condivisione esterno, accedere ai file multimediali e documentali autorizzati.
     \item \textbf{Schermate di Fruizione (Player e Visualizzatore):} Interfacce integrate per la fruizione protetta dei contenuti che si adattano al formato del file selezionato (Riproduttore Multimediale per audio/video in streaming e Visualizzatore Documenti per i PDF), inibendo nativamente qualsiasi funzione di download.
 \end{itemize}
@@ -205,11 +205,11 @@ Il software centralizza la gestione della presenza digitale degli studenti AFAM,
 
 \begin{itemize}
     \item \textbf{Autenticazione e Accesso Federato:} Permette l'accesso sicuro all'Area Personale dello studente. Il flusso prevede la verifica delle credenziali locali standard, protette da autenticazione a due fattori (2FA) tramite codice OTP monouso inviato via e-mail, oppure il reindirizzamento verso i gateway di identità digitale federata \textbf{SPID} ed \textbf{eIDAS}. Include le procedure di registrazione locale (previa validazione di un codice di attivazione), il recupero password self-service e la terminazione della sessione (logout).
-    \item \textbf{Gestione Profilo e Background Artistico:} Consente allo studente di amministrare le informazioni relative alla propria identità accademica e artistica. L'attore può inserire, modificare o eliminare i propri dati anagrafici e le voci relative alle esperienze passate, quali istituti frequentati, collaborazioni stabili o partecipazioni a eventi e concorsi, aggiornando i record sul database (DBMS).
-    \item \textbf{Gestione Portfolio e Categorie Artistiche:} Regola l'organizzazione e l'ingestion della produzione d'ingegno dello studente. Il flusso permette di creare e personalizzare Categorie Artistiche dedicate (es. Pianoforte, Canto) ed effettuare l'upload dei file multimediali o documentali (audio, video, PDF) inserendo un titolo e una descrizione per ciascun asset caricato.
-    \item \textbf{Modulazione della Privacy dei Contenuti:} Abilita lo studente a variare in tempo reale le politiche di sicurezza e visibilità dei propri file sul database. L'utente può impostare lo stato di ogni singolo asset su \textit{Pubblico}, rendendolo rintracciabile nel sistema e associabile ai link esterni, oppure su \textit{Privato}, segregandolo dalla ricerca globale e vincolandolo all'uso di codici.
-    \item \textbf{Condivisione Esterna tramite Link Temporizzati:} Gestisce la generazione di canali di consultazione remota per soggetti terzi. Lo studente seleziona un sottoinsieme di file impostati come \textit{Pubblici} e genera un URL univoco testuale crittografico. Il sistema offre un pannello di monitoraggio per visualizzare la ricevuta di lettura (spunta) all'apertura del link e permette la revoca manuale anticipata del collegamento.
-    \item \textbf{Condivisione Interna tramite Codice di Sblocco:} Consente la distribuzione controllata di materiale protetto all'interno dell'istituzione. Lo studente seleziona i file impostati come \textit{Privati} e genera un codice alfanumerico univoco da veicolare ai destinatari d'interesse. Il modulo include una schermata riepilogativa per monitorare i codici emessi e revocarne i permessi in qualsiasi momento.
+    \item \textbf{Gestione Profilo e Background Artistico:} Consente allo studente di amministrare le informazioni relative alla propria identità accademica e artistica. Lo studente può inserire, modificare o eliminare i propri dati anagrafici e le voci relative alle esperienze passate, quali istituti frequentati, collaborazioni o partecipazioni a eventi e concorsi, aggiornando il database (DBMS).
+    \item \textbf{Gestione Portfolio e Categorie Artistiche:} Regola l'organizzazione della produzione d'ingegno dello studente. Il flusso permette di creare e personalizzare Categorie Artistiche dedicate (es. Pianoforte, Canto) ed effettuare l'upload dei file multimediali o documentali (audio, video, PDF) inserendo un titolo e una descrizione per ciascun asset caricato.
+    \item \textbf{Modulazione della Privacy dei Contenuti:} Abilita lo studente a variare in tempo reale le politiche di sicurezza e visibilità dei propri file sul database. L'utente può impostare lo stato di ogni singolo asset su \textit{Pubblico}, rendendolo rintracciabile nel sistema, oppure su \textit{Privato}, isolandolo dalla ricerca globale e vincolandone la consultazione ordinaria all'uso di codici o di link temporizzati generati dallo studente.
+    \item \textbf{Condivisione Esterna tramite Link Temporizzati:} Gestisce la generazione di canali di consultazione remota per soggetti terzi. Lo studente seleziona un sottoinsieme dei contenuti caricati, indipendentemente dal loro stato di privacy \textit{Pubblico} o \textit{Privato}, e genera un URL univoco testuale crittografico. Il sistema offre un pannello di monitoraggio per visualizzare la ricevuta di lettura (spunta) all'apertura del link e permette la revoca manuale anticipata del collegamento.
+    \item \textbf{Condivisione Interna tramite Codice di Sblocco:} Consente la distribuzione controllata di materiale protetto all'interno dell'istituzione. Lo studente seleziona i file impostati come \textit{Privati} e genera un codice alfanumerico univoco da comunicare ai destinatari d'interesse. Il modulo include una schermata riepilogativa per monitorare i codici emessi e revocarne i permessi in qualsiasi momento.
 \end{itemize}
 
 \spaziocontenuto
@@ -217,8 +217,8 @@ Il software centralizza la gestione della presenza digitale degli studenti AFAM,
 \subsubsection{Funzionalità per l'Utente Esterno (Macro Casi d'Uso)}
 Il sistema governa l'accesso ai contenuti da parte di utenti terzi o della piattaforma attraverso specifiche interazioni che non richiedono la registrazione di un profilo nominale:
 \begin{itemize}
-    \item \textbf{Ricerca Globale e Consultazione Pubblica:} Permette a qualunque utente di individuare uno studente iscritto inserendo il relativo nome e cognome all'interno del motore di ricerca. Il flusso restituisce la visualizzazione dell'Area Personale del candidato limitata esclusivamente ai file multimediali e alle categorie che l'autore ha contrassegnato con stato di privacy \textit{Pubblico}.
-    \item \textbf{Risoluzione Link di Condivisione Esterna:} Gestisce l'accesso guidato alla piattaforma da parte dei valutatori. All'inserimento dell'URL univoco, il sistema ne verifica la validità temporale (entro la scadenza di 14 giorni), notifica l'avvenuta lettura allo studente e reindirizza l'utente esterno a una schermata dedicata contenente unicamente il portfolio di file pubblici selezionati per quella candidatura.
+    \item \textbf{Ricerca Globale e Consultazione Pubblica:} Permette a qualunque utente di individuare uno studente iscritto inserendo il relativo nome e cognome all'interno del sistema di ricerca. Il flusso restituisce la visualizzazione dell'Area Personale del candidato limitata esclusivamente ai file multimediali e alle categorie che l'autore ha contrassegnato con stato di privacy \textit{Pubblico}.
+    \item \textbf{Risoluzione Link di Condivisione Esterna:} Gestisce l'accesso guidato alla piattaforma da parte dei valutatori. All'inserimento dell'URL univoco, il sistema ne verifica la validità temporale (entro la scadenza di 14 giorni), notifica l'avvenuta lettura allo studente e reindirizza l'utente esterno a una schermata dedicata contenente unicamente i file selezionati per quella candidatura, siano essi pubblici o privati.
     \item \textbf{Sblocco Contenuti Privati tramite Codice:} Consente la visualizzazione di asset protetti all'interno di un profilo cercato. Qualora l'utente esterno inserisca nell'apposita maschera grafica un codice di sblocco valido e associato a quel profilo, il sistema interroga il DBMS e abilita temporaneamente la visualizzazione inline dei corrispondenti file privati.
     \item \textbf{Fruizione Protetta degli Asset (Anti-Download):} Regola l'interazione con i singoli file multimediali e documentali durante la consultazione. La selezione di un asset inizializza automaticamente il player multimediale integrato per i flussi audio/video in streaming controllato, oppure il visualizzatore dedicato per i documenti PDF, inibendo nativamente qualsiasi funzione di scaricamento locale del file fisico.
 \end{itemize}
@@ -246,7 +246,7 @@ Il sistema governa l'accesso ai contenuti da parte di utenti terzi o della piatt
 
 \subsubsection{Requisiti Esterni}
 \begin{itemize}
-    \item \textbf{Requisiti Legislativi e di Regolamentazione:} Il sistema implementa le politiche per la tutela dei dati personali in conformità con le normative GDPR, separando i file \textit{Pubblici} (accessibili via ricerca globale) da quelli \textit{Privati} (consultabili esclusivamente previa immissione di un codice di sblocco valido).
+    \item \textbf{Requisiti Legislativi e di Regolamentazione:} Il sistema implementa le politiche per la tutela dei dati personali in conformità con le normative GDPR, separando i file \textit{Pubblici} (accessibili via ricerca globale) da quelli \textit{Privati} (non accessibili tramite ricerca globale e consultabili solo previa immissione di un codice di sblocco valido oppure tramite link temporizzato generato dallo studente).
     \item \textbf{Requisiti di Interoperabilità e Standard:} Il sottosistema di identificazione digitale adotta gli standard di federazione \textbf{SAML 2.0} e \textbf{OpenID Connect} per permettere lo scambio dei flussi di autenticazione con i provider \textbf{SPID} ed \textbf{eIDAS} in conformità con le direttive \textbf{AgID}.
     \item \textbf{Interoperabilità Extra-Istituzionale:} L'architettura del software supporta l'estensione dei protocolli di comunicazione per consentire lo scambio di dati e la consultazione delle identità digitali in modo federato con sistemi analoghi di altre istituzioni della rete AFAM.
 \end{itemize}
@@ -1218,7 +1218,7 @@ Flusso degli eventi &
     \item Il Sistema mostra a video la schermata ``Gestione Condivisione tramite Link''.
     \item Lo studente clicca sul pulsante ``Seleziona Contenuti''.
     \item Il Sistema recupera dalla memoria temporanea l'identificativo dello studente.
-    \item Il Sistema interroga il DBMS per recuperare la struttura dei contenuti (strumenti e file).
+    \item Il Sistema interroga il DBMS per recuperare la struttura di tutti i contenuti caricati dallo studente (strumenti e file), includendo sia quelli pubblici sia quelli privati.
     \item \textbf{SE} lo studente non ha alcun contenuto caricato:
     \begin{itemize}[topsep=0.15em,itemsep=0.1em,parsep=0pt,partopsep=0pt]
         \item[6.1.] Il Sistema mostra a video il messaggio di errore: ``Nessun contenuto disponibile''.
@@ -1240,7 +1240,7 @@ Postcondizioni &
 \end{enumerate} \\ \hline
 Note &
 \begin{minipage}[t]{\linewidth}
-I contenuti sono organizzati secondo una struttura gerarchica a due livelli:
+I contenuti selezionabili per il link comprendono tutti i file caricati dallo studente, indipendentemente dallo stato di privacy pubblico o privato, e sono organizzati secondo una struttura gerarchica a due livelli:
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item \textbf{Livello primario:} raggruppamento per Argomento Artistico.
     \item \textbf{Livello secondario:} suddivisione per Tipologia di File.
@@ -1800,6 +1800,523 @@ Postcondizioni & Il Sistema ha mostrato a schermo la schermata ``Elenco Codici''
 \end{longtable}
 \normalsize
 
+\newpage
+\subsubsection{Modello degli oggetti}
 
+\paragraph{Oggetti entity}
+
+\paragraph{Oggetti boundary}
+
+\paragraph{Oggetti control}
+
+
+\newpage
+
+\subsubsection{Modelli Dinamici}
+
+\paragraph{Gestione Autenticazione - Login}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/Gestione autenticazione/Login.pdf}
+    \caption{Diagramma di sequenza - Gestione Autenticazione - Login}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Autenticazione - Login tramite SPID/eIDAS}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/Gestione autenticazione/Login tramite SPID_eIDAS.pdf}
+    \caption{Diagramma di sequenza - Gestione Autenticazione - Login tramite SPID/eIDAS}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Autenticazione - Registrazione}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/Gestione autenticazione/Registrazione.pdf}
+    \caption{Diagramma di sequenza - Gestione Autenticazione - Registrazione}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Autenticazione - Recupera password}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/Gestione autenticazione/RecuperaPassword.pdf}
+    \caption{Diagramma di sequenza - Gestione Autenticazione - Recupera password}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Autenticazione - Logout}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/Gestione autenticazione/Logout.pdf}
+    \caption{Diagramma di sequenza - Gestione Autenticazione - Logout}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Profilo - Modifica Dati Personali}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE PROFILO/ModificaDatiPersonali.pdf}
+    \caption{Diagramma di sequenza - Gestione Profilo - Modifica Dati Personali}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Profilo - Modifica Background Artistico}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE PROFILO/ModificaBackgroundArtistico.pdf}
+    \caption{Diagramma di sequenza - Gestione Profilo - Modifica Background Artistico}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Profilo - Aggiungi Background Artistico}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE PROFILO/Aggiungi Background Artistico.pdf}
+    \caption{Diagramma di sequenza - Gestione Profilo - Aggiungi Background Artistico}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Profilo - Elimina Background Artistico}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE PROFILO/Elimina Background Artistico.pdf}
+    \caption{Diagramma di sequenza - Gestione Profilo - Elimina Background Artistico}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Seleziona Categoria Artistica}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONTENUTI/Seleziona Categoria Artistica.pdf}
+    \caption{Diagramma di sequenza - Gestione Contenuti - Seleziona Categoria Artistica}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Crea Categoria Artistica}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONTENUTI/Crea Categoria Artistica.pdf}
+    \caption{Diagramma di sequenza - Gestione Contenuti - Crea Categoria Artistica}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Seleziona Tipologia File}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONTENUTI/Seleziona tipologia file.pdf}
+    \caption{Diagramma di sequenza - Gestione Contenuti - Seleziona Tipologia File}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Upload File}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONTENUTI/UploadFile.pdf}
+    \caption{Diagramma di sequenza - Gestione Contenuti - Upload File}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Elimina File}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONTENUTI/Elimina File.pdf}
+    \caption{Diagramma di sequenza - Gestione Contenuti - Elimina File}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Modifica File}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONTENUTI/ModificaFile.pdf}
+    \caption{Diagramma di sequenza - Gestione Contenuti - Modifica File}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Gestisci Privacy Contenuti}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONTENUTI/GestisciPrivacyContenuti.pdf}
+    \caption{Diagramma di sequenza - Gestione Contenuti - Gestisci Privacy Contenuti}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione con Link - Selezione Contenuti}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONDIVISIONE LINK/SelezionaContenuti.pdf}
+    \caption{Diagramma di sequenza - Gestione Condivisione con Link - Selezione Contenuti}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione con Link - Genera Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONDIVISIONE LINK/GeneraLink.pdf}
+    \caption{Diagramma di sequenza - Gestione Condivisione con Link - Genera Link}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione con Link - Visualizza Elenco Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONDIVISIONE LINK/VisualizzaElencoCodici.pdf}
+    \caption{Diagramma di sequenza - Gestione Condivisione con Link - Visualizza Elenco Link}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione con Link - Revoca Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONDIVISIONE LINK/Revoca Link.pdf}
+    \caption{Diagramma di sequenza - Gestione Condivisione con Link - Revoca Link}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione con Link - Verifica Validità Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONDIVISIONE LINK/Verifica validità link.pdf}
+    \caption{Diagramma di sequenza - Gestione Condivisione con Link - Verifica Validità Link}
+\end{figure}
+
+\newpage
+\paragraph{Consulta Profilo Studente - Cerca Studente}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/CONSULTA PROFILO STUDENTE/Cerca Studente.pdf}
+    \caption{Diagramma di sequenza - Consulta Profilo Studente - Cerca Studente}
+\end{figure}
+
+\newpage
+\paragraph{Consulta Profilo Studente - Mostra Contenuti Pubblici}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Pubblici.pdf}
+    \caption{Diagramma di sequenza - Consulta Profilo Studente - Mostra Contenuti Pubblici}
+\end{figure}
+
+\newpage
+\paragraph{Consulta Profilo Studente - Mostra Contenuti Privati}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Privati.pdf}
+    \caption{Diagramma di sequenza - Consulta Profilo Studente - Mostra Contenuti Privati}
+\end{figure}
+
+\newpage
+\paragraph{Consulta Profilo Studente - Visualizza Contenuto}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/CONSULTA PROFILO STUDENTE/VisualizzaContenuto.pdf}
+    \caption{Diagramma di sequenza - Consulta Profilo Studente - Visualizza Contenuto}
+\end{figure}
+
+\newpage
+\paragraph{Visualizza Contenuto Tramite Link - Mostra Contenuti Tramite Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/Mostra Contenuti tramite Link.pdf}
+    \caption{Diagramma di sequenza - Visualizza Contenuto Tramite Link - Mostra Contenuti Tramite Link}
+\end{figure}
+
+\newpage
+\paragraph{Visualizza Contenuto Tramite Link - Visualizza Contenuto Tramite Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/VisualizzaContenutoTramiteLink.pdf}
+    \caption{Diagramma di sequenza - Visualizza Contenuto Tramite Link - Visualizza Contenuto Tramite Link}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione Interna - Selezione Contenuti Privati}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONDIVISIONE INTERNA/SelezionaContenutiPrivati.pdf}
+    \caption{Diagramma di sequenza - Gestione Condivisione Interna - Selezione Contenuti Privati}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione Interna - Genera Codice}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONDIVISIONE INTERNA/GeneraCodice.pdf}
+    \caption{Diagramma di sequenza - Gestione Condivisione Interna - Genera Codice}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione Interna - Visualizza Elenco Codici}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONDIVISIONE INTERNA/VisualizzaElencoCodici.pdf}
+    \caption{Diagramma di sequenza - Gestione Condivisione Interna - Visualizza Elenco Codici}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione Interna - Revoca Codice}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/sequence/GESTIONE CONDIVISIONE INTERNA/RevocaCodice.pdf}
+    \caption{Diagramma di sequenza - Gestione Condivisione Interna - Revoca Codice}
+\end{figure}
+
+\newpage
+\subsubsection{Modelli delle Classi}
+
+\paragraph{Entity}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/Entity.pdf}
+    \caption{Diagramma delle classi - Entity}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Autenticazione - Login}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/Login.pdf}
+    \caption{Diagramma delle classi - Gestione Autenticazione - Login}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Autenticazione - Login tramite SPID/eIDAS}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/LoginTramiteSPID.pdf}
+    \caption{Diagramma delle classi - Gestione Autenticazione - Login tramite SPID/eIDAS}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Autenticazione - Registrazione}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/Registrazione.pdf}
+    \caption{Diagramma delle classi - Gestione Autenticazione - Registrazione}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Autenticazione - Recupera password}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/RecuperaPassword.pdf}
+    \caption{Diagramma delle classi - Gestione Autenticazione - Recupera password}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Autenticazione - Logout}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/Logout.pdf}
+    \caption{Diagramma delle classi - Gestione Autenticazione - Logout}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Profilo - Modifica Dati Personali}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/ModificaDatiPersonali.pdf}
+    \caption{Diagramma delle classi - Gestione Profilo - Modifica Dati Personali}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Profilo - Modifica Background Artistico}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/ModificaBackgroundArtistico.pdf}
+    \caption{Diagramma delle classi - Gestione Profilo - Modifica Background Artistico}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Profilo - Aggiungi Background Artistico}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/AggiungiBackgroundArtistico.pdf}
+    \caption{Diagramma delle classi - Gestione Profilo - Aggiungi Background Artistico}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Profilo - Elimina Background Artistico}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/EliminaBackgroundArtistico.pdf}
+    \caption{Diagramma delle classi - Gestione Profilo - Elimina Background Artistico}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Seleziona Categoria Artistica}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/SelezionaCategoriaArtistica.pdf}
+    \caption{Diagramma delle classi - Gestione Contenuti - Seleziona Categoria Artistica}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Crea Categoria Artistica}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/CreaCategoriaArtistica.pdf}
+    \caption{Diagramma delle classi - Gestione Contenuti - Crea Categoria Artistica}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Seleziona Tipologia File}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/SelezionaTipFile.pdf}
+    \caption{Diagramma delle classi - Gestione Contenuti - Seleziona Tipologia File}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Upload File}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/UploadFile.pdf}
+    \caption{Diagramma delle classi - Gestione Contenuti - Upload File}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Elimina File}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/EliminaFile.pdf}
+    \caption{Diagramma delle classi - Gestione Contenuti - Elimina File}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Modifica File}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/ModificaFile.pdf}
+    \caption{Diagramma delle classi - Gestione Contenuti - Modifica File}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Contenuti - Gestisci Privacy Contenuti}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/GestisciPrivacyContenuti.pdf}
+    \caption{Diagramma delle classi - Gestione Contenuti - Gestisci Privacy Contenuti}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione con Link - Selezione Contenuti}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/SelezionaContenuti.pdf}
+    \caption{Diagramma delle classi - Gestione Condivisione con Link - Selezione Contenuti}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione con Link - Genera Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/GeneraLink.pdf}
+    \caption{Diagramma delle classi - Gestione Condivisione con Link - Genera Link}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione con Link - Visualizza Elenco Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/VisualizzaElencoLink.pdf}
+    \caption{Diagramma delle classi - Gestione Condivisione con Link - Visualizza Elenco Link}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione con Link - Revoca Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/RevocaLink.pdf}
+    \caption{Diagramma delle classi - Gestione Condivisione con Link - Revoca Link}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione con Link - Verifica Validita Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/VerificaValiditaLink.pdf}
+    \caption{Diagramma delle classi - Gestione Condivisione con Link - Verifica Validita Link}
+\end{figure}
+
+\newpage
+\paragraph{Consulta Profilo Studente - Cerca Studente}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/CercaStudente.pdf}
+    \caption{Diagramma delle classi - Consulta Profilo Studente - Cerca Studente}
+\end{figure}
+
+\newpage
+\paragraph{Consulta Profilo Studente - Mostra Contenuti Pubblici}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/MostraContenutiPubblici.pdf}
+    \caption{Diagramma delle classi - Consulta Profilo Studente - Mostra Contenuti Pubblici}
+\end{figure}
+
+\newpage
+\paragraph{Consulta Profilo Studente - Mostra Contenuti Privati}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/MostraContenutiPrivati.pdf}
+    \caption{Diagramma delle classi - Consulta Profilo Studente - Mostra Contenuti Privati}
+\end{figure}
+
+\newpage
+\paragraph{Consulta Profilo Studente - Visualizza Contenuto}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/VisualizzaContenuto.pdf}
+    \caption{Diagramma delle classi - Consulta Profilo Studente - Visualizza Contenuto}
+\end{figure}
+
+\newpage
+\paragraph{Visualizza Contenuto Tramite Link - Mostra Contenuti Tramite Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/MostraContenutiTramiteLink.pdf}
+    \caption{Diagramma delle classi - Visualizza Contenuto Tramite Link - Mostra Contenuti Tramite Link}
+\end{figure}
+
+\newpage
+\paragraph{Visualizza Contenuto Tramite Link - Visualizza Contenuto Tramite Link}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/VisualizzaContenutoTramiteLink.pdf}
+    \caption{Diagramma delle classi - Visualizza Contenuto Tramite Link - Visualizza Contenuto Tramite Link}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione Interna - Selezione Contenuti Privati}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/SelezionaContenutiPrivati.pdf}
+    \caption{Diagramma delle classi - Gestione Condivisione Interna - Selezione Contenuti Privati}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione Interna - Genera Codice}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/GeneraCodice.pdf}
+    \caption{Diagramma delle classi - Gestione Condivisione Interna - Genera Codice}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione Interna - Visualizza Elenco Codici}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/VisualizzaElencoCodici.pdf}
+    \caption{Diagramma delle classi - Gestione Condivisione Interna - Visualizza Elenco Codici}
+\end{figure}
+
+\newpage
+\paragraph{Gestione Condivisione Interna - Revoca Codice}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{pdf/classdiagram/classi/RevocaCodice.pdf}
+    \caption{Diagramma delle classi - Gestione Condivisione Interna - Revoca Codice}
+\end{figure}
 
 \end{document}
