@@ -258,7 +258,16 @@ La decomposizione del sistema segue la seguente suddivisione. I sottosistemi ind
 \newpage
 
 \subsection{Mappatura hardware e software}
-\spaziocontenuto
+La mappatura hardware e software descrive la distribuzione dei componenti logici del sistema sui nodi fisici coinvolti nell'esecuzione della piattaforma. Il sistema AFAM Connect adotta un'architettura di tipo Repository: i sottosistemi applicativi non comunicano direttamente tra loro, ma accedono ai dati persistenti esclusivamente tramite il componente \texttt{DatabaseManager}, che rappresenta il punto di accesso centralizzato al DBMS.
+
+Il diagramma seguente mostra la collocazione dei sottosistemi sui nodi hardware previsti e il collegamento verso il DBMS. Le comunicazioni con il database avvengono secondo il modello Repository: i sottosistemi non comunicano direttamente tra loro, ma accedono ai dati tramite il livello di repository e il DBMS.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.78\textheight,keepaspectratio]{pdf/asta/mappaturaHardwareSoftware.pdf}
+    \caption{Mappatura hardware e software del sistema AFAM Connect}
+    \label{fig:mappatura_hardware_software}
+\end{figure}
 
 \newpage
 
@@ -299,7 +308,6 @@ cognome & VARCHAR(100) & NOT NULL & Cognome anagrafico. \\ \hline
 codice\_fiscale & CHAR(16) & UNIQUE, NOT NULL & Codice fiscale. \\ \hline
 email & VARCHAR(255) & UNIQUE, NOT NULL & Email di accesso. \\ \hline
 password & VARCHAR(255) & NOT NULL & Password cifrata/hash. \\ \hline
-telefono & VARCHAR(20) & NULL & Recapito telefonico. \\ \hline
 \caption{Struttura della tabella Studente}
 \label{tab:struttura_studente}
 \end{longtable}
@@ -317,7 +325,7 @@ telefono & VARCHAR(20) & NULL & Recapito telefonico. \\ \hline
 \multicolumn{1}{c|}{\textbf{Descrizione}} \\
 \hline
 id\_background & INT & PK, AUTO INC., NOT NULL & Identificativo del background. \\ \hline
-scuola\_universitaria & VARCHAR(255) & NULL & Istituto frequentato. \\ \hline
+universita & VARCHAR(255) & NULL & Istituto frequentato. \\ \hline
 collaborazioni & TEXT & NULL & Collaborazioni artistiche. \\ \hline
 autori & TEXT & NULL & Autori o riferimenti. \\ \hline
 partecipazioni & TEXT & NULL & Eventi e concorsi. \\ \hline

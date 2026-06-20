@@ -782,17 +782,17 @@ Requisiti speciali &
 
 Questo caso d'uso descrive la procedura con cui lo studente modifica un'informazione già presente nel proprio background artistico.
 
-\small
+\footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
 >{\raggedright\arraybackslash}p{10.2cm}|}
 \hline
-Caso d’uso & Modifica Background Artistico \\ \\ \hline
-ID & 2.2 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``BackgroundArtistico'' e ha recuperato i dati dello studente. \\ \\ \hline
+Caso d’uso & Modifica Background Artistico \\ \hline
+ID & 2.2 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``BackgroundArtistico'' e ha recuperato i dati dello studente. \\ \hline
 Flusso degli eventi &
-\begin{enumerate}
+\begin{enumerate}[topsep=0.15em,itemsep=0.1em,parsep=0pt,partopsep=0pt]
     \item Lo studente clicca sul pulsante ``Modifica Dati'' relativo all'informazione.
     \item Il Sistema mostra a video il form di modifica del background artistico con i campi editabili.
     \item Lo studente inserisce i nuovi dati.
@@ -802,15 +802,15 @@ Flusso degli eventi &
     \item Il Sistema mostra a video il messaggio di conferma: ``Modifiche effettuate correttamente''.
     \item Lo studente clicca sul pulsante ``OK'' per chiudere il messaggio.
     \item Il Sistema mostra nuovamente la schermata ``BackgroundArtistico'', aggiornata con i nuovi valori.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
-\begin{enumerate}
+\begin{enumerate}[topsep=0.15em,itemsep=0.1em,parsep=0pt,partopsep=0pt]
     \item Il Sistema ha mostrato la schermata ``BackgroundArtistico''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Requisiti speciali &
-\begin{itemize}
+\begin{itemize}[topsep=0.15em,itemsep=0.1em,parsep=0pt,partopsep=0pt]
     \item I campi di testo per l'inserimento della scuola o università frequentata, delle collaborazioni fatte, delle collaborazioni con autori e delle partecipazioni devono avere una lunghezza massima di 700 caratteri.
-\end{itemize} \\ \\ \hline
+\end{itemize} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Modifica Background Artistico}
 \label{tab:uc_modifica_background_artistico}\\
 \end{longtable}
