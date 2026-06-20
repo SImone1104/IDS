@@ -323,6 +323,8 @@ nome & VARCHAR(100) & NOT NULL & Nome anagrafico. \\ \hline
 cognome & VARCHAR(100) & NOT NULL & Cognome anagrafico. \\ \hline
 codice\_fiscale & CHAR(16) & UNIQUE, NOT NULL & Codice fiscale. \\ \hline
 email & VARCHAR(255) & UNIQUE, NOT NULL & Email di accesso. \\ \hline
+telefono & VARCHAR(10) & NOT NULL & Numero di telefono dello studente. \\ \hline
+percorso\_foto & VARCHAR(255) & NULL & Percorso del file della foto profilo. \\ \hline
 password & VARCHAR(255) & NOT NULL & Password cifrata/hash. \\ \hline
 \caption{Struttura della tabella Studente}
 \label{tab:struttura_studente}
@@ -422,6 +424,8 @@ id\_studente & INT & FK, NOT NULL & Studente creatore. \\ \hline
 
 
 \paragraph{Tabella Dettaglio\_Link}
+La tabella rappresenta l'associazione molti-a-molti tra link di condivisione e file selezionati: uno stesso link puo' essere associato a piu' file, e uno stesso file puo' comparire in piu' link diversi.
+
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.1cm}|
 >{\raggedright\arraybackslash}p{3.15cm}|
@@ -433,8 +437,8 @@ id\_studente & INT & FK, NOT NULL & Studente creatore. \\ \hline
 \multicolumn{1}{c|}{\textbf{Vincoli}} &
 \multicolumn{1}{c|}{\textbf{Descrizione}} \\
 \hline
-id\_link & INT & PK, FK, NOT NULL & Link associato. \\ \hline
-id\_file & INT & PK, FK, NOT NULL & File condiviso. \\ \hline
+id\_link & INT & PK, FK, NOT NULL & Link che raggruppa uno o piu' file selezionati. \\ \hline
+id\_file & INT & PK, FK, NOT NULL & File incluso tra i contenuti resi disponibili dal link. \\ \hline
 \caption{Struttura della tabella Dettaglio\_Link}
 \label{tab:struttura_dettaglio_link}
 \end{longtable}
@@ -464,6 +468,8 @@ id\_studente & INT & FK, NOT NULL & Studente creatore. \\ \hline
 
 
 \paragraph{Tabella Dettaglio\_Codice}
+La tabella rappresenta l'associazione molti-a-molti tra codici di sblocco e file privati selezionati: uno stesso codice puo' sbloccare piu' file privati, e uno stesso file privato puo' essere associato a piu' codici diversi.
+
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.1cm}|
 >{\raggedright\arraybackslash}p{3.15cm}|
@@ -475,8 +481,8 @@ id\_studente & INT & FK, NOT NULL & Studente creatore. \\ \hline
 \multicolumn{1}{c|}{\textbf{Vincoli}} &
 \multicolumn{1}{c|}{\textbf{Descrizione}} \\
 \hline
-id\_codice & INT & PK, FK, NOT NULL & Codice associato. \\ \hline
-id\_file & INT & PK, FK, NOT NULL & File sbloccato. \\ \hline
+id\_codice & INT & PK, FK, NOT NULL & Codice che raggruppa uno o piu' file privati selezionati. \\ \hline
+id\_file & INT & PK, FK, NOT NULL & File privato reso consultabile tramite il codice. \\ \hline
 \caption{Struttura della tabella Dettaglio\_Codice}
 \label{tab:struttura_dettaglio_codice}
 \end{longtable}

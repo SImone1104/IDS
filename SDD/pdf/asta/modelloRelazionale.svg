@@ -16,7 +16,7 @@
   <text x="750" y="36" class="title">Modello Relazionale - AFAM Connect</text>
 
   <g id="studente">
-    <rect x="70" y="360" width="285" height="195" class="box"/>
+    <rect x="70" y="360" width="285" height="245" class="box"/>
     <rect x="70" y="360" width="285" height="32" class="head"/>
     <text x="80" y="382" class="name">STUDENTE</text>
     <text x="80" y="415" class="pk">PK id_studente</text>
@@ -24,7 +24,9 @@
     <text x="80" y="461" class="attr">cognome</text>
     <text x="80" y="484" class="attr">codice_fiscale UNIQUE</text>
     <text x="80" y="507" class="attr">email UNIQUE</text>
-    <text x="80" y="530" class="attr">password</text>
+    <text x="80" y="530" class="attr">telefono</text>
+    <text x="80" y="553" class="attr">percorso_foto</text>
+    <text x="80" y="576" class="attr">password</text>
   </g>
 
   <g id="background">
@@ -97,20 +99,20 @@
   </g>
 
   <!-- Collegamenti da STUDENTE verso le relazioni figlie -->
-  <path d="M355,455 L420,455 L420,166 L470,166" class="line"/>
-  <text x="370" y="438" class="card">1</text>
+  <path d="M355,390 L435,390 L435,166 L470,166" class="line"/>
+  <text x="370" y="372" class="card">1</text>
   <text x="450" y="150" class="card">0..*</text>
 
-  <path d="M355,455 L420,455 L420,360 L470,360" class="line"/>
-  <text x="370" y="475" class="card">1</text>
+  <path d="M355,430 L445,430 L445,360 L470,360" class="line"/>
+  <text x="370" y="412" class="card">1</text>
   <text x="450" y="344" class="card">0..*</text>
 
-  <path d="M355,455 L420,455 L420,592 L470,592" class="line"/>
-  <text x="370" y="492" class="card">1</text>
+  <path d="M355,485 L435,485 L435,592 L470,592" class="line"/>
+  <text x="370" y="468" class="card">1</text>
   <text x="450" y="576" class="card">0..*</text>
 
-  <path d="M355,455 L420,455 L420,810 L470,810" class="line"/>
-  <text x="370" y="515" class="card">1</text>
+  <path d="M355,530 L455,530 L455,810 L470,810" class="line"/>
+  <text x="370" y="548" class="card">1</text>
   <text x="450" y="794" class="card">0..*</text>
 
   <!-- Collegamento CATEGORIA_ARTISTICA - CONTENUTO_FILE -->
