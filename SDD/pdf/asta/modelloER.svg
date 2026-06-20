@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+  <defs>
+    <style>
+      .entity { fill:#b9e2ea; stroke:#4d7f89; stroke-width:2; }
+      .rel { fill:#c9edf2; stroke:#4d7f89; stroke-width:2; }
+      .line { stroke:#456b73; stroke-width:2; fill:none; }
+      .title { font-family:Arial, sans-serif; font-size:24px; font-weight:bold; fill:#1c3f4a; }
+      .txt { font-family:Arial, sans-serif; font-size:22px; fill:#203a42; text-anchor:middle; dominant-baseline:middle; }
+      .small { font-family:Arial, sans-serif; font-size:17px; fill:#203a42; text-anchor:middle; dominant-baseline:middle; }
+      .card { font-family:Arial, sans-serif; font-size:18px; fill:#203a42; font-weight:bold; text-anchor:middle; dominant-baseline:middle; }
+    </style>
+  </defs>
+
+  <text x="750" y="42" class="title" text-anchor="middle">Modello E-R - AFAM Connect</text>
+
+  <!-- Entita' -->
+  <rect x="115" y="390" width="280" height="80" rx="10" class="entity"/>
+  <text x="255" y="430" class="txt">Studente</text>
+
+  <rect x="115" y="105" width="300" height="80" rx="10" class="entity"/>
+  <text x="265" y="145" class="txt">Background Artistico</text>
+
+  <rect x="115" y="675" width="300" height="80" rx="10" class="entity"/>
+  <text x="265" y="715" class="txt">Categoria Artistica</text>
+
+  <rect x="650" y="675" width="280" height="80" rx="10" class="entity"/>
+  <text x="790" y="715" class="txt">Contenuto File</text>
+
+  <rect x="1100" y="165" width="300" height="80" rx="10" class="entity"/>
+  <text x="1250" y="205" class="txt">Link Condivisione</text>
+
+  <rect x="1100" y="555" width="300" height="80" rx="10" class="entity"/>
+  <text x="1250" y="595" class="txt">Codice Sblocco</text>
+
+  <!-- Relazioni -->
+  <polygon points="255,250 330,295 255,340 180,295" class="rel"/>
+  <text x="255" y="295" class="small">possiede</text>
+
+  <polygon points="255,525 330,570 255,615 180,570" class="rel"/>
+  <text x="255" y="570" class="small">crea</text>
+
+  <polygon points="535,670 615,715 535,760 455,715" class="rel"/>
+  <text x="535" y="715" class="small">contiene</text>
+
+  <polygon points="735,260 810,305 735,350 660,305" class="rel"/>
+  <text x="735" y="305" class="small">genera</text>
+
+  <polygon points="735,500 810,545 735,590 660,545" class="rel"/>
+  <text x="735" y="545" class="small">genera</text>
+
+  <polygon points="1000,285 1080,330 1000,375 920,330" class="rel"/>
+  <text x="1000" y="330" class="small">include</text>
+
+  <polygon points="1035,665 1115,710 1035,755 955,710" class="rel"/>
+  <text x="1035" y="710" class="small">autorizza</text>
+
+  <!-- Studente - Background -->
+  <path d="M255,185 L255,250" class="line"/>
+  <path d="M255,340 L255,390" class="line"/>
+  <text x="275" y="205" class="card">0..*</text>
+  <text x="275" y="375" class="card">1</text>
+
+  <!-- Studente - Categoria -->
+  <path d="M255,470 L255,525" class="line"/>
+  <path d="M255,615 L255,675" class="line"/>
+  <text x="275" y="490" class="card">1</text>
+  <text x="275" y="655" class="card">0..*</text>
+
+  <!-- Categoria - Contenuto -->
+  <path d="M415,715 L455,715" class="line"/>
+  <path d="M615,715 L650,715" class="line"/>
+  <text x="432" y="700" class="card">1</text>
+  <text x="637" y="700" class="card">0..*</text>
+
+  <!-- Studente - Link -->
+  <path d="M395,410 L560,410 L560,305 L660,305" class="line"/>
+  <path d="M810,305 L920,305 L920,205 L1100,205" class="line"/>
+  <text x="415" y="395" class="card">1</text>
+  <text x="1080" y="190" class="card">0..*</text>
+
+  <!-- Studente - Codice -->
+  <path d="M395,450 L560,450 L560,545 L660,545" class="line"/>
+  <path d="M810,545 L920,545 L920,595 L1100,595" class="line"/>
+  <text x="415" y="465" class="card">1</text>
+  <text x="1080" y="580" class="card">0..*</text>
+
+  <!-- Link - Contenuto -->
+  <path d="M1100,225 L1000,225 L1000,285" class="line"/>
+  <path d="M1000,375 L1000,455 L860,455 L860,675" class="line"/>
+  <text x="1082" y="242" class="card">0..*</text>
+  <text x="880" y="655" class="card">1..*</text>
+
+  <!-- Codice - Contenuto -->
+  <path d="M1100,615 L1035,615 L1035,665" class="line"/>
+  <path d="M955,710 L930,710" class="line"/>
+  <text x="1082" y="632" class="card">0..*</text>
+  <text x="942" y="728" class="card">1..*</text>
+</svg>
