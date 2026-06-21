@@ -124,7 +124,7 @@ Questo approccio frammentato genera difficolta' nel mantenere la coerenza, l'agg
 \section{Architettura software proposta}
 L'architettura software proposta introduce una piattaforma centralizzata basata su una repository applicativa dei dati e dei contenuti degli studenti. Tale repository e' gestita tramite il DBMS e conserva in modo persistente le informazioni anagrafiche, il background artistico, le categorie, i file multimediali, i link di condivisione e i codici di sblocco.
 
-Il sistema viene organizzato in sottosistemi applicativi specializzati, ciascuno responsabile di un gruppo coerente di funzionalita': Gestione Studente, Gestione Autenticazione, Gestione Condivisione, Consulta e Gestione Operazioni Automatiche. La boundary DBMS rappresenta il punto di accesso ai dati persistenti e fornisce alle componenti di controllo i metodi necessari per recuperare, salvare e aggiornare gli oggetti di dominio.
+Il sistema viene organizzato in sottosistemi applicativi specializzati, ciascuno responsabile di un gruppo coerente di funzionalita': Gestione Studente, Gestione Autenticazione, Gestione Condivisione, Consultazione e Gestione Operazioni Automatiche. La boundary DBMS rappresenta il punto di accesso ai dati persistenti e fornisce alle componenti di controllo i metodi necessari per recuperare, salvare e aggiornare gli oggetti di dominio.
 
 \subsection{Panoramica}
 Il software sara' installato su un nodo di un'infrastruttura AFAM e sara' progettato per gestire in modo affidabile i dati degli studenti e i contenuti multimediali caricati. L'architettura prevede un sistema con accesso sicuro tramite credenziali personali gestibili in autonomia dallo studente, includendo funzioni di base per la gestione dell'account come il recupero della password.
@@ -160,7 +160,7 @@ La decomposizione del sistema segue la seguente suddivisione. I sottosistemi ind
     \item \textbf{Gestione Studente:} raccoglie le funzionalita' con cui lo studente amministra il proprio profilo, il portfolio e i contenuti caricati. Include la gestione dei dati personali e artistici, la creazione delle categorie, la selezione delle tipologie di file, l'upload, la modifica, l'eliminazione e la gestione della privacy dei contenuti.
     \item \textbf{Gestione Autenticazione:} gestisce l'accesso alla piattaforma e le operazioni collegate all'account. Comprende login, registrazione, recupero password, logout e l'interazione con eventuali boundary dedicate all'identita' digitale.
     \item \textbf{Gestione Condivisione:} governa la condivisione dei contenuti dello studente. Comprende la selezione dei file da condividere, la generazione e visualizzazione dei link temporizzati, la generazione dei codici di sblocco, la selezione dei contenuti privati e la revoca dei permessi di accesso.
-    \item \textbf{Consulta:} consente la consultazione dei profili e dei contenuti autorizzati. Include la ricerca dello studente, la visualizzazione del profilo, la consultazione dei contenuti pubblici, lo sblocco dei contenuti privati tramite codice e la visualizzazione dei contenuti condivisi tramite link.
+    \item \textbf{Consultazione:} consente la consultazione dei profili e dei contenuti autorizzati. Include la ricerca dello studente, la visualizzazione del profilo, la consultazione dei contenuti pubblici, lo sblocco dei contenuti privati tramite codice e la visualizzazione dei contenuti condivisi tramite link.
     \item \textbf{Gestione Operazioni Automatiche:} contiene le funzionalita' eseguite automaticamente dal sistema, in particolare il controllo temporale sulla validita' dei link di condivisione e l'aggiornamento del relativo stato quando risultano scaduti.
 \end{itemize}
 
@@ -344,9 +344,9 @@ password & VARCHAR(255) & NOT NULL & Password cifrata/hash. \\ \hline
 \multicolumn{1}{c|}{\textbf{Descrizione}} \\
 \hline
 id\_background & INT & PK, AUTO INC., NOT NULL & Identificativo del background. \\ \hline
-universita & VARCHAR(255) & NULL & Istituto frequentato. \\ \hline
-collaborazioni & TEXT & NULL & Collaborazioni artistiche. \\ \hline
-autori & TEXT & NULL & Autori o riferimenti. \\ \hline
+scuola\_universita & VARCHAR(255) & NULL & Istituto frequentato. \\ \hline
+collaborazioni\_fatte & TEXT & NULL & Collaborazioni artistiche. \\ \hline
+collaborazioni\_autori & TEXT & NULL & Autori o riferimenti. \\ \hline
 partecipazioni & TEXT & NULL & Eventi e concorsi. \\ \hline
 id\_studente & INT & FK, NOT NULL & Studente proprietario. \\ \hline
 \caption{Struttura della tabella Background\_Artistico}
@@ -392,7 +392,7 @@ descrizione & TEXT & NULL & Descrizione breve. \\ \hline
 tipologia & VARCHAR(30) & NOT NULL & Categoria tecnica usata per la navigazione e il filtro dei contenuti (audio, video, immagine, documento). \\ \hline
 formato & VARCHAR(20) & NOT NULL & Formato specifico o estensione del file (ad esempio MP3, MP4, PNG, PDF). \\ \hline
 dimensione & INT & NOT NULL & Dimensione in byte. \\ \hline
-stato\_privacy & ENUM & NOT NULL & Pubblico o privato. \\ \hline
+stato\_privacy & ENUM & NOT NULL & Pubblico, privato o non in elenco. \\ \hline
 percorso\_fisico & VARCHAR(255) & NOT NULL & Percorso di storage. \\ \hline
 id\_categoria & INT & FK, NOT NULL & Categoria associata. \\ \hline
 \caption{Struttura della tabella Contenuto\_File}
