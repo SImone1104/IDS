@@ -157,7 +157,7 @@ Tutte le operazioni CRUD verso il database sono centralizzate nella classe Datab
   \item \textbf{SceneManager:} Singleton che incapsula lo Stage JavaFX dell'applicazione. Ogni controller boundary lo invoca per effettuare la transizione alla schermata successiva tramite il metodo switchTo(String fxmlName), garantendo che esista un unico Stage attivo.
   \item \textbf{SessioneCorrente:} Singleton che mantiene il riferimento all'oggetto Studente autenticato durante la sessione attiva. Viene popolato al completamento del login e azzerato al logout o al raggiungimento del timeout di inattività (30 minuti), come specificato nei Requisiti Organizzativi del RAD.
   \item \textbf{DatabaseManager:} Singleton che gestisce la connessione JDBC a SQLite e fornisce tutti i metodi DAO (Data Access Object) per le operazioni di lettura, inserimento, aggiornamento ed eliminazione su ciascuna entità del sistema.
-  \item \textbf{Utils:} Classe di utilità con metodi statici condivisi da tutti i sotto-sistemi per la validazione degli input (email, password, nome, codice fiscale, telefono), l'hashing delle password (SHA-256), e la generazione di token univoci, codici di sblocco e OTP.
+  \item \textbf{Utils:} Classe di utilità con metodi statici condivisi da tutti i sotto-sistemi per la validazione degli input (email, password, nome, cognome, codice fiscale, telefono), l'hashing delle password (SHA-256), e la generazione di token univoci, codici di sblocco e OTP.
   \item \textbf{MessaggioDiAvviso:} Finestra di dialogo modale, implementata localmente in ciascun sotto-sistema che la utilizza, per la visualizzazione di messaggi di avviso (incl. la caduta di connessione con il database, UC 0.1), con pulsanti Riprova e Annulla. Corrisponde alla classe boundary omonima del Modello degli Oggetti.
   \item \textbf{MessaggioDiErrore:} Finestra di dialogo modale, implementata localmente in ciascun sotto-sistema che la utilizza, per la visualizzazione di un messaggio di errore conseguente a un'azione effettuata dallo studente. Contiene il pulsante OK.
   \item \textbf{MessaggioDiConferma:} Finestra di dialogo modale, implementata localmente in ciascun sotto-sistema che la utilizza, per informare lo studente del successo di un'operazione (pulsante OK) o per richiedere una conferma prima di un'azione (pulsanti Conferma e Annulla).
@@ -176,7 +176,7 @@ Si tratta del package principale dell'applicazione. Al suo interno sono presenti
 Contiene la classe che modella l'entità di cui è necessaria la rappresentazione nel sistema.
 
 \begin{itemize}
-  \item \textbf{EntityStudente:} Classe di modello che rappresenta lo studente autenticato sulla piattaforma. Contiene i dati anagrafici e di accesso dell'utente (nome, cognome, codice fiscale, email, password hashata, telefono, percorso della foto). È l'unica classe entity del sistema, in quanto è l'unico oggetto persistito che viene caricato in memoria durante la sessione attiva.
+  \item \textbf{EntityStudente:} Classe di modello che rappresenta lo studente autenticato sulla piattaforma. Contiene i dati anagrafici e di accesso dell'utente (nome, cognome, codice fiscale, email, password hashata, telefono, percorso della foto) e la lista delle voci di background artistico (datiBackground). È l'unica classe entity del sistema, in quanto è l'unico oggetto persistito che viene caricato in memoria durante la sessione attiva.
 \end{itemize}
 
 \subsubsection{utility}
@@ -195,30 +195,136 @@ Contiene le classi comuni a tutti i cinque sotto-sistemi. In particolare:
 
 Contiene tutti i package relativi alle funzionalità di autenticazione e accesso al sistema da parte dello Studente. Si suddivide in interfacceFXML, che contiene i file FXML e i relativi controller delle interfacce utente, e control, che contiene le classi che gestiscono la logica dei corrispondenti casi d'uso. Nel complesso permette allo studente di effettuare il login tramite credenziali locali con verifica OTP a due fattori, il login federato tramite SPID/eIDAS, la registrazione di un nuovo account con attivazione via codice, il recupero della password e il logout.
 
+Le classi del package interfacceFXML sono:
 
+\begin{itemize}
+  \item \textbf{SchermataPrincipale:} Rappresenta la pagina principale di atterraggio del sistema. Funge da snodo per indirizzare l'utente verso le operazioni di accesso o iscrizione. Contiene i pulsanti: Login, Recupera Password e Registrazione.
+  \item \textbf{SchermataLogin:} Gestisce l'interfaccia di accesso al sistema permettendo l'autenticazione classica o quella federata. Contiene i campi per l'inserimento di email e password e i pulsanti: Accedi, Entra con SPID/eIDAS e il menu a tendina per la selezione del Provider.
+  \item \textbf{SchermataRegistrazione:} Fornisce il modulo per la creazione di un nuovo profilo studente, raccogliendo i dati ed effettuandone una prima validazione locale. Contiene i campi per l'inserimento dei dati studente e il pulsante: Conferma Registrazione.
+  \item \textbf{SchermataAttivazioneAccount:} Interfaccia dedicata all'inserimento del codice OTP necessario per completare l'attivazione dell'account appena registrato. Contiene il campo per l'inserimento del codice e il pulsante: Verifica.
+  \item \textbf{SchermataVerificaIdentita:} Interfaccia dedicata all'inserimento del codice OTP richiesto durante l'accesso per completare l'autenticazione a due fattori (2FA). Contiene il campo per l'inserimento del codice e il pulsante: Verifica.
+  \item \textbf{HomeAFAM:} Schermata principale dello studente autenticato. Contiene i pulsanti di navigazione verso: Gestione Profilo, Gestione Contenuti, Gestione Condivisione con Link, Gestione Condivisione Interna, Ricerca e Logout.
+  \item \textbf{IdentitaDigitaleBoundary:} Rappresenta l'interfaccia verso il sistema di identità digitale (SPID/eIDAS), tramite cui il Sistema delega e riceve l'esito dell'autenticazione federata dell'utente.
+  \item \textbf{FormIdentitaDigitale:} Riproduce la pagina di autenticazione del Provider di identità digitale. Contiene i campi per l'inserimento di nome utente e password e il pulsante: Conferma.
+  \item \textbf{SchermataRecuperoPassword:} Consente allo studente di avviare la procedura di recupero della password inserendo la propria email. Contiene il campo per l'inserimento dell'email e il pulsante: Conferma.
+  \item \textbf{SchermataNuovaPassword:} Consente allo studente di impostare la nuova password al termine della procedura di recupero delle credenziali. Contiene il campo per l'inserimento della nuova password e il pulsante: Conferma.
+  \item \textbf{SchermataInserimentoCodice:} Interfaccia dedicata all'inserimento del codice di sicurezza necessario per proseguire l'operazione richiesta (recupero password o accesso a contenuti privati). Contiene il campo per l'inserimento del codice e i pulsanti: Conferma e Richiedi nuovo codice.
+  \item \textbf{MessaggioDiErrore:} Schermata di dialogo modale locale al sotto-sistema, utilizzata per informare lo studente di un errore (credenziali non corrette, codice errato, e-mail già in uso, studente non trovato, invio e-mail non riuscito). Contiene il pulsante OK.
+  \item \textbf{MessaggioDiConferma:} Schermata di dialogo modale locale al sotto-sistema, utilizzata per informare lo studente del completamento con successo della registrazione. Contiene il pulsante OK.
+  \item \textbf{MessaggioDiAvviso:} Schermata di dialogo modale locale al sotto-sistema, mostrata in caso di caduta di connessione con il database (UC 0.1), con i pulsanti Riprova e Annulla.
+\end{itemize}
+
+Le classi del package control sono:
+
+\begin{itemize}
+  \item \textbf{LoginControl:} Gestisce i casi d'uso Login (UC 1.1) e Login tramite SPID/eIDAS (UC 1.2). Coordina la verifica delle credenziali sul database tramite DatabaseManager, la generazione del codice OTP tramite Utils, l'invio del codice via e-mail tramite la libreria Jakarta Mail e la sua validazione per la 2FA, e l'interazione con il provider di identità digitale.
+  \item \textbf{RegistrazioneControl:} Gestisce il caso d'uso Registrazione (UC 1.3). Coordina la validazione dei dati inseriti, la verifica dell'unicità dell'email sul database, la generazione del codice di attivazione tramite Utils, il suo invio via e-mail tramite la libreria Jakarta Mail, la sua validazione e il salvataggio del nuovo studente.
+  \item \textbf{RecuperaPasswordControl:} Gestisce il caso d'uso Recupera password (UC 1.4). Coordina la verifica dell'email sul database, la generazione del codice di recupero tramite Utils, il suo invio via e-mail tramite la libreria Jakarta Mail, la sua validazione e l'aggiornamento della password.
+  \item \textbf{LogoutControl:} Gestisce il caso d'uso Logout (UC 1.5). Coordina l'interruzione della sessione attiva, la cancellazione dei dati dell'utente memorizzati temporaneamente in SessioneCorrente e il reindirizzamento alla SchermataPrincipale.
+\end{itemize}
 
 \subsubsection{gestioneStudente}
 
 Contiene tutti i package relativi alla gestione del profilo personale e dei contenuti artistici dello Studente. Si suddivide in interfacceFXML e control. Nel complesso permette allo studente di modificare i propri dati personali, gestire il background artistico, organizzare i contenuti in categorie artistiche, caricare, modificare ed eliminare file multimediali e documentali, e regolare la privacy di ciascun contenuto.
 
+Le classi del package interfacceFXML sono:
 
+\begin{itemize}
+  \item \textbf{SchermataGestioneProfilo:} Rappresenta la sezione di gestione del profilo dello studente e funge da snodo verso le operazioni sui dati personali. Contiene il pulsante: Dati Personali.
+  \item \textbf{SchermataDatiPersonali:} Mostra i dati personali dello studente e consente di avviarne la modifica. Contiene il pulsante: Modifica.
+  \item \textbf{FormModificaDatiPersonali:} Fornisce il modulo per la modifica dei dati personali dello studente. Contiene i campi per l'inserimento dei nuovi dati e il pulsante: Conferma Modifiche.
+  \item \textbf{SchermataGestionePortfolio:} Rappresenta la sezione di gestione del portfolio dello studente e funge da snodo verso le operazioni sul background artistico. Contiene il pulsante: Background Artistico.
+  \item \textbf{SchermataBackgroundArtistico:} Mostra le voci del background artistico dello studente e consente di gestirle. Contiene i pulsanti: Aggiungi Dati, Modifica Dati ed Elimina Dati.
+  \item \textbf{FormModificaBackgroundArtistico:} Fornisce il modulo per l'inserimento e la modifica delle informazioni relative al background artistico. Contiene i campi per l'inserimento dei nuovi dati e il pulsante: Conferma.
+  \item \textbf{SchermataGestioneContenuti:} Rappresenta la sezione di gestione dei contenuti e consente la selezione di una categoria artistica esistente o la creazione di una nuova. Contiene l'elenco delle categorie e il pulsante: Crea Categoria.
+  \item \textbf{SchermataNuovaCategoria:} Fornisce il modulo per la creazione di una nuova categoria artistica. Contiene il campo per l'inserimento del nome e il pulsante: Salva.
+  \item \textbf{SchermataTipologiaFile:} Consente allo studente di selezionare la tipologia del file da gestire all'interno di una categoria. Contiene gli elementi per la selezione della tipologia.
+  \item \textbf{SchermataElencoFile:} Mostra l'elenco dei file appartenenti alla categoria e alla tipologia selezionate e consente di operare su di essi. Contiene la lista dei file e i pulsanti: Upload e Menu contestuale.
+  \item \textbf{SchermataUpload:} Fornisce il modulo per il caricamento di un nuovo file. Contiene i campi per l'inserimento di titolo e descrizione, il selettore del file e il pulsante: Conferma.
+  \item \textbf{SchermataGestioneFile:} Consente di scegliere l'operazione da effettuare su un file selezionato. Contiene i pulsanti per l'eliminazione, la modifica e la gestione della privacy del contenuto.
+  \item \textbf{SchermataModifica:} Fornisce il modulo per la modifica dei dati di un file esistente. Contiene i campi per l'aggiornamento di titolo e descrizione e il pulsante: Conferma.
+  \item \textbf{SchermataPrivacy:} Consente di impostare il livello di privacy di un contenuto. Contiene gli elementi per la selezione della tipologia di privacy (Pubblico, Privato, Non in elenco) e il pulsante: Conferma.
+  \item \textbf{MessaggioDiErrore:} Schermata di dialogo modale locale al sotto-sistema, utilizzata per informare lo studente di un errore (file troppo grande). Contiene il pulsante OK.
+  \item \textbf{MessaggioDiAvviso:} Schermata di dialogo modale locale al sotto-sistema, utilizzata per richiedere allo studente la conferma dell'eliminazione di una voce di background artistico (UC 2.4) e in caso di caduta di connessione con il database (UC 0.1). Contiene i pulsanti Conferma/Riprova e Annulla.
+  \item \textbf{MessaggioDiConferma:} Schermata di dialogo modale locale al sotto-sistema, utilizzata per informare lo studente del successo delle operazioni di modifica dati, creazione categoria e aggiornamento privacy. Contiene il pulsante OK.
+\end{itemize}
+
+Le classi del package control sono:
+
+\begin{itemize}
+  \item \textbf{GestioneProfiloControl:} Gestisce i casi d'uso Modifica Dati Personali (UC 2.1), Modifica Background Artistico (UC 2.2), Aggiungi Background Artistico (UC 2.3) ed Elimina Background Artistico (UC 2.4). Coordina il recupero, l'aggiornamento e il salvataggio dei dati del profilo studente tramite DatabaseManager.
+  \item \textbf{CategoriaControl:} Gestisce i casi d'uso Seleziona Categoria Artistica (UC 3.1) e Crea Categoria Artistica (UC 3.2). Coordina il recupero delle categorie associate allo studente e la creazione di nuove categorie tramite DatabaseManager.
+  \item \textbf{TipologiaFileControl:} Gestisce il caso d'uso Seleziona Tipologia File (UC 3.3). Coordina il recupero dei file della categoria selezionata filtrati per tipologia tramite DatabaseManager.
+  \item \textbf{UploadFileControl:} Gestisce il caso d'uso Upload File (UC 3.4). Coordina la validazione delle dimensioni e del formato del file, la copia del file nella cartella locale afam\_files/ e il salvataggio dei metadati sul database tramite DatabaseManager.
+  \item \textbf{GestioneFileControl:} Gestisce i casi d'uso Elimina File (UC 3.5), Modifica File (UC 3.6) e Gestisci Privacy Contenuti (UC 3.7). Coordina le operazioni di aggiornamento ed eliminazione dei file sul database tramite DatabaseManager.
+\end{itemize}
 
 \subsubsection{gestioneCondivisione}
 
 Contiene tutti i package relativi alla gestione della condivisione dei contenuti tramite link temporizzati e tramite codici di sblocco interni. Si suddivide in interfacceFXML e control. Nel complesso permette allo studente di selezionare contenuti, generare link univoci temporizzati o codici alfanumerici univoci, visualizzarne l'elenco e revocarne la validità.
 
+Le classi del package interfacceFXML sono:
+
+\begin{itemize}
+  \item \textbf{SchermataGestioneCondLink:} Rappresenta la sezione di gestione della condivisione tramite link e funge da snodo verso la selezione dei contenuti e la gestione dei link generati. Contiene il pulsante: Seleziona.
+  \item \textbf{SchermataSelezionaContenuti:} Consente allo studente di selezionare i contenuti da condividere tramite link, includendo sia file pubblici sia privati. Contiene l'elenco dei contenuti e il pulsante: Conferma Selezione.
+  \item \textbf{SchermataGenerazioneLink:} Consente di avviare la generazione di un link di condivisione per i contenuti selezionati. Contiene il pulsante: Genera Link.
+  \item \textbf{MessaggioConfermaLink:} Schermata che mostra il link di condivisione generato e ne consente la copia. Contiene il link generato e i pulsanti: Copia e OK.
+  \item \textbf{SchermataElencoLink:} Mostra l'elenco dei link generati dallo studente con l'indicatore di avvenuta visualizzazione (spunta) e consente di gestirli. Contiene la lista dei link e il pulsante: Revoca.
+  \item \textbf{SchermataGestioneCondInterna:} Rappresenta la sezione di gestione della condivisione interna e funge da snodo verso la selezione dei contenuti privati e la generazione dei codici. Contiene i pulsanti: Seleziona Contenuti Privati e Gestisci Codici.
+  \item \textbf{SchermataGenerazioneCodice:} Consente di avviare la generazione di un codice di condivisione per i contenuti privati selezionati. Contiene il pulsante: Genera Codice.
+  \item \textbf{SchermataCodice:} Schermata che mostra il codice di condivisione generato e ne consente la copia. Contiene il codice generato e i pulsanti: Copia e OK.
+  \item \textbf{SchermataElencoCodici:} Mostra l'elenco dei codici generati dallo studente e consente di gestirli. Contiene la lista dei codici e il pulsante: Revoca.
+  \item \textbf{MessaggioDiErrore:} Schermata di dialogo modale locale al sotto-sistema, utilizzata per informare lo studente dell'assenza di contenuti, link o codici disponibili. Contiene il pulsante OK.
+  \item \textbf{MessaggioDiAvviso:} Schermata di dialogo modale locale al sotto-sistema, mostrata in caso di caduta di connessione con il database (UC 0.1), con i pulsanti Riprova e Annulla.
+  \item \textbf{MessaggioDiConferma:} Schermata di dialogo modale locale al sotto-sistema, utilizzata per informare lo studente della generazione con successo di link/codici e per richiedere la conferma di revoca di un link o di un codice (pulsanti Conferma e Annulla).
+\end{itemize}
+
+Le classi del package control sono:
+
+\begin{itemize}
+  \item \textbf{SelezionaContenutiControl:} Gestisce il caso d'uso Selezione Contenuti (UC 4.1). Coordina il recupero di tutti i contenuti dello studente, indipendentemente dalla privacy (pubblici e privati), e li presenta per la selezione, interrogando il database tramite DatabaseManager.
+  \item \textbf{GestisciLinkControl:} Gestisce i casi d'uso Genera Link (UC 4.2), Visualizza Elenco Link (UC 4.3) e Revoca Link (UC 4.4). Coordina la generazione del token univoco del link e il calcolo della data di scadenza (14 giorni), il recupero dei link generati dallo studente con il relativo stato di visualizzazione e la revoca anticipata tramite DatabaseManager.
+  \item \textbf{SelezionaContenutiPrivatiControl:} Gestisce il caso d'uso Selezione Contenuti Privati (UC 7.1). Coordina il recupero dei soli contenuti privati dello studente e li presenta per la selezione, interrogando il database tramite DatabaseManager.
+  \item \textbf{GestisciCodiceControl:} Gestisce i casi d'uso Genera Codice (UC 7.2), Visualizza Elenco Codici (UC 7.3) e Revoca Codice (UC 7.4). Coordina la generazione del codice alfanumerico univoco, il recupero dei codici generati dallo studente e la loro revoca tramite DatabaseManager.
+\end{itemize}
 
 \subsubsection{consultazione}
 
 Contiene tutti i package relativi alla consultazione dei profili e dei contenuti degli studenti da parte di qualsiasi utente della piattaforma (Studente, Utente, Utente Esterno). Si suddivide in interfacceFXML e control. Nel complesso permette di cercare uno studente, visualizzarne i contenuti pubblici, accedere ai contenuti privati tramite codice di sblocco, e fruire dei contenuti sia direttamente che tramite link di condivisione.
 
+Le classi del package interfacceFXML sono:
 
+\begin{itemize}
+  \item \textbf{SchermataRicerca:} Consente all'utente di ricercare uno studente all'interno del sistema inserendo nome e cognome. Contiene i campi per l'inserimento e il pulsante per avviare la ricerca.
+  \item \textbf{SchermataRisultatoRicerca:} Mostra l'elenco degli studenti corrispondenti ai criteri di ricerca e ne consente la selezione. Contiene la lista degli studenti trovati.
+  \item \textbf{SchermataProfiloStudente:} Mostra il profilo di uno studente consultato e funge da snodo verso la visualizzazione dei suoi contenuti pubblici e privati.
+  \item \textbf{SchermataContenutiPubblici:} Mostra le categorie dei contenuti di uno studente e ne consente la selezione. Riutilizzata sia per i contenuti pubblici sia per quelli privati (accessibili previa verifica del codice di sblocco): il control determina quali dati passare in base al contesto di accesso. Contiene l'elenco delle categorie.
+  \item \textbf{SchermataCategoriaContenuti:} Mostra le tipologie di file disponibili all'interno di una categoria selezionata e ne consente la selezione. Contiene l'elenco delle tipologie.
+  \item \textbf{SchermataVisualizzatoreDocumenti:} Consente la visualizzazione a schermo di un contenuto di tipo documentale (PDF o immagine) in modalità protetta anti-download. Contiene il pulsante: Chiudi.
+  \item \textbf{SchermataRiproduttoreMultimediale:} Consente la riproduzione a schermo di un contenuto multimediale (audio/video) in modalità streaming controllato anti-download. Contiene il pulsante: Chiudi.
+  \item \textbf{SchermataContenutiTramiteLink:} Rappresenta la schermata di accesso ai contenuti condivisi tramite link, attraverso cui viene avviata la consultazione a partire dal link ricevuto dall'utente esterno.
+  \item \textbf{SchermataContenutiCondivisi:} Mostra l'elenco dei contenuti resi disponibili tramite link e ne consente la selezione per la visualizzazione. Contiene la lista dei contenuti condivisi.
+  \item \textbf{MessaggioDiErrore:} Schermata di dialogo modale locale al sotto-sistema, utilizzata per informare l'utente che la ricerca non ha prodotto alcun risultato. Contiene il pulsante OK.
+  \item \textbf{MessaggioDiAvviso:} Schermata di dialogo modale locale al sotto-sistema, mostrata in caso di caduta di connessione con il database (UC 0.1), con i pulsanti Riprova e Annulla.
+\end{itemize}
+
+Le classi del package control sono:
+
+\begin{itemize}
+  \item \textbf{CercaStudenteControl:} Gestisce il caso d'uso Cerca Studente (UC 5.1). Coordina la ricerca degli studenti sul database per nome e cognome tramite DatabaseManager e il recupero del profilo dello studente selezionato.
+  \item \textbf{VisualizzaProfiloControl:} Gestisce i casi d'uso Mostra Contenuti Pubblici (UC 5.2), Mostra Contenuti Privati (UC 5.3) e Visualizza Contenuto (UC 5.4). Coordina il recupero dei contenuti pubblici, la verifica del codice di sblocco per i contenuti privati e il recupero del file fisico per la fruizione, passando alla SchermataContenutiPubblici i dati pertinenti in base al contesto (ricerca diretta o codice verificato).
+  \item \textbf{MostraContenutiLinkControl:} Gestisce i casi d'uso Mostra Contenuti Tramite Link (UC 6.1) e Visualizza Contenuto Tramite Link (UC 6.2). Coordina la verifica della validità del token, il recupero dei contenuti associati al link, l'aggiornamento dello stato di visualizzazione sul database e la fruizione del contenuto selezionato.
+\end{itemize}
 
 \subsubsection{gestioneOperazioniAutomatiche}
 
-Contiene le classi relative all'esecuzione di funzionalità automatiche attivate dall'attore Tempo. Non è presente alcun package di interfacce grafiche in quanto questo sotto-sistema non interagisce direttamente con l'utente. L'unica classe boundary presente è BoundaryTempo, che rappresenta l'interfaccia verso l'attore Tempo.
+Contiene le classi relative all'esecuzione di funzionalità automatiche attivate dall'attore Tempo. Non è presente alcuna interfaccia grafica destinata all'utente: il package interface contiene unicamente la classe boundary non grafica BoundaryTempo, che rappresenta l'interfaccia verso l'attore Tempo, mentre il package control contiene ControlValiditaLink.
 
-
+\begin{itemize}
+  \item \textbf{BoundaryTempo:} Rappresenta l'interfaccia verso l'orologio di sistema (attore Tempo), tramite cui il Sistema ottiene la data e l'ora correnti necessarie alla verifica della validità dei link di condivisione.
+  \item \textbf{ControlValiditaLink:} Gestisce il caso d'uso Verifica Validità Link (UC 4.5). Viene attivata automaticamente dall'attore Tempo come processo batch giornaliero alle ore 00:00; ottiene la data corrente tramite BoundaryTempo e interroga il database tramite DatabaseManager per identificare tutti i link di condivisione il cui stato è ATTIVO ma la cui data di scadenza è antecedente alla data odierna, aggiornandone lo stato in SCADUTO.
+\end{itemize}
 
 \subsection{org.xerial.sqlite-jdbc}
 

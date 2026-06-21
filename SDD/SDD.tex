@@ -389,7 +389,8 @@ id\_studente & INT & FK, NOT NULL & Studente proprietario. \\ \hline
 id\_file & INT & PK, AUTO INC., NOT NULL & Identificativo del file. \\ \hline
 titolo & VARCHAR(150) & NOT NULL & Titolo del contenuto. \\ \hline
 descrizione & TEXT & NULL & Descrizione breve. \\ \hline
-formato & VARCHAR(20) & NOT NULL & Tipo del file. \\ \hline
+tipologia & VARCHAR(30) & NOT NULL & Categoria tecnica usata per la navigazione e il filtro dei contenuti (audio, video, immagine, documento). \\ \hline
+formato & VARCHAR(20) & NOT NULL & Formato specifico o estensione del file (ad esempio MP3, MP4, PNG, PDF). \\ \hline
 dimensione & INT & NOT NULL & Dimensione in byte. \\ \hline
 stato\_privacy & ENUM & NOT NULL & Pubblico o privato. \\ \hline
 percorso\_fisico & VARCHAR(255) & NOT NULL & Percorso di storage. \\ \hline
