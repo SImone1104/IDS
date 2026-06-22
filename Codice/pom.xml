@@ -13,6 +13,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
         <javafx.version>21.0.5</javafx.version>
+        <!-- Link di condivisione ricevuto dall'esterno; per test: mvn javafx:run -Dafam.link=TOKEN -->
+        <afam.link></afam.link>
     </properties>
 
     <dependencies>
@@ -67,6 +69,7 @@
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>it.afam.Main</mainClass>
+                    <commandlineArgs>${afam.link}</commandlineArgs>
                 </configuration>
             </plugin>
         </plugins>

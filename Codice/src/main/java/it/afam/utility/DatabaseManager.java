@@ -277,7 +277,7 @@ public class DatabaseManager {
 
     /** Tutti i contenuti dello studente (pubblici e privati). */
     public List<DatiFile> recuperaContenuti(int idStudente) {
-        String sql = "SELECT cf.* FROM Contenuto_File cf "
+        String sql = "SELECT cf.*, ca.nome_categoria FROM Contenuto_File cf "
                 + "JOIN Categoria_Artistica ca ON cf.id_categoria = ca.id_categoria "
                 + "WHERE ca.id_studente = ?";
         return eseguiSelectFile(sql, idStudente);
@@ -285,7 +285,7 @@ public class DatabaseManager {
 
     /** Solo i contenuti privati dello studente. */
     public List<DatiFile> recuperaContenutiPrivati(int idStudente) {
-        String sql = "SELECT cf.* FROM Contenuto_File cf "
+        String sql = "SELECT cf.*, ca.nome_categoria FROM Contenuto_File cf "
                 + "JOIN Categoria_Artistica ca ON cf.id_categoria = ca.id_categoria "
                 + "WHERE ca.id_studente = ? AND cf.stato_privacy = 'Privato'";
         return eseguiSelectFile(sql, idStudente);
@@ -295,7 +295,7 @@ public class DatabaseManager {
         List<DatiFile> lista = new ArrayList<>();
         try (ResultSet rs = boundaryDBMS.eseguiQuery(sql, new Object[]{idStudente})) {
             while (rs.next()) {
-                lista.add(mappaFile(rs));
+                lista.add(mappaFileConCategoria(rs));
             }
             return lista;
         } catch (SQLException e) {
@@ -513,7 +513,19 @@ public class DatabaseManager {
                 rs.getString("descrizione"),
                 rs.getString("tipologia"),
                 rs.getString("stato_privacy"),
-                rs.getString("percorso_fisico"));
+                rs.getString("percorso_fisico"),
+                null);
+    }
+
+    private DatiFile mappaFileConCategoria(ResultSet rs) throws SQLException {
+        return new DatiFile(
+                rs.getInt("id_file"),
+                rs.getString("titolo"),
+                rs.getString("descrizione"),
+                rs.getString("tipologia"),
+                rs.getString("stato_privacy"),
+                rs.getString("percorso_fisico"),
+                rs.getString("nome_categoria"));
     }
 
     private String estensione(String percorso) {

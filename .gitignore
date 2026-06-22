@@ -8,3 +8,12 @@
 *.synctex.gz
 *.synctex(busy)
 *.toc
+
+# --- Progetto Codice (Java / JavaFX / Maven) ---
+Codice/target/
+
+.idea/
+*.iml
+.vscode/
+# Credenziali SMTP: versionate su richiesta esplicita dell'utente
+

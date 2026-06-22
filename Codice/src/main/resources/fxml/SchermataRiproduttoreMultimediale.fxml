@@ -2,16 +2,27 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.media.MediaView?>
 
 <VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
       fx:controller="it.afam.consultazione.interfaccia.SchermataRiproduttoreMultimediale"
-      alignment="CENTER" spacing="12" prefWidth="720" prefHeight="540">
+      alignment="CENTER" spacing="10" prefWidth="760" prefHeight="560">
     <padding><Insets top="15" right="15" bottom="15" left="15"/></padding>
     <children>
-        <Label fx:id="labelInfo" style="-fx-font-weight: bold;"/>
-        <MediaView fx:id="riproduttore" fitWidth="640" fitHeight="400" preserveRatio="true"/>
+        <Label fx:id="labelTitolo" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <Label fx:id="labelDescrizione" wrapText="true"/>
+        <MediaView fx:id="riproduttore" fitWidth="680" fitHeight="360" preserveRatio="true"/>
+        <HBox alignment="CENTER" spacing="10">
+            <padding><Insets left="10" right="10"/></padding>
+            <children>
+                <Button fx:id="bottonePlayPause" text="Pausa" prefWidth="80" onAction="#cliccaPlayPause"/>
+                <Slider fx:id="sliderTempo" HBox.hgrow="ALWAYS" prefWidth="480"/>
+                <Label fx:id="labelTempo" text="00:00 / 00:00"/>
+            </children>
+        </HBox>
         <Button text="Chiudi Contenuto" onAction="#cliccaChiudi"/>
     </children>
 </VBox>

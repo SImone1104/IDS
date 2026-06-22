@@ -31,7 +31,8 @@ public class SchermataSelezionaContenuti {
             @Override
             protected void updateItem(DatiFile f, boolean empty) {
                 super.updateItem(f, empty);
-                setText(empty || f == null ? null : f.titolo() + "  [" + f.tipologia() + ", " + f.privacy() + "]");
+                setText(empty || f == null ? null
+                        : f.titolo() + "  [" + f.categoria() + " - " + f.tipologia() + ", " + f.privacy() + "]");
             }
         });
         try {

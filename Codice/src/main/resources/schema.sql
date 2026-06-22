@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS Contenuto_File (
     tipologia       TEXT NOT NULL,
     formato         TEXT NOT NULL,
     dimensione      INTEGER NOT NULL,
-    stato_privacy   TEXT NOT NULL CHECK (stato_privacy IN ('Pubblico', 'Privato', 'Non in elenco')),
+    stato_privacy   TEXT NOT NULL CHECK (stato_privacy IN ('Pubblico', 'Privato')),
     percorso_fisico TEXT NOT NULL,
     id_categoria    INTEGER NOT NULL,
     FOREIGN KEY (id_categoria) REFERENCES Categoria_Artistica(id_categoria)

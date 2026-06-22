@@ -24,11 +24,6 @@ public class HomeAFAM {
     }
 
     @FXML
-    private void cliccaGestionePortfolio() {
-        SceneManager.getIstanza().switchTo("SchermataGestionePortfolio.fxml");
-    }
-
-    @FXML
     private void cliccaGestioneContenuti() {
         SceneManager.getIstanza().switchTo("SchermataGestioneContenuti.fxml");
     }

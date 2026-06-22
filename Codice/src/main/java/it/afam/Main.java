@@ -1,9 +1,12 @@
 package it.afam;
 
+import it.afam.consultazione.control.MostraContenutiLinkControl;
+import it.afam.consultazione.interfaccia.SchermataContenutiTramiteLink;
 import it.afam.gestioneOperazioniAutomatiche.ControlValiditaLink;
 import it.afam.utility.DatabaseManager;
 import it.afam.utility.SceneManager;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.stage.Stage;
 
 import java.time.Duration;
@@ -29,7 +32,30 @@ public class Main extends Application {
 
         primaryStage.setTitle("AFAM Connect");
         SceneManager.getIstanza().setStage(primaryStage);
-        SceneManager.getIstanza().switchTo("SchermataPrincipale.fxml");
+
+        String link = primoArgomentoValido(getParameters().getRaw());
+        if (link != null) {
+            // Found message (UC 6.1): link ricevuto dall'esterno (es. WhatsApp) all'avvio dell'app
+            if (new MostraContenutiLinkControl().linkValido(link)) {
+                SchermataContenutiTramiteLink.linkRicevuto = link;
+                SceneManager.getIstanza().switchTo("SchermataContenutiTramiteLink.fxml");
+            } else {
+                // link scaduto o non valido: non si apre niente
+                Platform.exit();
+            }
+        } else {
+            SceneManager.getIstanza().switchTo("SchermataPrincipale.fxml");
+        }
+    }
+
+    /** Primo argomento non vuoto passato all'avvio (il link di condivisione ricevuto). */
+    private String primoArgomentoValido(java.util.List<String> args) {
+        for (String a : args) {
+            if (a != null && !a.isBlank()) {
+                return a.trim();
+            }
+        }
+        return null;
     }
 
     /**

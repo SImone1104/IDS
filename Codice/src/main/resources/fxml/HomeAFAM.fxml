@@ -12,7 +12,6 @@
         <Label text="Home AFAM" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
         <Button text="Ricerca" prefWidth="260" onAction="#cliccaRicerca"/>
         <Button text="Gestione Profilo" prefWidth="260" onAction="#cliccaGestioneProfilo"/>
-        <Button text="Gestione Portfolio" prefWidth="260" onAction="#cliccaGestionePortfolio"/>
         <Button text="Gestione Contenuti" prefWidth="260" onAction="#cliccaGestioneContenuti"/>
         <Button text="Gestione Condivisione con Link" prefWidth="260" onAction="#cliccaGestioneCondLink"/>
         <Button text="Gestione Condivisione Interna" prefWidth="260" onAction="#cliccaGestCondInterna"/>

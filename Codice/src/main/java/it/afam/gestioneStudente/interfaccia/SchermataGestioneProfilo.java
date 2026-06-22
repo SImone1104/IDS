@@ -12,6 +12,11 @@ public class SchermataGestioneProfilo {
     }
 
     @FXML
+    private void cliccaBackgroundArtistico() {
+        SceneManager.getIstanza().switchTo("SchermataBackgroundArtistico.fxml");
+    }
+
+    @FXML
     private void cliccaIndietro() {
         SceneManager.getIstanza().switchTo("HomeAFAM.fxml");
     }

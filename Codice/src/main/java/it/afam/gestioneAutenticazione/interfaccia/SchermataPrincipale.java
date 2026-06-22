@@ -20,4 +20,10 @@ public class SchermataPrincipale {
     private void cliccaRecuperaPassword() {
         SceneManager.getIstanza().switchTo("SchermataRecuperoPassword.fxml");
     }
+
+    /** Consultazione accessibile anche all'utente esterno non autenticato. */
+    @FXML
+    private void cliccaRicerca() {
+        SceneManager.getIstanza().switchTo("SchermataRicerca.fxml");
+    }
 }

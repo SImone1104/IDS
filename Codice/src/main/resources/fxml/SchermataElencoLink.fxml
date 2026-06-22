@@ -16,6 +16,7 @@
         <HBox alignment="CENTER" spacing="15">
             <children>
                 <Button text="Revoca" onAction="#cliccaRevoca"/>
+                <Button text="Copia Link" onAction="#cliccaCopiaLink"/>
                 <Button text="Indietro" onAction="#cliccaIndietro"/>
             </children>
         </HBox>

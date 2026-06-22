@@ -10,6 +10,8 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
 
 /** Elenco dei link generati, con revoca (UC 4.3, 4.4). */
 public class SchermataElencoLink {
@@ -52,6 +54,18 @@ public class SchermataElencoLink {
         } catch (ConnessioneException e) {
             MessaggioDiAvviso.mostra("Connessione al database non riuscita. Riprova.");
         }
+    }
+
+    @FXML
+    private void cliccaCopiaLink() {
+        DatiLink sel = listaLink.getSelectionModel().getSelectedItem();
+        if (sel == null) {
+            MessaggioDiErrore.mostra("Seleziona un link da copiare");
+            return;
+        }
+        ClipboardContent content = new ClipboardContent();
+        content.putString(sel.url());
+        Clipboard.getSystemClipboard().setContent(content);
     }
 
     @FXML

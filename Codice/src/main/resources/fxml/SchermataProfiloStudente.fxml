@@ -2,16 +2,23 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
 
 <VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
       fx:controller="it.afam.consultazione.interfaccia.SchermataProfiloStudente"
-      alignment="CENTER" spacing="14" prefWidth="440" prefHeight="280">
-    <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
+      alignment="CENTER" spacing="8" prefWidth="500" prefHeight="540">
+    <padding><Insets top="20" right="40" bottom="20" left="40"/></padding>
     <children>
         <Label text="Profilo Studente" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+        <ImageView fx:id="immagineFoto" fitWidth="110" fitHeight="110" preserveRatio="true"/>
         <Label fx:id="labelNome"/>
         <Label fx:id="labelCognome"/>
+        <Label fx:id="labelEmail"/>
+        <Label fx:id="labelTelefono"/>
+        <Label text="Background Artistico:" style="-fx-font-weight: bold;"/>
+        <ListView fx:id="listaBackground" prefHeight="170"/>
         <Button text="Mostra Contenuti Pubblici" prefWidth="240" onAction="#cliccaMostraContenutiPubblici"/>
         <Button text="Indietro" prefWidth="240" onAction="#cliccaIndietro"/>
     </children>

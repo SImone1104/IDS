@@ -80,6 +80,6 @@ public class SchermataBackgroundArtistico {
 
     @FXML
     private void cliccaIndietro() {
-        SceneManager.getIstanza().switchTo("SchermataGestionePortfolio.fxml");
+        SceneManager.getIstanza().switchTo("SchermataGestioneProfilo.fxml");
     }
 }

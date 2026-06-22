@@ -1,9 +1,11 @@
 package it.afam.consultazione.control;
 
 import it.afam.consultazione.interfaccia.SchermataContenutiCondivisi;
+import it.afam.entity.EntityStudente;
 import it.afam.utility.DatabaseManager;
 import it.afam.utility.SceneManager;
 import it.afam.utility.SessioneCorrente;
+import it.afam.utility.dto.DatiBackground;
 import it.afam.utility.dto.DatiCategoria;
 import it.afam.utility.dto.DatiFile;
 
@@ -11,6 +13,18 @@ import java.util.List;
 
 /** Consultazione del profilo: contenuti pubblici, privati tramite codice, visualizzazione (UC 5.2-5.4). */
 public class VisualizzaProfiloControl {
+
+    /** Dati anagrafici dello studente consultato (UC 5.1). */
+    public EntityStudente caricaProfilo() {
+        return DatabaseManager.getIstanza()
+                .recuperaProfilo(SessioneCorrente.getIstanza().getIdProfiloConsultato());
+    }
+
+    /** Background artistico dello studente consultato, mostrato nel profilo (Tabella 27). */
+    public List<DatiBackground> caricaBackground() {
+        return DatabaseManager.getIstanza()
+                .recuperaBackground(SessioneCorrente.getIstanza().getIdProfiloConsultato());
+    }
 
     public List<DatiCategoria> mostraContenutiPubblici() {
         return DatabaseManager.getIstanza()
@@ -34,6 +48,7 @@ public class VisualizzaProfiloControl {
             return false;
         }
         SchermataContenutiCondivisi.contenuti = DatabaseManager.getIstanza().recuperaFilePerCodice(codice);
+        SchermataContenutiCondivisi.accessoTramiteLink = false; // consultazione interna: "Indietro" disponibile
         return true;
     }
 

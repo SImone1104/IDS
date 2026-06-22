@@ -1,7 +1,0 @@
-target/
-*.db
-.idea/
-*.iml
-.vscode/
-# Credenziali SMTP: NON versionare
-src/main/resources/email.properties

@@ -13,5 +13,6 @@
         <Button text="Login" prefWidth="220" onAction="#cliccaLogin"/>
         <Button text="Registrati" prefWidth="220" onAction="#cliccaRegistrazione"/>
         <Button text="Recupera Password" prefWidth="220" onAction="#cliccaRecuperaPassword"/>
+        <Button text="Ricerca" prefWidth="220" onAction="#cliccaRicerca"/>
     </children>
 </VBox>

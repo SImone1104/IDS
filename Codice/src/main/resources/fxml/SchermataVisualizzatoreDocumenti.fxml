@@ -7,11 +7,12 @@
 
 <VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
       fx:controller="it.afam.consultazione.interfaccia.SchermataVisualizzatoreDocumenti"
-      alignment="CENTER" spacing="10" prefWidth="720" prefHeight="560">
+      alignment="CENTER" spacing="6" prefWidth="720" prefHeight="580">
     <padding><Insets top="15" right="15" bottom="15" left="15"/></padding>
     <children>
-        <Label fx:id="labelInfo" style="-fx-font-weight: bold;"/>
-        <WebView fx:id="visualizzatore" prefHeight="460"/>
+        <Label fx:id="labelTitolo" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <Label fx:id="labelDescrizione" wrapText="true"/>
+        <WebView fx:id="visualizzatore" prefHeight="440"/>
         <Button text="Chiudi Contenuto" onAction="#cliccaChiudi"/>
     </children>
 </VBox>
