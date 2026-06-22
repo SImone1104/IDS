@@ -418,7 +418,7 @@ token\_url & VARCHAR(255) & UNIQUE, NOT NULL & Token del link. \\ \hline
 data\_creazione & DATETIME & NOT NULL & Data di generazione. \\ \hline
 data\_scadenza & DATETIME & NOT NULL & Termine di validita'. \\ \hline
 visualizzato & BOOLEAN & NOT NULL, DEFAULT FALSE & Stato di lettura. \\ \hline
-stato\_link & ENUM & NOT NULL & Attivo o revocato. \\ \hline
+stato\_link & ENUM & NOT NULL & Attivo, revocato o scaduto. \\ \hline
 id\_studente & INT & FK, NOT NULL & Studente creatore. \\ \hline
 \caption{Struttura della tabella Link\_Condivisione}
 \label{tab:struttura_link_condivisione}

@@ -245,7 +245,7 @@ Il sistema governa l'accesso ai contenuti da parte di utenti terzi o della piatt
 \subsubsection{Requisiti Organizzativi}
 \begin{itemize}
     \item \textbf{Requisiti di Sviluppo e Processo:} Il backend logico e i moduli applicativi del sistema devono essere interamente sviluppati e implementati in linguaggio Java.
-    \item \textbf{Requisiti Operativi:} Il sistema gestisce lo stato della sessione memorizzando temporaneamente l'identificativo dell'utente loggato. Al momento del logout o dopo un timeout di inattività di 30 minuti, il sistema cancella tali record volatili ripristinando la visualizzazione anonima.
+    \item \textbf{Requisiti Operativi:} Il sistema gestisce lo stato della sessione memorizzando temporaneamente l'identificativo dell'utente loggato. Al momento del logout, il sistema cancella tali record volatili ripristinando la visualizzazione anonima.
     \item \textbf{Requisiti di Controllo Temporale:} Un modulo interno di batch scheduling si esegue automaticamente ogni giorno alle ore 00:00, effettuando una query sul DBMS per disattivare tutti i link di condivisione esterna che hanno superato il vincolo temporale di 14 giorni.
 \end{itemize}
 
