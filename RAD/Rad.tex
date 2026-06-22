@@ -194,7 +194,7 @@ Il software prevede inoltre funzioni di tracciamento e feedback al fine di aiuta
 
 Di seguito sono illustrate le interfacce che consentono di svolgere le funzionalità principali del software:
 \begin{itemize}
-    \item \textbf{Schermata di Login / Autenticazione:} Interfaccia che permette di effettuare l'accesso sicuro al sistema tramite credenziali locali standard (protette da codice OTP inviato via e-mail) o, in alternativa, tramite i sistemi di identità digitale \textbf{SPID} ed \textbf{eIDAS} previa selezione del proprio Provider dall'apposito menu a tendina. Include anche il form di registrazione e di recupero password.
+    \item \textbf{Schermata di Login / Autenticazione:} Interfaccia principale iniziale che permette di effettuare l'accesso sicuro al sistema tramite credenziali locali standard (protette da codice OTP inviato via e-mail) o, in alternativa, tramite i sistemi di identità digitale \textbf{SPID} ed \textbf{eIDAS} previa selezione del proprio Provider dall'apposito menu a tendina. Include anche il form di registrazione, il recupero password e i controlli di ricerca pubblica degli studenti, utilizzabili senza login.
     \item \textbf{Area Personale (Home AFAM / Dashboard Studente):} Interfaccia principale a cui accede lo studente una volta autenticato. Da qui l'utente può navigare verso la gestione del proprio profilo anagrafico e del background artistico, oppure accedere alla gestione dei contenuti e delle condivisioni.
     \item \textbf{Schermata Gestione Contenuti ed Elenco File:} Interfaccia che permette di visualizzare e creare le Categorie Artistiche e di effettuare l'upload dei file (audio, video, PDF) entro il limite di 1 GB. Tramite menu a tendina contestuali (attivati dal pulsante "+"), consente di modificare, eliminare o regolare lo stato di privacy (Pubblico/Privato) di ciascun asset.
     \item \textbf{Schermata Gestione Condivisione (Link e Codici):} Interfaccia sdoppiata che permette allo studente di selezionare i materiali e generare URL univoci temporizzati per l'esterno (della durata di 14 giorni con indicatore di avvenuta lettura) attingendo da tutti i file caricati, sia pubblici sia privati, oppure codici di sblocco univoci per la condivisione interna di file privati, con relative funzioni di revoca manuale immediata.
@@ -256,9 +256,9 @@ Il sistema governa l'accesso ai contenuti da parte di utenti terzi o della piatt
     \item \textbf{Interoperabilità Extra-Istituzionale:} L'architettura del software supporta l'estensione dei protocolli di comunicazione per consentire lo scambio di dati e la consultazione delle identità digitali in modo federato con sistemi analoghi di altre istituzioni della rete AFAM.
 \end{itemize}
 \subsection{Modelli di Sistema}
-Si premette che nei casi d’uso elencati di seguito, con il termine ``Schermata di Login / Autenticazione'' si fa riferimento alla schermata di accesso principale del software, in cui lo studente può immettere le proprie credenziali locali o selezionare l'autenticazione federata tramite i gateway \textbf{SPID} o \textbf{eIDAS}. Con il termine ``Area Personale'' (o Dashboard Studente) si identifica l'interfaccia principale riservata allo studente autenticato, da cui si diramano i moduli di gestione del profilo, del portfolio e delle condivisioni. 
+Si premette che nei casi d’uso elencati di seguito, con il termine ``Schermata di Login / Autenticazione'' si fa riferimento alla schermata iniziale del software, in cui lo studente può immettere le proprie credenziali locali, registrarsi, recuperare la password o selezionare l'autenticazione federata tramite i gateway \textbf{SPID} o \textbf{eIDAS}. La stessa schermata contiene anche il punto di accesso alla ricerca pubblica degli studenti, disponibile senza autenticazione. Con il termine ``Area Personale'' (o Dashboard Studente) si identifica l'interfaccia principale riservata allo studente autenticato, da cui si diramano i moduli di gestione del profilo, del portfolio e delle condivisioni. 
 
-Con il termine ``Schermata di Ricerca e Consultazione Profilo'' si fa riferimento all'interfaccia globale di localizzazione degli iscritti; tale funzionalità è accessibile sia dall'utente esterno per scopi di valutazione, sia dallo studente stesso per visionare la resa pubblica del proprio portfolio o per ricercare altri utenti all'interno della piattaforma AFAM. Con il termine ``Schermate di Fruizione'' si identificano invece i componenti integrati (Player multimediale e Visualizzatore PDF) dedicati alla riproduzione protetta (anti-download) degli asset documentali e multimediali. Queste schermate sono condivise da tutte le tipologie di attori, consentendo allo studente la verifica dei propri materiali o la consultazione delle opere altrui, e all'utente esterno la sottomissione controllata dei file autorizzati.
+Con il termine ``Schermata di Ricerca e Consultazione Profilo'' si fa riferimento all'interfaccia globale di localizzazione degli iscritti, raggiungibile dalla schermata iniziale di Login / Autenticazione tramite i controlli di ricerca pubblica. Tale funzionalità è accessibile anche senza autenticazione dall'utente che installa o avvia il software, limitandolo alla sola ricerca e consultazione dei profili pubblici, oltre che dallo studente autenticato per visionare la resa pubblica del proprio portfolio o per ricercare altri utenti all'interno della piattaforma AFAM. Con il termine ``Schermate di Fruizione'' si identificano invece i componenti integrati (Player multimediale e Visualizzatore PDF) dedicati alla riproduzione protetta (anti-download) degli asset documentali e multimediali. Queste schermate sono condivise da tutte le tipologie di attori, consentendo allo studente la verifica dei propri materiali o la consultazione delle opere altrui, e all'utente esterno la sottomissione controllata dei file autorizzati.
 
 Inoltre, all'interno di ciascuna interfaccia grafica del sistema, è capillarmente presente un pulsante di ``Annulla'', ``Indietro'' o ``Esci''. Questa scelta progettuale garantisce che l'utilizzatore possa interrompere in qualsiasi momento l'operazione corrente (come il caricamento di un file o la generazione di un codice) e fare ritorno in sicurezza alla schermata immediatamente precedente, ripristinando lo stato di consistenza della navigazione.\spaziocontenuto
 
@@ -281,7 +281,7 @@ All'interno del sistema sono stati individuati sei attori, suddivisi tra figure 
 \multicolumn{1}{|c|}{\cellcolor{unipablue}\color{white}\rule{0pt}{2.7ex}\textbf{ATTORE}} &
 \multicolumn{1}{c|}{\rule{0pt}{2.7ex}\textbf{DESCRIZIONE}} \\
 \hline
-Utente & Attore generico del sistema che rappresenta la classe base per chiunque interagisca con le funzioni pubbliche della piattaforma. Da esso ereditano sia lo Studente che l'Utente Esterno la facoltà di effettuare ricerche globali e fruire degli asset multimediali pubblici. \\ \hline
+Utente & Attore generico del sistema che rappresenta chiunque interagisca con le funzioni pubbliche della piattaforma, anche senza autenticazione dopo aver installato o avviato il software. Può effettuare ricerche globali e consultare i profili e gli asset pubblici, senza accedere alle funzioni riservate allo Studente. \\ \hline
 Studente & Attore autenticato utilizzatore del sistema, appartenente a un'istituzione AFAM. Possiede i massimi privilegi di scrittura e gestione sul proprio spazio, potendo modificare l'anagrafica, caricare file, modularne la privacy e generare o revocare link e codici di sblocco. \\ \hline
 Utente Esterno & Attore non registrato (es. membro di commissione, docente esterno, ente partner) che interagisce con la piattaforma in modalità di sola lettura per consultare i percorsi e i file multimediali degli studenti, previo possesso di un URL valido o di un codice di sblocco. \\ \hline
 Identità Digitale & Attore di sistema esterno che rappresenta il gateway di autenticazione federata nazionale ed europea (\textbf{SPID} ed \textbf{eIDAS}). Fornisce alla piattaforma i payload e i token di identità necessari a validare in sicurezza l'accesso o l'iscrizione degli studenti. \\ \hline
@@ -1423,10 +1423,14 @@ All’interno della suddetta macro-categoria sono presenti i seguenti casi d’u
 Caso d'uso & Cerca Studente \\ \hline
 ID & 5.1 \\ \hline
 Attori & Utente, DBMS \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \hline
+Precondizioni &
+\begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
+    \item Il Sistema ha mostrato a schermo la schermata Home AFAM.
+    \item Il Sistema ha mostrato a schermo la schermata principale.
+\end{enumerate} \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
-    \item L'utente clicca sul pulsante di ricerca.
+    \item L'utente clicca sul pulsante di ricerca .
     \item Il Sistema mostra a schermo la schermata di ricerca.
     \item L'utente digita il nome e il cognome dello studente da cercare.
     \item L'utente clicca sul pulsante ``INVIO''.
@@ -1450,8 +1454,8 @@ Postcondizioni &
     \item Il Sistema ha mostrato la schermata ``Profilo Studente''.
     \item Il Sistema ha mostrato la schermata di ricerca.
 \end{enumerate} \\ \hline
-Requisiti speciali & Nel campo di ricerca sono ammessi solo caratteri alfabetici. \\ \hline
-Nota & La schermata ``Profilo Studente'' contiene sia i dati del profilo sia le informazioni relative al background artistico dello studente selezionato. \\ \hline
+Requisiti speciali & Nel campo di ricerca sono ammessi solo caratteri alfabetici. L'utente non autenticato può eseguire esclusivamente la ricerca e la consultazione dei profili pubblici; tutte le funzioni di gestione, caricamento, modifica e condivisione restano riservate allo studente autenticato. \\ \hline
+Nota & La schermata ``Profilo Studente'' contiene sia i dati del profilo sia le informazioni relative al background artistico dello studente selezionato. Per l'utente non autenticato sono mostrati solo i contenuti pubblici. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Cerca Studente}
 \label{tab:uc_cerca_studente}\\
 \end{longtable}

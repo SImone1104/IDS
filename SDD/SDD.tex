@@ -392,7 +392,7 @@ descrizione & TEXT & NULL & Descrizione breve. \\ \hline
 tipologia & VARCHAR(30) & NOT NULL & Categoria tecnica usata per la navigazione e il filtro dei contenuti (audio, video, immagine, documento). \\ \hline
 formato & VARCHAR(20) & NOT NULL & Formato specifico o estensione del file (ad esempio MP3, MP4, PNG, PDF). \\ \hline
 dimensione & INT & NOT NULL & Dimensione in byte. \\ \hline
-stato\_privacy & ENUM & NOT NULL & Pubblico, privato o non in elenco. \\ \hline
+stato\_privacy & ENUM & NOT NULL & Pubblico o privato. \\ \hline
 percorso\_fisico & VARCHAR(255) & NOT NULL & Percorso di storage. \\ \hline
 id\_categoria & INT & FK, NOT NULL & Categoria associata. \\ \hline
 \caption{Struttura della tabella Contenuto\_File}
