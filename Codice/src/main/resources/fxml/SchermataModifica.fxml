@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.afam.gestioneStudente.interfaccia.SchermataModifica"
+      alignment="CENTER" spacing="12" prefWidth="460" prefHeight="360">
+    <padding><Insets top="25" right="40" bottom="25" left="40"/></padding>
+    <children>
+        <Label text="Modifica File" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+        <TextField fx:id="campoTitolo" promptText="Titolo"/>
+        <TextArea fx:id="campoDescrizione" promptText="Descrizione" prefRowCount="3" wrapText="true"/>
+        <HBox alignment="CENTER" spacing="10">
+            <children>
+                <Button text="Scegli File" onAction="#cliccaScegliFile"/>
+                <Label fx:id="labelFile"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="15">
+            <children>
+                <Button text="Conferma Modifica" onAction="#cliccaConfermaModifica"/>
+                <Button text="Annulla" onAction="#cliccaAnnulla"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>

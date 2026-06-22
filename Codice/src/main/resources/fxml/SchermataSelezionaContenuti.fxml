@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.afam.gestioneCondivisione.interfaccia.SchermataSelezionaContenuti"
+      alignment="CENTER" spacing="12" prefWidth="520" prefHeight="420">
+    <padding><Insets top="25" right="30" bottom="25" left="30"/></padding>
+    <children>
+        <Label text="Seleziona Contenuti" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+        <Label text="Seleziona uno o più file (Ctrl/Shift per selezione multipla)"/>
+        <ListView fx:id="listaContenuti" prefHeight="250"/>
+        <HBox alignment="CENTER" spacing="15">
+            <children>
+                <Button text="Conferma Selezione" onAction="#cliccaConfermaSelezione"/>
+                <Button text="Annulla" onAction="#cliccaAnnulla"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>

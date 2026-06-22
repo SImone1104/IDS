@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.afam.gestioneStudente.interfaccia.SchermataGestionePortfolio"
+      alignment="CENTER" spacing="18" prefWidth="420" prefHeight="280">
+    <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
+    <children>
+        <Label text="Gestione Portfolio" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+        <Button text="Background Artistico" prefWidth="220" onAction="#cliccaBackgroundArtistico"/>
+        <Button text="Indietro" prefWidth="220" onAction="#cliccaIndietro"/>
+    </children>
+</VBox>

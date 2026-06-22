@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.afam.gestioneAutenticazione.interfaccia.SchermataInserimentoCodice"
+      alignment="CENTER" spacing="15" prefWidth="420" prefHeight="280">
+    <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
+    <children>
+        <Label text="Inserisci il codice" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+        <Label text="Inserisci il codice di recupero ricevuto via e-mail"/>
+        <TextField fx:id="codice" promptText="Codice"/>
+        <HBox alignment="CENTER" spacing="15">
+            <children>
+                <Button text="Conferma" onAction="#cliccaConferma"/>
+                <Button text="Richiedi nuovo codice" onAction="#cliccaRichiediNuovoCodice"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>

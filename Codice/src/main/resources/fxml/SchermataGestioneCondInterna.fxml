@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.afam.gestioneCondivisione.interfaccia.SchermataGestioneCondInterna"
+      alignment="CENTER" spacing="16" prefWidth="460" prefHeight="280">
+    <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
+    <children>
+        <Label text="Condivisione Interna (Codice)" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+        <Button text="Seleziona Contenuti Privati" prefWidth="260" onAction="#cliccaSelezionaContenutiPrivati"/>
+        <Button text="Gestisci Codici" prefWidth="260" onAction="#cliccaGestisciCodici"/>
+        <Button text="Indietro" prefWidth="260" onAction="#cliccaIndietro"/>
+    </children>
+</VBox>

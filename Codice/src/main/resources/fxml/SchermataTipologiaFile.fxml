@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.afam.gestioneStudente.interfaccia.SchermataTipologiaFile"
+      alignment="CENTER" spacing="14" prefWidth="420" prefHeight="340">
+    <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
+    <children>
+        <Label text="Scegli Tipologia" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+        <Button text="Immagine" prefWidth="220" onAction="#cliccaImmagini"/>
+        <Button text="Audio" prefWidth="220" onAction="#cliccaAudio"/>
+        <Button text="Video" prefWidth="220" onAction="#cliccaVideo"/>
+        <Button text="Documento" prefWidth="220" onAction="#cliccaDocumenti"/>
+        <Button text="Indietro" prefWidth="220" onAction="#cliccaIndietro"/>
+    </children>
+</VBox>

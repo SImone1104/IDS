@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.afam.gestioneStudente.interfaccia.FormModificaDatiPersonali"
+      alignment="CENTER" spacing="12" prefWidth="440" prefHeight="320">
+    <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
+    <children>
+        <Label text="Modifica Dati Personali" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+        <TextField fx:id="campoEmail" promptText="E-mail"/>
+        <TextField fx:id="campoTelefono" promptText="Telefono"/>
+        <HBox alignment="CENTER" spacing="10">
+            <children>
+                <Button text="Scegli Foto" onAction="#cliccaScegliFoto"/>
+                <Label fx:id="labelFoto" text="(nessuna foto selezionata)"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="15">
+            <children>
+                <Button text="Conferma Modifiche" onAction="#cliccaConfermaModifiche"/>
+                <Button text="Annulla" onAction="#cliccaAnnulla"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>
