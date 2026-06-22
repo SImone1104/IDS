@@ -20,6 +20,10 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{\baselineskip}
 \captionsetup[table]{position=bottom}
+\setlength{\tabcolsep}{4pt}
+\setlength{\arrayrulewidth}{0.35pt}
+\renewcommand{\arraystretch}{1.12}
+\arrayrulecolor{black!60}
 
 \definecolor{lightblue}{RGB}{10,160,255}
 \definecolor{unipablue}{RGB}{0,70,127}
@@ -127,23 +131,23 @@ Questo documento descrive il software in termini di requisiti funzionali e non f
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
 \multicolumn{1}{|c|}{\cellcolor{unipablue}\color{white}\rule{0pt}{2.7ex}\textbf{TERMINE}} &
 \multicolumn{1}{c|}{\rule{0pt}{2.7ex}\textbf{SIGNIFICATO}} \\
 \hline
-Studente & Utilizzatore autenticato del Sistema, appartenente a un'istituzione AFAM, che gestisce il proprio profilo e portfolio artistico. \\ \\ \hline
-Utente Esterno & Soggetto terzo non registrato (es. membro di commissione, ente valutatore) che consulta i materiali autorizzati dallo studente. \\ \\ \hline
-Credenziali locali & Insieme di dati personali necessari allo studente per autenticarsi direttamente sulla piattaforma, composti da e-mail e password. \\ \\ \hline
-Identità Digitale & Insieme di attributi e credenziali digitali che identificano univocamente una persona online e ne consentono l'autenticazione sicura tramite provider esterni, come \textbf{SPID} ed \textbf{eIDAS}. \\ \\ \hline
-Portfolio Artistico & Raccolta digitalizzata e centralizzata della produzione d'ingegno dello studente, comprendente asset multimediali, spartiti e curriculum. \\ \\ \hline
-Categoria Artistica & Raggruppamento logico e categoriale (es. Pianoforte, Danza) creato dallo studente per organizzare i propri file nel sistema. \\ \\ \hline
-Contenuto Pubblico & Stato di privacy di un file che lo rende visibile a chiunque effettui una ricerca standard sulla piattaforma. \\ \\ \hline
-Contenuto Privato & Stato di privacy di un file che lo rende invisibile alla ricerca standard, consultabile tramite codice univoco oppure tramite link temporizzato se selezionato esplicitamente dallo studente. \\ \\ \hline
-Link di Condivisione & URL univoco e temporizzato generato dallo studente per consentire ai valutatori esterni l'accesso ai file selezionati tra tutti i contenuti caricati, sia pubblici sia privati. \\ \\ \hline
-Codice di Sblocco & Token testuale generato dallo studente per abilitare la consultazione protetta di contenuti privati a specifici destinatari interni all'istituzione. \\ \\ \hline
-Ricevuta di Lettura & Indicatore visivo automatizzato che notifica allo studente l'avvenuta apertura e consultazione di un link inviato all'esterno. \\ \\ \hline
-Streaming controllato & Modalità di fruizione inline dei flussi audio/video e dei documenti PDF che inibisce nativamente qualsiasi operazione di download del file fisico. \\ \\ \hline
+Studente & Utilizzatore autenticato del Sistema, appartenente a un'istituzione AFAM, che gestisce il proprio profilo e portfolio artistico. \\ \hline
+Utente Esterno & Soggetto terzo non registrato (es. membro di commissione, ente valutatore) che consulta i materiali autorizzati dallo studente. \\ \hline
+Credenziali locali & Insieme di dati personali necessari allo studente per autenticarsi direttamente sulla piattaforma, composti da e-mail e password. \\ \hline
+Identità Digitale & Insieme di attributi e credenziali digitali che identificano univocamente una persona online e ne consentono l'autenticazione sicura tramite provider esterni, come \textbf{SPID} ed \textbf{eIDAS}. \\ \hline
+Portfolio Artistico & Raccolta digitalizzata e centralizzata della produzione d'ingegno dello studente, comprendente asset multimediali, spartiti e curriculum. \\ \hline
+Categoria Artistica & Raggruppamento logico e categoriale (es. Pianoforte, Danza) creato dallo studente per organizzare i propri file nel sistema. \\ \hline
+Contenuto Pubblico & Stato di privacy di un file che lo rende visibile a chiunque effettui una ricerca standard sulla piattaforma. \\ \hline
+Contenuto Privato & Stato di privacy di un file che lo rende invisibile alla ricerca standard, consultabile tramite codice univoco oppure tramite link temporizzato se selezionato esplicitamente dallo studente. \\ \hline
+Link di Condivisione & URL univoco e temporizzato generato dallo studente per consentire ai valutatori esterni l'accesso ai file selezionati tra tutti i contenuti caricati, sia pubblici sia privati. \\ \hline
+Codice di Sblocco & Token testuale generato dallo studente per abilitare la consultazione protetta di contenuti privati a specifici destinatari interni all'istituzione. \\ \hline
+Ricevuta di Lettura & Indicatore visivo automatizzato che notifica allo studente l'avvenuta apertura e consultazione di un link inviato all'esterno. \\ \hline
+Streaming controllato & Modalità di fruizione inline dei flussi audio/video e dei documenti PDF che inibisce nativamente qualsiasi operazione di download del file fisico. \\ \hline
 \caption{Glossario e Definizioni dei termini del dominio AFAM}
 \label{tab:definizioni_sistema}\\
 \end{longtable}
@@ -155,19 +159,19 @@ Streaming controllato & Modalità di fruizione inline dei flussi audio/video e d
 \small
 \begin{tabular}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
 \multicolumn{1}{|c|}{\cellcolor{unipablue}\color{white}\rule{0pt}{2.7ex}\textbf{ACRONIMO}} &
 \multicolumn{1}{c|}{\rule{0pt}{2.7ex}\textbf{SIGNIFICATO}} \\
 \hline
-AFAM & Alta Formazione Artistica, Musicale e Coreutica. \\ \\ \hline
-DBMS & Database Management System (Sistema per la gestione di basi di dati). \\ \\ \hline
-SPID & Sistema Pubblico di Identità Digitale. \\ \\ \hline
-eIDAS & electronic IDentification Authentication and Signature. \\ \\ \hline
-AgID & Agenzia per l'Italia Digitale. \\ \\ \hline
-OTP / 2FA & One-Time Password / Autenticazione a Due Fattori. \\ \\ \hline
-GUI & Graphical User Interface (Interfaccia Grafica Utente). \\ \\ \hline
-URL & Uniform Resource Locator (Link/Indirizzo Web). \\ \\ \hline
+AFAM & Alta Formazione Artistica, Musicale e Coreutica. \\ \hline
+DBMS & Database Management System (Sistema per la gestione di basi di dati). \\ \hline
+SPID & Sistema Pubblico di Identità Digitale. \\ \hline
+eIDAS & electronic IDentification Authentication and Signature. \\ \hline
+AgID & Agenzia per l'Italia Digitale. \\ \hline
+OTP / 2FA & One-Time Password / Autenticazione a Due Fattori. \\ \hline
+GUI & Graphical User Interface (Interfaccia Grafica Utente). \\ \hline
+URL & Uniform Resource Locator (Link/Indirizzo Web). \\ \hline
 \end{tabular}
 \caption{Acronimi e Abbreviazioni tecniche utilizzate nel documento}
 \label{tab:acronimi_sistema}
@@ -272,17 +276,17 @@ All'interno del sistema sono stati individuati sei attori, suddivisi tra figure 
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
 \multicolumn{1}{|c|}{\cellcolor{unipablue}\color{white}\rule{0pt}{2.7ex}\textbf{ATTORE}} &
 \multicolumn{1}{c|}{\rule{0pt}{2.7ex}\textbf{DESCRIZIONE}} \\
 \hline
-Utente & Attore generico del sistema che rappresenta la classe base per chiunque interagisca con le funzioni pubbliche della piattaforma. Da esso ereditano sia lo Studente che l'Utente Esterno la facoltà di effettuare ricerche globali e fruire degli asset multimediali pubblici. \\ \\ \hline
-Studente & Attore autenticato utilizzatore del sistema, appartenente a un'istituzione AFAM. Possiede i massimi privilegi di scrittura e gestione sul proprio spazio, potendo modificare l'anagrafica, caricare file, modularne la privacy e generare o revocare link e codici di sblocco. \\ \\ \hline
-Utente Esterno & Attore non registrato (es. membro di commissione, docente esterno, ente partner) che interagisce con la piattaforma in modalità di sola lettura per consultare i percorsi e i file multimediali degli studenti, previo possesso di un URL valido o di un codice di sblocco. \\ \\ \hline
-Identità Digitale & Attore di sistema esterno che rappresenta il gateway di autenticazione federata nazionale ed europea (\textbf{SPID} ed \textbf{eIDAS}). Fornisce alla piattaforma i payload e i token di identità necessari a validare in sicurezza l'accesso o l'iscrizione degli studenti. \\ \\ \hline
-DBMS & Attore di sistema che si occupa della persistenza e dell'immagazzinamento sicuro di tutti i dati applicativi, tra cui i record anagrafici, i percorsi fisici dei file multimediali, lo stato di privacy degli asset e i token dei link di condivisione. \\ \\ \hline
-Tempo & Attore di sistema non umano che incorpora lo scorrere del tempo come evento scatenante (trigger). Agisce in modo automatizzato per avviare le procedure batch periodiche, come il controllo quotidiano e la conseguente disattivazione dei link scaduti. \\ \\ \hline
+Utente & Attore generico del sistema che rappresenta la classe base per chiunque interagisca con le funzioni pubbliche della piattaforma. Da esso ereditano sia lo Studente che l'Utente Esterno la facoltà di effettuare ricerche globali e fruire degli asset multimediali pubblici. \\ \hline
+Studente & Attore autenticato utilizzatore del sistema, appartenente a un'istituzione AFAM. Possiede i massimi privilegi di scrittura e gestione sul proprio spazio, potendo modificare l'anagrafica, caricare file, modularne la privacy e generare o revocare link e codici di sblocco. \\ \hline
+Utente Esterno & Attore non registrato (es. membro di commissione, docente esterno, ente partner) che interagisce con la piattaforma in modalità di sola lettura per consultare i percorsi e i file multimediali degli studenti, previo possesso di un URL valido o di un codice di sblocco. \\ \hline
+Identità Digitale & Attore di sistema esterno che rappresenta il gateway di autenticazione federata nazionale ed europea (\textbf{SPID} ed \textbf{eIDAS}). Fornisce alla piattaforma i payload e i token di identità necessari a validare in sicurezza l'accesso o l'iscrizione degli studenti. \\ \hline
+DBMS & Attore di sistema che si occupa della persistenza e dell'immagazzinamento sicuro di tutti i dati applicativi, tra cui i record anagrafici, i percorsi fisici dei file multimediali, lo stato di privacy degli asset e i token dei link di condivisione. \\ \hline
+Tempo & Attore di sistema non umano che incorpora lo scorrere del tempo come evento scatenante (trigger). Agisce in modo automatizzato per avviare le procedure batch periodiche, come il controllo quotidiano e la conseguente disattivazione dei link scaduti. \\ \hline
 \caption{Mappatura e descrizione degli Attori del sistema AFAM}
 \label{tab:descrizione_attori}\\
 \end{longtable}
@@ -310,15 +314,15 @@ Le funzionalità principali del sistema vengono riassunte e formalizzate nella s
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{4.1cm}|
->{\raggedright\arraybackslash}p{9.5cm}|}
+>{\raggedright\arraybackslash}p{10.4cm}|}
 \hline
-Gestione autenticazione & Gestisce tutte le procedure relative all'accesso al sistema. Permette allo studente di registrarsi alla piattaforma creando un nuovo account e di effettuare l'accesso alla propria area personale. L'autenticazione può avvenire tramite credenziali standard (email e password) oppure tramite i servizi di identità digitale (SPID o eIDAS). Infine, sono previste le funzionalità per il recupero della password e per la disconnessione sicura dal sistema. \\ \\ \hline
-Gestione profilo & Gestisce le funzionalità di consultazione e aggiornamento delle informazioni personali e curriculari dell'utente. Nello specifico, permette allo studente di inserire e modificare i propri dati personali e di arricchire il proprio profilo aggiungendo o aggiornando il proprio background artistico (percorso di studi, collaborazioni ed esperienze pregresse). \\ \\ \hline
-Gestione contenuti & Permette allo studente di gestire integralmente la propria area artistica: dalla creazione di specifiche categorie di interesse, all'upload di nuovi file (suddivisi per strumenti, tracce audio, file video, immagini, PDF). Inoltre, permette la modifica o l'eliminazione dei materiali precedentemente caricati e la configurazione della privacy per ogni singolo contenuto. \\ \\ \hline
-Gestione condivisione tramite link & Permette allo studente di selezionare specifici contenuti, precedentemente caricati, e di generare link per la diffusione del materiale a utenti o commissioni esterne all'istituzione AFAM. Inoltre, permette una gestione completa delle condivisioni attive, consentendo allo studente di visualizzare l'elenco dei link generati, monitorarne la data e l'ora di scadenza automatica e la possibilità di revocare il link prima del termine previsto. \\ \\ \hline
-Consulta profilo studente & Permette la ricerca e la consultazione dei profili degli studenti registrati alla piattaforma AFAM. Consente all'utente (Studente o utente esterno) di cercare uno specifico profilo. L'accesso ai materiali è regolato in modo differenziato: è consentita la libera visualizzazione dei contenuti pubblici, mentre la visualizzazione dei contenuti privati avviene nell'apposita sezione a seguito dell'inserimento di un codice. \\ \\ \hline
-Gestione condivisione interna & Permette allo studente di condividere specifici contenuti privati con altri utenti, senza la necessità di generare un link. La condivisione avviene tramite la generazione di un codice univoco: l'utente destinatario, inserendo tale codice nell'apposita area, otterrà l'accesso alla visualizzazione dei contenuti privati selezionati dallo studente. Questa modalità non prevede alcuna verifica di riscontro della visualizzazione. È prevista inoltre la funzionalità che permette allo studente di monitorare lo storico dei codici creati e di revocarne la validità in qualsiasi momento. \\ \\ \hline
-Visualizza contenuto tramite link & Gestisce l'accesso da parte di soggetti terzi non registrati alla piattaforma. Consente all'utente esterno di accedere a un'area dedicata per visualizzare esclusivamente i contenuti multimediali selezionati e condivisi da uno studente AFAM. Il modulo garantisce un accesso tracciato aggiornando lo stato di visualizzazione per fornire il feedback allo studente. \\ \\ \hline
+Gestione autenticazione & Gestisce tutte le procedure relative all'accesso al sistema. Permette allo studente di registrarsi alla piattaforma creando un nuovo account e di effettuare l'accesso alla propria area personale. L'autenticazione può avvenire tramite credenziali standard (email e password) oppure tramite i servizi di identità digitale (SPID o eIDAS). Infine, sono previste le funzionalità per il recupero della password e per la disconnessione sicura dal sistema. \\ \hline
+Gestione profilo & Gestisce le funzionalità di consultazione e aggiornamento delle informazioni personali e curriculari dell'utente. Nello specifico, permette allo studente di inserire e modificare i propri dati personali e di arricchire il proprio profilo aggiungendo o aggiornando il proprio background artistico (percorso di studi, collaborazioni ed esperienze pregresse). \\ \hline
+Gestione contenuti & Permette allo studente di gestire integralmente la propria area artistica: dalla creazione di specifiche categorie di interesse, all'upload di nuovi file (suddivisi per strumenti, tracce audio, file video, immagini, PDF). Inoltre, permette la modifica o l'eliminazione dei materiali precedentemente caricati e la configurazione della privacy per ogni singolo contenuto. \\ \hline
+Gestione condivisione tramite link & Permette allo studente di selezionare specifici contenuti, precedentemente caricati, e di generare link per la diffusione del materiale a utenti o commissioni esterne all'istituzione AFAM. Inoltre, permette una gestione completa delle condivisioni attive, consentendo allo studente di visualizzare l'elenco dei link generati, monitorarne la data e l'ora di scadenza automatica e la possibilità di revocare il link prima del termine previsto. \\ \hline
+Consulta profilo studente & Permette la ricerca e la consultazione dei profili degli studenti registrati alla piattaforma AFAM. Consente all'utente (Studente o utente esterno) di cercare uno specifico profilo. L'accesso ai materiali è regolato in modo differenziato: è consentita la libera visualizzazione dei contenuti pubblici, mentre la visualizzazione dei contenuti privati avviene nell'apposita sezione a seguito dell'inserimento di un codice. \\ \hline
+Gestione condivisione interna & Permette allo studente di condividere specifici contenuti privati con altri utenti, senza la necessità di generare un link. La condivisione avviene tramite la generazione di un codice univoco: l'utente destinatario, inserendo tale codice nell'apposita area, otterrà l'accesso alla visualizzazione dei contenuti privati selezionati dallo studente. Questa modalità non prevede alcuna verifica di riscontro della visualizzazione. È prevista inoltre la funzionalità che permette allo studente di monitorare lo storico dei codici creati e di revocarne la validità in qualsiasi momento. \\ \hline
+Visualizza contenuto tramite link & Gestisce l'accesso da parte di soggetti terzi non registrati alla piattaforma. Consente all'utente esterno di accedere a un'area dedicata per visualizzare esclusivamente i contenuti multimediali selezionati e condivisi da uno studente AFAM. Il modulo garantisce un accesso tracciato aggiornando lo stato di visualizzazione per fornire il feedback allo studente. \\ \hline
 \caption{Mappatura e descrizione dei Macro Casi d'Uso}
 \label{tab:macro_casi_uso}\\
 \end{longtable}
@@ -332,12 +336,12 @@ Il seguente caso d'uso descrive la gestione delle anomalie di rete o di sistema 
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-\textbf{Caso d’uso} & Errore comunicazione DBMS \\ \\ \hline
-\textbf{ID} & 0.1 \\ \\ \hline
-\textbf{Attori} & Utente (iniziatore), DBMS (partecipante) \\ \\ \hline
-\textbf{Precondizioni} & Il sistema rileva l'impossibilità di stabilire o mantenere una connessione attiva con il database, oppure riceve un codice d'errore fatale durante una query. \\ \\ \hline
+\textbf{Caso d’uso} & Errore comunicazione DBMS \\ \hline
+\textbf{ID} & 0.1 \\ \hline
+\textbf{Attori} & Utente (iniziatore), DBMS (partecipante) \\ \hline
+\textbf{Precondizioni} & Il sistema rileva l'impossibilità di stabilire o mantenere una connessione attiva con il database, oppure riceve un codice d'errore fatale durante una query. \\ \hline
 \textbf{Flusso degli eventi} &
 \begin{enumerate}
     \item L'Utente esegue un'operazione che richiede l'accesso in lettura o scrittura sul DBMS.
@@ -345,7 +349,7 @@ Il seguente caso d'uso descrive la gestione delle anomalie di rete o di sistema 
     \item Il Sistema mostra a video un messaggio di errore: ``Errore di comunicazione con il database'' e mette a disposizione i pulsanti ``Riprova'' e ``Annulla''.
     \item L'Utente seleziona il pulsante ``Annulla''.
     \item Il Sistema mostra a video la ``Schermata Principale''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \textbf{Flussi Alternativi} &
 \textbf{2a. Tentativo di riconnessione (Riprova):}
 \begin{itemize}
@@ -353,8 +357,8 @@ Il seguente caso d'uso descrive la gestione delle anomalie di rete o di sistema 
     \item[2.] Il Sistema effettua un nuovo tentativo di esecuzione della query sul DBMS.
     \item[3.] Se il tentativo ha esito positivo, la finestra di errore si chiude e il sistema riprende il normale flusso del caso d'uso originario dal quale era stato interrotto.
     \item[4.] Se il tentativo fallisce nuovamente, il sistema ritorna al punto 3 del flusso principale.
-\end{itemize} \\ \\ \hline
-\textbf{Postcondizioni} & Il Sistema ha mostrato a video la ``Schermata Principale''. \\ \\ \hline
+\end{itemize} \\ \hline
+\textbf{Postcondizioni} & Il Sistema ha mostrato a video la ``Schermata Principale''. \\ \hline
 \caption{Caso d'Uso : Caduta di connessione}
 \label{tab:uc_errore_dbms}\\
 \end{longtable}
@@ -388,12 +392,12 @@ Questo caso d'uso descrive la procedura di autenticazione a due fattori (2FA) es
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-\textbf{Caso d’uso} & Login \\ \\ \hline
-\textbf{ID} & 1.1 \\ \\ \hline
-\textbf{Attori} & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-\textbf{Precondizioni} & Il sistema ha mostrato a schermo la schermata principale. \\ \\ \hline
+\textbf{Caso d’uso} & Login \\ \hline
+\textbf{ID} & 1.1 \\ \hline
+\textbf{Attori} & Studente (iniziatore), DBMS (partecipante) \\ \hline
+\textbf{Precondizioni} & Il sistema ha mostrato a schermo la schermata principale. \\ \hline
 \textbf{Flusso degli eventi} &
 \begin{enumerate}
     \item Lo studente clicca sul pulsante ``Login''.
@@ -431,17 +435,17 @@ Questo caso d'uso descrive la procedura di autenticazione a due fattori (2FA) es
             \item[6.6.1.] Il Sistema richiede al DBMS i dati relativi all’Account.
             \item[6.6.2.] Il Sistema mostra a video la schermata ``Home AFAM''.
         \end{itemize}
-\end{itemize} \\ \\ \hline
+\end{itemize} \\ \hline
 \textbf{Postcondizioni} &
 \begin{enumerate}
     \item Il Sistema ha mostrato la schermata ``Home AFAM''.
     \item Il Sistema ha mostrato a video la schermata di login.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \textbf{Requisiti speciali} &
 \begin{itemize}
     \item L'e-mail deve contenere una ``@'' e almeno un ``.''.
     \item La password deve contenere da un minimo di 8 a un massimo di 16 caratteri.
-\end{itemize} \\ \\ \hline
+\end{itemize} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Login}
 \label{tab:uc_login}\\
 \end{longtable}
@@ -455,12 +459,12 @@ Questo caso d'uso descrive la procedura di autenticazione federata eseguita dall
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Login tramite SPID/eIDAS \\ \\ \hline
-ID & 1.2 \\ \\ \hline
-Attori & Studente (iniziatore), AgID e DBMS (partecipanti) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata principale. \\ \\ \hline
+Caso d’uso & Login tramite SPID/eIDAS \\ \hline
+ID & 1.2 \\ \hline
+Attori & Studente (iniziatore), AgID e DBMS (partecipanti) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata principale. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca sul pulsante ``Login''.
@@ -501,12 +505,12 @@ Flusso degli eventi &
             \item[11.3.2.] Il Sistema mostra a video la schermata ``Home AFAM''.
         \end{itemize}
     \end{itemize}
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}
     \item Il Sistema ha mostrato la schermata ``Home AFAM''.
     \item Il Sistema ha mostrato a video la schermata di login.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Login tramite SPID/eIDAS}
 \label{tab:uc_login_spid_eidas}\\
 \end{longtable}
@@ -520,12 +524,12 @@ Questo caso d'uso descrive la procedura con cui lo studente crea e attiva un nuo
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Registrazione \\ \\ \hline
-ID & 1.3 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata principale. \\ \\ \hline
+Caso d’uso & Registrazione \\ \hline
+ID & 1.3 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata principale. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca sul pulsante ``Registrati''.
@@ -584,12 +588,12 @@ Flusso degli eventi &
         \item[12.3.] Lo studente clicca sul pulsante ``OK'' per chiuderlo.
         \item[12.4.] Il Sistema mostra a video la schermata di ``Login''.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}
     \item Il Sistema ha mostrato a video la schermata di login.
     \item Il Sistema ha mostrato a video la schermata per la registrazione.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Requisiti speciali &
 \begin{itemize}
     \item Il nome deve essere diverso dal cognome.
@@ -598,7 +602,7 @@ Requisiti speciali &
     \item Il codice fiscale deve contenere 16 caratteri.
     \item L'e-mail deve contenere una ``@'' e almeno un ``.''.
     \item La password deve contenere da un minimo di 8 a un massimo di 16 caratteri, almeno una lettera maiuscola e almeno un numero.
-\end{itemize} \\ \\ \hline
+\end{itemize} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Registrazione}
 \label{tab:uc_registrazione}\\
 \end{longtable}
@@ -612,12 +616,12 @@ Questo caso d'uso descrive la procedura con cui lo studente recupera l'accesso a
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Recupera password \\ \\ \hline
-ID & 1.4 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata principale. \\ \\ \hline
+Caso d’uso & Recupera password \\ \hline
+ID & 1.4 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata principale. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca sul pulsante ``Recupera password''.
@@ -662,17 +666,17 @@ Flusso degli eventi &
         \item[12.4.] Il Sistema aggiorna nel DBMS la password dello studente.
         \item[12.5.] Il Sistema mostra la schermata di login.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}
     \item Il Sistema ha mostrato la schermata di login.
     \item Il Sistema ha mostrato il form per il recupero della password.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Requisiti speciali &
 \begin{itemize}
     \item L'e-mail deve contenere una ``@'' e almeno un ``.''.
     \item La password deve contenere da un minimo di 8 a un massimo di 16 caratteri, almeno una lettera maiuscola e almeno un numero.
-\end{itemize} \\ \\ \hline
+\end{itemize} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Recupera password}
 \label{tab:uc_recupera_password}\\
 \end{longtable}
@@ -686,12 +690,12 @@ Questo caso d'uso descrive la procedura con cui lo studente termina la sessione 
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Logout \\ \\ \hline
-ID & 1.5 \\ \\ \hline
-Attori & Studente (iniziatore) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``Home AFAM''. \\ \\ \hline
+Caso d’uso & Logout \\ \hline
+ID & 1.5 \\ \hline
+Attori & Studente (iniziatore) \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``Home AFAM''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca sul pulsante ``Logout''.
@@ -699,8 +703,8 @@ Flusso degli eventi &
     \item Lo studente clicca sul pulsante ``Conferma''.
     \item Il Sistema interrompe la sessione attiva e cancella i dati dell'utente memorizzati temporaneamente.
     \item Il Sistema mostra a schermo la schermata principale.
-\end{enumerate} \\ \\ \hline
-Postcondizioni & \hspace*{1.5em}Il Sistema ha mostrato a video la schermata principale. \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & \hspace*{1.5em}Il Sistema ha mostrato a video la schermata principale. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Logout}
 \label{tab:uc_logout}\\
 \end{longtable}
@@ -733,12 +737,12 @@ Questo caso d'uso descrive la procedura con cui lo studente consulta e modifica 
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Modifica Dati Personali \\ \\ \hline
-ID & 2.1 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \\ \hline
+Caso d’uso & Modifica Dati Personali \\ \hline
+ID & 2.1 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Lo studente clicca sul pulsante ``Gestione Profilo''.
@@ -759,18 +763,18 @@ Flusso degli eventi &
     \item Il Sistema mostra a video il messaggio di conferma: ``Modifiche effettuate correttamente''.
     \item Lo studente clicca sul pulsante ``OK'' per chiudere il messaggio.
     \item Il Sistema mostra nuovamente la schermata ``Dati Personali'', aggiornata con i nuovi valori.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il Sistema ha mostrato la schermata ``Dati Personali''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Requisiti speciali &
 \begin{itemize}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item La nuova e-mail deve contenere una ``@'' e almeno un ``.''.
     \item Il numero di telefono deve contenere esclusivamente caratteri numerici.
     \item Il numero di telefono deve contenere esattamente 10 caratteri.
     \item La foto deve avere formato PNG o JPG.
-\end{itemize} \\ \\ \hline
+\end{itemize} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Modifica Dati Personali}
 \label{tab:uc_modifica_dati_personali}\\
 \end{longtable}
@@ -786,7 +790,7 @@ Questo caso d'uso descrive la procedura con cui lo studente modifica un'informaz
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
 Caso d’uso & Modifica Background Artistico \\ \hline
 ID & 2.2 \\ \hline
@@ -825,12 +829,12 @@ Questo caso d'uso descrive la procedura con cui lo studente aggiunge nuove infor
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Aggiungi Background Artistico \\ \\ \hline
-ID & 2.3 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \\ \hline
+Caso d’uso & Aggiungi Background Artistico \\ \hline
+ID & 2.3 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Lo studente clicca sul pulsante ``Gestione Profilo''.
@@ -851,15 +855,15 @@ Flusso degli eventi &
     \item Il Sistema mostra a video il messaggio di conferma: ``Aggiunto nuovo background''.
     \item Lo studente clicca sul pulsante ``OK'' per chiudere il messaggio.
     \item Il Sistema mostra nuovamente la schermata ``BackgroundArtistico'', aggiornata con i nuovi valori.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il Sistema ha mostrato la schermata ``BackgroundArtistico''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Requisiti speciali &
 \begin{itemize}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item I campi di testo per l'inserimento della scuola o università frequentata, delle collaborazioni fatte, delle collaborazioni con autori e delle partecipazioni devono avere una lunghezza massima di 700 caratteri.
-\end{itemize} \\ \\ \hline
+\end{itemize} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Aggiungi Background Artistico}
 \label{tab:uc_aggiungi_background_artistico}\\
 \end{longtable}
@@ -873,12 +877,12 @@ Questo caso d'uso descrive la procedura con cui lo studente elimina un'informazi
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Elimina Background Artistico \\ \\ \hline
-ID & 2.4 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``BackgroundArtistico'' e ha recuperato i dati dello studente. \\ \\ \hline
+Caso d’uso & Elimina Background Artistico \\ \hline
+ID & 2.4 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``BackgroundArtistico'' e ha recuperato i dati dello studente. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca sul pulsante ``Elimina Dati'' relativo all'informazione.
@@ -887,11 +891,11 @@ Flusso degli eventi &
     \item Il Sistema invia i nuovi dati aggiornati al DBMS per la sovrascrittura permanente sul database.
     \item Il Sistema aggiorna i dati dello studente in memoria.
     \item Il Sistema mostra nuovamente la schermata ``BackgroundArtistico'', aggiornata con i nuovi valori.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}
     \item Il Sistema ha mostrato la schermata ``BackgroundArtistico''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Elimina Background Artistico}
 \label{tab:uc_elimina_background_artistico}\\
 \end{longtable}
@@ -929,12 +933,12 @@ Questo caso d'uso descrive la procedura con cui lo studente seleziona una catego
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Seleziona Categoria Artistica \\ \\ \hline
-ID & 3.1 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \\ \hline
+Caso d’uso & Seleziona Categoria Artistica \\ \hline
+ID & 3.1 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca sul pulsante ``Gestione Contenuti''.
@@ -943,11 +947,11 @@ Flusso degli eventi &
     \item Il Sistema mostra a video la schermata ``Gestione Contenuti'', elencando le Categorie Artistiche esistenti e il pulsante ``Crea Nuova Categoria Artistica''.
     \item Lo studente clicca sulla Categoria Artistica desiderata.
     \item Il Sistema mostra a video la schermata ``Scelta Tipologia File'' relativa a quella categoria.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}
     \item Il Sistema ha mostrato a schermo la schermata per la scelta della tipologia dei file.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Seleziona Categoria Artistica}
 \label{tab:uc_seleziona_categoria_artistica}\\
 \end{longtable}
@@ -961,12 +965,12 @@ Questo caso d'uso descrive la procedura con cui lo studente crea una nuova categ
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Crea Categoria Artistica \\ \\ \hline
-ID & 3.2 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \\ \hline
+Caso d’uso & Crea Categoria Artistica \\ \hline
+ID & 3.2 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Lo studente clicca sul pulsante ``Gestione Contenuti''.
@@ -980,16 +984,16 @@ Flusso degli eventi &
     \item Il Sistema mostra a video il messaggio di conferma ``Categoria Artistica creata con successo''.
     \item Lo studente clicca sul pulsante ``OK'' per chiudere il messaggio.
     \item Il Sistema mostra a video la schermata ``Scelta Tipologia File'' relativa alla categoria appena creata.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il Sistema ha mostrato a schermo la schermata per la scelta della tipologia dei file.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Requisiti speciali &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il campo dove inserire il nome della categoria artistica non può essere vuoto.
     \item Il nome della categoria artistica deve essere univoco.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Crea Categoria Artistica}
 \label{tab:uc_crea_categoria_artistica}\\
 \end{longtable}
@@ -1003,22 +1007,22 @@ Questo caso d'uso descrive la procedura con cui lo studente seleziona una tipolo
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Seleziona Tipologia File \\ \\ \hline
-ID & 3.3 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata per la scelta della tipologia dei file. \\ \\ \hline
+Caso d’uso & Seleziona Tipologia File \\ \hline
+ID & 3.3 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata per la scelta della tipologia dei file. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente seleziona la tipologia di file di interesse cliccando sul relativo pulsante.
     \item Il Sistema interroga il DBMS per recuperare i dati relativi ai file appartenenti alla tipologia selezionata.
     \item Il Sistema mostra a video la schermata contenente l'elenco dei file disponibili per la tipologia scelta.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}
     \item Il Sistema ha mostrato a schermo la schermata contenente i file.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Seleziona Tipologia File}
 \label{tab:uc_seleziona_tipologia_file}\\
 \end{longtable}
@@ -1032,12 +1036,12 @@ Questo caso d'uso descrive la procedura con cui lo studente carica un nuovo file
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Upload File \\ \\ \hline
-ID & 3.4 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \\ \hline
+Caso d’uso & Upload File \\ \hline
+ID & 3.4 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Lo studente clicca sul pulsante ``UPLOAD''.
@@ -1064,15 +1068,15 @@ Flusso degli eventi &
         \item[8.4.] Lo studente clicca su ``OK''.
         \item[8.5.] Il Sistema mostra la schermata contenente i file.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
-Postcondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \hline
 Requisiti speciali &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il campo di testo per il titolo non può essere vuoto.
     \item Il campo di testo per il titolo può contenere al massimo 200 caratteri.
     \item I file caricati non devono superare 1 GB di dimensione.
     \item I file caricati devono avere formato idoneo alla categoria selezionata (es. MP4 per i video, PNG per le immagini, MP3 per i file audio).
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Upload File}
 \label{tab:uc_upload_file}\\
 \end{longtable}
@@ -1086,12 +1090,12 @@ Questo caso d'uso descrive la procedura con cui lo studente elimina un file dall
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Elimina File \\ \\ \hline
-ID & 3.5 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \\ \hline
+Caso d’uso & Elimina File \\ \hline
+ID & 3.5 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca su ``+'' accanto al file di interesse.
@@ -1104,8 +1108,8 @@ Flusso degli eventi &
     \item Il Sistema mostra a schermo il messaggio ``File eliminato correttamente''.
     \item Lo studente clicca sul pulsante ``OK''.
     \item Il Sistema mostra a schermo la schermata contenente i file.
-\end{enumerate} \\ \\ \hline
-Postcondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Elimina File}
 \label{tab:uc_elimina_file}\\
 \end{longtable}
@@ -1119,12 +1123,12 @@ Questo caso d'uso descrive la procedura con cui lo studente modifica un file gi�
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Modifica File \\ \\ \hline
-ID & 3.6 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \\ \hline
+Caso d’uso & Modifica File \\ \hline
+ID & 3.6 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca su ``+'' accanto al file di interesse.
@@ -1138,8 +1142,8 @@ Flusso degli eventi &
     \item Il Sistema mostra a video il messaggio di conferma: ``Modifica effettuata correttamente''.
     \item Lo studente clicca sul pulsante ``OK''.
     \item Il Sistema mostra a schermo la schermata contenente i file.
-\end{enumerate} \\ \\ \hline
-Postcondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Modifica File}
 \label{tab:uc_modifica_file}\\
 \end{longtable}
@@ -1153,12 +1157,12 @@ Questo caso d'uso descrive la procedura con cui lo studente modifica le impostaz
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Gestisci Privacy Contenuti \\ \\ \hline
-ID & 3.7 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \\ \hline
+Caso d’uso & Gestisci Privacy Contenuti \\ \hline
+ID & 3.7 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca su ``+'' accanto al file di interesse.
@@ -1172,8 +1176,8 @@ Flusso degli eventi &
     \item Il Sistema mostra a video il messaggio di conferma: ``Impostazioni di privacy aggiornate correttamente''.
     \item Lo studente clicca sul pulsante ``OK'' per chiudere il messaggio.
     \item Il Sistema mostra a video la schermata contenente i file.
-\end{enumerate} \\ \\ \hline
-Postcondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & Il Sistema ha mostrato a schermo la schermata contenente i file. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Gestisci Privacy Contenuti}
 \label{tab:uc_gestisci_privacy_contenuti}\\
 \end{longtable}
@@ -1207,12 +1211,12 @@ Questo caso d'uso descrive la procedura con cui lo studente seleziona i contenut
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Selezione Contenuti \\ \\ \hline
-ID & 4.1 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``Home AFAM''. \\ \\ \hline
+Caso d’uso & Selezione Contenuti \\ \hline
+ID & 4.1 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``Home AFAM''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Lo studente clicca sulla sezione ``Gestione condivisione tramite link''.
@@ -1233,12 +1237,12 @@ Flusso degli eventi &
         \item[7.3.] Lo studente clicca sul pulsante ``Conferma Selezione Finale''.
         \item[7.4.] Il Sistema mostra a video la schermata ``Generazione Link''.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il Sistema ha mostrato a video la schermata ``Generazione Link''.
     \item Il Sistema ha mostrato la schermata ``Gestione Condivisione tramite Link''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Note &
 \begin{minipage}[t]{\linewidth}
 I contenuti selezionabili per il link comprendono tutti i file caricati dallo studente, indipendentemente dallo stato di privacy pubblico o privato, e sono organizzati secondo una struttura gerarchica a due livelli:
@@ -1246,7 +1250,7 @@ I contenuti selezionabili per il link comprendono tutti i file caricati dallo st
     \item \textbf{Livello primario:} raggruppamento per Argomento Artistico.
     \item \textbf{Livello secondario:} suddivisione per Tipologia di File.
 \end{enumerate}
-\end{minipage} \\ \\ \hline
+\end{minipage} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Selezione Contenuti}
 \label{tab:uc_selezione_contenuti_link}\\
 \end{longtable}
@@ -1260,12 +1264,12 @@ Questo caso d'uso descrive la procedura con cui lo studente genera un link univo
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Genera Link \\ \\ \hline
-ID & 4.2 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``Generazione Link''. \\ \\ \hline
+Caso d’uso & Genera Link \\ \hline
+ID & 4.2 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``Generazione Link''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca sul pulsante ``Genera Link''.
@@ -1276,11 +1280,11 @@ Flusso degli eventi &
     \item Il Sistema copia il link generato nel dispositivo dello studente.
     \item Lo studente clicca sul pulsante ``OK'' per chiudere il messaggio di conferma.
     \item Il Sistema mostra a video la schermata ``Gestione Condivisione tramite Link''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}
     \item Il Sistema ha mostrato a video la schermata ``Gestione Condivisione tramite Link''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Genera Link}
 \label{tab:uc_genera_link}\\
 \end{longtable}
@@ -1294,12 +1298,12 @@ Questo caso d'uso descrive la procedura con cui lo studente consulta l'elenco de
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Visualizza Elenco Link \\ \\ \hline
-ID & 4.3 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``Gestione Condivisione Link''. \\ \\ \hline
+Caso d’uso & Visualizza Elenco Link \\ \hline
+ID & 4.3 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``Gestione Condivisione Link''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Lo studente clicca sulla sezione ``Gestisci link''.
@@ -1315,12 +1319,12 @@ Flusso degli eventi &
     \begin{itemize}[topsep=0.15em,itemsep=0.1em,parsep=0pt,partopsep=0pt]
         \item[5.1.] Il Sistema mostra a video la schermata ``Elenco Link'', contenente l'elenco dei link con un indicatore di avvenuta visualizzazione (es. spunta) e il pulsante ``Revoca''.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il Sistema ha mostrato a schermo la schermata ``Elenco Link''.
     \item Il Sistema ha mostrato a video la schermata ``Gestione Condivisione Link''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Visualizza Elenco Link}
 \label{tab:uc_visualizza_elenco_link}\\
 \end{longtable}
@@ -1334,12 +1338,12 @@ Questo caso d'uso descrive la procedura con cui lo studente revoca un link speci
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Revoca Link \\ \\ \hline
-ID & 4.4 \\ \\ \hline
-Attori & Studente (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``Elenco Link''. \\ \\ \hline
+Caso d’uso & Revoca Link \\ \hline
+ID & 4.4 \\ \hline
+Attori & Studente (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``Elenco Link''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Lo studente clicca sul pulsante ``Revoca'' in corrispondenza di un link specifico.
@@ -1347,11 +1351,11 @@ Flusso degli eventi &
     \item Lo studente clicca su ``Conferma''.
     \item Il Sistema invia la richiesta di revoca al DBMS per aggiornare lo stato del link.
     \item Il Sistema mostra nuovamente la schermata ``Elenco Link''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}
     \item Il Sistema ha mostrato a schermo la schermata ``Elenco Link''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Revoca Link}
 \label{tab:uc_revoca_link}\\
 \end{longtable}
@@ -1365,12 +1369,12 @@ Questo caso d'uso descrive il controllo automatico della validità temporale dei
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d’uso & Verifica Validità Link \\ \\ \hline
-ID & 4.5 \\ \\ \hline
-Attori & Tempo (iniziatore), DBMS (partecipante) \\ \\ \hline
-Precondizioni & \mbox{} \\ \\ \hline
+Caso d’uso & Verifica Validità Link \\ \hline
+ID & 4.5 \\ \hline
+Attori & Tempo (iniziatore), DBMS (partecipante) \\ \hline
+Precondizioni & \mbox{} \\ \hline
 Flusso degli eventi &
 \begin{enumerate}
     \item Il Tempo interroga il Sistema sulla data odierna.
@@ -1382,8 +1386,8 @@ Flusso degli eventi &
             \item[2.2.1.] Il Sistema aggiorna il DBMS rendendo il link disattivato.
         \end{itemize}
     \end{itemize}
-\end{enumerate} \\ \\ \hline
-Postcondizioni & \mbox{} \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & \mbox{} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Verifica Validità Link}
 \label{tab:uc_verifica_validita_link}\\
 \end{longtable}
@@ -1414,12 +1418,12 @@ All’interno della suddetta macro-categoria sono presenti i seguenti casi d’u
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d'uso & Cerca Studente \\ \\ \hline
-ID & 5.1 \\ \\ \hline
-Attori & Utente, DBMS \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \\ \hline
+Caso d'uso & Cerca Studente \\ \hline
+ID & 5.1 \\ \hline
+Attori & Utente, DBMS \\ \hline
+Precondizioni & Il Sistema ha mostrato a schermo la schermata ``Home AFAM''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item L'utente clicca sul pulsante di ricerca.
@@ -1440,14 +1444,14 @@ Flusso degli eventi &
         \item[7.2.] L'utente clicca sul pulsante ``OK''.
         \item[7.3.] Il Sistema mostra nuovamente la schermata di ricerca.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il Sistema ha mostrato la schermata ``Profilo Studente''.
     \item Il Sistema ha mostrato la schermata di ricerca.
-\end{enumerate} \\ \\ \hline
-Requisiti speciali & Nel campo di ricerca sono ammessi solo caratteri alfabetici. \\ \\ \hline
-Nota & La schermata ``Profilo Studente'' contiene sia i dati del profilo sia le informazioni relative al background artistico dello studente selezionato. \\ \\ \hline
+\end{enumerate} \\ \hline
+Requisiti speciali & Nel campo di ricerca sono ammessi solo caratteri alfabetici. \\ \hline
+Nota & La schermata ``Profilo Studente'' contiene sia i dati del profilo sia le informazioni relative al background artistico dello studente selezionato. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Cerca Studente}
 \label{tab:uc_cerca_studente}\\
 \end{longtable}
@@ -1459,12 +1463,12 @@ Nota & La schermata ``Profilo Studente'' contiene sia i dati del profilo sia le 
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d'uso & Mostra Contenuti Pubblici \\ \\ \hline
-ID & 5.2 \\ \\ \hline
-Attori & Utente, DBMS \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato la schermata ``Profilo Studente''. \\ \\ \hline
+Caso d'uso & Mostra Contenuti Pubblici \\ \hline
+ID & 5.2 \\ \hline
+Attori & Utente, DBMS \\ \hline
+Precondizioni & Il Sistema ha mostrato la schermata ``Profilo Studente''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item L'utente clicca sul pulsante ``Mostra Contenuti Pubblici''.
@@ -1476,8 +1480,8 @@ Flusso degli eventi &
     \item L'utente clicca sulla tipologia desiderata.
     \item Il Sistema interroga il DBMS per recuperare l'elenco dei file caricati per la tipologia selezionata.
     \item Il Sistema mostra la schermata ``Elenco File'' con i risultati.
-\end{enumerate} \\ \\ \hline
-Postcondizioni & Il Sistema ha mostrato la schermata ``Elenco File''. \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & Il Sistema ha mostrato la schermata ``Elenco File''. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Mostra Contenuti Pubblici}
 \label{tab:uc_mostra_contenuti_pubblici}\\
 \end{longtable}
@@ -1489,12 +1493,12 @@ Postcondizioni & Il Sistema ha mostrato la schermata ``Elenco File''. \\ \\ \hli
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d'uso & Mostra Contenuti Privati \\ \\ \hline
-ID & 5.3 \\ \\ \hline
-Attori & Utente, DBMS \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato la schermata "Profilo Studente". \\ \\ \hline
+Caso d'uso & Mostra Contenuti Privati \\ \hline
+ID & 5.3 \\ \hline
+Attori & Utente, DBMS \\ \hline
+Precondizioni & Il Sistema ha mostrato la schermata "Profilo Studente". \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item L'utente clicca sul pulsante ``Visualizza Contenuti Privati''.
@@ -1514,12 +1518,12 @@ Flusso degli eventi &
         \item[7.2.] Il Sistema interroga il DBMS per recuperare l'elenco dei file privati.
         \item[7.3.] Il Sistema mostra la schermata ``Elenco File'' con i risultati.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il Sistema ha mostrato la schermata ``Elenco File''.
     \item Il Sistema ha mostrato la schermata ``Profilo Studente''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Mostra Contenuti Privati}
 \label{tab:uc_mostra_contenuti_privati}\\
 \end{longtable}
@@ -1531,12 +1535,12 @@ Postcondizioni &
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d'uso & Visualizza Contenuto \\ \\ \hline
-ID & 5.4 \\ \\ \hline
-Attori & Utente, DBMS \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato la schermata ``Elenco File'' con i risultati. \\ \\ \hline
+Caso d'uso & Visualizza Contenuto \\ \hline
+ID & 5.4 \\ \hline
+Attori & Utente, DBMS \\ \hline
+Precondizioni & Il Sistema ha mostrato la schermata ``Elenco File'' con i risultati. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item L'utente clicca sul file che desidera visualizzare.
@@ -1554,8 +1558,8 @@ Flusso degli eventi &
         \item[5.2.] L'utente clicca sul pulsante ``Chiudi Contenuto''.
         \item[5.3.] Il Sistema mostra nuovamente la schermata ``Elenco File''.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
-Postcondizioni & Il Sistema ha mostrato la schermata ``Elenco File''. \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & Il Sistema ha mostrato la schermata ``Elenco File''. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Visualizza Contenuto}
 \label{tab:uc_visualizza_contenuto}\\
 \end{longtable}
@@ -1585,13 +1589,13 @@ All’interno della suddetta macro-categoria sono presenti i seguenti casi d’u
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Note & Caso particolare. Questo caso d'uso rappresenta un sistema esterno che manda un messaggio al Sistema per trasmettere il link condiviso; per questo si suppone che non ci sia un attore iniziatore. \\ \\ \hline
-Caso d'uso & Mostra Contenuti Tramite Link \\ \\ \hline
-ID & 6.1 \\ \\ \hline
-Attori & DBMS \\ \\ \hline
-Precondizioni & \mbox{} \\ \\ \hline
+Note & Caso particolare. Questo caso d'uso rappresenta un sistema esterno che manda un messaggio al Sistema per trasmettere il link condiviso; per questo si suppone che non ci sia un attore iniziatore. \\ \hline
+Caso d'uso & Mostra Contenuti Tramite Link \\ \hline
+ID & 6.1 \\ \hline
+Attori & DBMS \\ \hline
+Precondizioni & \mbox{} \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il Sistema riceve una richiesta di accesso tramite un link condiviso (\textit{found message}).
@@ -1603,8 +1607,8 @@ Flusso degli eventi &
         \item[4.2.] Il Sistema aggiorna lo stato del link nel DBMS per segnalare l'avvenuta visualizzazione.
         \item[4.3.] Il Sistema mostra a video la schermata ``Contenuti Condivisi'', visualizzando l'elenco dei file con i relativi titoli e descrizioni.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
-Postcondizioni & Il Sistema ha mostrato la schermata ``Contenuti Condivisi''. \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & Il Sistema ha mostrato la schermata ``Contenuti Condivisi''. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Mostra Contenuti Tramite Link}
 \label{tab:uc_mostra_contenuti_tramite_link}\\
 \end{longtable}
@@ -1616,12 +1620,12 @@ Postcondizioni & Il Sistema ha mostrato la schermata ``Contenuti Condivisi''. \\
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d'uso & Apri Contenuto Tramite Link \\ \\ \hline
-ID & 6.2 \\ \\ \hline
-Attori & Utente esterno, DBMS \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato la schermata ``Contenuti Condivisi''. \\ \\ \hline
+Caso d'uso & Apri Contenuto Tramite Link \\ \hline
+ID & 6.2 \\ \hline
+Attori & Utente esterno, DBMS \\ \hline
+Precondizioni & Il Sistema ha mostrato la schermata ``Contenuti Condivisi''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item L'utente clicca su uno specifico file di interesse dall'elenco.
@@ -1639,8 +1643,8 @@ Flusso degli eventi &
         \item[5.2.] L'utente clicca sul pulsante ``Chiudi Contenuto''.
         \item[5.3.] Il Sistema mostra la schermata ``Contenuti Condivisi''.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
-Postcondizioni & Il Sistema ha mostrato la schermata ``Contenuti Condivisi''. \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & Il Sistema ha mostrato la schermata ``Contenuti Condivisi''. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Apri Contenuto Tramite Link}
 \label{tab:uc_apri_contenuto_tramite_link}\\
 \end{longtable}
@@ -1672,12 +1676,12 @@ All’interno della suddetta macro-categoria sono presenti i seguenti casi d’u
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d'uso & Selezione Contenuti Privati \\ \\ \hline
-ID & 7.1 \\ \\ \hline
-Attori & Studente, DBMS \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``Home AFAM''. \\ \\ \hline
+Caso d'uso & Selezione Contenuti Privati \\ \hline
+ID & 7.1 \\ \hline
+Attori & Studente, DBMS \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``Home AFAM''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Lo studente clicca sulla sezione ``Gestione Condivisione Interna''.
@@ -1698,12 +1702,12 @@ Flusso degli eventi &
         \item[7.3.] Lo studente clicca sul pulsante ``Conferma Selezione Finale''.
         \item[7.4.] Il Sistema mostra a video la schermata ``Generazione Codice''.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il Sistema ha mostrato a video la schermata ``Generazione Codice''.
     \item Il Sistema ha mostrato la schermata ``Gestione Condivisione Interna''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Selezione Contenuti Privati}
 \label{tab:uc_selezione_contenuti_privati}\\
 \end{longtable}
@@ -1715,12 +1719,12 @@ Postcondizioni &
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d'uso & Genera Codice \\ \\ \hline
-ID & 7.2 \\ \\ \hline
-Attori & Studente, DBMS \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``Generazione Codice''. \\ \\ \hline
+Caso d'uso & Genera Codice \\ \hline
+ID & 7.2 \\ \hline
+Attori & Studente, DBMS \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``Generazione Codice''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Lo studente clicca sul pulsante ``Genera Codice''.
@@ -1731,8 +1735,8 @@ Flusso degli eventi &
     \item Il Sistema copia il codice generato nel dispositivo dello studente.
     \item Lo studente clicca sul pulsante ``OK'' per chiudere il messaggio di conferma.
     \item Il Sistema mostra a video la schermata ``Gestione Condivisione Interna''.
-\end{enumerate} \\ \\ \hline
-Postcondizioni & Il Sistema ha mostrato a video la schermata ``Gestione Condivisione Interna''. \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & Il Sistema ha mostrato a video la schermata ``Gestione Condivisione Interna''. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Genera Codice}
 \label{tab:uc_genera_codice}\\
 \end{longtable}
@@ -1744,12 +1748,12 @@ Postcondizioni & Il Sistema ha mostrato a video la schermata ``Gestione Condivis
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d'uso & Visualizza Elenco Codici \\ \\ \hline
-ID & 7.3 \\ \\ \hline
-Attori & Studente, DBMS \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``Gestione Condivisione Interna''. \\ \\ \hline
+Caso d'uso & Visualizza Elenco Codici \\ \hline
+ID & 7.3 \\ \hline
+Attori & Studente, DBMS \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``Gestione Condivisione Interna''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Lo studente clicca sulla sezione ``Gestisci Codici''.
@@ -1765,12 +1769,12 @@ Flusso degli eventi &
     \begin{itemize}[topsep=0.15em,itemsep=0.1em,parsep=0pt,partopsep=0pt]
         \item[5.1.] Il Sistema mostra a video la schermata ``Elenco Codici'', contenente l'elenco dei codici e il pulsante ``Revoca''.
     \end{itemize}
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 Postcondizioni &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Il Sistema ha mostrato a schermo la schermata ``Elenco Codici''.
     \item Il Sistema ha mostrato a video la schermata ``Gestione Condivisione Interna''.
-\end{enumerate} \\ \\ \hline
+\end{enumerate} \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Visualizza Elenco Codici}
 \label{tab:uc_visualizza_elenco_codici}\\
 \end{longtable}
@@ -1782,12 +1786,12 @@ Postcondizioni &
 \small
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{3.4cm}|
->{\raggedright\arraybackslash}p{10.2cm}|}
+>{\raggedright\arraybackslash}p{11.1cm}|}
 \hline
-Caso d'uso & Revoca Codice \\ \\ \hline
-ID & 7.4 \\ \\ \hline
-Attori & Studente, DBMS \\ \\ \hline
-Precondizioni & Il Sistema ha mostrato a video la schermata ``Elenco Codici''. \\ \\ \hline
+Caso d'uso & Revoca Codice \\ \hline
+ID & 7.4 \\ \hline
+Attori & Studente, DBMS \\ \hline
+Precondizioni & Il Sistema ha mostrato a video la schermata ``Elenco Codici''. \\ \hline
 Flusso degli eventi &
 \begin{enumerate}[topsep=0.2em,itemsep=0.15em,parsep=0pt,partopsep=0pt]
     \item Lo studente clicca sul pulsante ``Revoca'' in corrispondenza di un codice specifico.
@@ -1795,8 +1799,8 @@ Flusso degli eventi &
     \item Lo studente clicca sul pulsante ``Conferma''.
     \item Il Sistema invia la richiesta di revoca al DBMS per aggiornare lo stato del codice.
     \item Il Sistema mostra nuovamente la schermata ``Elenco Codici''.
-\end{enumerate} \\ \\ \hline
-Postcondizioni & Il Sistema ha mostrato a schermo la schermata ``Elenco Codici''. \\ \\ \hline
+\end{enumerate} \\ \hline
+Postcondizioni & Il Sistema ha mostrato a schermo la schermata ``Elenco Codici''. \\ \hline
 \caption{Scheda di dettaglio del Caso d'Uso Revoca Codice}
 \label{tab:uc_revoca_codice}\\
 \end{longtable}
@@ -1811,7 +1815,7 @@ Ci serviamo dell'euristica di Abbot per identificare gli oggetti del sistema dis
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{5.1cm}|
->{\raggedright\arraybackslash}p{8.5cm}|}
+>{\raggedright\arraybackslash}p{9.4cm}|}
 \hline
 \multicolumn{1}{|c|}{\cellcolor{unipablue}\color{white}\rule{0pt}{2.7ex}\textbf{OGGETTI ENTITY}} &
 \multicolumn{1}{c|}{\rule{0pt}{2.7ex}\textbf{DESCRIZIONE}} \\
@@ -1827,7 +1831,7 @@ Entity\allowbreak{}Studente & Entity che permette di salvare i dati dello studen
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{5.1cm}|
->{\raggedright\arraybackslash}p{8.5cm}|}
+>{\raggedright\arraybackslash}p{9.4cm}|}
 \hline
 \multicolumn{1}{|c|}{\cellcolor{unipablue}\color{white}\rule{0pt}{2.7ex}\textbf{OGGETTI BOUNDARY}} &
 \multicolumn{1}{c|}{\rule{0pt}{2.7ex}\textbf{DESCRIZIONE}} \\
@@ -1892,7 +1896,7 @@ Boundary\allowbreak{}DBMS & Rappresenta l'interfaccia di comunicazione tra il Si
 \footnotesize
 \begin{longtable}{|
 >{\columncolor{unipablue}\color{white}\bfseries\raggedright\arraybackslash}p{5.1cm}|
->{\raggedright\arraybackslash}p{8.5cm}|}
+>{\raggedright\arraybackslash}p{9.4cm}|}
 \hline
 \multicolumn{1}{|c|}{\cellcolor{unipablue}\color{white}\rule{0pt}{2.7ex}\textbf{OGGETTI CONTROL}} &
 \multicolumn{1}{c|}{\rule{0pt}{2.7ex}\textbf{DESCRIZIONE}} \\

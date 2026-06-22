@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.13)  20 JUN 2026 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.13)  22 JUN 2026 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -423,8 +423,8 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@count@id=\count312
 \enitdp@description=\count313
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 33.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 72
+Package hyperref Info: Option `colorlinks' set `true' on input line 37.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 76
 .
 (C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -436,26 +436,26 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (Rad.aux)
 \openout1 = `Rad.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Info: Redefining \it@ocap on input line 72.
-LaTeX Info: Redefining \it@ccap on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Info: Redefining \it@ocap on input line 76.
+LaTeX Info: Redefining \it@ccap on input line 76.
 
 (C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
@@ -516,7 +516,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 72.
+Package hyperref Info: Link coloring ON on input line 76.
 (Rad.out) (Rad.out)
 \@outlinefile=\write3
 \openout3 = `Rad.out'.
@@ -526,12 +526,12 @@ Package caption Info: End \AtBeginDocument code.
 <logo-unipa.png, id=511, 963.6pt x 963.6pt>
 File: logo-unipa.png Graphic file (type png)
 <use logo-unipa.png>
-Package pdftex.def Info: logo-unipa.png  used on input line 80.
+Package pdftex.def Info: logo-unipa.png  used on input line 84.
 (pdftex.def)             Requested size: 113.81102pt x 113.80379pt.
 <pdf/logoIDS-transparent.png, id=513, 2390.9325pt x 1798.72pt>
 File: pdf/logoIDS-transparent.png Graphic file (type png)
 <use pdf/logoIDS-transparent.png>
-Package pdftex.def Info: pdf/logoIDS-transparent.png  used on input line 94.
+Package pdftex.def Info: pdf/logoIDS-transparent.png  used on input line 98.
 (pdftex.def)             Requested size: 227.62206pt x 171.23697pt.
  [1
 
@@ -576,31 +576,33 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [7]
 ignored error: Infinite glue shrinkage found in box being split [8]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 156.
+(Font)              <10.95> on input line 160.
  [9]
-[10]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-93.
- (C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+97.
+
+(C:\Users\Simone\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-[11{C:/Users/Simone/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc
-}] [12] [13] [14{C:/Users/Simone/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
-lm/lm-rm.enc}{C:/Users/Simone/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/
-lm-mathit.enc}] [15]
-<pdf/VistaAttori.pdf, id=722, 544.0325pt x 394.47375pt>
+) [10{C:/Users/Simone/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.e
+nc}]
+[11] [12] [13] [14{C:/Users/Simone/AppData/Local/Programs/MiKTeX/fonts/enc/dvip
+s/lm/lm-rm.enc}{C:/Users/Simone/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
+m/lm-mathit.enc}]
+<pdf/VistaAttori.pdf, id=718, 544.0325pt x 394.47375pt>
 File: pdf/VistaAttori.pdf Graphic file (type pdf)
 <use pdf/VistaAttori.pdf>
-Package pdftex.def Info: pdf/VistaAttori.pdf  used on input line 265.
+Package pdftex.def Info: pdf/VistaAttori.pdf  used on input line 269.
 (pdftex.def)             Requested size: 455.26582pt x 330.10971pt.
- [16 <./pdf/VistaAttori.pdf>] [17]
+ [15]
+ignored error: Infinite glue shrinkage found in box being split [16 <./pdf/Vist
+aAttori.pdf>] [17]
 
 pdfTeX warning: pdflatex.exe (file ./pdf/Vistad'insieme-crop.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
 <pdf/Vistad'insieme-crop.pdf, id=739, 537.00626pt x 547.04375pt>
 File: pdf/Vistad'insieme-crop.pdf Graphic file (type pdf)
 <use pdf/Vistad'insieme-crop.pdf>
-Package pdftex.def Info: pdf/Vistad'insieme-crop.pdf  used on input line 299.
+Package pdftex.def Info: pdf/Vistad'insieme-crop.pdf  used on input line 303.
 (pdftex.def)             Requested size: 455.24475pt x 463.75398pt.
 [18 <./pdf/Vistad'insieme-crop.pdf>]
 ignored error: Infinite glue shrinkage found in box being split [19] [20]
@@ -615,659 +617,656 @@ File: pdf/GestioneAutenticazione/GestioneAutenticazione.pdf Graphic file (type
 pdf)
 <use pdf/GestioneAutenticazione/GestioneAutenticazione.pdf>
 Package pdftex.def Info: pdf/GestioneAutenticazione/GestioneAutenticazione.pdf 
- used on input line 377.
+ used on input line 381.
 (pdftex.def)             Requested size: 455.23962pt x 394.1709pt.
 [22 <./pdf/GestioneAutenticazione/GestioneAutenticazione.pdf>]
 ignored error: Infinite glue shrinkage found in box being split [23] [24]
 ignored error: Infinite glue shrinkage found in box being split [25] [26]
-ignored error: Infinite glue shrinkage found in box being split [27]
-ignored error: Infinite glue shrinkage found in box being split [28] [29]
-ignored error: Infinite glue shrinkage found in box being split [30] [31]
-[32]
+ignored error: Infinite glue shrinkage found in box being split [27] [28]
+ignored error: Infinite glue shrinkage found in box being split [29] [30]
+[31]
 
 pdfTeX warning: pdflatex.exe (file ./pdf/GestioneProfilo/Gestione profilo.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<pdf/GestioneProfilo/Gestione profilo.pdf, id=903, 435.54718pt x 349.305pt>
+<pdf/GestioneProfilo/Gestione profilo.pdf, id=899, 435.54718pt x 349.305pt>
 File: pdf/GestioneProfilo/Gestione profilo.pdf Graphic file (type pdf)
 <use pdf/GestioneProfilo/Gestione profilo.pdf>
 Package pdftex.def Info: pdf/GestioneProfilo/Gestione profilo.pdf  used on inpu
-t line 723.
+t line 727.
 (pdftex.def)             Requested size: 455.25784pt x 365.1128pt.
-[33 <./pdf/GestioneProfilo/Gestione profilo.pdf>] [34] [35] [36] [37]
+[32 <./pdf/GestioneProfilo/Gestione profilo.pdf>] [33] [34] [35] [36]
 
 pdfTeX warning: pdflatex.exe (file ./pdf/GestioneContenuti/GestioneContenuti.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<pdf/GestioneContenuti/GestioneContenuti.pdf, id=991, 478.66827pt x 507.81718pt
+<pdf/GestioneContenuti/GestioneContenuti.pdf, id=986, 478.66827pt x 507.81718pt
 >
 File: pdf/GestioneContenuti/GestioneContenuti.pdf Graphic file (type pdf)
 <use pdf/GestioneContenuti/GestioneContenuti.pdf>
 Package pdftex.def Info: pdf/GestioneContenuti/GestioneContenuti.pdf  used on i
-nput line 918.
+nput line 922.
 (pdftex.def)             Requested size: 384.22061pt x 407.61806pt.
-[38 <./pdf/GestioneContenuti/GestioneContenuti.pdf>] [39] [40] [41] [42]
-[43] [44] [45]
+[37 <./pdf/GestioneContenuti/GestioneContenuti.pdf>] [38] [39] [40] [41]
+[42] [43] [44]
 
 pdfTeX warning: pdflatex.exe (file ./pdf/GestioneCondLink/Gestcondivisioneconli
 nk.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<pdf/GestioneCondLink/Gestcondivisioneconlink.pdf, id=1116, 551.1792pt x 427.59
+<pdf/GestioneCondLink/Gestcondivisioneconlink.pdf, id=1112, 551.1792pt x 427.59
 75pt>
 File: pdf/GestioneCondLink/Gestcondivisioneconlink.pdf Graphic file (type pdf)
 <use pdf/GestioneCondLink/Gestcondivisioneconlink.pdf>
 Package pdftex.def Info: pdf/GestioneCondLink/Gestcondivisioneconlink.pdf  used
- on input line 1196.
+ on input line 1200.
 (pdftex.def)             Requested size: 455.2583pt x 353.18333pt.
-[46 <./pdf/GestioneCondLink/Gestcondivisioneconlink.pdf>]
-ignored error: Infinite glue shrinkage found in box being split [47] [48]
-[49] [50] [51] [52]
+[45 <./pdf/GestioneCondLink/Gestcondivisioneconlink.pdf>] [46] [47] [48]
+[49] [50]
 
 pdfTeX warning: pdflatex.exe (file ./pdf/ConsultaProfStudente/Consultaprofilost
 udente.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
-<pdf/ConsultaProfStudente/Consultaprofilostudente.pdf, id=1201, 528.05281pt x 3
+<pdf/ConsultaProfStudente/Consultaprofilostudente.pdf, id=1193, 528.05281pt x 3
 85.44pt>
 File: pdf/ConsultaProfStudente/Consultaprofilostudente.pdf Graphic file (type p
 df)
 <use pdf/ConsultaProfStudente/Consultaprofilostudente.pdf>
 Package pdftex.def Info: pdf/ConsultaProfStudente/Consultaprofilostudente.pdf  
-used on input line 1405.
+used on input line 1409.
 (pdftex.def)             Requested size: 455.26073pt x 332.30708pt.
-[53 <./pdf/ConsultaProfStudente/Consultaprofilostudente.pdf>] [54] [55]
-[56] [57]
+[51 <./pdf/ConsultaProfStudente/Consultaprofilostudente.pdf>] [52] [53]
+[54] [55]
 
 pdfTeX warning: pdflatex.exe (file ./pdf/VisualizzaContenutoTramiteLink/Visuali
 zza contenuto con link.drawio.pdf): PDF inclusion: found PDF version <1.7>, but
  at most version <1.5> allowed
 <pdf/VisualizzaContenutoTramiteLink/Visualizza contenuto con link.drawio.pdf, i
-d=1274, 490.71327pt x 363.27718pt>
+d=1266, 490.71327pt x 363.27718pt>
 File: pdf/VisualizzaContenutoTramiteLink/Visualizza contenuto con link.drawio.p
 df Graphic file (type pdf)
 <use pdf/VisualizzaContenutoTramiteLink/Visualizza contenuto con link.drawio.pd
 f>
 Package pdftex.def Info: pdf/VisualizzaContenutoTramiteLink/Visualizza contenut
-o con link.drawio.pdf  used on input line 1576.
+o con link.drawio.pdf  used on input line 1580.
 (pdftex.def)             Requested size: 455.26543pt x 337.03499pt.
-[58 <./pdf/VisualizzaContenutoTramiteLink/Visualizza contenuto con link.drawio.
-pdf>] [59] [60]
+[56 <./pdf/VisualizzaContenutoTramiteLink/Visualizza contenuto con link.drawio.
+pdf>] [57] [58]
 
 pdfTeX warning: pdflatex.exe (file ./pdf/GestioneCondivisioneInterna/VistaD'ins
 iemeProgetto-2-Gest cond interna.drawio.pdf): PDF inclusion: found PDF version 
 <1.7>, but at most version <1.5> allowed
 <pdf/GestioneCondivisioneInterna/VistaD'insiemeProgetto-2-Gest cond interna.dra
-wio.pdf, id=1308, 435.54718pt x 417.47968pt>
+wio.pdf, id=1300, 435.54718pt x 417.47968pt>
 File: pdf/GestioneCondivisioneInterna/VistaD'insiemeProgetto-2-Gest cond intern
 a.drawio.pdf Graphic file (type pdf)
 <use pdf/GestioneCondivisioneInterna/VistaD'insiemeProgetto-2-Gest cond interna
 .drawio.pdf>
 Package pdftex.def Info: pdf/GestioneCondivisioneInterna/VistaD'insiemeProgetto
--2-Gest cond interna.drawio.pdf  used on input line 1663.
+-2-Gest cond interna.drawio.pdf  used on input line 1667.
 (pdftex.def)             Requested size: 455.25784pt x 436.37271pt.
-[61 <./pdf/GestioneCondivisioneInterna/VistaD'insiemeProgetto-2-Gest cond inter
-na.drawio.pdf>] [62] [63] [64] [65]
-ignored error: Infinite glue shrinkage found in box being split [66]
-ignored error: Infinite glue shrinkage found in box being split [67]
-ignored error: Infinite glue shrinkage found in box being split [68] [69]
-[70]
-<pdf/sequence/Gestione autenticazione/Login.pdf, id=1397, 1632.0975pt x 3782.88
+[59 <./pdf/GestioneCondivisioneInterna/VistaD'insiemeProgetto-2-Gest cond inter
+na.drawio.pdf>] [60] [61] [62] [63]
+ignored error: Infinite glue shrinkage found in box being split [64]
+ignored error: Infinite glue shrinkage found in box being split [65]
+ignored error: Infinite glue shrinkage found in box being split [66] [67]
+[68]
+<pdf/sequence/Gestione autenticazione/Login.pdf, id=1389, 1632.0975pt x 3782.88
 281pt>
 File: pdf/sequence/Gestione autenticazione/Login.pdf Graphic file (type pdf)
 <use pdf/sequence/Gestione autenticazione/Login.pdf>
 Package pdftex.def Info: pdf/sequence/Gestione autenticazione/Login.pdf  used o
-n input line 1928.
+n input line 1932.
 (pdftex.def)             Requested size: 248.61433pt x 576.23943pt.
- [71 <./pdf/sequence/Gestione autenticazione/Login.pdf>]
-<pdf/sequence/Gestione autenticazione/Login tramite SPID_eIDAS.pdf, id=2593, 22
+ [69 <./pdf/sequence/Gestione autenticazione/Login.pdf>]
+<pdf/sequence/Gestione autenticazione/Login tramite SPID_eIDAS.pdf, id=2585, 22
 07.24625pt x 3234.0825pt>
 File: pdf/sequence/Gestione autenticazione/Login tramite SPID_eIDAS.pdf Graphic
  file (type pdf)
 <use pdf/sequence/Gestione autenticazione/Login tramite SPID_eIDAS.pdf>
 Package pdftex.def Info: pdf/sequence/Gestione autenticazione/Login tramite SPI
-D_eIDAS.pdf  used on input line 1936.
+D_eIDAS.pdf  used on input line 1940.
 (pdftex.def)             Requested size: 393.31296pt x 576.28667pt.
 
-Underfull \hbox (badness 1728) in paragraph at lines 1937--1937
+Underfull \hbox (badness 1728) in paragraph at lines 1941--1941
 []\T1/lmr/m/n/12 Figura 11: |Dia-gram-ma di se-quen-za - Ge-stio-ne Au-ten-ti-c
 a-zio-ne - Lo-gin tra-mi-te
  []
 
-[72 <./pdf/sequence/Gestione autenticazione/Login tramite SPID_eIDAS.pdf>]
-<pdf/sequence/Gestione autenticazione/Registrazione.pdf, id=3669, 2050.66125pt 
+[70 <./pdf/sequence/Gestione autenticazione/Login tramite SPID_eIDAS.pdf>]
+<pdf/sequence/Gestione autenticazione/Registrazione.pdf, id=3661, 2050.66125pt 
 x 4087.77188pt>
 File: pdf/sequence/Gestione autenticazione/Registrazione.pdf Graphic file (type
  pdf)
 <use pdf/sequence/Gestione autenticazione/Registrazione.pdf>
 Package pdftex.def Info: pdf/sequence/Gestione autenticazione/Registrazione.pdf
-  used on input line 1944.
+  used on input line 1948.
 (pdftex.def)             Requested size: 289.09322pt x 576.27612pt.
 
-[73 <./pdf/sequence/Gestione autenticazione/Registrazione.pdf>]
-<pdf/sequence/Gestione autenticazione/RecuperaPassword.pdf, id=4992, 2098.84125
+[71 <./pdf/sequence/Gestione autenticazione/Registrazione.pdf>]
+<pdf/sequence/Gestione autenticazione/RecuperaPassword.pdf, id=4983, 2098.84125
 pt x 3728.68031pt>
 File: pdf/sequence/Gestione autenticazione/RecuperaPassword.pdf Graphic file (t
 ype pdf)
 <use pdf/sequence/Gestione autenticazione/RecuperaPassword.pdf>
 Package pdftex.def Info: pdf/sequence/Gestione autenticazione/RecuperaPassword.
-pdf  used on input line 1952.
+pdf  used on input line 1956.
 (pdftex.def)             Requested size: 324.38829pt x 576.28954pt.
- [74 <./pdf/sequence/Gestione autenticazione/RecuperaPassword.pdf>]
-<pdf/sequence/Gestione autenticazione/Logout.pdf, id=6119, 831.105pt x 816.0487
+ [72 <./pdf/sequence/Gestione autenticazione/RecuperaPassword.pdf>]
+<pdf/sequence/Gestione autenticazione/Logout.pdf, id=6110, 831.105pt x 816.0487
 5pt>
 File: pdf/sequence/Gestione autenticazione/Logout.pdf Graphic file (type pdf)
 <use pdf/sequence/Gestione autenticazione/Logout.pdf>
 Package pdftex.def Info: pdf/sequence/Gestione autenticazione/Logout.pdf  used 
-on input line 1960.
+on input line 1964.
 (pdftex.def)             Requested size: 455.24496pt x 446.99777pt.
- [75 <./pdf/sequence/Gestione autenticazione/Logout.pdf>]
-<pdf/sequence/GESTIONE PROFILO/ModificaDatiPersonali.pdf, id=6469, 1190.94937pt
+ [73 <./pdf/sequence/Gestione autenticazione/Logout.pdf>]
+<pdf/sequence/GESTIONE PROFILO/ModificaDatiPersonali.pdf, id=6461, 1190.94937pt
  x 1811.26688pt>
 File: pdf/sequence/GESTIONE PROFILO/ModificaDatiPersonali.pdf Graphic file (typ
 e pdf)
 <use pdf/sequence/GESTIONE PROFILO/ModificaDatiPersonali.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE PROFILO/ModificaDatiPersonali.pd
-f  used on input line 1968.
+f  used on input line 1972.
 (pdftex.def)             Requested size: 378.91272pt x 576.27309pt.
- [76 <./pdf/sequence/GESTIONE PROFILO/ModificaDatiPersonali.pdf>]
-<pdf/sequence/GESTIONE PROFILO/ModificaBackgroundArtistico.pdf, id=7182, 1424.3
+ [74 <./pdf/sequence/GESTIONE PROFILO/ModificaDatiPersonali.pdf>]
+<pdf/sequence/GESTIONE PROFILO/ModificaBackgroundArtistico.pdf, id=7174, 1424.3
 2124pt x 1407.75937pt>
 File: pdf/sequence/GESTIONE PROFILO/ModificaBackgroundArtistico.pdf Graphic fil
 e (type pdf)
 <use pdf/sequence/GESTIONE PROFILO/ModificaBackgroundArtistico.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE PROFILO/ModificaBackgroundArtist
-ico.pdf  used on input line 1976.
+ico.pdf  used on input line 1980.
 (pdftex.def)             Requested size: 455.22705pt x 449.9337pt.
- [77 <./pdf/sequence/GESTIONE PROFILO/ModificaBackgroundArtistico.pdf>]
-<pdf/sequence/GESTIONE PROFILO/Aggiungi Background Artistico.pdf, id=7610, 1591
+ [75 <./pdf/sequence/GESTIONE PROFILO/ModificaBackgroundArtistico.pdf>]
+<pdf/sequence/GESTIONE PROFILO/Aggiungi Background Artistico.pdf, id=7602, 1591
 .44562pt x 1812.7725pt>
 File: pdf/sequence/GESTIONE PROFILO/Aggiungi Background Artistico.pdf Graphic f
 ile (type pdf)
 <use pdf/sequence/GESTIONE PROFILO/Aggiungi Background Artistico.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE PROFILO/Aggiungi Background Arti
-stico.pdf  used on input line 1984.
+stico.pdf  used on input line 1988.
 (pdftex.def)             Requested size: 455.24228pt x 518.55412pt.
- [78 <./pdf/sequence/GESTIONE PROFILO/Aggiungi Background Artistico.pdf>]
-<pdf/sequence/GESTIONE PROFILO/Elimina Background Artistico.pdf, id=8323, 1431.
+ [76 <./pdf/sequence/GESTIONE PROFILO/Aggiungi Background Artistico.pdf>]
+<pdf/sequence/GESTIONE PROFILO/Elimina Background Artistico.pdf, id=8315, 1431.
 84938pt x 1132.23pt>
 File: pdf/sequence/GESTIONE PROFILO/Elimina Background Artistico.pdf Graphic fi
 le (type pdf)
 <use pdf/sequence/GESTIONE PROFILO/Elimina Background Artistico.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE PROFILO/Elimina Background Artis
-tico.pdf  used on input line 1992.
+tico.pdf  used on input line 1996.
 (pdftex.def)             Requested size: 455.2298pt x 359.9714pt.
- [79 <./pdf/sequence/GESTIONE PROFILO/Elimina Background Artistico.pdf>]
-<pdf/sequence/GESTIONE CONTENUTI/Seleziona Categoria Artistica.pdf, id=8692, 11
+ [77 <./pdf/sequence/GESTIONE PROFILO/Elimina Background Artistico.pdf>]
+<pdf/sequence/GESTIONE CONTENUTI/Seleziona Categoria Artistica.pdf, id=8683, 11
 14.1625pt x 1154.81438pt>
 File: pdf/sequence/GESTIONE CONTENUTI/Seleziona Categoria Artistica.pdf Graphic
  file (type pdf)
 <use pdf/sequence/GESTIONE CONTENUTI/Seleziona Categoria Artistica.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONTENUTI/Seleziona Categoria Ar
-tistica.pdf  used on input line 2000.
+tistica.pdf  used on input line 2004.
 (pdftex.def)             Requested size: 455.24551pt x 471.85583pt.
 
-[80 <./pdf/sequence/GESTIONE CONTENUTI/Seleziona Categoria Artistica.pdf>]
-<pdf/sequence/GESTIONE CONTENUTI/Crea Categoria Artistica.pdf, id=9228, 1018.55
+[78 <./pdf/sequence/GESTIONE CONTENUTI/Seleziona Categoria Artistica.pdf>]
+<pdf/sequence/GESTIONE CONTENUTI/Crea Categoria Artistica.pdf, id=9219, 1018.55
 531pt x 1491.32156pt>
 File: pdf/sequence/GESTIONE CONTENUTI/Crea Categoria Artistica.pdf Graphic file
  (type pdf)
 <use pdf/sequence/GESTIONE CONTENUTI/Crea Categoria Artistica.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONTENUTI/Crea Categoria Artisti
-ca.pdf  used on input line 2008.
+ca.pdf  used on input line 2012.
 (pdftex.def)             Requested size: 393.59818pt x 576.28825pt.
 
-[81 <./pdf/sequence/GESTIONE CONTENUTI/Crea Categoria Artistica.pdf>]
-<pdf/sequence/GESTIONE CONTENUTI/Seleziona tipologia file.pdf, id=9917, 1052.43
+[79 <./pdf/sequence/GESTIONE CONTENUTI/Crea Categoria Artistica.pdf>]
+<pdf/sequence/GESTIONE CONTENUTI/Seleziona tipologia file.pdf, id=9909, 1052.43
 187pt x 811.53188pt>
 File: pdf/sequence/GESTIONE CONTENUTI/Seleziona tipologia file.pdf Graphic file
  (type pdf)
 <use pdf/sequence/GESTIONE CONTENUTI/Seleziona tipologia file.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONTENUTI/Seleziona tipologia fi
-le.pdf  used on input line 2016.
+le.pdf  used on input line 2020.
 (pdftex.def)             Requested size: 455.25082pt x 351.04462pt.
- [82 <./pdf/sequence/GESTIONE CONTENUTI/Seleziona tipologia file.pdf>]
-<pdf/sequence/GESTIONE CONTENUTI/UploadFile.pdf, id=10234, 1290.32062pt x 1857.
+ [80 <./pdf/sequence/GESTIONE CONTENUTI/Seleziona tipologia file.pdf>]
+<pdf/sequence/GESTIONE CONTENUTI/UploadFile.pdf, id=10226, 1290.32062pt x 1857.
 94125pt>
 File: pdf/sequence/GESTIONE CONTENUTI/UploadFile.pdf Graphic file (type pdf)
 <use pdf/sequence/GESTIONE CONTENUTI/UploadFile.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONTENUTI/UploadFile.pdf  used o
-n input line 2024.
+n input line 2028.
 (pdftex.def)             Requested size: 400.23152pt x 576.29604pt.
- [83 <./pdf/sequence/GESTIONE CONTENUTI/UploadFile.pdf>]
-<pdf/sequence/GESTIONE CONTENUTI/Elimina File.pdf, id=10965, 1193.96063pt x 153
+ [81 <./pdf/sequence/GESTIONE CONTENUTI/UploadFile.pdf>]
+<pdf/sequence/GESTIONE CONTENUTI/Elimina File.pdf, id=10957, 1193.96063pt x 153
 1.22063pt>
 File: pdf/sequence/GESTIONE CONTENUTI/Elimina File.pdf Graphic file (type pdf)
 <use pdf/sequence/GESTIONE CONTENUTI/Elimina File.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONTENUTI/Elimina File.pdf  used
- on input line 2032.
+ on input line 2036.
 (pdftex.def)             Requested size: 449.35558pt x 576.28577pt.
- [84 <./pdf/sequence/GESTIONE CONTENUTI/Elimina File.pdf>]
-<pdf/sequence/GESTIONE CONTENUTI/ModificaFile.pdf, id=11525, 1291.82625pt x 148
+ [82 <./pdf/sequence/GESTIONE CONTENUTI/Elimina File.pdf>]
+<pdf/sequence/GESTIONE CONTENUTI/ModificaFile.pdf, id=11517, 1291.82625pt x 148
 5.29906pt>
 File: pdf/sequence/GESTIONE CONTENUTI/ModificaFile.pdf Graphic file (type pdf)
 <use pdf/sequence/GESTIONE CONTENUTI/ModificaFile.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONTENUTI/ModificaFile.pdf  used
- on input line 2040.
+ on input line 2044.
 (pdftex.def)             Requested size: 455.24069pt x 523.42068pt.
- [85 <./pdf/sequence/GESTIONE CONTENUTI/ModificaFile.pdf>]
-<pdf/sequence/GESTIONE CONTENUTI/GestisciPrivacyContenuti.pdf, id=12161, 1279.7
+ [83 <./pdf/sequence/GESTIONE CONTENUTI/ModificaFile.pdf>]
+<pdf/sequence/GESTIONE CONTENUTI/GestisciPrivacyContenuti.pdf, id=12152, 1279.7
 8125pt x 1740.5025pt>
 File: pdf/sequence/GESTIONE CONTENUTI/GestisciPrivacyContenuti.pdf Graphic file
  (type pdf)
 <use pdf/sequence/GESTIONE CONTENUTI/GestisciPrivacyContenuti.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONTENUTI/GestisciPrivacyContenu
-ti.pdf  used on input line 2048.
+ti.pdf  used on input line 2052.
 (pdftex.def)             Requested size: 423.75465pt x 576.30634pt.
 
-[86 <./pdf/sequence/GESTIONE CONTENUTI/GestisciPrivacyContenuti.pdf>]
-<pdf/sequence/GESTIONE CONDIVISIONE LINK/SelezionaContenuti.pdf, id=12763, 1626
+[84 <./pdf/sequence/GESTIONE CONTENUTI/GestisciPrivacyContenuti.pdf>]
+<pdf/sequence/GESTIONE CONDIVISIONE LINK/SelezionaContenuti.pdf, id=12754, 1626
 .82782pt x 1842.885pt>
 File: pdf/sequence/GESTIONE CONDIVISIONE LINK/SelezionaContenuti.pdf Graphic fi
 le (type pdf)
 <use pdf/sequence/GESTIONE CONDIVISIONE LINK/SelezionaContenuti.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONDIVISIONE LINK/SelezionaConte
-nuti.pdf  used on input line 2056.
+nuti.pdf  used on input line 2060.
 (pdftex.def)             Requested size: 455.23563pt x 515.69496pt.
- [87 <./pdf/sequence/GESTIONE CONDIVISIONE LINK/SelezionaContenuti.pdf>]
-<pdf/sequence/GESTIONE CONDIVISIONE LINK/GeneraLink.pdf, id=13407, 1303.87125pt
+ [85 <./pdf/sequence/GESTIONE CONDIVISIONE LINK/SelezionaContenuti.pdf>]
+<pdf/sequence/GESTIONE CONDIVISIONE LINK/GeneraLink.pdf, id=13399, 1303.87125pt
  x 1186.4325pt>
 File: pdf/sequence/GESTIONE CONDIVISIONE LINK/GeneraLink.pdf Graphic file (type
  pdf)
 <use pdf/sequence/GESTIONE CONDIVISIONE LINK/GeneraLink.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONDIVISIONE LINK/GeneraLink.pdf
-  used on input line 2064.
+  used on input line 2068.
 (pdftex.def)             Requested size: 455.24763pt x 414.2438pt.
- [88 <./pdf/sequence/GESTIONE CONDIVISIONE LINK/GeneraLink.pdf>]
-<pdf/sequence/GESTIONE CONDIVISIONE LINK/VisualizzaElencoLink.pdf, id=13838, 12
+ [86 <./pdf/sequence/GESTIONE CONDIVISIONE LINK/GeneraLink.pdf>]
+<pdf/sequence/GESTIONE CONDIVISIONE LINK/VisualizzaElencoLink.pdf, id=13830, 12
 69.24188pt x 1364.84906pt>
 File: pdf/sequence/GESTIONE CONDIVISIONE LINK/VisualizzaElencoLink.pdf Graphic 
 file (type pdf)
 <use pdf/sequence/GESTIONE CONDIVISIONE LINK/VisualizzaElencoLink.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONDIVISIONE LINK/VisualizzaElen
-coLink.pdf  used on input line 2072.
+coLink.pdf  used on input line 2076.
 (pdftex.def)             Requested size: 455.24179pt x 489.53343pt.
- [89 <./pdf/sequence/GESTIONE CONDIVISIONE LINK/VisualizzaElencoLink.pdf>]
-<pdf/sequence/GESTIONE CONDIVISIONE LINK/Revoca Link.pdf, id=14338, 1228.59pt x
+ [87 <./pdf/sequence/GESTIONE CONDIVISIONE LINK/VisualizzaElencoLink.pdf>]
+<pdf/sequence/GESTIONE CONDIVISIONE LINK/Revoca Link.pdf, id=14330, 1228.59pt x
  1091.57813pt>
 File: pdf/sequence/GESTIONE CONDIVISIONE LINK/Revoca Link.pdf Graphic file (typ
 e pdf)
 <use pdf/sequence/GESTIONE CONDIVISIONE LINK/Revoca Link.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONDIVISIONE LINK/Revoca Link.pd
-f  used on input line 2080.
+f  used on input line 2084.
 (pdftex.def)             Requested size: 455.24606pt x 404.4772pt.
- [90 <./pdf/sequence/GESTIONE CONDIVISIONE LINK/Revoca Link.pdf>]
-<pdf/sequence/GESTIONE CONDIVISIONE LINK/Verifica validita link.pdf, id=14667, 
+ [88 <./pdf/sequence/GESTIONE CONDIVISIONE LINK/Revoca Link.pdf>]
+<pdf/sequence/GESTIONE CONDIVISIONE LINK/Verifica validita link.pdf, id=14659, 
 996.72375pt x 928.21782pt>
 File: pdf/sequence/GESTIONE CONDIVISIONE LINK/Verifica validita link.pdf Graphi
 c file (type pdf)
 <use pdf/sequence/GESTIONE CONDIVISIONE LINK/Verifica validita link.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONDIVISIONE LINK/Verifica valid
-ita link.pdf  used on input line 2088.
+ita link.pdf  used on input line 2092.
 (pdftex.def)             Requested size: 455.24382pt x 423.9544pt.
- [91 <./pdf/sequence/GESTIONE CONDIVISIONE LINK/Verifica validita link.pdf>]
-<pdf/sequence/CONSULTA PROFILO STUDENTE/Cerca Studente.pdf, id=15060, 1065.9825
+ [89 <./pdf/sequence/GESTIONE CONDIVISIONE LINK/Verifica validita link.pdf>]
+<pdf/sequence/CONSULTA PROFILO STUDENTE/Cerca Studente.pdf, id=15051, 1065.9825
 pt x 1818.795pt>
 File: pdf/sequence/CONSULTA PROFILO STUDENTE/Cerca Studente.pdf Graphic file (t
 ype pdf)
 <use pdf/sequence/CONSULTA PROFILO STUDENTE/Cerca Studente.pdf>
 Package pdftex.def Info: pdf/sequence/CONSULTA PROFILO STUDENTE/Cerca Studente.
-pdf  used on input line 2096.
+pdf  used on input line 2100.
 (pdftex.def)             Requested size: 337.7544pt x 576.28152pt.
- [92 <./pdf/sequence/CONSULTA PROFILO STUDENTE/Cerca Studente.pdf>]
-<pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Pubblici.pdf, id=15710
+ [90 <./pdf/sequence/CONSULTA PROFILO STUDENTE/Cerca Studente.pdf>]
+<pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Pubblici.pdf, id=15701
 , 1186.4325pt x 1126.96031pt>
 File: pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Pubblici.pdf Grap
 hic file (type pdf)
 <use pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Pubblici.pdf>
 Package pdftex.def Info: pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenut
-i Pubblici.pdf  used on input line 2104.
+i Pubblici.pdf  used on input line 2108.
 (pdftex.def)             Requested size: 455.24818pt x 432.428pt.
- [93 <./pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Pubblici.pdf>]
-<pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Privati.pdf, id=16234,
+ [91 <./pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Pubblici.pdf>]
+<pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Privati.pdf, id=16226,
  1160.83687pt x 1446.90562pt>
 File: pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Privati.pdf Graph
 ic file (type pdf)
 <use pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Privati.pdf>
 Package pdftex.def Info: pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenut
-i Privati.pdf  used on input line 2112.
+i Privati.pdf  used on input line 2116.
 (pdftex.def)             Requested size: 455.23979pt x 567.42601pt.
- [94 <./pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Privati.pdf>]
-<pdf/sequence/CONSULTA PROFILO STUDENTE/VisualizzaContenuto.pdf, id=16887, 995.
+ [92 <./pdf/sequence/CONSULTA PROFILO STUDENTE/Mostra Contenuti Privati.pdf>]
+<pdf/sequence/CONSULTA PROFILO STUDENTE/VisualizzaContenuto.pdf, id=16879, 995.
 21812pt x 1299.35437pt>
 File: pdf/sequence/CONSULTA PROFILO STUDENTE/VisualizzaContenuto.pdf Graphic fi
 le (type pdf)
 <use pdf/sequence/CONSULTA PROFILO STUDENTE/VisualizzaContenuto.pdf>
 Package pdftex.def Info: pdf/sequence/CONSULTA PROFILO STUDENTE/VisualizzaConte
-nuto.pdf  used on input line 2120.
+nuto.pdf  used on input line 2124.
 (pdftex.def)             Requested size: 441.40524pt x 576.29762pt.
- [95 <./pdf/sequence/CONSULTA PROFILO STUDENTE/VisualizzaContenuto.pdf>]
+ [93 <./pdf/sequence/CONSULTA PROFILO STUDENTE/VisualizzaContenuto.pdf>]
 <pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/Mostra Contenuti tramite Link.p
-df, id=17414, 1162.3425pt x 1132.23pt>
+df, id=17406, 1162.3425pt x 1132.23pt>
 File: pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/Mostra Contenuti tramite L
 ink.pdf Graphic file (type pdf)
 <use pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/Mostra Contenuti tramite Li
 nk.pdf>
 Package pdftex.def Info: pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/Mostra 
-Contenuti tramite Link.pdf  used on input line 2128.
+Contenuti tramite Link.pdf  used on input line 2132.
 (pdftex.def)             Requested size: 455.24496pt x 443.45105pt.
- [96 <./pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/Mostra Contenuti tramite
+ [94 <./pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/Mostra Contenuti tramite
  Link.pdf>]
 <pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/VisualizzaContenutoTramiteLink.
-pdf, id=17833, 949.29657pt x 1299.35437pt>
+pdf, id=17825, 949.29657pt x 1299.35437pt>
 File: pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/VisualizzaContenutoTramite
 Link.pdf Graphic file (type pdf)
 <use pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/VisualizzaContenutoTramiteL
 ink.pdf>
 Package pdftex.def Info: pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/Visuali
-zzaContenutoTramiteLink.pdf  used on input line 2136.
+zzaContenutoTramiteLink.pdf  used on input line 2140.
 (pdftex.def)             Requested size: 421.03783pt x 576.29762pt.
- [97 <./pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/VisualizzaContenutoTrami
+ [95 <./pdf/sequence/VISUALIZZA CONTENUTO TRAMITE LINK/VisualizzaContenutoTrami
 teLink.pdf>]
 <pdf/sequence/GESTIONE CONDIVISIONE INTERNA/SelezionaContenutiPrivati.pdf, id=1
-8361, 1501.10812pt x 1751.04187pt>
+8352, 1501.10812pt x 1751.04187pt>
 File: pdf/sequence/GESTIONE CONDIVISIONE INTERNA/SelezionaContenutiPrivati.pdf 
 Graphic file (type pdf)
 <use pdf/sequence/GESTIONE CONDIVISIONE INTERNA/SelezionaContenutiPrivati.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONDIVISIONE INTERNA/SelezionaCo
-ntenutiPrivati.pdf  used on input line 2144.
+ntenutiPrivati.pdf  used on input line 2148.
 (pdftex.def)             Requested size: 455.2376pt x 531.03442pt.
- [98 <./pdf/sequence/GESTIONE CONDIVISIONE INTERNA/SelezionaContenutiPrivati.pd
+ [96 <./pdf/sequence/GESTIONE CONDIVISIONE INTERNA/SelezionaContenutiPrivati.pd
 f>]
-<pdf/sequence/GESTIONE CONDIVISIONE INTERNA/GeneraCodice.pdf, id=19005, 1306.88
+<pdf/sequence/GESTIONE CONDIVISIONE INTERNA/GeneraCodice.pdf, id=18996, 1306.88
 25pt x 1304.62407pt>
 File: pdf/sequence/GESTIONE CONDIVISIONE INTERNA/GeneraCodice.pdf Graphic file 
 (type pdf)
 <use pdf/sequence/GESTIONE CONDIVISIONE INTERNA/GeneraCodice.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONDIVISIONE INTERNA/GeneraCodic
-e.pdf  used on input line 2152.
+e.pdf  used on input line 2156.
 (pdftex.def)             Requested size: 455.24211pt x 454.45541pt.
- [99 <./pdf/sequence/GESTIONE CONDIVISIONE INTERNA/GeneraCodice.pdf>]
-<pdf/sequence/GESTIONE CONDIVISIONE INTERNA/VisualizzaElencoCodici.pdf, id=1943
-6, 1321.93875pt x 1025.33063pt>
+ [97 <./pdf/sequence/GESTIONE CONDIVISIONE INTERNA/GeneraCodice.pdf>]
+<pdf/sequence/GESTIONE CONDIVISIONE INTERNA/VisualizzaElencoCodici.pdf, id=1942
+8, 1321.93875pt x 1025.33063pt>
 File: pdf/sequence/GESTIONE CONDIVISIONE INTERNA/VisualizzaElencoCodici.pdf Gra
 phic file (type pdf)
 <use pdf/sequence/GESTIONE CONDIVISIONE INTERNA/VisualizzaElencoCodici.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONDIVISIONE INTERNA/VisualizzaE
-lencoCodici.pdf  used on input line 2160.
+lencoCodici.pdf  used on input line 2164.
 (pdftex.def)             Requested size: 455.24236pt x 353.09799pt.
- [100 <./pdf/sequence/GESTIONE CONDIVISIONE INTERNA/VisualizzaElencoCodici.pdf>
-]
-<pdf/sequence/GESTIONE CONDIVISIONE INTERNA/RevocaCodice.pdf, id=19912, 1017.80
+ [98 <./pdf/sequence/GESTIONE CONDIVISIONE INTERNA/VisualizzaElencoCodici.pdf>]
+<pdf/sequence/GESTIONE CONDIVISIONE INTERNA/RevocaCodice.pdf, id=19904, 1017.80
 25pt x 913.91437pt>
 File: pdf/sequence/GESTIONE CONDIVISIONE INTERNA/RevocaCodice.pdf Graphic file 
 (type pdf)
 <use pdf/sequence/GESTIONE CONDIVISIONE INTERNA/RevocaCodice.pdf>
 Package pdftex.def Info: pdf/sequence/GESTIONE CONDIVISIONE INTERNA/RevocaCodic
-e.pdf  used on input line 2168.
+e.pdf  used on input line 2172.
 (pdftex.def)             Requested size: 455.2425pt x 408.77542pt.
- [101 <./pdf/sequence/GESTIONE CONDIVISIONE INTERNA/RevocaCodice.pdf>]
-<pdf/classdiagram/classi/Entity.pdf, id=20241, 750.55406pt x 563.85657pt>
+ [99 <./pdf/sequence/GESTIONE CONDIVISIONE INTERNA/RevocaCodice.pdf>]
+<pdf/classdiagram/classi/Entity.pdf, id=20233, 750.55406pt x 563.85657pt>
 File: pdf/classdiagram/classi/Entity.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/Entity.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/Entity.pdf  used on input line
- 2178.
+ 2182.
 (pdftex.def)             Requested size: 455.24904pt x 342.00755pt.
- [102 <./pdf/classdiagram/classi/Entity.pdf>]
-<pdf/classdiagram/classi/Login.pdf, id=20330, 1376.89406pt x 1036.62282pt>
+ [100 <./pdf/classdiagram/classi/Entity.pdf>]
+<pdf/classdiagram/classi/Login.pdf, id=20322, 1376.89406pt x 1036.62282pt>
 File: pdf/classdiagram/classi/Login.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/Login.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/Login.pdf  used on input line 
-2186.
+2190.
 (pdftex.def)             Requested size: 455.23784pt x 342.7351pt.
- [103 <./pdf/classdiagram/classi/Login.pdf>]
-<pdf/classdiagram/classi/LoginTramiteSPID.pdf, id=20930, 1570.36688pt x 1036.62
+ [101 <./pdf/classdiagram/classi/Login.pdf>]
+<pdf/classdiagram/classi/LoginTramiteSPID.pdf, id=20921, 1570.36688pt x 1036.62
 282pt>
 File: pdf/classdiagram/classi/LoginTramiteSPID.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/LoginTramiteSPID.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/LoginTramiteSPID.pdf  used on 
-input line 2194.
+input line 2198.
 (pdftex.def)             Requested size: 455.227pt x 300.5022pt.
- [104 <./pdf/classdiagram/classi/LoginTramiteSPID.pdf>]
-<pdf/classdiagram/classi/Registrazione.pdf, id=21565, 1529.715pt x 1036.62282pt
+ [102 <./pdf/classdiagram/classi/LoginTramiteSPID.pdf>]
+<pdf/classdiagram/classi/Registrazione.pdf, id=21556, 1529.715pt x 1036.62282pt
 >
 File: pdf/classdiagram/classi/Registrazione.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/Registrazione.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/Registrazione.pdf  used on inp
-ut line 2202.
+ut line 2206.
 (pdftex.def)             Requested size: 455.23007pt x 308.49007pt.
 
-[105 <./pdf/classdiagram/classi/Registrazione.pdf>]
-<pdf/classdiagram/classi/RecuperaPassword.pdf, id=22137, 1516.16437pt x 1036.62
+[103 <./pdf/classdiagram/classi/Registrazione.pdf>]
+<pdf/classdiagram/classi/RecuperaPassword.pdf, id=22129, 1516.16437pt x 1036.62
 282pt>
 File: pdf/classdiagram/classi/RecuperaPassword.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/RecuperaPassword.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/RecuperaPassword.pdf  used on 
-input line 2210.
+input line 2214.
 (pdftex.def)             Requested size: 455.22298pt x 311.24232pt.
- [106 <./pdf/classdiagram/classi/RecuperaPassword.pdf>]
-<pdf/classdiagram/classi/Logout.pdf, id=22703, 907.13907pt x 750.55406pt>
+ [104 <./pdf/classdiagram/classi/RecuperaPassword.pdf>]
+<pdf/classdiagram/classi/Logout.pdf, id=22695, 907.13907pt x 750.55406pt>
 File: pdf/classdiagram/classi/Logout.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/Logout.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/Logout.pdf  used on input line
- 2218.
+ 2222.
 (pdftex.def)             Requested size: 455.24329pt x 376.66187pt.
- [107 <./pdf/classdiagram/classi/Logout.pdf>]
-<pdf/classdiagram/classi/ModificaDatiPersonali.pdf, id=22972, 1425.07407pt x 10
+ [105 <./pdf/classdiagram/classi/Logout.pdf>]
+<pdf/classdiagram/classi/ModificaDatiPersonali.pdf, id=22964, 1425.07407pt x 10
 36.62282pt>
 File: pdf/classdiagram/classi/ModificaDatiPersonali.pdf Graphic file (type pdf)
 
 <use pdf/classdiagram/classi/ModificaDatiPersonali.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/ModificaDatiPersonali.pdf  use
-d on input line 2226.
+d on input line 2230.
 (pdftex.def)             Requested size: 455.22845pt x 331.14082pt.
 
-[108 <./pdf/classdiagram/classi/ModificaDatiPersonali.pdf>]
-<pdf/classdiagram/classi/ModificaBackgroundArtistico.pdf, id=23442, 1377.64688p
+[106 <./pdf/classdiagram/classi/ModificaDatiPersonali.pdf>]
+<pdf/classdiagram/classi/ModificaBackgroundArtistico.pdf, id=23434, 1377.64688p
 t x 1036.62282pt>
 File: pdf/classdiagram/classi/ModificaBackgroundArtistico.pdf Graphic file (typ
 e pdf)
 <use pdf/classdiagram/classi/ModificaBackgroundArtistico.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/ModificaBackgroundArtistico.pd
-f  used on input line 2234.
+f  used on input line 2238.
 (pdftex.def)             Requested size: 455.2345pt x 342.5453pt.
- [109 <./pdf/classdiagram/classi/ModificaBackgroundArtistico.pdf>]
-<pdf/classdiagram/classi/AggiungiBackgroundArtistico.pdf, id=23889, 1705.87312p
+ [107 <./pdf/classdiagram/classi/ModificaBackgroundArtistico.pdf>]
+<pdf/classdiagram/classi/AggiungiBackgroundArtistico.pdf, id=23880, 1705.87312p
 t x 1036.62282pt>
 File: pdf/classdiagram/classi/AggiungiBackgroundArtistico.pdf Graphic file (typ
 e pdf)
 <use pdf/classdiagram/classi/AggiungiBackgroundArtistico.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/AggiungiBackgroundArtistico.pd
-f  used on input line 2242.
+f  used on input line 2246.
 (pdftex.def)             Requested size: 455.22983pt x 276.63348pt.
- [110 <./pdf/classdiagram/classi/AggiungiBackgroundArtistico.pdf>]
-<pdf/classdiagram/classi/EliminaBackgroundArtistico.pdf, id=24404, 1358.07375pt
+ [108 <./pdf/classdiagram/classi/AggiungiBackgroundArtistico.pdf>]
+<pdf/classdiagram/classi/EliminaBackgroundArtistico.pdf, id=24395, 1358.07375pt
  x 1036.62282pt>
 File: pdf/classdiagram/classi/EliminaBackgroundArtistico.pdf Graphic file (type
  pdf)
 <use pdf/classdiagram/classi/EliminaBackgroundArtistico.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/EliminaBackgroundArtistico.pdf
-  used on input line 2250.
+  used on input line 2254.
 (pdftex.def)             Requested size: 455.2321pt x 347.48038pt.
- [111 <./pdf/classdiagram/classi/EliminaBackgroundArtistico.pdf>]
-<pdf/classdiagram/classi/SelezionaCategoriaArtistica.pdf, id=24811, 1151.05031p
+ [109 <./pdf/classdiagram/classi/EliminaBackgroundArtistico.pdf>]
+<pdf/classdiagram/classi/SelezionaCategoriaArtistica.pdf, id=24803, 1151.05031p
 t x 1145.02782pt>
 File: pdf/classdiagram/classi/SelezionaCategoriaArtistica.pdf Graphic file (typ
 e pdf)
 <use pdf/classdiagram/classi/SelezionaCategoriaArtistica.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/SelezionaCategoriaArtistica.pd
-f  used on input line 2258.
+f  used on input line 2262.
 (pdftex.def)             Requested size: 455.24828pt x 452.86635pt.
- [112 <./pdf/classdiagram/classi/SelezionaCategoriaArtistica.pdf>]
-<pdf/classdiagram/classi/CreaCategoriaArtistica.pdf, id=25284, 1464.2203pt x 10
+ [110 <./pdf/classdiagram/classi/SelezionaCategoriaArtistica.pdf>]
+<pdf/classdiagram/classi/CreaCategoriaArtistica.pdf, id=25276, 1464.2203pt x 10
 36.62282pt>
 File: pdf/classdiagram/classi/CreaCategoriaArtistica.pdf Graphic file (type pdf
 )
 <use pdf/classdiagram/classi/CreaCategoriaArtistica.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/CreaCategoriaArtistica.pdf  us
-ed on input line 2266.
+ed on input line 2270.
 (pdftex.def)             Requested size: 455.24414pt x 322.29881pt.
- [113 <./pdf/classdiagram/classi/CreaCategoriaArtistica.pdf>]
-<pdf/classdiagram/classi/SelezionaTipFile.pdf, id=25751, 933.4875pt x 1036.6228
+ [111 <./pdf/classdiagram/classi/CreaCategoriaArtistica.pdf>]
+<pdf/classdiagram/classi/SelezionaTipFile.pdf, id=25743, 933.4875pt x 1036.6228
 2pt>
 File: pdf/classdiagram/classi/SelezionaTipFile.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/SelezionaTipFile.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/SelezionaTipFile.pdf  used on 
-input line 2274.
+input line 2278.
 (pdftex.def)             Requested size: 455.24782pt x 505.54536pt.
- [114 <./pdf/classdiagram/classi/SelezionaTipFile.pdf>]
-<pdf/classdiagram/classi/UploadFile.pdf, id=26089, 1400.98407pt x 1036.62282pt>
+ [112 <./pdf/classdiagram/classi/SelezionaTipFile.pdf>]
+<pdf/classdiagram/classi/UploadFile.pdf, id=26081, 1400.98407pt x 1036.62282pt>
 
 File: pdf/classdiagram/classi/UploadFile.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/UploadFile.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/UploadFile.pdf  used on input 
-line 2282.
+line 2286.
 (pdftex.def)             Requested size: 455.22891pt x 336.83516pt.
- [115 <./pdf/classdiagram/classi/UploadFile.pdf>]
-<pdf/classdiagram/classi/EliminaFile.pdf, id=26596, 1388.93906pt x 1036.62282pt
+ [113 <./pdf/classdiagram/classi/UploadFile.pdf>]
+<pdf/classdiagram/classi/EliminaFile.pdf, id=26587, 1388.93906pt x 1036.62282pt
 >
 File: pdf/classdiagram/classi/EliminaFile.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/EliminaFile.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/EliminaFile.pdf  used on input
- line 2290.
+ line 2294.
 (pdftex.def)             Requested size: 455.23587pt x 339.76141pt.
- [116 <./pdf/classdiagram/classi/EliminaFile.pdf>]
-<pdf/classdiagram/classi/ModificaFile.pdf, id=27081, 1451.4225pt x 1036.62282pt
+ [114 <./pdf/classdiagram/classi/EliminaFile.pdf>]
+<pdf/classdiagram/classi/ModificaFile.pdf, id=27072, 1451.4225pt x 1036.62282pt
 >
 File: pdf/classdiagram/classi/ModificaFile.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/ModificaFile.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/ModificaFile.pdf  used on inpu
-t line 2298.
+t line 2302.
 (pdftex.def)             Requested size: 455.22945pt x 325.13016pt.
- [117 <./pdf/classdiagram/classi/ModificaFile.pdf>]
-<pdf/classdiagram/classi/GestisciPrivacyContenuti.pdf, id=27581, 1264.725pt x 1
+ [115 <./pdf/classdiagram/classi/ModificaFile.pdf>]
+<pdf/classdiagram/classi/GestisciPrivacyContenuti.pdf, id=27573, 1264.725pt x 1
 036.62282pt>
 File: pdf/classdiagram/classi/GestisciPrivacyContenuti.pdf Graphic file (type p
 df)
 <use pdf/classdiagram/classi/GestisciPrivacyContenuti.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/GestisciPrivacyContenuti.pdf  
-used on input line 2306.
+used on input line 2310.
 (pdftex.def)             Requested size: 455.24277pt x 373.13647pt.
- [118 <./pdf/classdiagram/classi/GestisciPrivacyContenuti.pdf>]
-<pdf/classdiagram/classi/SelezionaContenuti.pdf, id=28072, 1416.04031pt x 1036.
+ [116 <./pdf/classdiagram/classi/GestisciPrivacyContenuti.pdf>]
+<pdf/classdiagram/classi/SelezionaContenuti.pdf, id=28064, 1416.04031pt x 1036.
 62282pt>
 File: pdf/classdiagram/classi/SelezionaContenuti.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/SelezionaContenuti.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/SelezionaContenuti.pdf  used o
-n input line 2314.
+n input line 2318.
 (pdftex.def)             Requested size: 455.23805pt x 333.26039pt.
- [119 <./pdf/classdiagram/classi/SelezionaContenuti.pdf>]
-<pdf/classdiagram/classi/GeneraLink.pdf, id=28626, 1305.37688pt x 1036.62282pt>
+ [117 <./pdf/classdiagram/classi/SelezionaContenuti.pdf>]
+<pdf/classdiagram/classi/GeneraLink.pdf, id=28618, 1305.37688pt x 1036.62282pt>
 
 File: pdf/classdiagram/classi/GeneraLink.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/GeneraLink.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/GeneraLink.pdf  used on input 
-line 2322.
+line 2326.
 (pdftex.def)             Requested size: 455.23552pt x 361.51056pt.
 
-[120 <./pdf/classdiagram/classi/GeneraLink.pdf>]
-<pdf/classdiagram/classi/VisualizzaElencoLink.pdf, id=29036, 1353.55687pt x 103
+[118 <./pdf/classdiagram/classi/GeneraLink.pdf>]
+<pdf/classdiagram/classi/VisualizzaElencoLink.pdf, id=29028, 1353.55687pt x 103
 6.62282pt>
 File: pdf/classdiagram/classi/VisualizzaElencoLink.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/VisualizzaElencoLink.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/VisualizzaElencoLink.pdf  used
- on input line 2330.
+ on input line 2334.
 (pdftex.def)             Requested size: 455.24638pt x 348.65088pt.
- [121 <./pdf/classdiagram/classi/VisualizzaElencoLink.pdf>]
-<pdf/classdiagram/classi/RevocaLink.pdf, id=29519, 998.22937pt x 1036.62282pt>
+ [119 <./pdf/classdiagram/classi/VisualizzaElencoLink.pdf>]
+<pdf/classdiagram/classi/RevocaLink.pdf, id=29510, 998.22937pt x 1036.62282pt>
 File: pdf/classdiagram/classi/RevocaLink.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/RevocaLink.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/RevocaLink.pdf  used on input 
-line 2338.
+line 2342.
 (pdftex.def)             Requested size: 455.24606pt x 472.75554pt.
- [122 <./pdf/classdiagram/classi/RevocaLink.pdf>]
-<pdf/classdiagram/classi/VerificaValiditaLink.pdf, id=29851, 1105.88156pt x 103
+ [120 <./pdf/classdiagram/classi/RevocaLink.pdf>]
+<pdf/classdiagram/classi/VerificaValiditaLink.pdf, id=29842, 1105.88156pt x 103
 6.62282pt>
 File: pdf/classdiagram/classi/VerificaValiditaLink.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/VerificaValiditaLink.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/VerificaValiditaLink.pdf  used
- on input line 2346.
+ on input line 2350.
 (pdftex.def)             Requested size: 455.23682pt x 426.72641pt.
 
-[123 <./pdf/classdiagram/classi/VerificaValiditaLink.pdf>]
-<pdf/classdiagram/classi/CercaStudente.pdf, id=30144, 1544.77126pt x 1036.62282
+[121 <./pdf/classdiagram/classi/VerificaValiditaLink.pdf>]
+<pdf/classdiagram/classi/CercaStudente.pdf, id=30136, 1544.77126pt x 1036.62282
 pt>
 File: pdf/classdiagram/classi/CercaStudente.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/CercaStudente.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/CercaStudente.pdf  used on inp
-ut line 2354.
+ut line 2358.
 (pdftex.def)             Requested size: 455.23215pt x 305.48473pt.
- [124 <./pdf/classdiagram/classi/CercaStudente.pdf>]
-<pdf/classdiagram/classi/MostraContenutiPubblici.pdf, id=30626, 1034.36438pt x 
+ [122 <./pdf/classdiagram/classi/CercaStudente.pdf>]
+<pdf/classdiagram/classi/MostraContenutiPubblici.pdf, id=30618, 1034.36438pt x 
 1036.62282pt>
 File: pdf/classdiagram/classi/MostraContenutiPubblici.pdf Graphic file (type pd
 f)
 <use pdf/classdiagram/classi/MostraContenutiPubblici.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/MostraContenutiPubblici.pdf  u
-sed on input line 2362.
+sed on input line 2366.
 (pdftex.def)             Requested size: 455.248pt x 456.24199pt.
- [125 <./pdf/classdiagram/classi/MostraContenutiPubblici.pdf>]
-<pdf/classdiagram/classi/MostraContenutiPrivati.pdf, id=31108, 1361.085pt x 103
+ [123 <./pdf/classdiagram/classi/MostraContenutiPubblici.pdf>]
+<pdf/classdiagram/classi/MostraContenutiPrivati.pdf, id=31100, 1361.085pt x 103
 6.62282pt>
 File: pdf/classdiagram/classi/MostraContenutiPrivati.pdf Graphic file (type pdf
 )
 <use pdf/classdiagram/classi/MostraContenutiPrivati.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/MostraContenutiPrivati.pdf  us
-ed on input line 2370.
+ed on input line 2374.
 (pdftex.def)             Requested size: 455.2446pt x 346.72113pt.
- [126 <./pdf/classdiagram/classi/MostraContenutiPrivati.pdf>]
-<pdf/classdiagram/classi/VisualizzaContenuto.pdf, id=31632, 1243.64626pt x 1036
+ [124 <./pdf/classdiagram/classi/MostraContenutiPrivati.pdf>]
+<pdf/classdiagram/classi/VisualizzaContenuto.pdf, id=31624, 1243.64626pt x 1036
 .62282pt>
 File: pdf/classdiagram/classi/VisualizzaContenuto.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/VisualizzaContenuto.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/VisualizzaContenuto.pdf  used 
-on input line 2378.
+on input line 2382.
 (pdftex.def)             Requested size: 455.24597pt x 379.46352pt.
 
-[127 <./pdf/classdiagram/classi/VisualizzaContenuto.pdf>]
-<pdf/classdiagram/classi/MostraContenutiTramiteLink.pdf, id=32031, 970.3753pt x
+[125 <./pdf/classdiagram/classi/VisualizzaContenuto.pdf>]
+<pdf/classdiagram/classi/MostraContenutiTramiteLink.pdf, id=32022, 970.3753pt x
  1036.62282pt>
 File: pdf/classdiagram/classi/MostraContenutiTramiteLink.pdf Graphic file (type
  pdf)
 <use pdf/classdiagram/classi/MostraContenutiTramiteLink.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/MostraContenutiTramiteLink.pdf
-  used on input line 2386.
+  used on input line 2390.
 (pdftex.def)             Requested size: 455.24728pt x 486.32701pt.
- [128 <./pdf/classdiagram/classi/MostraContenutiTramiteLink.pdf>]
-<pdf/classdiagram/classi/VisualizzaContenutoTramiteLink.pdf, id=32357, 1148.039
+ [126 <./pdf/classdiagram/classi/MostraContenutiTramiteLink.pdf>]
+<pdf/classdiagram/classi/VisualizzaContenutoTramiteLink.pdf, id=32348, 1148.039
 06pt x 1036.62282pt>
 File: pdf/classdiagram/classi/VisualizzaContenutoTramiteLink.pdf Graphic file (
 type pdf)
 <use pdf/classdiagram/classi/VisualizzaContenutoTramiteLink.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/VisualizzaContenutoTramiteLink
-.pdf  used on input line 2394.
+.pdf  used on input line 2398.
 (pdftex.def)             Requested size: 455.23099pt x 411.0512pt.
- [129 <./pdf/classdiagram/classi/VisualizzaContenutoTramiteLink.pdf>]
-<pdf/classdiagram/classi/SelezionaContenutiPrivati.pdf, id=32731, 1269.24188pt 
+ [127 <./pdf/classdiagram/classi/VisualizzaContenutoTramiteLink.pdf>]
+<pdf/classdiagram/classi/SelezionaContenutiPrivati.pdf, id=32723, 1269.24188pt 
 x 1053.9375pt>
 File: pdf/classdiagram/classi/SelezionaContenutiPrivati.pdf Graphic file (type 
 pdf)
 <use pdf/classdiagram/classi/SelezionaContenutiPrivati.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/SelezionaContenutiPrivati.pdf 
- used on input line 2402.
+ used on input line 2406.
 (pdftex.def)             Requested size: 455.24179pt x 378.0181pt.
- [130 <./pdf/classdiagram/classi/SelezionaContenutiPrivati.pdf>]
-<pdf/classdiagram/classi/GeneraCodice.pdf, id=33273, 1147.28625pt x 1036.62282p
+ [128 <./pdf/classdiagram/classi/SelezionaContenutiPrivati.pdf>]
+<pdf/classdiagram/classi/GeneraCodice.pdf, id=33265, 1147.28625pt x 1036.62282p
 t>
 File: pdf/classdiagram/classi/GeneraCodice.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/GeneraCodice.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/GeneraCodice.pdf  used on inpu
-t line 2410.
+t line 2414.
 (pdftex.def)             Requested size: 455.23007pt x 411.3201pt.
- [131 <./pdf/classdiagram/classi/GeneraCodice.pdf>]
-<pdf/classdiagram/classi/VisualizzaElencoCodici.pdf, id=33671, 1193.96063pt x 1
+ [129 <./pdf/classdiagram/classi/GeneraCodice.pdf>]
+<pdf/classdiagram/classi/VisualizzaElencoCodici.pdf, id=33663, 1193.96063pt x 1
 036.62282pt>
 File: pdf/classdiagram/classi/VisualizzaElencoCodici.pdf Graphic file (type pdf
 )
 <use pdf/classdiagram/classi/VisualizzaElencoCodici.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/VisualizzaElencoCodici.pdf  us
-ed on input line 2418.
+ed on input line 2422.
 (pdftex.def)             Requested size: 455.2401pt x 395.24945pt.
- [132 <./pdf/classdiagram/classi/VisualizzaElencoCodici.pdf>]
-<pdf/classdiagram/classi/RevocaCodice.pdf, id=34108, 1020.81375pt x 1036.62282p
+ [130 <./pdf/classdiagram/classi/VisualizzaElencoCodici.pdf>]
+<pdf/classdiagram/classi/RevocaCodice.pdf, id=34100, 1020.81375pt x 1036.62282p
 t>
 File: pdf/classdiagram/classi/RevocaCodice.pdf Graphic file (type pdf)
 <use pdf/classdiagram/classi/RevocaCodice.pdf>
 Package pdftex.def Info: pdf/classdiagram/classi/RevocaCodice.pdf  used on inpu
-t line 2426.
+t line 2430.
 (pdftex.def)             Requested size: 455.24979pt x 462.30013pt.
- [133 <./pdf/classdiagram/classi/RevocaCodice.pdf>] (Rad.aux)
+ [131 <./pdf/classdiagram/classi/RevocaCodice.pdf>] (Rad.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -1276,10 +1275,10 @@ Package rerunfilecheck Info: File `Rad.out' has not changed.
 (rerunfilecheck)             Checksum: 2D68C655351D52301DC1F308242C946E;32045.
  ) 
 Here is how much of TeX's memory you used:
- 15001 strings out of 467871
- 265283 string characters out of 5417892
- 721608 words of memory out of 5000000
- 43046 multiletter control sequences out of 15000+600000
+ 15000 strings out of 467871
+ 265282 string characters out of 5417892
+ 723589 words of memory out of 5000000
+ 43047 multiletter control sequences out of 15000+600000
  688610 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,83p,856b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1292,9 +1291,9 @@ pfb><C:/Users/Simone/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc1
 12.pfb><C:/Users/Simone/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr
 i10.pfb><C:/Users/Simone/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 ri12.pfb>
-Output written on Rad.pdf (133 pages, 29801311 bytes).
+Output written on Rad.pdf (131 pages, 29795552 bytes).
 PDF statistics:
- 34618 PDF objects out of 38293 (max. 8388607)
- 652 named destinations out of 1000 (max. 500000)
+ 34609 PDF objects out of 38293 (max. 8388607)
+ 650 named destinations out of 1000 (max. 500000)
  1387 words of extra memory for PDF output out of 10000 (max. 10000000)
 
