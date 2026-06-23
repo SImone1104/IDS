@@ -3,7 +3,7 @@ package it.afam.utility;
 /**
  * Singleton che mantiene lo stato della sessione: identificativo dello studente
  * autenticato e contesto di navigazione (categoria, tipologia, file, profilo
- * consultato, contenuti selezionati). Azzerato al logout o al timeout.
+ * consultato, contenuti selezionati). Azzerato al logout.
  */
 public class SessioneCorrente {
 
@@ -51,7 +51,7 @@ public class SessioneCorrente {
     public String getSchermataRitorno() { return schermataRitorno; }
     public void setSchermataRitorno(String schermata) { this.schermataRitorno = schermata; }
 
-    /** Azzera tutti i dati della sessione (logout / timeout). */
+    /** Azzera tutti i dati della sessione (logout). */
     public void pulisci() {
         idStudente = 0;
         idCategoriaCorrente = 0;

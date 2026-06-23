@@ -11,9 +11,11 @@
 
 # --- Progetto Codice (Java / JavaFX / Maven) ---
 Codice/target/
+Codice/.tools/
+Codice/afam.db
+Codice/src/main/resources/email.properties
 
 .idea/
 *.iml
 .vscode/
-# Credenziali SMTP: versionate su richiesta esplicita dell'utente
 
