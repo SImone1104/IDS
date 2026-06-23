@@ -8,9 +8,6 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TextInputDialog;
-
-import java.util.Optional;
 
 /** Tipologie ed elenco file pubblici della categoria; sblocco contenuti privati (UC 5.2-5.4, 5.3). */
 public class SchermataCategoriaContenuti {
@@ -55,23 +52,7 @@ public class SchermataCategoriaContenuti {
 
     @FXML
     private void cliccaVisualizzaContenutiPrivati() {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Sblocco contenuti privati");
-        dialog.setHeaderText(null);
-        dialog.setContentText("Inserisci il codice di sblocco:");
-        Optional<String> res = dialog.showAndWait();
-        if (res.isEmpty()) {
-            return;
-        }
-        try {
-            if (control.verificaCodiceSblocco(res.get().trim())) {
-                SceneManager.getIstanza().switchTo("SchermataContenutiCondivisi.fxml");
-            } else {
-                MessaggioDiErrore.mostra("Codice errato");
-            }
-        } catch (ConnessioneException e) {
-            MessaggioDiAvviso.mostra("Connessione al database non riuscita.");
-        }
+        SceneManager.getIstanza().switchTo("SchermataInserimentoCodiceSblocco.fxml");
     }
 
     @FXML
