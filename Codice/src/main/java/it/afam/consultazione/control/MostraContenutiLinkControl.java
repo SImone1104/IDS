@@ -1,7 +1,7 @@
 package it.afam.consultazione.control;
 
 import it.afam.consultazione.interfaccia.SchermataContenutiCondivisi;
-import it.afam.gestioneAutenticazione.interfaccia.MessaggioDiErrore;
+import it.afam.consultazione.interfaccia.MessaggioDiErrore;
 import it.afam.utility.DatabaseManager;
 import it.afam.utility.SceneManager;
 import it.afam.utility.SessioneCorrente;

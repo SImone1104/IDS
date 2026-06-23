@@ -1,6 +1,6 @@
 package it.afam.gestioneCondivisione.control;
 
-import it.afam.gestioneAutenticazione.interfaccia.MessaggioDiConferma;
+import it.afam.gestioneCondivisione.interfaccia.MessaggioDiConferma;
 import it.afam.gestioneCondivisione.interfaccia.MessaggioConfermaLink;
 import it.afam.utility.DatabaseManager;
 import it.afam.utility.SessioneCorrente;

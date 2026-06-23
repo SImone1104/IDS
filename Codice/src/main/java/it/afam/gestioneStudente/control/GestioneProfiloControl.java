@@ -1,7 +1,7 @@
 package it.afam.gestioneStudente.control;
 
 import it.afam.entity.EntityStudente;
-import it.afam.gestioneAutenticazione.interfaccia.MessaggioDiConferma;
+import it.afam.gestioneStudente.interfaccia.MessaggioDiConferma;
 import it.afam.utility.DatabaseManager;
 import it.afam.utility.SessioneCorrente;
 import it.afam.utility.Utils;

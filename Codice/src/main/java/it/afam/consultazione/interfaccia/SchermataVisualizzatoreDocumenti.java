@@ -1,6 +1,5 @@
 package it.afam.consultazione.interfaccia;
 
-import it.afam.gestioneAutenticazione.interfaccia.MessaggioDiAvviso;
 import it.afam.utility.ConnessioneException;
 import it.afam.utility.DatabaseManager;
 import it.afam.utility.SceneManager;

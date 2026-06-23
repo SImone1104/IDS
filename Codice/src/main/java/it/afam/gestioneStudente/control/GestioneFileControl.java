@@ -1,6 +1,6 @@
 package it.afam.gestioneStudente.control;
 
-import it.afam.gestioneAutenticazione.interfaccia.MessaggioDiConferma;
+import it.afam.gestioneStudente.interfaccia.MessaggioDiConferma;
 import it.afam.utility.DatabaseManager;
 import it.afam.utility.dto.DatiFile;
 

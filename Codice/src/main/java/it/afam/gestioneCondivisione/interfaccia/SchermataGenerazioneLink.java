@@ -1,6 +1,5 @@
 package it.afam.gestioneCondivisione.interfaccia;
 
-import it.afam.gestioneAutenticazione.interfaccia.MessaggioDiAvviso;
 import it.afam.gestioneCondivisione.control.GestisciLinkControl;
 import it.afam.utility.ConnessioneException;
 import it.afam.utility.SceneManager;
