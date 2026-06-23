@@ -2,7 +2,6 @@ package it.afam.consultazione.interfaccia;
 
 import it.afam.consultazione.control.VisualizzaProfiloControl;
 import it.afam.entity.EntityStudente;
-import it.afam.gestioneAutenticazione.interfaccia.MessaggioDiAvviso;
 import it.afam.utility.ConnessioneException;
 import it.afam.utility.SceneManager;
 import it.afam.utility.dto.DatiBackground;

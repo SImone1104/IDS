@@ -1,7 +1,6 @@
 package it.afam.consultazione.interfaccia;
 
 import it.afam.consultazione.control.MostraContenutiLinkControl;
-import it.afam.gestioneAutenticazione.interfaccia.MessaggioDiErrore;
 import it.afam.utility.SceneManager;
 import it.afam.utility.dto.DatiFile;
 import javafx.collections.FXCollections;
