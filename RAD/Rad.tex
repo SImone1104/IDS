@@ -196,16 +196,16 @@ Di seguito sono illustrate le interfacce che consentono di svolgere le funzional
 \begin{itemize}
     \item \textbf{Schermata di Login / Autenticazione:} Interfaccia principale iniziale che permette di effettuare l'accesso sicuro al sistema tramite credenziali locali standard (protette da codice OTP inviato via e-mail) o, in alternativa, tramite i sistemi di identità digitale \textbf{SPID} ed \textbf{eIDAS} previa selezione del proprio Provider dall'apposito menu a tendina. Include anche il form di registrazione, il recupero password e i controlli di ricerca pubblica degli studenti, utilizzabili senza login.
     \item \textbf{Area Personale (Home AFAM / Dashboard Studente):} Interfaccia principale a cui accede lo studente una volta autenticato. Da qui l'utente può navigare verso la gestione del proprio profilo anagrafico e del background artistico, oppure accedere alla gestione dei contenuti e delle condivisioni.
-    \item \textbf{Schermata Gestione Contenuti ed Elenco File:} Interfaccia che permette di visualizzare e creare le Categorie Artistiche e di effettuare l'upload dei file (audio, video, PDF) entro il limite di 1 GB. Tramite menu a tendina contestuali (attivati dal pulsante "+"), consente di modificare, eliminare o regolare lo stato di privacy (Pubblico/Privato) di ciascun asset.
+    \item \textbf{Schermata Gestione Contenuti ed Elenco File:} Interfaccia che permette di visualizzare e creare le Categorie Artistiche e di effettuare l'upload dei file (audio, video, PDF) entro il limite di 1 GB. Tramite menu a tendina contestuali consente di modificare, eliminare o regolare lo stato di privacy (Pubblico/Privato) di ciascun asset.
     \item \textbf{Schermata Gestione Condivisione (Link e Codici):} Interfaccia sdoppiata che permette allo studente di selezionare i materiali e generare URL univoci temporizzati per l'esterno (della durata di 14 giorni con indicatore di avvenuta lettura) attingendo da tutti i file caricati, sia pubblici sia privati, oppure codici di sblocco univoci per la condivisione interna di file privati, con relative funzioni di revoca manuale immediata.
-    \item \textbf{Schermata di Ricerca e Consultazione Profilo:} Interfaccia dedicata agli utenti della piattaforma e ai valutatori esterni. Permette di cercare uno studente per nome e cognome per consultarne il profilo pubblico o, tramite l'inserimento di un codice valido o la risoluzione di un link di condivisione esterno, accedere ai file multimediali e documentali autorizzati.
+    \item \textbf{Schermata di Ricerca e Consultazione Profilo:} Interfaccia dedicata agli utenti della piattaforma e ai valutatori esterni. Permette di cercare uno studente per nome e cognome per consultarne il profilo pubblico e tramite l'inserimento di un codice valido, permette di visualizzare i file privati.
     \item \textbf{Schermate di Fruizione (Player e Visualizzatore):} Interfacce integrate per la fruizione protetta dei contenuti che si adattano al formato del file selezionato (Riproduttore Multimediale per audio/video in streaming e Visualizzatore Documenti per i PDF), inibendo nativamente qualsiasi funzione di download.
 \end{itemize}
 \spaziocontenuto
 \subsection{Requisiti funzionali}
 Il Sistema prevede due macro-tipologie di attori, nello specifico lo Studente e l'Utente (Generico/Esterno), le cui interazioni con la piattaforma sono governate dai flussi logici e dai macro casi d'uso descritti di seguito:
 
-\subsubsection{Funzionalità per lo Studente (Macro Casi d'Uso)}
+\subsubsection{Funzionalità per lo Studente}
 Il software centralizza la gestione della presenza digitale degli studenti AFAM, strutturando le interazioni principali nei seguenti macro casi d'uso:
 
 \begin{itemize}
@@ -219,10 +219,10 @@ Il software centralizza la gestione della presenza digitale degli studenti AFAM,
 
 \spaziocontenuto
 
-\subsubsection{Funzionalità per l'Utente Esterno (Macro Casi d'Uso)}
+\subsubsection{Funzionalità per l'Utente Esterno}
 Il sistema governa l'accesso ai contenuti da parte di utenti terzi o della piattaforma attraverso specifiche interazioni che non richiedono la registrazione di un profilo nominale:
 \begin{itemize}
-    \item \textbf{Ricerca Globale e Consultazione Pubblica:} Permette a qualunque utente di individuare uno studente iscritto inserendo il relativo nome e cognome all'interno del sistema di ricerca. Il flusso restituisce la visualizzazione dell'Area Personale del candidato limitata esclusivamente ai file multimediali e alle categorie che l'autore ha contrassegnato con stato di privacy \textit{Pubblico}.
+    \item \textbf{Ricerca Globale e Consultazione Pubblica:} Permette a qualunque utente di individuare uno studente iscritto inserendo il relativo nome e cognome all'interno del sistema di ricerca. Il flusso restituisce la visualizzazione dell'Area Personale del candidato limitata alla visualizzazione dei dati personali , del background artistico e ai file multimediali e alle categorie che l'autore ha contrassegnato con stato di privacy \textit{Pubblico}.
     \item \textbf{Risoluzione Link di Condivisione Esterna:} Gestisce l'accesso guidato alla piattaforma da parte dei valutatori. All'inserimento dell'URL univoco, il sistema ne verifica la validità temporale (entro la scadenza di 14 giorni), notifica l'avvenuta lettura allo studente e reindirizza l'utente esterno a una schermata dedicata contenente unicamente i file selezionati per quella candidatura, siano essi pubblici o privati.
     \item \textbf{Sblocco Contenuti Privati tramite Codice:} Consente la visualizzazione di asset protetti all'interno di un profilo cercato. Qualora l'utente esterno inserisca nell'apposita maschera grafica un codice di sblocco valido e associato a quel profilo, il sistema interroga il DBMS e abilita temporaneamente la visualizzazione inline dei corrispondenti file privati.
     \item \textbf{Fruizione Protetta degli Asset (Anti-Download):} Regola l'interazione con i singoli file multimediali e documentali durante la consultazione. La selezione di un asset inizializza automaticamente il player multimediale integrato per i flussi audio/video in streaming controllato, oppure il visualizzatore dedicato per i documenti PDF, inibendo nativamente qualsiasi funzione di scaricamento locale del file fisico.
