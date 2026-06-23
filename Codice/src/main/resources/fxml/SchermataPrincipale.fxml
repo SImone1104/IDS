@@ -2,17 +2,59 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="it.afam.gestioneAutenticazione.interfaccia.SchermataPrincipale"
-      alignment="CENTER" spacing="18" prefWidth="420" prefHeight="320">
-    <padding><Insets top="30" right="30" bottom="30" left="30"/></padding>
-    <children>
-        <Label text="AFAM Connect" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
-        <Button text="Login" prefWidth="220" onAction="#cliccaLogin"/>
-        <Button text="Registrati" prefWidth="220" onAction="#cliccaRegistrazione"/>
-        <Button text="Recupera Password" prefWidth="220" onAction="#cliccaRecuperaPassword"/>
-        <Button text="Ricerca" prefWidth="220" onAction="#cliccaRicerca"/>
-    </children>
-</VBox>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.afam.gestioneAutenticazione.interfaccia.SchermataPrincipale"
+            prefWidth="760" prefHeight="500">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="16"
+              style="-fx-background-color: white;
+                     -fx-border-color: transparent transparent #cde2ea transparent;
+                     -fx-border-width: 0 0 1 0;
+                     -fx-padding: 14 24 14 24;
+                     -fx-effect: dropshadow(gaussian, rgba(24, 52, 90, 0.16), 14, 0.18, 0, 4);">
+            <children>
+                <ImageView fitWidth="210" fitHeight="90" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/afam-connect-logo.png"/>
+                    </image>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button text="Login" prefWidth="110" onAction="#cliccaLogin"/>
+                <Button text="Registrati" prefWidth="120" onAction="#cliccaRegistrazione"/>
+                <Button text="Recupera Password" prefWidth="170" onAction="#cliccaRecuperaPassword"/>
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="18">
+            <padding><Insets top="38" right="34" bottom="34" left="34"/></padding>
+            <children>
+                <Label text="Benvenuto in AFAM Connect"
+                       style="-fx-font-size: 28px; -fx-font-weight: bold;"/>
+                <Label text="La piattaforma digitale pensata per valorizzare il percorso artistico e formativo degli studenti AFAM."
+                       wrapText="true" maxWidth="560" style="-fx-font-size: 15px; -fx-text-alignment: center;"/>
+                <Label text="Consulta profili pubblici, esperienze artistiche e contenuti condivisi dagli studenti."
+                       wrapText="true" maxWidth="540" style="-fx-font-size: 14px; -fx-text-alignment: center;"/>
+
+                <VBox alignment="CENTER" spacing="10" style="-fx-padding: 18 0 0 0;">
+                    <children>
+                        <Label text="Ricerca i nostri studenti"
+                               style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                        <Label text="Usa la ricerca per trovare uno studente e visualizzare il suo profilo pubblico."
+                               wrapText="true" maxWidth="480" style="-fx-text-alignment: center;"/>
+                        <Button text="Ricerca" prefWidth="220" onAction="#cliccaRicerca"/>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

@@ -8,6 +8,7 @@ import it.afam.utility.dto.DatiFile;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressIndicator;
 import javafx.scene.control.Slider;
 import javafx.scene.layout.VBox;
 import javafx.scene.media.Media;
@@ -26,6 +27,8 @@ public class SchermataRiproduttoreMultimediale {
 
     @FXML private Label labelTitolo;
     @FXML private Label labelDescrizione;
+    @FXML private ProgressIndicator indicatoreCaricamento;
+    @FXML private Label labelCaricamento;
     @FXML private MediaView riproduttore;
     @FXML private VBox pannelloAudio;
     @FXML private Button bottonePlayPause;
@@ -54,6 +57,7 @@ public class SchermataRiproduttoreMultimediale {
             Media media = new Media(f.toURI().toString());
             player = new MediaPlayer(media);
             riproduttore.setMediaPlayer(player);
+            impostaCaricamento(true);
             configuraControlli();
             player.play();
         } catch (ConnessioneException e) {
@@ -72,8 +76,13 @@ public class SchermataRiproduttoreMultimediale {
     private void configuraControlli() {
         // imposta la durata massima della timeline quando è nota
         player.setOnReady(() -> {
+            impostaCaricamento(false);
             sliderTempo.setMax(player.getTotalDuration().toSeconds());
             aggiornaTempo();
+        });
+        player.setOnError(() -> {
+            impostaCaricamento(false);
+            labelTitolo.setText(labelTitolo.getText() + " (contenuto non caricabile)");
         });
 
         // avanzamento automatico della timeline durante la riproduzione
@@ -129,6 +138,16 @@ public class SchermataRiproduttoreMultimediale {
         Duration totale = player.getTotalDuration();
         labelTempo.setText(formato(corrente) + " / "
                 + (totale == null || totale.isUnknown() ? "--:--" : formato(totale)));
+    }
+
+    private void impostaCaricamento(boolean caricamento) {
+        indicatoreCaricamento.setVisible(caricamento);
+        indicatoreCaricamento.setManaged(caricamento);
+        labelCaricamento.setVisible(caricamento);
+        labelCaricamento.setManaged(caricamento);
+
+        bottonePlayPause.setDisable(caricamento);
+        sliderTempo.setDisable(caricamento);
     }
 
     private String formato(Duration d) {

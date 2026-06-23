@@ -47,7 +47,7 @@ public class FormModificaBackgroundArtistico {
                 MessaggioDiConferma.mostra(messaggio);
                 SceneManager.getIstanza().switchTo("SchermataBackgroundArtistico.fxml");
             } else {
-                MessaggioDiErrore.mostra("Ogni campo può contenere al massimo 700 caratteri");
+                MessaggioDiErrore.mostra("Ogni campo puo contenere al massimo 700 caratteri");
             }
         } catch (ConnessioneException e) {
             MessaggioDiAvviso.mostra("Connessione al database non riuscita. Riprova.");

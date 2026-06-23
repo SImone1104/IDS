@@ -2,6 +2,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -12,6 +13,8 @@
     <children>
         <Label fx:id="labelTitolo" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
         <Label fx:id="labelDescrizione" wrapText="true"/>
+        <ProgressIndicator fx:id="indicatoreCaricamento" prefWidth="42" prefHeight="42"/>
+        <Label fx:id="labelCaricamento" text="Caricamento documento in corso..."/>
         <ScrollPane fitToWidth="true" prefHeight="480">
             <content>
                 <VBox fx:id="contenitorePagine" alignment="CENTER" spacing="12"/>

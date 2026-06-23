@@ -2,6 +2,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -14,10 +15,14 @@
         <Label text="Inserisci il codice" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
         <Label text="Inserisci il codice di recupero ricevuto via e-mail"/>
         <TextField fx:id="codice" promptText="Codice"/>
+        <ProgressIndicator fx:id="indicatoreCaricamento" prefWidth="38" prefHeight="38"
+                           visible="false" managed="false"/>
+        <Label fx:id="labelCaricamento" text="Invio nuovo codice in corso..."
+               visible="false" managed="false"/>
         <HBox alignment="CENTER" spacing="15">
             <children>
-                <Button text="Conferma" onAction="#cliccaConferma"/>
-                <Button text="Richiedi nuovo codice" onAction="#cliccaRichiediNuovoCodice"/>
+                <Button fx:id="bottoneConferma" text="Conferma" onAction="#cliccaConferma"/>
+                <Button fx:id="bottoneNuovoCodice" text="Richiedi nuovo codice" onAction="#cliccaRichiediNuovoCodice"/>
             </children>
         </HBox>
     </children>

@@ -2,19 +2,46 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="it.afam.gestioneAutenticazione.interfaccia.HomeAFAM"
-      alignment="CENTER" spacing="12" prefWidth="460" prefHeight="460">
-    <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
-    <children>
-        <Label text="Home AFAM" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
-        <Button text="Ricerca" prefWidth="260" onAction="#cliccaRicerca"/>
-        <Button text="Gestione Profilo" prefWidth="260" onAction="#cliccaGestioneProfilo"/>
-        <Button text="Gestione Contenuti" prefWidth="260" onAction="#cliccaGestioneContenuti"/>
-        <Button text="Gestione Condivisione con Link" prefWidth="260" onAction="#cliccaGestioneCondLink"/>
-        <Button text="Gestione Condivisione Interna" prefWidth="260" onAction="#cliccaGestCondInterna"/>
-        <Button text="Logout" prefWidth="260" onAction="#cliccaLogout"/>
-    </children>
-</VBox>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.afam.gestioneAutenticazione.interfaccia.HomeAFAM"
+            prefWidth="760" prefHeight="500">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="16"
+              style="-fx-background-color: white;
+                     -fx-border-color: transparent transparent #cde2ea transparent;
+                     -fx-border-width: 0 0 1 0;
+                     -fx-padding: 14 24 14 24;
+                     -fx-effect: dropshadow(gaussian, rgba(24, 52, 90, 0.16), 14, 0.18, 0, 4);">
+            <children>
+                <ImageView fitWidth="210" fitHeight="90" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/afam-connect-logo.png"/>
+                    </image>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button text="Logout" prefWidth="120" onAction="#cliccaLogout"/>
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="12">
+            <padding><Insets top="38" right="40" bottom="34" left="40"/></padding>
+            <children>
+                <Label text="Home AFAM" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+                <Button text="Gestione Profilo" prefWidth="260" onAction="#cliccaGestioneProfilo"/>
+                <Button text="Gestione Contenuti" prefWidth="260" onAction="#cliccaGestioneContenuti"/>
+                <Button text="Gestione Condivisione con Link" prefWidth="260" onAction="#cliccaGestioneCondLink"/>
+                <Button text="Gestione Condivisione Interna" prefWidth="260" onAction="#cliccaGestCondInterna"/>
+                <Button text="Ricerca" prefWidth="260" onAction="#cliccaRicerca"/>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
