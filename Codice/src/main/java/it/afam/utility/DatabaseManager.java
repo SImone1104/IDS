@@ -13,6 +13,7 @@ import java.io.File;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.sql.Connection;
 import java.time.LocalDate;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -263,7 +264,24 @@ public class DatabaseManager {
     }
 
     public void eliminaFile(int idFile) {
-        boundaryDBMS.eseguiAggiornamento("DELETE FROM Contenuto_File WHERE id_file = ?", new Object[]{idFile});
+        Connection conn = boundaryDBMS.apriConnessione();
+        try {
+            boolean autoCommitPrecedente = conn.getAutoCommit();
+            conn.setAutoCommit(false);
+            try {
+                boundaryDBMS.eseguiAggiornamento("DELETE FROM Dettaglio_Link WHERE id_file = ?", new Object[]{idFile});
+                boundaryDBMS.eseguiAggiornamento("DELETE FROM Dettaglio_Codice WHERE id_file = ?", new Object[]{idFile});
+                boundaryDBMS.eseguiAggiornamento("DELETE FROM Contenuto_File WHERE id_file = ?", new Object[]{idFile});
+                conn.commit();
+            } catch (RuntimeException | SQLException e) {
+                conn.rollback();
+                throw e;
+            } finally {
+                conn.setAutoCommit(autoCommitPrecedente);
+            }
+        } catch (SQLException e) {
+            throw new ConnessioneException("Errore durante l'eliminazione del file", e);
+        }
     }
 
     public void aggiornaPrivacy(int idFile, String privacy) {

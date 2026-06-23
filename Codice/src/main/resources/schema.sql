@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS Dettaglio_Link (
     id_file  INTEGER NOT NULL,
     PRIMARY KEY (id_link, id_file),
     FOREIGN KEY (id_link) REFERENCES Link_Condivisione(id_link),
-    FOREIGN KEY (id_file) REFERENCES Contenuto_File(id_file)
+    FOREIGN KEY (id_file) REFERENCES Contenuto_File(id_file) ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS Codice_Sblocco (
@@ -74,5 +74,5 @@ CREATE TABLE IF NOT EXISTS Dettaglio_Codice (
     id_file    INTEGER NOT NULL,
     PRIMARY KEY (id_codice, id_file),
     FOREIGN KEY (id_codice) REFERENCES Codice_Sblocco(id_codice),
-    FOREIGN KEY (id_file) REFERENCES Contenuto_File(id_file)
+    FOREIGN KEY (id_file) REFERENCES Contenuto_File(id_file) ON DELETE CASCADE
 );
