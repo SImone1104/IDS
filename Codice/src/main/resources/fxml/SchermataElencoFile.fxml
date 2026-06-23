@@ -17,7 +17,7 @@
             <children>
                 <Button text="Upload" onAction="#cliccaUpload"/>
                 <Button text="Opzioni" onAction="#cliccaOpzioniFile"/>
-                <Button text="Indietro" onAction="#cliccaIndietro"/>
+                <Button text="Indietro" styleClass="secondary-action" onAction="#cliccaIndietro"/>
             </children>
         </HBox>
     </children>

@@ -12,6 +12,6 @@
         <Label text="Gestione Profilo" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
         <Button text="Dati Personali" prefWidth="220" onAction="#cliccaDatiPersonali"/>
         <Button text="Background Artistico" prefWidth="220" onAction="#cliccaBackgroundArtistico"/>
-        <Button text="Indietro" prefWidth="220" onAction="#cliccaIndietro"/>
+        <Button text="Indietro" prefWidth="220" styleClass="secondary-action" onAction="#cliccaIndietro"/>
     </children>
 </VBox>

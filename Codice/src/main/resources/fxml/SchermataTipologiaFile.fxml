@@ -14,6 +14,6 @@
         <Button text="Audio" prefWidth="220" onAction="#cliccaAudio"/>
         <Button text="Video" prefWidth="220" onAction="#cliccaVideo"/>
         <Button text="Documento" prefWidth="220" onAction="#cliccaDocumenti"/>
-        <Button text="Indietro" prefWidth="220" onAction="#cliccaIndietro"/>
+        <Button text="Indietro" prefWidth="220" styleClass="secondary-action" onAction="#cliccaIndietro"/>
     </children>
 </VBox>

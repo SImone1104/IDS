@@ -12,6 +12,6 @@
         <Label text="Condivisione Interna (Codice)" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
         <Button text="Seleziona Contenuti Privati" prefWidth="260" onAction="#cliccaSelezionaContenutiPrivati"/>
         <Button text="Gestisci Codici" prefWidth="260" onAction="#cliccaGestisciCodici"/>
-        <Button text="Indietro" prefWidth="260" onAction="#cliccaIndietro"/>
+        <Button text="Indietro" prefWidth="260" styleClass="secondary-action" onAction="#cliccaIndietro"/>
     </children>
 </VBox>

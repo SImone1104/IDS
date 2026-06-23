@@ -2,25 +2,57 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
 <VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
       fx:controller="it.afam.consultazione.interfaccia.SchermataProfiloStudente"
-      alignment="CENTER" spacing="8" prefWidth="560" prefHeight="660">
-    <padding><Insets top="20" right="40" bottom="20" left="40"/></padding>
+      alignment="TOP_CENTER" spacing="18" prefWidth="760"
+      styleClass="student-profile-root">
+    <padding><Insets top="30" right="42" bottom="30" left="42"/></padding>
     <children>
-        <Label text="Profilo Studente" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
-        <ImageView fx:id="immagineFoto" fitWidth="110" fitHeight="110" preserveRatio="true"/>
-        <Label fx:id="labelNome"/>
-        <Label fx:id="labelCognome"/>
-        <Label fx:id="labelEmail"/>
-        <Label fx:id="labelTelefono"/>
-        <Label text="Background Artistico:" style="-fx-font-weight: bold;"/>
-        <ListView fx:id="listaBackground" prefHeight="260"/>
-        <Button text="Mostra Contenuti Pubblici" prefWidth="240" onAction="#cliccaMostraContenutiPubblici"/>
-        <Button text="Mostra Contenuti Privati" prefWidth="240" onAction="#cliccaMostraContenutiPrivati"/>
-        <Button text="Indietro" prefWidth="240" onAction="#cliccaIndietro"/>
+        <Label text="Profilo Studente"/>
+
+        <HBox alignment="CENTER_LEFT" spacing="28" maxWidth="620" styleClass="student-profile-header">
+            <padding><Insets top="20" right="24" bottom="20" left="24"/></padding>
+            <children>
+                <VBox alignment="CENTER" spacing="8" prefWidth="180">
+                    <children>
+                        <ImageView fx:id="immagineFoto" fitWidth="150" fitHeight="150" preserveRatio="true"
+                                   styleClass="student-profile-photo"/>
+                        <Label text="Foto profilo" styleClass="student-profile-caption"/>
+                    </children>
+                </VBox>
+
+                <VBox alignment="CENTER_LEFT" spacing="10" prefWidth="360">
+                    <children>
+                        <Label fx:id="labelNome" styleClass="student-profile-data"/>
+                        <Label fx:id="labelCognome" styleClass="student-profile-data"/>
+                        <Label fx:id="labelEmail" wrapText="true" styleClass="student-profile-data"/>
+                        <Label fx:id="labelTelefono" styleClass="student-profile-data"/>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+
+        <VBox alignment="CENTER_LEFT" spacing="10" maxWidth="620" styleClass="student-profile-section">
+            <padding><Insets top="18" right="20" bottom="18" left="20"/></padding>
+            <children>
+                <Label text="Background Artistico" styleClass="student-profile-section-title"/>
+                <VBox fx:id="contenitoreBackground" spacing="8" maxWidth="580"/>
+            </children>
+        </VBox>
+
+        <Region prefHeight="2"/>
+
+        <HBox alignment="CENTER" spacing="12">
+            <children>
+                <Button text="Mostra Contenuti Pubblici" prefWidth="205" onAction="#cliccaMostraContenutiPubblici"/>
+                <Button text="Mostra Contenuti Privati" prefWidth="205" onAction="#cliccaMostraContenutiPrivati"/>
+                <Button text="Indietro" prefWidth="130" styleClass="secondary-action" onAction="#cliccaIndietro"/>
+            </children>
+        </HBox>
     </children>
 </VBox>

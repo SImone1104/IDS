@@ -18,7 +18,7 @@
                 <Button text="Aggiungi" onAction="#cliccaAggiungiDati"/>
                 <Button text="Modifica" onAction="#cliccaModificaDati"/>
                 <Button text="Elimina" onAction="#cliccaEliminaDati"/>
-                <Button text="Indietro" onAction="#cliccaIndietro"/>
+                <Button text="Indietro" styleClass="secondary-action" onAction="#cliccaIndietro"/>
             </children>
         </HBox>
     </children>

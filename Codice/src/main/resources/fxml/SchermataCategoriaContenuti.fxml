@@ -25,7 +25,7 @@
         <HBox alignment="CENTER" spacing="10">
             <children>
                 <Button text="Visualizza" onAction="#cliccaVisualizza"/>
-                <Button text="Indietro" onAction="#cliccaIndietro"/>
+                <Button text="Indietro" styleClass="secondary-action" onAction="#cliccaIndietro"/>
             </children>
         </HBox>
     </children>

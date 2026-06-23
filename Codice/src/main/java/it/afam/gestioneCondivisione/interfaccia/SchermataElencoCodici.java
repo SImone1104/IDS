@@ -8,6 +8,8 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
 
 /** Elenco dei codici di sblocco generati, con revoca (UC 7.3, 7.4). */
 public class SchermataElencoCodici {
@@ -49,6 +51,18 @@ public class SchermataElencoCodici {
         } catch (ConnessioneException e) {
             MessaggioDiAvviso.mostra("Connessione al database non riuscita. Riprova.");
         }
+    }
+
+    @FXML
+    private void cliccaCopiaCodice() {
+        DatiCodice sel = listaCodici.getSelectionModel().getSelectedItem();
+        if (sel == null) {
+            MessaggioDiErrore.mostra("Seleziona un codice da copiare");
+            return;
+        }
+        ClipboardContent content = new ClipboardContent();
+        content.putString(sel.codice());
+        Clipboard.getSystemClipboard().setContent(content);
     }
 
     @FXML

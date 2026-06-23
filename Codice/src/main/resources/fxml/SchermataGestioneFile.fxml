@@ -13,6 +13,6 @@
         <Button text="Modifica File" prefWidth="220" onAction="#cliccaModificaFile"/>
         <Button text="Privacy" prefWidth="220" onAction="#cliccaPrivacy"/>
         <Button text="Elimina File" prefWidth="220" onAction="#cliccaEliminaFile"/>
-        <Button text="Indietro" prefWidth="220" onAction="#cliccaIndietro"/>
+        <Button text="Indietro" prefWidth="220" styleClass="secondary-action" onAction="#cliccaIndietro"/>
     </children>
 </VBox>

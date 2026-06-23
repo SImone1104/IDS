@@ -12,6 +12,6 @@
         <Label text="Condivisione tramite Link" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
         <Button text="Seleziona Contenuti" prefWidth="240" onAction="#cliccaSelezionaContenuti"/>
         <Button text="Gestisci Link" prefWidth="240" onAction="#cliccaGestisciLink"/>
-        <Button text="Indietro" prefWidth="240" onAction="#cliccaIndietro"/>
+        <Button text="Indietro" prefWidth="240" styleClass="secondary-action" onAction="#cliccaIndietro"/>
     </children>
 </VBox>

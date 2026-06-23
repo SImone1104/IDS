@@ -17,7 +17,7 @@
             <children>
                 <Button text="Revoca" onAction="#cliccaRevoca"/>
                 <Button text="Copia Link" onAction="#cliccaCopiaLink"/>
-                <Button text="Indietro" onAction="#cliccaIndietro"/>
+                <Button text="Indietro" styleClass="secondary-action" onAction="#cliccaIndietro"/>
             </children>
         </HBox>
     </children>

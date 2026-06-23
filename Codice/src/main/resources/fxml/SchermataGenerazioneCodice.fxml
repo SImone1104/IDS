@@ -17,6 +17,6 @@
         <Label fx:id="labelCaricamento" text="Generazione codice in corso..."
                visible="false" managed="false"/>
         <Button fx:id="bottoneGenera" text="Genera Codice" prefWidth="200" onAction="#cliccaGeneraCodice"/>
-        <Button fx:id="bottoneIndietro" text="Indietro" prefWidth="200" onAction="#cliccaIndietro"/>
+        <Button fx:id="bottoneIndietro" text="Indietro" prefWidth="200" styleClass="secondary-action" onAction="#cliccaIndietro"/>
     </children>
 </VBox>

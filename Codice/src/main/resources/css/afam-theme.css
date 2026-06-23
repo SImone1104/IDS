@@ -122,6 +122,78 @@
     -fx-background-color: #137f90;
 }
 
+.secondary-action {
+    -fx-background-color: #eef4f7;
+    -fx-text-fill: -afam-blue;
+    -fx-border-color: #c7d9e2;
+    -fx-border-width: 1px;
+}
+
+.secondary-action:hover {
+    -fx-background-color: #e3eef3;
+}
+
+.secondary-action:pressed {
+    -fx-background-color: #d5e5ec;
+}
+
+.student-profile-root {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+}
+
+.student-profile-header {
+    -fx-background-color: linear-gradient(to bottom right, #f7fcfd, #eef7fa);
+    -fx-background-radius: 10px;
+    -fx-border-color: #d4e6ee;
+    -fx-border-radius: 10px;
+}
+
+.student-profile-photo {
+    -fx-effect: dropshadow(gaussian, rgba(24, 52, 90, 0.22), 14, 0.20, 0, 5);
+}
+
+.student-profile-caption {
+    -fx-font-size: 12px;
+    -fx-text-fill: -afam-muted;
+}
+
+.student-profile-data {
+    -fx-font-size: 15px;
+    -fx-text-fill: -afam-ink;
+}
+
+.student-profile-section {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-border-color: #d4e6ee;
+    -fx-border-radius: 10px;
+}
+
+.student-profile-section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: 800;
+    -fx-text-fill: -afam-blue;
+}
+
+.background-card {
+    -fx-padding: 4px 2px 6px 2px;
+}
+
+.background-card-row {
+    -fx-padding: 0 0 7px 0;
+}
+
+.background-card-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: 800;
+    -fx-text-fill: -afam-blue;
+}
+
+.background-card-value {
+    -fx-font-size: 13px;
+    -fx-text-fill: -afam-ink;
+}
+
 .slider .track {
     -fx-background-color: #d8edf2;
 }

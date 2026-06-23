@@ -21,6 +21,6 @@
                visible="false" managed="false"/>
         <Button fx:id="bottoneAccedi" text="Accedi" prefWidth="160" onAction="#cliccaAccedi"/>
         <Button fx:id="bottoneSpidEidas" text="Accedi con SPID/eIDAS" prefWidth="180" onAction="#cliccaAccediSpidEidas"/>
-        <Button fx:id="bottoneIndietro" text="Indietro" prefWidth="160" onAction="#cliccaIndietro"/>
+        <Button fx:id="bottoneIndietro" text="Indietro" prefWidth="160" styleClass="secondary-action" onAction="#cliccaIndietro"/>
     </children>
 </VBox>

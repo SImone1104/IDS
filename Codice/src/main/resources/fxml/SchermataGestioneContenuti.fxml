@@ -18,7 +18,7 @@
             <children>
                 <Button text="Apri" onAction="#cliccaApriCategoria"/>
                 <Button text="Crea Nuova Categoria" onAction="#cliccaCreaNuovaCategoria"/>
-                <Button text="Indietro" onAction="#cliccaIndietro"/>
+                <Button text="Indietro" styleClass="secondary-action" onAction="#cliccaIndietro"/>
             </children>
         </HBox>
     </children>
