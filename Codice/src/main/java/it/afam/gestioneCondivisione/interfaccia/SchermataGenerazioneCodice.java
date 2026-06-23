@@ -3,7 +3,6 @@ package it.afam.gestioneCondivisione.interfaccia;
 import it.afam.gestioneCondivisione.control.GestisciCodiceControl;
 import it.afam.utility.ConnessioneException;
 import it.afam.utility.SceneManager;
-import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -19,32 +18,15 @@ public class SchermataGenerazioneCodice {
 
     @FXML
     private void cliccaGeneraCodice() {
-        impostaCaricamento(true);
-        Task<Void> taskCodice = new Task<>() {
-            @Override
-            protected Void call() {
-                GestisciCodiceControl.getIstanza().generaCodice();
-                return null;
-            }
-        };
-
-        taskCodice.setOnSucceeded(event -> {
-            impostaCaricamento(false);
+        try {
+            impostaCaricamento(true);
+            GestisciCodiceControl.getIstanza().generaCodice();
             SceneManager.getIstanza().switchTo("SchermataGestioneCondInterna.fxml");
-        });
-        taskCodice.setOnFailed(event -> {
+        } catch (ConnessioneException e) {
+            MessaggioDiAvviso.mostra("Connessione al database non riuscita. Riprova.");
+        } finally {
             impostaCaricamento(false);
-            Throwable errore = taskCodice.getException();
-            if (errore instanceof ConnessioneException) {
-                MessaggioDiAvviso.mostra("Connessione al database non riuscita. Riprova.");
-            } else {
-                MessaggioDiErrore.mostra("Generazione codice non riuscita. Riprova tra qualche secondo.");
-            }
-        });
-
-        Thread threadCodice = new Thread(taskCodice, "genera-codice-afam");
-        threadCodice.setDaemon(true);
-        threadCodice.start();
+        }
     }
 
     @FXML
