@@ -1,7 +1,6 @@
 package it.afam.consultazione.interfaccia;
 
 import it.afam.consultazione.control.CercaStudenteControl;
-import it.afam.gestioneAutenticazione.interfaccia.MessaggioDiErrore;
 import it.afam.utility.SceneManager;
 import it.afam.utility.dto.DatiStudente;
 import javafx.collections.FXCollections;

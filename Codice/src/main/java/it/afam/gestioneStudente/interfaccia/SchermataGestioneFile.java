@@ -1,6 +1,5 @@
 package it.afam.gestioneStudente.interfaccia;
 
-import it.afam.gestioneAutenticazione.interfaccia.MessaggioDiAvviso;
 import it.afam.gestioneStudente.control.GestioneFileControl;
 import it.afam.utility.ConnessioneException;
 import it.afam.utility.SceneManager;
