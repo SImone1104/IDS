@@ -13,6 +13,7 @@
 Codice/target/
 Codice/.tools/
 Codice/afam.db
+Codice/identifier.sqlite
 Codice/src/main/resources/email.properties
 
 .idea/
