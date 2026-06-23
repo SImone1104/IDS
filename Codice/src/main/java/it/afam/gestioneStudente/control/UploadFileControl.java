@@ -38,7 +38,7 @@ public class UploadFileControl {
         }
         return switch (tipologia) {
             case "Immagine" -> estensione.equals("png") || estensione.equals("jpg") || estensione.equals("jpeg");
-            case "Audio" -> estensione.equals("mp3") || estensione.equals("wav");
+            case "Audio" -> estensione.equals("mp3") || estensione.equals("wav") || estensione.equals("m4a");
             case "Video" -> estensione.equals("mp4") || estensione.equals("avi") || estensione.equals("mov");
             case "Documento" -> estensione.equals("pdf");
             default -> false;

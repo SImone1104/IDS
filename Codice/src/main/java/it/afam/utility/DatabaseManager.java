@@ -418,9 +418,17 @@ public class DatabaseManager {
     // ============================================================
 
     public List<DatiStudente> cercaStudenti(String nome, String cognome) {
-        String sql = "SELECT id_studente, nome, cognome FROM Studente WHERE nome = ? AND cognome = ?";
+        nome = nome == null ? "" : nome.trim();
+        cognome = cognome == null ? "" : cognome.trim();
+        String sql = "SELECT id_studente, nome, cognome FROM Studente "
+                + "WHERE (? = '' OR LOWER(nome) LIKE LOWER(?)) "
+                + "AND (? = '' OR LOWER(cognome) LIKE LOWER(?)) "
+                + "ORDER BY cognome, nome";
+        String filtroNome = nome + "%";
+        String filtroCognome = cognome + "%";
         List<DatiStudente> lista = new ArrayList<>();
-        try (ResultSet rs = boundaryDBMS.eseguiQuery(sql, new Object[]{nome, cognome})) {
+        try (ResultSet rs = boundaryDBMS.eseguiQuery(sql, new Object[]{
+                nome, filtroNome, cognome, filtroCognome})) {
             while (rs.next()) {
                 lista.add(new DatiStudente(rs.getInt("id_studente"),
                         rs.getString("nome"), rs.getString("cognome")));
@@ -469,11 +477,12 @@ public class DatabaseManager {
 
     /** File privati associati a un codice di sblocco. */
     public List<DatiFile> recuperaFilePerCodice(String codice) {
-        String sql = "SELECT cf.* FROM Contenuto_File cf "
+        String sql = "SELECT cf.*, ca.nome_categoria FROM Contenuto_File cf "
                 + "JOIN Dettaglio_Codice dc ON cf.id_file = dc.id_file "
                 + "JOIN Codice_Sblocco cs ON dc.id_codice = cs.id_codice "
+                + "JOIN Categoria_Artistica ca ON cf.id_categoria = ca.id_categoria "
                 + "WHERE cs.token_testuale = ?";
-        return eseguiSelectFileToken(sql, codice);
+        return eseguiSelectFileTokenConCategoria(sql, codice);
     }
 
     /** Verifica che un link sia valido e attivo. */
@@ -490,11 +499,12 @@ public class DatabaseManager {
     public List<DatiFile> recuperaFilePerLink(String token) {
         boundaryDBMS.eseguiAggiornamento(
                 "UPDATE Link_Condivisione SET visualizzato = 1 WHERE token_url = ?", new Object[]{token});
-        String sql = "SELECT cf.* FROM Contenuto_File cf "
+        String sql = "SELECT cf.*, ca.nome_categoria FROM Contenuto_File cf "
                 + "JOIN Dettaglio_Link dl ON cf.id_file = dl.id_file "
                 + "JOIN Link_Condivisione lc ON dl.id_link = lc.id_link "
+                + "JOIN Categoria_Artistica ca ON cf.id_categoria = ca.id_categoria "
                 + "WHERE lc.token_url = ?";
-        return eseguiSelectFileToken(sql, token);
+        return eseguiSelectFileTokenConCategoria(sql, token);
     }
 
     /** Recupera il file fisico dato il suo identificativo. */
@@ -508,6 +518,18 @@ public class DatabaseManager {
         try (ResultSet rs = boundaryDBMS.eseguiQuery(sql, new Object[]{token})) {
             while (rs.next()) {
                 lista.add(mappaFile(rs));
+            }
+            return lista;
+        } catch (SQLException e) {
+            throw new ConnessioneException("Errore durante il recupero dei contenuti condivisi", e);
+        }
+    }
+
+    private List<DatiFile> eseguiSelectFileTokenConCategoria(String sql, String token) {
+        List<DatiFile> lista = new ArrayList<>();
+        try (ResultSet rs = boundaryDBMS.eseguiQuery(sql, new Object[]{token})) {
+            while (rs.next()) {
+                lista.add(mappaFileConCategoria(rs));
             }
             return lista;
         } catch (SQLException e) {

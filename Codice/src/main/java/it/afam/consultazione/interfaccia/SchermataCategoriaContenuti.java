@@ -51,11 +51,6 @@ public class SchermataCategoriaContenuti {
     }
 
     @FXML
-    private void cliccaVisualizzaContenutiPrivati() {
-        SceneManager.getIstanza().switchTo("SchermataInserimentoCodiceSblocco.fxml");
-    }
-
-    @FXML
     private void cliccaIndietro() {
         SceneManager.getIstanza().switchTo("SchermataContenutiPubblici.fxml");
     }

@@ -15,6 +15,14 @@
         <Label fx:id="labelTitolo" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
         <Label fx:id="labelDescrizione" wrapText="true"/>
         <MediaView fx:id="riproduttore" fitWidth="680" fitHeight="360" preserveRatio="true"/>
+        <VBox fx:id="pannelloAudio" alignment="CENTER" spacing="8" prefWidth="680" prefHeight="180"
+              visible="false" managed="false"
+              style="-fx-border-color: #b8b8b8; -fx-border-radius: 8; -fx-padding: 20;">
+            <children>
+                <Label text="Riproduttore audio" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+                <Label text="Usa Play/Pausa e la barra di avanzamento per ascoltare il contenuto." wrapText="true"/>
+            </children>
+        </VBox>
         <HBox alignment="CENTER" spacing="10">
             <padding><Insets left="10" right="10"/></padding>
             <children>

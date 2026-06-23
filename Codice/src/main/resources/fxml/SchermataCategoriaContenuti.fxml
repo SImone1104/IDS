@@ -25,7 +25,6 @@
         <HBox alignment="CENTER" spacing="10">
             <children>
                 <Button text="Visualizza" onAction="#cliccaVisualizza"/>
-                <Button text="Visualizza Contenuti Privati" onAction="#cliccaVisualizzaContenutiPrivati"/>
                 <Button text="Indietro" onAction="#cliccaIndietro"/>
             </children>
         </HBox>

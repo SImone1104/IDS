@@ -12,5 +12,6 @@
         <Label text="Generazione Codice" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
         <Label text="Genera un codice per i contenuti privati selezionati"/>
         <Button text="Genera Codice" prefWidth="200" onAction="#cliccaGeneraCodice"/>
+        <Button text="Indietro" prefWidth="200" onAction="#cliccaIndietro"/>
     </children>
 </VBox>

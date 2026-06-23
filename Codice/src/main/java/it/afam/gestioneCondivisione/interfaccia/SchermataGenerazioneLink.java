@@ -17,4 +17,9 @@ public class SchermataGenerazioneLink {
             MessaggioDiAvviso.mostra("Connessione al database non riuscita. Riprova.");
         }
     }
+
+    @FXML
+    private void cliccaIndietro() {
+        SceneManager.getIstanza().switchTo("SchermataSelezionaContenuti.fxml");
+    }
 }

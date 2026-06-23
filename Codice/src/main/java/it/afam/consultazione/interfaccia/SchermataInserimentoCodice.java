@@ -31,6 +31,6 @@ public class SchermataInserimentoCodice {
 
     @FXML
     private void cliccaIndietro() {
-        SceneManager.getIstanza().switchTo("SchermataCategoriaContenuti.fxml");
+        SceneManager.getIstanza().switchTo("SchermataProfiloStudente.fxml");
     }
 }

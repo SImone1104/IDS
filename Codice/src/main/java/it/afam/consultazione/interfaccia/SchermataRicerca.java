@@ -21,12 +21,18 @@ public class SchermataRicerca {
 
     @FXML
     private void cliccaCerca() {
-        if (!Utils.validaNome(campoNome.getText()) || !Utils.validaCognome(campoCognome.getText())) {
-            MessaggioDiErrore.mostra("Inserisci nome e cognome (solo caratteri alfabetici)");
+        String nome = campoNome.getText() == null ? "" : campoNome.getText().trim();
+        String cognome = campoCognome.getText() == null ? "" : campoCognome.getText().trim();
+        if (nome.isEmpty() && cognome.isEmpty()) {
+            MessaggioDiErrore.mostra("Inserisci almeno una parte del nome o del cognome");
+            return;
+        }
+        if ((!nome.isEmpty() && !Utils.validaNome(nome)) || (!cognome.isEmpty() && !Utils.validaCognome(cognome))) {
+            MessaggioDiErrore.mostra("Inserisci solo caratteri alfabetici");
             return;
         }
         try {
-            List<DatiStudente> risultati = control.cercaStudente(campoNome.getText(), campoCognome.getText());
+            List<DatiStudente> risultati = control.cercaStudente(nome, cognome);
             if (risultati.isEmpty()) {
                 MessaggioDiErrore.mostra("Nessun risultato trovato");
                 return;

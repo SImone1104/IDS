@@ -2,29 +2,34 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="it.afam.gestioneStudente.interfaccia.FormModificaBackgroundArtistico"
-      alignment="CENTER" spacing="10" prefWidth="500" prefHeight="460">
-    <padding><Insets top="25" right="40" bottom="25" left="40"/></padding>
-    <children>
-        <Label text="Background Artistico" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
-        <Label text="Scuola / Università"/>
-        <TextArea fx:id="campoScuolaUniversita" prefRowCount="2" wrapText="true"/>
-        <Label text="Collaborazioni fatte"/>
-        <TextArea fx:id="campoCollaborazioniFatte" prefRowCount="2" wrapText="true"/>
-        <Label text="Collaborazioni con autori"/>
-        <TextArea fx:id="campoCollaborazioniAutori" prefRowCount="2" wrapText="true"/>
-        <Label text="Partecipazioni"/>
-        <TextArea fx:id="campoPartecipazioni" prefRowCount="2" wrapText="true"/>
-        <HBox alignment="CENTER" spacing="15">
+<ScrollPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.afam.gestioneStudente.interfaccia.FormModificaBackgroundArtistico"
+            fitToWidth="true" prefWidth="540" prefHeight="600">
+    <content>
+        <VBox alignment="CENTER" spacing="10">
+            <padding><Insets top="25" right="40" bottom="25" left="40"/></padding>
             <children>
-                <Button text="Conferma" onAction="#cliccaConferma"/>
-                <Button text="Annulla" onAction="#cliccaAnnulla"/>
+                <Label text="Background Artistico" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label text="Scuola / Universita"/>
+                <TextArea fx:id="campoScuolaUniversita" prefRowCount="3" wrapText="true"/>
+                <Label text="Collaborazioni fatte"/>
+                <TextArea fx:id="campoCollaborazioniFatte" prefRowCount="3" wrapText="true"/>
+                <Label text="Collaborazioni con autori"/>
+                <TextArea fx:id="campoCollaborazioniAutori" prefRowCount="3" wrapText="true"/>
+                <Label text="Partecipazioni"/>
+                <TextArea fx:id="campoPartecipazioni" prefRowCount="3" wrapText="true"/>
+                <HBox alignment="CENTER" spacing="15">
+                    <children>
+                        <Button text="Conferma" onAction="#cliccaConferma"/>
+                        <Button text="Annulla" onAction="#cliccaAnnulla"/>
+                    </children>
+                </HBox>
             </children>
-        </HBox>
-    </children>
-</VBox>
+        </VBox>
+    </content>
+</ScrollPane>

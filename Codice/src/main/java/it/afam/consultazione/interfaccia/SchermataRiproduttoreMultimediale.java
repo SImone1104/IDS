@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.layout.VBox;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
@@ -26,6 +27,7 @@ public class SchermataRiproduttoreMultimediale {
     @FXML private Label labelTitolo;
     @FXML private Label labelDescrizione;
     @FXML private MediaView riproduttore;
+    @FXML private VBox pannelloAudio;
     @FXML private Button bottonePlayPause;
     @FXML private Slider sliderTempo;
     @FXML private Label labelTempo;
@@ -48,6 +50,7 @@ public class SchermataRiproduttoreMultimediale {
                 labelTitolo.setText(dati.titolo() + " (file non trovato)");
                 return;
             }
+            configuraVista(dati.tipologia());
             Media media = new Media(f.toURI().toString());
             player = new MediaPlayer(media);
             riproduttore.setMediaPlayer(player);
@@ -56,6 +59,14 @@ public class SchermataRiproduttoreMultimediale {
         } catch (ConnessioneException e) {
             MessaggioDiAvviso.mostra("Connessione al database non riuscita.");
         }
+    }
+
+    private void configuraVista(String tipologia) {
+        boolean audio = "Audio".equals(tipologia);
+        pannelloAudio.setVisible(audio);
+        pannelloAudio.setManaged(audio);
+        riproduttore.setVisible(!audio);
+        riproduttore.setManaged(!audio);
     }
 
     private void configuraControlli() {

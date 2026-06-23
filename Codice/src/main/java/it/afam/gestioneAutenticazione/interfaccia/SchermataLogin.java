@@ -30,6 +30,11 @@ public class SchermataLogin {
     }
 
     @FXML
+    private void cliccaAccediSpidEidas() {
+        MessaggioDiErrore.mostra("Login tramite SPID/eIDAS non disponibile in questa demo.");
+    }
+
+    @FXML
     private void cliccaIndietro() {
         SceneManager.getIstanza().switchTo("SchermataPrincipale.fxml");
     }

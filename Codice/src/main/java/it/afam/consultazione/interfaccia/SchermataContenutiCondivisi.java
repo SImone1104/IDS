@@ -31,7 +31,7 @@ public class SchermataContenutiCondivisi {
             @Override
             protected void updateItem(DatiFile f, boolean empty) {
                 super.updateItem(f, empty);
-                setText(empty || f == null ? null : f.titolo() + "  [" + f.tipologia() + "]");
+                setText(empty || f == null ? null : descrizioneFile(f));
             }
         });
         if (contenuti != null) {
@@ -56,6 +56,14 @@ public class SchermataContenutiCondivisi {
 
     @FXML
     private void cliccaIndietro() {
-        SceneManager.getIstanza().switchTo("SchermataRicerca.fxml");
+        SceneManager.getIstanza().switchTo("SchermataProfiloStudente.fxml");
+    }
+
+    private String descrizioneFile(DatiFile f) {
+        String categoria = f.categoria();
+        if (categoria == null || categoria.isBlank()) {
+            categoria = "-";
+        }
+        return f.titolo() + "  [" + categoria + " - " + f.tipologia() + ", " + f.privacy() + "]";
     }
 }

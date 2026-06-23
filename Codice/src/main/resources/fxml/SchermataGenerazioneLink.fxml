@@ -12,5 +12,6 @@
         <Label text="Generazione Link" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
         <Label text="Genera un link per i contenuti selezionati"/>
         <Button text="Genera Link" prefWidth="200" onAction="#cliccaGeneraLink"/>
+        <Button text="Indietro" prefWidth="200" onAction="#cliccaIndietro"/>
     </children>
 </VBox>

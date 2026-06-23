@@ -8,13 +8,14 @@
 
 <VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
       fx:controller="it.afam.gestioneAutenticazione.interfaccia.SchermataLogin"
-      alignment="CENTER" spacing="15" prefWidth="420" prefHeight="300">
+      alignment="CENTER" spacing="15" prefWidth="420" prefHeight="340">
     <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
     <children>
         <Label text="Login" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
         <TextField fx:id="email" promptText="E-mail"/>
         <PasswordField fx:id="password" promptText="Password"/>
         <Button text="Accedi" prefWidth="160" onAction="#cliccaAccedi"/>
+        <Button text="Accedi con SPID/eIDAS" prefWidth="180" onAction="#cliccaAccediSpidEidas"/>
         <Button text="Indietro" prefWidth="160" onAction="#cliccaIndietro"/>
     </children>
 </VBox>

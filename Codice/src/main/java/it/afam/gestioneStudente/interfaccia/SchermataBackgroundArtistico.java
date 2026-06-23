@@ -20,6 +20,8 @@ public class SchermataBackgroundArtistico {
             @Override
             protected void updateItem(DatiBackground d, boolean empty) {
                 super.updateItem(d, empty);
+                setWrapText(true);
+                setPrefWidth(0);
                 setText(empty || d == null ? null : riassunto(d));
             }
         });
@@ -36,12 +38,31 @@ public class SchermataBackgroundArtistico {
     }
 
     private String riassunto(DatiBackground d) {
-        return "Scuola/Università: " + sicuro(d.scuolaUniversita())
-                + "  |  Partecipazioni: " + sicuro(d.partecipazioni());
+        return "Scuola/Universita:\n" + elencoPuntato(d.scuolaUniversita())
+                + "\nCollaborazioni fatte:\n" + elencoPuntato(d.collaborazioniFatte())
+                + "\nCollaborazioni con autori:\n" + elencoPuntato(d.collaborazioniAutori())
+                + "\nPartecipazioni:\n" + elencoPuntato(d.partecipazioni());
     }
 
     private String sicuro(String s) {
         return s == null || s.isEmpty() ? "-" : s;
+    }
+
+    private String elencoPuntato(String valore) {
+        String testo = sicuro(valore);
+        if ("-".equals(testo)) {
+            return "-";
+        }
+        StringBuilder elenco = new StringBuilder();
+        for (String riga : testo.split("\\R")) {
+            if (!riga.isBlank()) {
+                if (elenco.length() > 0) {
+                    elenco.append('\n');
+                }
+                elenco.append("- ").append(riga.trim());
+            }
+        }
+        return elenco.length() == 0 ? "-" : elenco.toString();
     }
 
     @FXML
