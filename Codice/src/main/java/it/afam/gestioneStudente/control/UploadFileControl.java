@@ -1,5 +1,6 @@
 package it.afam.gestioneStudente.control;
 
+import it.afam.utility.ArchivioFile;
 import it.afam.utility.DatabaseManager;
 import it.afam.utility.SessioneCorrente;
 
@@ -26,9 +27,10 @@ public class UploadFileControl {
         if (!formatoIdoneo(sessione.getTipologiaCorrente(), estensione(percorsoFile))) {
             return false;
         }
+        String percorsoArchiviato = ArchivioFile.archiviaContenuto(percorsoFile);
         DatabaseManager.getIstanza().salvaFile(
                 sessione.getIdStudente(), sessione.getIdCategoriaCorrente(),
-                sessione.getTipologiaCorrente(), titolo, descrizione, percorsoFile);
+                sessione.getTipologiaCorrente(), titolo, descrizione, percorsoArchiviato);
         return true;
     }
 

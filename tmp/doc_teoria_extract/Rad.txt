@@ -1,0 +1,2890 @@
+SOURCE: C:\Users\Simone\Desktop\DOC+teoria\Rad.pdf
+PAGES: 145
+
+
+--- PAGE 1 ---
+Università degli Studi di Palermo
+Dipartimento di Ingegneria — A.A. 2025/2026
+Requirements Analysis Document
+Gruppo di lavoro
+Simone Sottile
+Matteo Duca
+Giuseppe Giacomarra
+Gilberto Mogavero
+1
+
+--- PAGE 2 ---
+AF AM Connect RAD
+Indice
+1 Introduzione 9
+1.1 Obiettivo generale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+1.2 Definizioni, acronimi e abbreviazioni del Sistema . . . . . . . . . . . . . . . 9
+1.2.1 Definizioni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+1.2.2 Acronimi e Abbreviazioni . . . . . . . . . . . . . . . . . . . . . . . 10
+2 Sistema attuale 11
+3 Sistema proposto 11
+3.1 Vista d’insieme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3.2 Requisiti funzionali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.2.1 Funzionalità per lo Studente . . . . . . . . . . . . . . . . . . . . . . 12
+3.2.2 Funzionalità per l’Utente Esterno . . . . . . . . . . . . . . . . . . . 13
+3.3 Requisiti non funzionali . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3.3.1 Requisiti del Prodotto . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3.3.2 Requisiti Organizzativi . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3.3.3 Requisiti Esterni . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3.4 Modelli di Sistema . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.4.1 Vista degli attori . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3.4.2 Modelli dei casi d’uso . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+3.4.2.1 Vista d’insieme . . . . . . . . . . . . . . . . . . . . . . . . 19
+3.4.2.2 Caso d’uso: Caduta di connessione . . . . . . . . . . . . . 22
+3.4.2.3 Caso d’uso: Gestione Autenticazione . . . . . . . . . . . . 23
+3.4.2.3.1 Login . . . . . . . . . . . . . . . . . . . . . . . . 24
+2
+
+--- PAGE 3 ---
+AF AM Connect RAD
+3.4.2.3.2 Login tramite SPID/eIDAS . . . . . . . . . . . . 26
+3.4.2.3.3 Registrazione . . . . . . . . . . . . . . . . . . . . 28
+3.4.2.3.4 Recupera password . . . . . . . . . . . . . . . . . 30
+3.4.2.3.5 Logout . . . . . . . . . . . . . . . . . . . . . . . . 32
+3.4.2.4 Caso d’uso: Gestione Profilo . . . . . . . . . . . . . . . . . 33
+3.4.2.4.1 Modifica Dati Personali . . . . . . . . . . . . . . 34
+3.4.2.4.2 Modifica Background Artistico . . . . . . . . . . 35
+3.4.2.4.3 Aggiungi Background Artistico . . . . . . . . . . 36
+3.4.2.4.4 Elimina Background Artistico . . . . . . . . . . . 37
+3.4.2.5 Caso d’uso: Gestione Contenuti . . . . . . . . . . . . . . . 38
+3.4.2.5.1 Seleziona Categoria Artistica . . . . . . . . . . . 39
+3.4.2.5.2 Crea Categoria Artistica . . . . . . . . . . . . . . 40
+3.4.2.5.3 Seleziona Tipologia File . . . . . . . . . . . . . . 41
+3.4.2.5.4 Upload File . . . . . . . . . . . . . . . . . . . . . 42
+3.4.2.5.5 Elimina File . . . . . . . . . . . . . . . . . . . . . 43
+3.4.2.5.6 Modifica File . . . . . . . . . . . . . . . . . . . . 44
+3.4.2.5.7 Gestisci Privacy Contenuti . . . . . . . . . . . . . 45
+3.4.2.6 Caso d’uso: Gestione Condivisione con Link . . . . . . . . 46
+3.4.2.6.1 Selezione Contenuti . . . . . . . . . . . . . . . . . 47
+3.4.2.6.2 Genera Link . . . . . . . . . . . . . . . . . . . . . 48
+3.4.2.6.3 Visualizza Elenco Link . . . . . . . . . . . . . . . 49
+3.4.2.6.4 Revoca Link . . . . . . . . . . . . . . . . . . . . . 50
+3.4.2.6.5 Verifica Validità Link . . . . . . . . . . . . . . . . 51
+3.4.2.7 Caso d’uso: Consulta Profilo Studente . . . . . . . . . . . 52
+3
+
+--- PAGE 4 ---
+AF AM Connect RAD
+3.4.2.7.1 Cerca Studente . . . . . . . . . . . . . . . . . . . 53
+3.4.2.7.2 Mostra Contenuti Pubblici . . . . . . . . . . . . . 54
+3.4.2.7.3 Mostra Contenuti Privati . . . . . . . . . . . . . 55
+3.4.2.7.4 Visualizza Contenuto . . . . . . . . . . . . . . . . 56
+3.4.2.8 Caso d’uso: Visualizza Contenuto Tramite Link . . . . . . 57
+3.4.2.8.1 Mostra Contenuti Tramite Link . . . . . . . . . . 58
+3.4.2.8.2 Apri Contenuto Tramite Link . . . . . . . . . . . 59
+3.4.2.9 Caso d’uso: Gestione Condivisione Interna . . . . . . . . . 60
+3.4.2.9.1 Selezione Contenuti Privati . . . . . . . . . . . . 61
+3.4.2.9.2 Genera Codice . . . . . . . . . . . . . . . . . . . 62
+3.4.2.9.3 Visualizza Elenco Codici . . . . . . . . . . . . . . 63
+3.4.2.9.4 Revoca Codice . . . . . . . . . . . . . . . . . . . 64
+3.4.3 Modello degli oggetti . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+3.4.3.1 Oggetti entity . . . . . . . . . . . . . . . . . . . . . . . . . 65
+3.4.3.2 Oggetti boundary . . . . . . . . . . . . . . . . . . . . . . . 65
+3.4.3.3 Oggetti control . . . . . . . . . . . . . . . . . . . . . . . . 69
+3.4.4 Modelli Dinamici . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+3.4.4.1 Gestione Autenticazione - Login . . . . . . . . . . . . . . . 70
+3.4.4.2 Gestione Autenticazione - Login tramite SPID/eIDAS . . 71
+3.4.4.3 Gestione Autenticazione - Registrazione . . . . . . . . . . 72
+3.4.4.4 Gestione Autenticazione - Recupera password . . . . . . . 73
+3.4.4.5 Gestione Autenticazione - Logout . . . . . . . . . . . . . . 74
+3.4.4.6 Gestione Profilo - Modifica Dati Personali . . . . . . . . . 75
+3.4.4.7 Gestione Profilo - Modifica Background Artistico . . . . . 76
+4
+
+--- PAGE 5 ---
+AF AM Connect RAD
+3.4.4.8 Gestione Profilo - Aggiungi Background Artistico . . . . . 77
+3.4.4.9 Gestione Profilo - Elimina Background Artistico . . . . . . 78
+3.4.4.10 Gestione Contenuti - Seleziona Categoria Artistica . . . . 79
+3.4.4.11 Gestione Contenuti - Crea Categoria Artistica . . . . . . . 80
+3.4.4.12 Gestione Contenuti - Seleziona Tipologia File . . . . . . . 81
+3.4.4.13 Gestione Contenuti - Upload File . . . . . . . . . . . . . . 82
+3.4.4.14 Gestione Contenuti - Elimina File . . . . . . . . . . . . . . 83
+3.4.4.15 Gestione Contenuti - Modifica File . . . . . . . . . . . . . 84
+3.4.4.16 Gestione Contenuti - Gestisci Privacy Contenuti . . . . . . 85
+3.4.4.17 Gestione Condivisione con Link - Selezione Contenuti . . . 86
+3.4.4.18 Gestione Condivisione con Link - Genera Link . . . . . . . 87
+3.4.4.19 Gestione Condivisione con Link - Visualizza Elenco Link . 88
+3.4.4.20 Gestione Condivisione con Link - Revoca Link . . . . . . . 89
+3.4.4.21 Gestione Condivisione con Link - Verifica Validità Link . . 90
+3.4.4.22 Consulta Profilo Studente - Cerca Studente . . . . . . . . 91
+3.4.4.23 Consulta Profilo Studente - Mostra Contenuti Pubblici . . 92
+3.4.4.24 Consulta Profilo Studente - Mostra Contenuti Privati . . . 93
+3.4.4.25 Consulta Profilo Studente - Visualizza Contenuto . . . . . 94
+3.4.4.26 Visualizza Contenuto Tramite Link - Mostra Contenuti
+Tramite Link . . . . . . . . . . . . . . . . . . . . . . . . . 95
+3.4.4.27 Visualizza Contenuto Tramite Link - Apri Contenuto Tra-
+mite Link . . . . . . . . . . . . . . . . . . . . . . . . . . . 96
+3.4.4.28 Gestione Condivisione Interna - Selezione Contenuti Privati 97
+3.4.4.29 Gestione Condivisione Interna - Genera Codice . . . . . . 98
+3.4.4.30 Gestione Condivisione Interna - Visualizza Elenco Codici . 99
+5
+
+--- PAGE 6 ---
+AF AM Connect RAD
+3.4.4.31 Gestione Condivisione Interna - Revoca Codice . . . . . . 100
+3.4.5 Modelli delle Classi . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+3.4.5.1 Entity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+3.4.5.2 Gestione Autenticazione - Login . . . . . . . . . . . . . . . 102
+3.4.5.3 Gestione Autenticazione - Login tramite SPID/eIDAS . . 103
+3.4.5.4 Gestione Autenticazione - Registrazione . . . . . . . . . . 104
+3.4.5.5 Gestione Autenticazione - Recupera password . . . . . . . 105
+3.4.5.6 Gestione Autenticazione - Logout . . . . . . . . . . . . . . 106
+3.4.5.7 Gestione Profilo - Modifica Dati Personali . . . . . . . . . 107
+3.4.5.8 Gestione Profilo - Modifica Background Artistico . . . . . 108
+3.4.5.9 Gestione Profilo - Aggiungi Background Artistico . . . . . 109
+3.4.5.10 Gestione Profilo - Elimina Background Artistico . . . . . . 110
+3.4.5.11 Gestione Contenuti - Seleziona Categoria Artistica . . . . 111
+3.4.5.12 Gestione Contenuti - Crea Categoria Artistica . . . . . . . 112
+3.4.5.13 Gestione Contenuti - Seleziona Tipologia File . . . . . . . 113
+3.4.5.14 Gestione Contenuti - Upload File . . . . . . . . . . . . . . 114
+3.4.5.15 Gestione Contenuti - Elimina File . . . . . . . . . . . . . . 115
+3.4.5.16 Gestione Contenuti - Modifica File . . . . . . . . . . . . . 116
+3.4.5.17 Gestione Contenuti - Gestisci Privacy Contenuti . . . . . . 117
+3.4.5.18 Gestione Condivisione con Link - Selezione Contenuti . . . 118
+3.4.5.19 Gestione Condivisione con Link - Genera Link . . . . . . . 119
+3.4.5.20 Gestione Condivisione con Link - Visualizza Elenco Link . 120
+3.4.5.21 Gestione Condivisione con Link - Revoca Link . . . . . . . 121
+3.4.5.22 Gestione Condivisione con Link - Verifica Validita Link . . 122
+6
+
+--- PAGE 7 ---
+AF AM Connect RAD
+3.4.5.23 Consulta Profilo Studente - Cerca Studente . . . . . . . . 123
+3.4.5.24 Consulta Profilo Studente - Mostra Contenuti Pubblici . . 124
+3.4.5.25 Consulta Profilo Studente - Mostra Contenuti Privati . . . 125
+3.4.5.26 Consulta Profilo Studente - Visualizza Contenuto . . . . . 126
+3.4.5.27 Visualizza Contenuto Tramite Link - Mostra Contenuti
+Tramite Link . . . . . . . . . . . . . . . . . . . . . . . . . 127
+3.4.5.28 Visualizza Contenuto Tramite Link - Apri Contenuto Tra-
+mite Link . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+3.4.5.29 Gestione Condivisione Interna - Selezione Contenuti Privati129
+3.4.5.30 Gestione Condivisione Interna - Genera Codice . . . . . . 130
+3.4.5.31 Gestione Condivisione Interna - Visualizza Elenco Codici . 131
+3.4.5.32 Gestione Condivisione Interna - Revoca Codice . . . . . . 132
+3.4.6 Interfacce . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+3.4.6.1 Schermata Principale . . . . . . . . . . . . . . . . . . . . . 133
+3.4.6.2 Login . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+3.4.6.3 Registrazione . . . . . . . . . . . . . . . . . . . . . . . . . 134
+3.4.6.4 Recupera Password . . . . . . . . . . . . . . . . . . . . . . 134
+3.4.6.5 Verifica Identita . . . . . . . . . . . . . . . . . . . . . . . 135
+3.4.6.6 Home AFAM . . . . . . . . . . . . . . . . . . . . . . . . . 135
+3.4.6.7 Gestione Profilo . . . . . . . . . . . . . . . . . . . . . . . . 136
+3.4.6.8 Dati Personali . . . . . . . . . . . . . . . . . . . . . . . . 136
+3.4.6.9 Background Artistico . . . . . . . . . . . . . . . . . . . . . 137
+3.4.6.10 Form Background Artistico . . . . . . . . . . . . . . . . . 137
+3.4.6.11 Gestione Contenuti . . . . . . . . . . . . . . . . . . . . . . 138
+3.4.6.12 Seleziona Tipologia File . . . . . . . . . . . . . . . . . . . 138
+7
+
+--- PAGE 8 ---
+AF AM Connect RAD
+3.4.6.13 Elenco File . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+3.4.6.14 Upload File . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+3.4.6.15 Gestione Condivisione con Link . . . . . . . . . . . . . . . 140
+3.4.6.16 Seleziona Contenuti per Link . . . . . . . . . . . . . . . . 140
+3.4.6.17 Generazione Link . . . . . . . . . . . . . . . . . . . . . . . 141
+3.4.6.18 Elenco Link . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+3.4.6.19 Gestione Condivisione Interna . . . . . . . . . . . . . . . . 142
+3.4.6.20 Seleziona Contenuti Privati . . . . . . . . . . . . . . . . . 142
+3.4.6.21 Generazione Codice . . . . . . . . . . . . . . . . . . . . . 143
+3.4.6.22 Elenco Codici . . . . . . . . . . . . . . . . . . . . . . . . . 143
+3.4.6.23 Ricerca Studente . . . . . . . . . . . . . . . . . . . . . . . 144
+3.4.6.24 Risultato Ricerca . . . . . . . . . . . . . . . . . . . . . . . 144
+3.4.6.25 Profilo Studente . . . . . . . . . . . . . . . . . . . . . . . 145
+3.4.6.26 Contenuti Condivisi tramite Link . . . . . . . . . . . . . . 145
+8
+
+--- PAGE 9 ---
+AF AM Connect RAD
+1 Introduzione
+1.1 Obiettivo generale
+L’obiettivo del progetto è quello di realizzare una piattaforma software in grado di fornire
+supporto alle istituzioni AFAM (Alta Formazione Artistica, Musicale e Coreutica) e ai
+relativi studenti, agendo da intermediario sicuro e centralizzato tra l’artista, l’istituzione
+e i soggetti valutatori esterni.
+Il sistema mira a digitalizzare e valorizzare il percorso artistico dei candidati, fornendo
+uno strumento idoneo alla creazione di un portfolio multimediale certificato e modulabile
+sotto il profilo della privacy.
+Questo documento descrive il software in termini di requisiti funzionali e non funzionali,
+definendo in modo univoco le regole di dominio dell’applicazione (quali le politiche anti-
+download, i limiti di storage e la temporizzazione delle condivisioni). Esso funge da
+specifica tecnica formale e da base contrattuale tra il committente e gli sviluppatori della
+piattaforma.
+1.2 Definizioni, acronimi e abbreviazioni del Sistema
+1.2.1 Definizioni
+TERMINE SIGNIFICATO
+Studente
+Utilizzatore autenticato del Sistema, appartenente a un’istituzione
+AFAM, che gestisce il proprio profilo e portfolio artistico.
+Utente Esterno
+Soggetto terzo non registrato (es. membro di commissione, ente
+valutatore) che consulta i materiali autorizzati dallo studente.
+Credenziali locali
+Insieme di dati personali necessari allo studente per autenticarsi
+direttamente sulla piattaforma, composti da e-mail e password.
+Identità Digitale
+Insieme di attributi e credenziali digitali che identificano
+univocamente una persona online e ne consentono l’autenticazione
+sicura tramite provider esterni, comeSPIDedeIDAS.
+Portfolio
+Artistico
+Raccolta digitalizzata e centralizzata della produzione d’ingegno
+dello studente, comprendente asset multimediali, spartiti e
+curriculum.
+Categoria
+Artistica
+Raggruppamento logico e categoriale (es. Pianoforte, Danza)
+creato dallo studente per organizzare i propri file nel sistema.
+9
+
+--- PAGE 10 ---
+AF AM Connect RAD
+Contenuto
+Pubblico
+Stato di privacy di un file che lo rende visibile a chiunque effettui
+una ricerca standard sulla piattaforma.
+Contenuto
+Privato
+Stato di privacy di un file che lo rende invisibile alla ricerca
+standard, consultabile tramite codice univoco oppure tramite link
+temporizzato se selezionato esplicitamente dallo studente.
+Link di
+Condivisione
+URL univoco e temporizzato generato dallo studente per
+consentire ai valutatori esterni l’accesso ai file selezionati tra tutti
+i contenuti caricati, sia pubblici sia privati.
+Codice di
+Sblocco
+Token testuale generato dallo studente per abilitare la
+consultazione protetta di contenuti privati a specifici destinatari
+interni all’istituzione.
+Ricevuta di
+Lettura
+Indicatore visivo automatizzato che notifica allo studente
+l’avvenuta apertura e consultazione di un link inviato all’esterno.
+Streaming
+controllato
+Modalità di fruizione inline dei flussi audio/video e dei documenti
+PDF che inibisce nativamente qualsiasi operazione di download
+del file fisico.
+Tabella 1: Glossario e Definizioni dei termini del dominio AFAM
+1.2.2 Acronimi e Abbreviazioni
+ACRONIMO SIGNIFICATO
+AFAM
+Alta Formazione Artistica, Musicale e Coreutica.
+DBMS
+Database Management System (Sistema per la gestione di basi di
+dati).
+SPID
+Sistema Pubblico di Identità Digitale.
+eIDAS
+electronic IDentification Authentication and Signature.
+AgID
+Agenzia per l’Italia Digitale.
+OTP / 2FA
+One-Time Password / Autenticazione a Due Fattori.
+GUI
+Graphical User Interface (Interfaccia Grafica Utente).
+URL
+Uniform Resource Locator (Link/Indirizzo Web).
+Tabella 2: Acronimi e Abbreviazioni tecniche utilizzate nel documento
+2 Sistema attuale
+10
+
+--- PAGE 11 ---
+AF AM Connect RAD
+Supponiamo che non esista alcun sistema informatizzato preesistente in uso dagli istituti.
+3 Sistema proposto
+3.1 Vista d’insieme
+La proposta progettuale prevede un software in grado di supportare gli studenti delle
+istituzioni AFAM nella gestione e valorizzazione della propria identità digitale e della pro-
+duzione artistica, automatizzando e semplificando attività quali l’organizzazione del port-
+folio multimediale, la regolazione della privacy dei contenuti e la gestione delle condivisioni
+sia interne che esterne.
+La strutturazione dei contenuti in categorie artistiche personalizzate permette allo stu-
+dente di stabilire con certezza il livello di visibilità di ogni singola opera, tenendo traccia
+dei file caricati e modificando la privacy tra Pubblico o Privato. In questo modo, anche
+la consultazione da parte di terzi risulta controllata e permette di determinare molto più
+facilmente quali materiali mostrare in base allo specifico contesto (es. audizioni, esami o
+concorsi).
+Questo tipo di software consente inoltre di mantenere centralizzate le informazioni sul
+percorso dello studente, rendendo più semplice e veloce la condivisione mirata di que-
+ste informazioni senza dover ricorrere all’invio frammentato di email, e fornendo una
+panoramica completa e protetta della produzione d’ingegno del candidato.
+Il software prevede inoltre funzioni di tracciamento e feedback al fine di aiutare gli stu-
+denti ad avere un riscontro oggettivo sulle proprie candidature, mostrando notifiche visive
+immediate non appena i link inviati vengono effettivamente aperti e consultati.
+Di seguito sono illustrate le interfacce che consentono di svolgere le funzionalità principali
+del software:
+•Schermata di Login / Autenticazione:Interfaccia principale iniziale che per-
+mette di effettuare l’accesso sicuro al sistema tramite credenziali locali standard
+(protette da codice OTP inviato via e-mail) o, in alternativa, tramite i sistemi di
+identità digitaleSPIDedeIDASprevia selezione del proprio Provider dall’appo-
+sito menu a tendina. Include anche il form di registrazione, il recupero password e
+i controlli di ricerca pubblica degli studenti, utilizzabili senza login.
+•Area Personale (Home AFAM / Dashboard Studente):Interfaccia princi-
+pale a cui accede lo studente una volta autenticato. Da qui l’utente può navigare
+11
+
+--- PAGE 12 ---
+AF AM Connect RAD
+verso la gestione del proprio profilo anagrafico e del background artistico, oppure
+accedere alla gestione dei contenuti e delle condivisioni.
+•Schermata Gestione Contenuti ed Elenco File:Interfaccia che permette di
+visualizzare e creare le Categorie Artistiche e di effettuare l’upload dei file (audio,
+video, PDF) entro il limite di 1 GB. Tramite menu a tendina contestuali consente
+di modificare, eliminare o regolare lo stato di privacy (Pubblico/Privato) di ciascun
+asset.
+•Schermata Gestione Condivisione (Link e Codici):Interfaccia sdoppiata che
+permetteallostudentediselezionareimaterialiegenerareURLunivocitemporizzati
+per l’esterno (della durata di 14 giorni con indicatore di avvenuta lettura) attingendo
+da tutti i file caricati, sia pubblici sia privati, oppure codici di sblocco univoci
+per la condivisione interna di file privati, con relative funzioni di revoca manuale
+immediata.
+•Schermata di Ricerca e Consultazione Profilo:Interfaccia dedicata agli utenti
+della piattaforma e ai valutatori esterni. Permette di cercare uno studente per nome
+e cognome per consultarne il profilo pubblico e tramite l’inserimento di un codice
+valido, permette di visualizzare i file privati.
+•Schermate di Fruizione (Player e Visualizzatore):Interfacce integrate per la
+fruizione protetta dei contenuti che si adattano al formato del file selezionato (Ri-
+produttore Multimediale per audio/video in streaming e Visualizzatore Documenti
+per i PDF), inibendo nativamente qualsiasi funzione di download.
+3.2 Requisiti funzionali
+Il Sistema prevede due macro-tipologie di attori, nello specifico lo Studente e l’Utente
+(Generico/Esterno), le cui interazioni con la piattaforma sono governate dai flussi logici
+e dai macro casi d’uso descritti di seguito:
+3.2.1 Funzionalità per lo Studente
+Il software centralizza la gestione della presenza digitale degli studenti AFAM, struttu-
+rando le interazioni principali nei seguenti macro casi d’uso:
+•Autenticazione e Accesso Federato:Permette l’accesso sicuro all’Area Perso-
+nale dello studente. Il flusso prevede la verifica delle credenziali locali standard,
+protette da autenticazione a due fattori (2FA) tramite codice OTP monouso inviato
+12
+
+--- PAGE 13 ---
+AF AM Connect RAD
+via e-mail, oppure il reindirizzamento verso i gateway di identità digitale federata
+SPIDedeIDAS. Include le procedure di registrazione locale (previa validazione di
+un codice di attivazione), il recupero password self-service e la terminazione della
+sessione (logout).
+•Gestione Profilo e Background Artistico:Consente allo studente di ammi-
+nistrare le informazioni relative alla propria identità accademica e artistica. Lo
+studente può inserire, modificare o eliminare i propri dati anagrafici e le voci relati-
+ve alle esperienze passate, quali istituti frequentati, collaborazioni o partecipazioni
+a eventi e concorsi, aggiornando il database (DBMS).
+•Gestione Portfolio e Categorie Artistiche:Regola l’organizzazione della pro-
+duzione d’ingegno dello studente. Il flusso permette di creare e personalizzare Cate-
+gorie Artistiche dedicate (es. Pianoforte, Canto) ed effettuare l’upload dei file mul-
+timediali o documentali (audio, video, PDF) inserendo un titolo e una descrizione
+per ciascun asset caricato.
+•Modulazione della Privacy dei Contenuti:Abilita lo studente a variare in
+tempo reale le politiche di sicurezza e visibilità dei propri file sul database. L’utente
+può impostare lo stato di ogni singolo asset suPubblico, rendendolo rintracciabi-
+le nel sistema, oppure suPrivato, isolandolo dalla ricerca globale e vincolandone
+la consultazione ordinaria all’uso di codici o di link temporizzati generati dallo
+studente.
+•Condivisione Esterna tramite Link Temporizzati:Gestisce la generazione di
+canali di consultazione remota per soggetti terzi. Lo studente seleziona un sottoin-
+sieme dei contenuti caricati, indipendentemente dal loro stato di privacyPubblicoo
+Privato, e genera un URL univoco testuale crittografico. Il sistema offre un pannello
+di monitoraggio per visualizzare la ricevuta di lettura (spunta) all’apertura del link
+e permette la revoca manuale anticipata del collegamento.
+•Condivisione Interna tramite Codice di Sblocco:Consente la distribuzione
+controllata di materiale protetto all’interno dell’istituzione. Lo studente seleziona
+i file impostati comePrivatie genera un codice alfanumerico univoco da comuni-
+care ai destinatari d’interesse. Il modulo include una schermata riepilogativa per
+monitorare i codici emessi e revocarne i permessi in qualsiasi momento.
+3.2.2 Funzionalità per l’Utente Esterno
+Il sistema governa l’accesso ai contenuti da parte di utenti terzi o della piattaforma
+attraverso specifiche interazioni che non richiedono la registrazione di un profilo nominale:
+13
+
+--- PAGE 14 ---
+AF AM Connect RAD
+•Ricerca Globale e Consultazione Pubblica:Permette a qualunque utente di
+individuare uno studente iscritto inserendo il relativo nome e cognome all’interno
+del sistema di ricerca. Il flusso restituisce la visualizzazione dell’Area Personale del
+candidato limitata alla visualizzazione dei dati personali , del background artistico
+e ai file multimediali e alle categorie che l’autore ha contrassegnato con stato di
+privacyPubblico.
+•Risoluzione Link di Condivisione Esterna:Gestisce l’accesso guidato alla piat-
+taforma da parte dei valutatori. All’inserimento dell’URL univoco, il sistema ne
+verifica la validità temporale (entro la scadenza di 14 giorni), notifica l’avvenuta let-
+tura allo studente e reindirizza l’utente esterno a una schermata dedicata contenente
+unicamente i file selezionati per quella candidatura, siano essi pubblici o privati.
+•Sblocco Contenuti Privati tramite Codice:Consente la visualizzazione di
+asset protetti all’interno di un profilo cercato. Qualora l’utente esterno inserisca
+nell’apposita maschera grafica un codice di sblocco valido e associato a quel profilo,
+il sistema interroga il DBMS e abilita temporaneamente la visualizzazione inline dei
+corrispondenti file privati.
+•Fruizione Protetta degli Asset (Anti-Download):Regola l’interazione con
+i singoli file multimediali e documentali durante la consultazione. La selezione di
+un asset inizializza automaticamente il player multimediale integrato per i flussi au-
+dio/video in streaming controllato, oppure il visualizzatore dedicato per i documenti
+PDF, inibendo nativamente qualsiasi funzione di scaricamento locale del file fisico.
+3.3 Requisiti non funzionali
+3.3.1 Requisiti del Prodotto
+•Usabilità:Un utente finale (studente o valutatore esterno) privo di competenze
+informatiche avanzate deve essere in grado di utilizzare autonomamente tutte le
+funzioni del sistema (upload asset, modifica privacy, generazione link/codici) dopo
+un tempo di auto-addestramento non superiore a 15 minuti.
+•Tempi di risposta:Il tempo di caricamento ed elaborazione delle maschere gra-
+fiche (refresh dello schermo) deve assestarsi su una media inferiore a 1.5 secondi in
+condizioni di normale carico di rete.
+•Vincoli di Spazio:Il backend applica un controllo algoritmico in fase di ingestion
+dei file, rifiutando a livello di memoria qualsiasi asset fisico che superi la quota rigida
+di 1 GB per singolo upload e restituendo un feedback immediato di errore a video.
+14
+
+--- PAGE 15 ---
+AF AM Connect RAD
+•Affidabilità e Disponibilità:Il sistema deve garantire un indice di disponibilità
+continuaparial99.9%inmodalità24/7. Nellefinestretemporalidipiccoaccademico
+(sessioni di esame o audizioni), il tempo massimo di inattività (downtime) non deve
+superare i 5 minuti complessivi nell’arco dell’intero mese.
+•Robustezza:In caso di guasto imprevisto o caduta di connessione con il DBMS
+relazionale, la probabilità di corruzione dei dati transazionali memorizzati deve
+essere pari a zero (0%). Il tempo di riavvio automatico del sistema dopo un
+malfunzionamento deve essere inferiore a 30 secondi.
+•Sicurezza:Il sistema memorizza le password nel database previa applicazione
+dell’algoritmo di hashing unidirezionale SHA-256. Le interfacce integrano moduli
+player che inibiscono i flussi di download diretto, veicolando i contenuti esclusiva-
+mente tramite riproduzione in streaming controllato inline.
+3.3.2 Requisiti Organizzativi
+•Requisiti di Sviluppo e Processo:Il backend logico e i moduli applicativi del
+sistema devono essere interamente sviluppati e implementati in linguaggio Java.
+•Requisiti Operativi:Il sistema gestisce lo stato della sessione memorizzando
+temporaneamente l’identificativo dell’utente loggato. Al momento del logout, il
+sistema cancella tali record volatili ripristinando la visualizzazione anonima.
+•Requisiti di Controllo Temporale:Un modulo interno di batch scheduling si
+esegue automaticamente ogni giorno alle ore 00:00, effettuando una query sul DBMS
+per disattivare tutti i link di condivisione esterna che hanno superato il vincolo
+temporale di 14 giorni.
+3.3.3 Requisiti Esterni
+•RequisitiLegislativiediRegolamentazione:Ilsistemaimplementalepolitiche
+per la tutela dei dati personali in conformità con le normative GDPR, separando i
+filePubblici(accessibili via ricerca globale) da quelliPrivati(non accessibili tramite
+ricerca globale e consultabili solo previa immissione di un codice di sblocco valido
+oppure tramite link temporizzato generato dallo studente).
+•Requisiti di Interoperabilità e Standard:Il sottosistema di identificazione
+digitale adotta gli standard di federazioneSAML 2.0eOpenID Connectper
+permettere lo scambio dei flussi di autenticazione con i providerSPIDedeIDAS
+in conformità con le direttiveAgID.
+15
+
+--- PAGE 16 ---
+AF AM Connect RAD
+3.4 Modelli di Sistema
+Si premette che nei casi d’uso elencati di seguito, con il termine “Schermata di Login /
+Autenticazione” si fa riferimento alla schermata iniziale del software, in cui lo studente
+può immettere le proprie credenziali locali, registrarsi, recuperare la password o selezio-
+nare l’autenticazione federata tramite i gatewaySPIDoeIDAS. La stessa schermata
+contiene anche il punto di accesso alla ricerca pubblica degli studenti, disponibile senza
+autenticazione. Con il termine “Area Personale” (o Dashboard Studente) si identifica
+l’interfaccia principale riservata allo studente autenticato, da cui si diramano i moduli di
+gestione del profilo, del portfolio e delle condivisioni.
+Con il termine “Schermata di Ricerca e Consultazione Profilo” si fa riferimento all’in-
+terfaccia globale di localizzazione degli iscritti, raggiungibile dalla schermata iniziale di
+Login / Autenticazione tramite i controlli di ricerca pubblica. Tale funzionalità è acces-
+sibile anche senza autenticazione dall’utente che installa o avvia il software, limitandolo
+alla sola ricerca e consultazione dei profili pubblici, oltre che dallo studente autenticato
+per visionare la resa pubblica del proprio portfolio o per ricercare altri utenti all’interno
+della piattaforma AFAM. Con il termine “Schermate di Fruizione” si identificano invece
+i componenti integrati (Player multimediale e Visualizzatore PDF) dedicati alla riprodu-
+zione protetta (anti-download) degli asset documentali e multimediali. Queste schermate
+sono condivise da tutte le tipologie di attori, consentendo allo studente la verifica dei
+propri materiali o la consultazione delle opere altrui, e all’utente esterno la sottomissione
+controllata dei file autorizzati.
+Inoltre, all’interno di ciascuna interfaccia grafica del sistema, è capillarmente presente
+un pulsante di “Annulla”, “Indietro” o “Esci”. Questa scelta progettuale garantisce che
+l’utilizzatore possa interrompere in qualsiasi momento l’operazione corrente (come il cari-
+camento di un file o la generazione di un codice) e fare ritorno in sicurezza alla schermata
+immediatamente precedente, ripristinando lo stato di consistenza della navigazione.
+16
+
+--- PAGE 17 ---
+AF AM Connect RAD
+3.4.1 Vista degli attori
+Figura 1: Vista degli attori del sistema
+All’interno del sistema sono stati individuati sei attori, suddivisi tra figure umane (utiliz-
+zatori della piattaforma) e componenti di sistema o temporali che innescano o supportano
+le procedure operative:
+ATTORE DESCRIZIONE
+Utente
+Attore generico del sistema che rappresenta chiunque interagisca
+con le funzioni pubbliche della piattaforma, anche senza
+autenticazione dopo aver installato o avviato il software. Può
+effettuare ricerche globali e consultare i profili e gli asset pubblici,
+senza accedere alle funzioni riservate allo Studente.
+Studente
+Attore autenticato utilizzatore del sistema, appartenente a
+un’istituzione AFAM. Possiede i massimi privilegi di scrittura e
+gestione sul proprio spazio, potendo modificare l’anagrafica,
+caricare file, modularne la privacy e generare o revocare link e
+codici di sblocco.
+17
+
+--- PAGE 18 ---
+AF AM Connect RAD
+Utente Esterno
+Attore non registrato (es. membro di commissione, docente
+esterno, ente partner) che interagisce con la piattaforma in
+modalità di sola lettura per consultare i percorsi e i file
+multimediali degli studenti, previo possesso di un URL valido o di
+un codice di sblocco.
+Identità Digitale
+Attore di sistema esterno che rappresenta il gateway di
+autenticazione federata nazionale ed europea (SPIDedeIDAS).
+Fornisce alla piattaforma i payload e i token di identità necessari
+a validare in sicurezza l’accesso o l’iscrizione degli studenti.
+DBMS
+Attore di sistema che si occupa della persistenza e
+dell’immagazzinamento sicuro di tutti i dati applicativi, tra cui i
+record anagrafici, i percorsi fisici dei file multimediali, lo stato di
+privacy degli asset e i token dei link di condivisione.
+Tempo
+Attore di sistema non umano che incorpora lo scorrere del tempo
+come evento scatenante (trigger). Agisce in modo automatizzato
+per avviare le procedure batch periodiche, come il controllo
+quotidiano e la conseguente disattivazione dei link scaduti.
+Tabella 3: Mappatura e descrizione degli Attori del sistema AFAM
+18
+
+--- PAGE 19 ---
+AF AM Connect RAD
+3.4.2 Modelli dei casi d’uso
+3.4.2.1 Vista d’insieme
+La seguente immagine mostra la vista d’insieme del sistema proposto.
+Studente
+Gestione
+autenticazione
+Gestione contenuti
+Gestionecondivisione tramite
+link
+Caduta di
+connessione
+<<extends>>
+<<extends>>
+<<extends>>
+Gestione profilo
+<<extends>>
+Utente esterno
+Visualizza contenuto
+tramite link <<extends>>
+Gestione condivisione
+interna
+<<extends>>
+Vista d'insieme
+Consulta profilo
+studente
+<<extends>>
+Utente
+Tempo
+DBMS
+AgID
+Figura 2: Vista d’insieme del sistema
+19
+
+--- PAGE 20 ---
+AF AM Connect RAD
+Le funzionalità principali del sistema vengono riassunte e formalizzate nella seguente
+tabella orientata alla descrizione dei macro casi d’uso:
+Gestione
+autenticazione
+Gestisce tutte le procedure relative all’accesso al sistema.
+Permette allo studente di registrarsi alla piattaforma creando
+un nuovo account e di effettuare l’accesso alla propria area
+personale. L’autenticazione può avvenire tramite credenziali
+standard (email e password) oppure tramite i servizi di
+identità digitale (SPID o eIDAS). Infine, sono previste le
+funzionalità per il recupero della password e per la
+disconnessione sicura dal sistema.
+Gestione profilo
+Gestisce le funzionalità di consultazione e aggiornamento
+delle informazioni personali e curriculari dell’utente. Nello
+specifico, permette allo studente di inserire e modificare i
+propri dati personali e di arricchire il proprio profilo
+aggiungendo o aggiornando il proprio background artistico
+(percorso di studi, collaborazioni ed esperienze pregresse).
+Gestione contenuti
+Permette allo studente di gestire integralmente la propria area
+artistica: dalla creazione di specifiche categorie di interesse,
+all’upload di nuovi file (suddivisi per strumenti, tracce audio,
+file video, immagini, PDF). Inoltre, permette la modifica o
+l’eliminazione dei materiali precedentemente caricati e la
+configurazione della privacy per ogni singolo contenuto.
+Gestione
+condivisione tramite
+link
+Permette allo studente di selezionare specifici contenuti,
+precedentemente caricati, e di generare link per la diffusione
+del materiale a utenti o commissioni esterne all’istituzione
+AFAM. Inoltre, permette una gestione completa delle
+condivisioni attive, consentendo allo studente di visualizzare
+l’elenco dei link generati, monitorarne la data e l’ora di
+scadenza automatica e la possibilità di revocare il link prima
+del termine previsto.
+Consulta profilo
+studente
+Permette la ricerca e la consultazione dei profili degli studenti
+registrati alla piattaforma AFAM. Consente all’utente
+(Studente o utente esterno) di cercare uno specifico profilo.
+L’accesso ai materiali è regolato in modo differenziato: è
+consentita la libera visualizzazione dei contenuti pubblici,
+mentre la visualizzazione dei contenuti privati avviene
+nell’apposita sezione a seguito dell’inserimento di un codice.
+Gestione
+condivisione interna
+Permette allo studente di condividere specifici contenuti
+privati con altri utenti, senza la necessità di generare un link.
+La condivisione avviene tramite la generazione di un codice
+univoco: l’utente destinatario, inserendo tale codice
+nell’apposita area, otterrà l’accesso alla visualizzazione dei
+contenuti privati selezionati dallo studente. Questa modalità
+non prevede alcuna verifica di riscontro della visualizzazione.
+È prevista inoltre la funzionalità che permette allo studente
+di monitorare lo storico dei codici creati e di revocarne la
+validità in qualsiasi momento.
+20
+
+--- PAGE 21 ---
+AF AM Connect RAD
+Visualizza contenuto
+tramite link
+Gestisce l’accesso da parte di soggetti terzi non registrati alla
+piattaforma. Consente all’utente esterno di accedere a
+un’area dedicata per visualizzare esclusivamente i contenuti
+multimediali selezionati e condivisi da uno studente AFAM. Il
+modulo garantisce un accesso tracciato aggiornando lo stato
+di visualizzazione per fornire il feedback allo studente.
+Tabella 4: Mappatura e descrizione dei Macro Casi d’Uso
+21
+
+--- PAGE 22 ---
+AF AM Connect RAD
+3.4.2.2 Caso d’uso: Caduta di connessione
+Il seguente caso d’uso descrive la gestione delle anomalie di rete o di sistema in tutte quelle
+funzionalità che richiedono un’interazione transazionale con la base di dati, integrando un
+meccanismo di ripristino e sottomissione della richiesta.
+Caso d’uso
+Errore comunicazione DBMS
+ID
+0.1
+Attori
+Utente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il sistema rileva l’impossibilità di stabilire o mantenere una
+connessione attiva con il database, oppure riceve un codice
+d’errore fatale durante una query.
+Flusso degli
+eventi 1. L’Utente esegue un’operazione che richiede l’accesso in
+lettura o scrittura sul DBMS.
+2. Il Sistema intercetta il timeout o la mancata risposta del
+server della base di dati.
+3. Il Sistema mostra a video un messaggio di errore: “Errore
+di comunicazione con il database” e mette a disposizione i
+pulsanti “Riprova” e “Annulla”.
+4. L’Utente seleziona il pulsante “Annulla”.
+5. Il Sistema mostra a video la “Schermata Principale”.
+Flussi Alternativi
+2a. Tentativo di riconnessione (Riprova):
+1. Al punto 4 del flusso principale, l’Utente seleziona il
+pulsante “Riprova”.
+2. Il Sistema effettua un nuovo tentativo di esecuzione della
+query sul DBMS.
+3. Se il tentativo ha esito positivo, la finestra di errore si
+chiude e il sistema riprende il normale flusso del caso d’uso
+originario dal quale era stato interrotto.
+4. Se il tentativo fallisce nuovamente, il sistema ritorna al
+punto 3 del flusso principale.
+Postcondizioni
+Il Sistema ha mostrato a video la “Schermata Principale”.
+Tabella 5: Caso d’Uso : Caduta di connessione
+22
+
+--- PAGE 23 ---
+AF AM Connect RAD
+3.4.2.3 Caso d’uso: Gestione Autenticazione
+All’interno della suddetta macro-categoria sono presenti i seguenti casi d’uso di dettaglio:
+•Login (1.1):
+•Login tramite SPID/eIDAS(1.2):
+•Registrazione (1.3):
+•Recupera Password (1.4):
+•Logout (1.5):
+Studente
+Login
+Registrazione
+Recupera password
+DBMS
+AgID
+Logout
+Gestione Autenticazione
+Login tramite
+SPID/eIDAS
+Figura 3: Vista d’insieme di Gestione Autenticazione
+23
+
+--- PAGE 24 ---
+AF AM Connect RAD
+3.4.2.3.1 Login
+Questo caso d’uso descrive la procedura di autenticazione a due fattori (2FA) eseguita
+dallo studente per accedere alla propria area riservata all’interno della piattaforma.
+Caso d’uso
+Login
+ID
+1.1
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il sistema ha mostrato a schermo la schermata principale.
+Flusso degli
+eventi 1. Lo studente clicca sul pulsante “Login”.
+2. Il Sistema mostra a video la schermata di login contenente
+il form (Email, Password) e il pulsante “Accedi”.
+3. Lo studente compila i campi con Email e Password e clicca
+sul pulsante “Accedi”.
+4. Il Sistema interroga il DBMS per verificare la presenza e la
+correttezza dei dati inseriti.
+5.SEle credenziali non sono corrette:
+5.1. Il Sistema mostra a video il messaggio di errore:
+“Credenziali non corrette”.
+5.2. Lo studente clicca sul pulsante “OK” per chiuderlo.
+5.3. Il Sistema mostra nuovamente la schermata di login.
+6.ALTRIMENTI(Credenziali corrette - Inizio verifica
+2FA):
+6.1. Il Sistema genera un codice di verifica e lo invia
+all’e-mail dello studente.
+6.2. Il Sistema mostra a video la schermata “Verifica
+Identità” (campo Codice).
+6.3. Lo studente inserisce il codice ricevuto e clicca sul
+pulsante “Verifica”.
+6.4. Il Sistema valida il codice inserito.
+24
+
+--- PAGE 25 ---
+AF AM Connect RAD
+6.5.SEil codice di verifica è errato:
+6.5.1. Il Sistema mostra a video il messaggio di errore:
+“Codice errato”.
+6.5.2. Lo studente clicca sul pulsante “Invia nuovo codice”.
+6.5.3. Il Sistema genera un nuovo codice, lo invia all’e-mail
+dello studente e ricarica la schermata di verifica.
+6.6.ALTRIMENTI(il codice di verifica è corretto):
+6.6.1. Il Sistema richiede al DBMS i dati relativi all’Account.
+6.6.2. Il Sistema mostra a video la schermata “Home
+AFAM”.
+Postcondizioni
+1. Il Sistema ha mostrato la schermata “Home AFAM”.
+2. Il Sistema ha mostrato a video la schermata di login.
+Requisiti speciali
+•L’e-mail deve contenere una “@” e almeno un “.”.
+•La password deve contenere da un minimo di 8 a un
+massimo di 16 caratteri.
+Tabella 6: Scheda di dettaglio del Caso d’Uso Login
+25
+
+--- PAGE 26 ---
+AF AM Connect RAD
+3.4.2.3.2 Login tramite SPID/eIDAS
+Questo caso d’uso descrive la procedura di autenticazione federata eseguita dallo studente
+tramite un Provider SPID o eIDAS.
+Caso d’uso
+Login tramite SPID/eIDAS
+ID
+1.2
+Attori
+Studente (iniziatore), AgID e DBMS (partecipanti)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata principale.
+Flusso degli
+eventi 1. Lo studente clicca sul pulsante “Login”.
+2. Il Sistema mostra a video la schermata di login contenente
+il pulsante “Entra con SPID/eIDAS”.
+3. Lo studente clicca sul pulsante “Entra con SPID/eIDAS”.
+4. Il Sistema mostra a video un menu a tendina contenente
+l’elenco dei Provider disponibili.
+5. Lo studente seleziona il proprio Provider cliccando
+sull’apposita voce del menu.
+6. Il Sistema mostra a schermo il form di autenticazione del
+Provider scelto.
+7. Lo studente inserisce le proprie credenziali nel form e clicca
+sul pulsante “Conferma”.
+8. Il Sistema richiede al Provider l’esito dell’autenticazione.
+9. Il Provider invia al Sistema l’esito e il codice fiscale
+associato all’autenticazione.
+10.SEl’esito è negativo:
+10.1. Il Sistema mostra a video il messaggio di errore:
+“Accesso negato: clicca qui per registrarti”.
+10.2. Lo studente clicca sul pulsante “Registrati” per
+chiudere il messaggio di errore.
+10.3. Il Sistema invoca il caso d’uso “Registrazione
+Studente”.
+26
+
+--- PAGE 27 ---
+AF AM Connect RAD
+11.ALTRIMENTI(esito positivo):
+11.1. Il Sistema interroga il DBMS per verificare se lo
+studente è registrato alla piattaforma.
+11.2.SElo studente non è registrato:
+11.2.1. Il Sistema mostra a video il messaggio di errore:
+“Accesso negato: clicca qui per registrarti”.
+11.2.2. Lo studente clicca sul pulsante “Registrati” per
+chiudere il messaggio di errore.
+11.2.3. Il Sistema invoca il caso d’uso “Registrazione
+Studente”.
+11.3.ALTRIMENTI:
+11.3.1. Il Sistema richiede al DBMS i dati relativi
+all’account.
+11.3.2. Il Sistema mostra a video la schermata “Home
+AFAM”.
+Postcondizioni
+1. Il Sistema ha mostrato la schermata “Home AFAM”.
+2. Il Sistema ha mostrato a video la schermata di login.
+Tabella 7: Scheda di dettaglio del Caso d’Uso Login tramite SPID/eIDAS
+27
+
+--- PAGE 28 ---
+AF AM Connect RAD
+3.4.2.3.3 Registrazione
+Questo caso d’uso descrive la procedura con cui lo studente crea e attiva un nuovo account
+sulla piattaforma.
+Caso d’uso
+Registrazione
+ID
+1.3
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata principale.
+Flusso degli
+eventi 1. Lo studente clicca sul pulsante “Registrati”.
+2. Il Sistema mostra a video la schermata “Registrazione”
+contenente:
+•il form con i campi Nome, Cognome, Codice fiscale,
+E-mail, Password e Conferma Password;
+•i pulsanti “Conferma” e “Annulla”.
+3. Lo studente compila i campi del form e clicca sul pulsante
+“Conferma”.
+4. Il Sistema valida la corrispondenza delle password e il
+formato dei dati.
+5.SEi dati non sono validi o le password non corrispondono:
+5.1. Il Sistema mostra a video il messaggio di errore: “Dati
+non validi”.
+5.2. Lo studente clicca sul pulsante “OK” per chiuderlo.
+5.3. Il Sistema mostra nuovamente la schermata
+“Registrazione”.
+6.ALTRIMENTI(dati validi):
+6.1. Il Sistema interroga il DBMS per verificare se l’e-mail
+è già presente.
+7.SEl’e-mail è già registrata:
+7.1. Il Sistema mostra a video il messaggio di errore:
+“E-mail già in uso”.
+7.2. Lo studente clicca sul pulsante “OK” per chiuderlo.
+7.3. Il Sistema mostra nuovamente la schermata
+“Registrazione”.
+28
+
+--- PAGE 29 ---
+AF AM Connect RAD
+8.ALTRIMENTI(e-mail non presente):
+8.1. Il Sistema genera un codice di attivazione e lo invia
+all’e-mail dello studente.
+8.2. Il Sistema mostra a video la schermata “Attivazione
+Account” contenente il campo “Codice di attivazione”.
+9. Lo studente inserisce il codice ricevuto e clicca sul pulsante
+“Verifica”.
+10. Il Sistema verifica la validità del codice inserito.
+11.SEil codice è errato:
+11.1. Il Sistema mostra a video il messaggio di errore:
+“Codice non valido”.
+11.2. Lo studente clicca sul pulsante “Invia nuovo codice”.
+11.3. Il Sistema genera un nuovo codice, lo invia all’e-mail e
+ricarica la schermata di attivazione.
+12.ALTRIMENTI(codice corretto):
+12.1. Il Sistema invia i dati del nuovo Studente al DBMS
+per la memorizzazione definitiva.
+12.2. Il Sistema mostra a video il messaggio di conferma:
+“Registrazione completata”.
+12.3. Lo studente clicca sul pulsante “OK” per chiuderlo.
+12.4. Il Sistema mostra a video la schermata di “Login”.
+Postcondizioni
+1. Il Sistema ha mostrato a video la schermata di login.
+2. Il Sistema ha mostrato a video la schermata per la
+registrazione.
+Requisiti speciali
+•Il nome deve essere diverso dal cognome.
+•Il nome deve contenere solo caratteri alfabetici.
+•Il cognome deve contenere solo caratteri alfabetici.
+•Il codice fiscale deve contenere 16 caratteri.
+•L’e-mail deve contenere una “@” e almeno un “.”.
+•La password deve contenere da un minimo di 8 a un
+massimo di 16 caratteri, almeno una lettera maiuscola e
+almeno un numero.
+Tabella 8: Scheda di dettaglio del Caso d’Uso Registrazione
+29
+
+--- PAGE 30 ---
+AF AM Connect RAD
+3.4.2.3.4 Recupera password
+Questo caso d’uso descrive la procedura con cui lo studente recupera l’accesso al proprio
+account impostando una nuova password.
+Caso d’uso
+Recupera password
+ID
+1.4
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata principale.
+Flusso degli
+eventi 1. Lo studente clicca sul pulsante “Recupera password”.
+2. Il Sistema mostra il form per il recupero della password.
+3. Lo studente inserisce la propria e-mail.
+4. Lo studente clicca sul pulsante “Conferma”.
+5. Il Sistema verifica presso il DBMS se l’e-mail è associata a
+uno studente registrato.
+6.SEl’e-mail non esiste:
+6.1. Il Sistema mostra il messaggio di errore “Studente non
+trovato”.
+6.2. Lo studente conferma la presa visione del messaggio.
+6.3. Il Sistema mostra nuovamente il form per il recupero
+della password.
+7.ALTRIMENTI(l’e-mail esiste):
+7.1. Il Sistema genera un codice di recupero.
+7.2. Il Sistema invia all’e-mail dello studente il codice di
+recupero.
+7.3. Il Sistema mostra la schermata per l’inserimento del
+codice.
+30
+
+--- PAGE 31 ---
+AF AM Connect RAD
+8. Lo studente inserisce il codice ricevuto.
+9. Lo studente clicca sul pulsante “Conferma”.
+10. Il Sistema valida il codice inserito.
+11.SEil codice è errato:
+11.1. Il Sistema mostra il messaggio di errore “Codice non
+valido”.
+11.2. Lo studente conferma la presa visione del messaggio.
+11.3. Il Sistema mostra nuovamente la schermata per
+l’inserimento del codice.
+12.ALTRIMENTI(il codice è corretto):
+12.1. Il Sistema mostra il form per l’inserimento della nuova
+password.
+12.2. Lo studente inserisce la nuova password.
+12.3. Lo studente clicca sul pulsante “Conferma”.
+12.4. Il Sistema aggiorna nel DBMS la password dello
+studente.
+12.5. Il Sistema mostra la schermata di login.
+Postcondizioni
+1. Il Sistema ha mostrato la schermata di login.
+2. Il Sistema ha mostrato il form per il recupero della
+password.
+Requisiti speciali
+•L’e-mail deve contenere una “@” e almeno un “.”.
+•La password deve contenere da un minimo di 8 a un
+massimo di 16 caratteri, almeno una lettera maiuscola e
+almeno un numero.
+Tabella 9: Scheda di dettaglio del Caso d’Uso Recupera password
+31
+
+--- PAGE 32 ---
+AF AM Connect RAD
+3.4.2.3.5 Logout
+Questo caso d’uso descrive la procedura con cui lo studente termina la sessione attiva e
+si disconnette dalla piattaforma.
+Caso d’uso
+Logout
+ID
+1.5
+Attori
+Studente (iniziatore)
+Precondizioni
+Il Sistema ha mostrato a video la schermata “Home AFAM”.
+Flusso degli
+eventi 1. Lo studente clicca sul pulsante “Logout”.
+2. Il Sistema richiede la conferma della disconnessione tramite
+il messaggio a video: “Sei sicuro di voler uscire?”.
+3. Lo studente clicca sul pulsante “Conferma”.
+4. Il Sistema interrompe la sessione attiva e cancella i dati
+dell’utente memorizzati temporaneamente.
+5. Il Sistema mostra a schermo la schermata principale.
+Postcondizioni
+Il Sistema ha mostrato a video la schermata principale.
+Tabella 10: Scheda di dettaglio del Caso d’Uso Logout
+32
+
+--- PAGE 33 ---
+AF AM Connect RAD
+3.4.2.4 Caso d’uso: Gestione Profilo
+All’interno della suddetta macro-categoria sono presenti i seguenti casi d’uso di dettaglio:
+•Modifica Dati Personali (2.1):
+•Modifica Background Artistico(2.2):
+•Aggiungi Background Artistico (2.3):
+•Elimina Background Artistico (2.4):
+Studente DBMS
+Modifica Dati
+Personali
+Gestione profilo
+Modifica Background
+Artistico
+Aggiungi Background
+Artistico
+Elimina Background
+Artistico
+Figura 4: Vista d’insieme di Gestione Profilo
+33
+
+--- PAGE 34 ---
+AF AM Connect RAD
+3.4.2.4.1 Modifica Dati Personali
+Questo caso d’uso descrive la procedura con cui lo studente consulta e modifica i propri
+dati personali.
+Caso d’uso
+Modifica Dati Personali
+ID
+2.1
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata “Home AFAM”.
+Flusso degli eventi 1. Lo studente clicca sul pulsante “Gestione Profilo”.
+2. Il Sistema mostra a video la schermata “Gestione Profilo”.
+3. Lo studente clicca sul pulsante “Dati Personali”.
+4. Il Sistema recupera dalla memoria i dati dello studente.
+5. Il Sistema mostra a video la schermata “Dati Personali”
+contenente i dati dello studente (Nome, Cognome, Foto, E-mail e
+Numero di telefono) e il pulsante “Modifica Dati”.
+6. Lo studente clicca sul pulsante “Modifica Dati”.
+7. Il Sistema mostra a video il form di modifica dei dati personali
+con i campi editabili.
+8. Lo studente inserisce i nuovi dati.
+9. Lo studente clicca sul pulsante “Conferma Modifiche”.
+10. Il Sistema invia i nuovi dati aggiornati al DBMS per la
+sovrascrittura permanente sul database.
+11. Il Sistema aggiorna i dati dello studente in memoria.
+12. Il Sistema mostra a video il messaggio di conferma: “Modifiche
+effettuate correttamente”.
+13. Lo studente clicca sul pulsante “OK” per chiudere il messaggio.
+14. Il Sistema mostra nuovamente la schermata “Dati Personali”,
+aggiornata con i nuovi valori.
+Postcondizioni 1. Il Sistema ha mostrato la schermata “Dati Personali”.
+Requisiti speciali •La nuova e-mail deve contenere una “@” e almeno un “.”.
+•Il numero di telefono deve contenere esclusivamente caratteri
+numerici.
+•Il numero di telefono deve contenere esattamente 10 caratteri.
+•La foto deve avere formato PNG o JPG.
+Tabella 11: Scheda di dettaglio del Caso d’Uso Modifica Dati Personali
+34
+
+--- PAGE 35 ---
+AF AM Connect RAD
+3.4.2.4.2 Modifica Background Artistico
+Questo caso d’uso descrive la procedura con cui lo studente modifica un’informazione già
+presente nel proprio background artistico.
+Caso d’uso
+Modifica Background Artistico
+ID
+2.2
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a video la schermata “BackgroundArtistico” e
+ha recuperato i dati dello studente.
+Flusso degli eventi 1. Lo studente clicca sul pulsante “Modifica Dati” relativo
+all’informazione.
+2. Il Sistema mostra a video il form di modifica del background
+artistico con i campi editabili.
+3. Lo studente inserisce i nuovi dati.
+4. Lo studente clicca sul pulsante “Conferma Modifiche”.
+5. Il Sistema invia i nuovi dati aggiornati al DBMS per la
+sovrascrittura permanente sul database.
+6. Il Sistema aggiorna i dati dello studente in memoria.
+7. Il Sistema mostra a video il messaggio di conferma: “Modifiche
+effettuate correttamente”.
+8. Lo studente clicca sul pulsante “OK” per chiudere il messaggio.
+9. Il Sistema mostra nuovamente la schermata
+“BackgroundArtistico”, aggiornata con i nuovi valori.
+Postcondizioni 1. Il Sistema ha mostrato la schermata “BackgroundArtistico”.
+Requisiti speciali •I campi di testo per l’inserimento della scuola o università
+frequentata, delle collaborazioni fatte, delle collaborazioni con
+autori e delle partecipazioni devono avere una lunghezza massima
+di 700 caratteri.
+Tabella 12: Scheda di dettaglio del Caso d’Uso Modifica Background Artistico
+35
+
+--- PAGE 36 ---
+AF AM Connect RAD
+3.4.2.4.3 Aggiungi Background Artistico
+Questo caso d’uso descrive la procedura con cui lo studente aggiunge nuove informazioni
+al proprio background artistico.
+Caso d’uso
+Aggiungi Background Artistico
+ID
+2.3
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata “Home AFAM”.
+Flusso degli eventi 1. Lo studente clicca sul pulsante “Gestione Profilo”.
+2. Il Sistema mostra a video la schermata “Gestione Profilo”.
+3. Lo studente clicca sul pulsante “BACKGROUND ARTISTICO”.
+4. Il Sistema recupera dalla memoria i dati dello studente.
+5. Il Sistema mostra a video la schermata “BackgroundArtistico”,
+contenente i dati attuali dello studente (Scuola/Università
+frequentata, Collaborazioni fatte, Collaborazioni con autori e
+Partecipazioni).
+6. Lo studente clicca sul pulsante “Aggiungi Dati”.
+7. Il Sistema mostra a video il form di aggiunta del background
+artistico con i campi editabili.
+8. Lo studente inserisce i nuovi dati.
+9. Lo studente clicca sul pulsante “Conferma”.
+10. Il Sistema invia i nuovi dati al DBMS per la sovrascrittura
+permanente sul database.
+11. Il Sistema aggiorna i dati dello studente in memoria.
+12. Il Sistema mostra a video il messaggio di conferma: “Aggiunto
+nuovo background”.
+13. Lo studente clicca sul pulsante “OK” per chiudere il messaggio.
+14. Il Sistema mostra nuovamente la schermata
+“BackgroundArtistico”, aggiornata con i nuovi valori.
+Postcondizioni 1. Il Sistema ha mostrato la schermata “BackgroundArtistico”.
+Requisiti speciali •I campi di testo per l’inserimento della scuola o università
+frequentata, delle collaborazioni fatte, delle collaborazioni con
+autori e delle partecipazioni devono avere una lunghezza massima
+di 700 caratteri.
+Tabella 13: Scheda di dettaglio del Caso d’Uso Aggiungi Background Artistico
+36
+
+--- PAGE 37 ---
+AF AM Connect RAD
+3.4.2.4.4 Elimina Background Artistico
+Questo caso d’uso descrive la procedura con cui lo studente elimina un’informazione dal
+proprio background artistico.
+Caso d’uso
+Elimina Background Artistico
+ID
+2.4
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a video la schermata
+“BackgroundArtistico” e ha recuperato i dati dello studente.
+Flusso degli
+eventi 1. Lo studente clicca sul pulsante “Elimina Dati” relativo
+all’informazione.
+2. Il Sistema mostra a video il messaggio di avviso: “Sei sicuro
+di eliminare questa informazione?”.
+3. Lo studente clicca sul pulsante “OK”.
+4. Il Sistema invia i nuovi dati aggiornati al DBMS per la
+sovrascrittura permanente sul database.
+5. Il Sistema aggiorna i dati dello studente in memoria.
+6. Il Sistema mostra nuovamente la schermata
+“BackgroundArtistico”, aggiornata con i nuovi valori.
+Postcondizioni
+1. Il Sistema ha mostrato la schermata “BackgroundArtistico”.
+Tabella 14: Scheda di dettaglio del Caso d’Uso Elimina Background Artistico
+37
+
+--- PAGE 38 ---
+AF AM Connect RAD
+3.4.2.5 Caso d’uso: Gestione Contenuti
+All’interno della suddetta macro-categoria sono presenti i seguenti casi d’uso di dettaglio:
+•Seleziona Categoria Artistica (3.1):
+•Crea Categoria Artistica (3.2):
+•Seleziona Tipologia File (3.3):
+•Upload file (3.4):
+•Elimina file (3.5):
+•Modifica file (3.6):
+•Gestisci privacy contenuti (3.7):
+Studente DBMS
+Seleziona Categoria
+Artistica
+Upload file
+Elimina file
+Gestisci privacy
+contenuti
+Modifica file
+Seleziona tipologia
+file
+Gestione
+Contenuti
+Crea Categoria
+Artistica
+Figura 5: Vista d’insieme di Gestione Contenuti
+38
+
+--- PAGE 39 ---
+AF AM Connect RAD
+3.4.2.5.1 Seleziona Categoria Artistica
+Questo caso d’uso descrive la procedura con cui lo studente seleziona una categoria
+artistica associata al proprio profilo.
+Caso d’uso
+Seleziona Categoria Artistica
+ID
+3.1
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata “Home AFAM”.
+Flusso degli
+eventi 1. Lo studente clicca sul pulsante “Gestione Contenuti”.
+2. Il Sistema recupera dalla memoria temporanea
+l’identificativo dello studente.
+3. Il Sistema interroga il DBMS per recuperare la lista delle
+Categorie Artistiche (es. Pianoforte, Danza Classica,
+Pittura) associate allo studente.
+4. Il Sistema mostra a video la schermata “Gestione
+Contenuti”, elencando le Categorie Artistiche esistenti e il
+pulsante “Crea Nuova Categoria Artistica”.
+5. Lo studente clicca sulla Categoria Artistica desiderata.
+6. Il Sistema mostra a video la schermata “Scelta Tipologia
+File” relativa a quella categoria.
+Postcondizioni
+1. Il Sistema ha mostrato a schermo la schermata per la scelta
+della tipologia dei file.
+Tabella 15: Scheda di dettaglio del Caso d’Uso Seleziona Categoria Artistica
+39
+
+--- PAGE 40 ---
+AF AM Connect RAD
+3.4.2.5.2 Crea Categoria Artistica
+Questo caso d’uso descrive la procedura con cui lo studente crea una nuova categoria
+artistica.
+Caso d’uso
+Crea Categoria Artistica
+ID
+3.2
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata “Home AFAM”.
+Flusso degli eventi 1. Lo studente clicca sul pulsante “Gestione Contenuti”.
+2. Il Sistema recupera dalla memoria temporanea l’identificativo
+dello studente.
+3. Il Sistema interroga il DBMS per recuperare la lista delle
+Categorie Artistiche associate allo studente.
+4. Il Sistema mostra a video la schermata “Gestione Contenuti”,
+elencando le Categorie Artistiche esistenti e il pulsante “Crea
+Nuova Categoria Artistica”.
+5. Lo studente clicca sul pulsante “Crea Nuova Categoria Artistica”.
+6. Il Sistema mostra a video il form di inserimento “Nuova
+Categoria Artistica”.
+7. Lo studente inserisce il nome della nuova Categoria Artistica e
+clicca sul pulsante “Salva”.
+8. Il Sistema invia il nome della nuova Categoria Artistica al DBMS
+per il salvataggio permanente.
+9. Il Sistema mostra a video il messaggio di conferma “Categoria
+Artistica creata con successo”.
+10. Lo studente clicca sul pulsante “OK” per chiudere il messaggio.
+11. Il Sistema mostra a video la schermata “Scelta Tipologia File”
+relativa alla categoria appena creata.
+Postcondizioni 1. Il Sistema ha mostrato a schermo la schermata per la scelta della
+tipologia dei file.
+Requisiti speciali 1. Il campo dove inserire il nome della categoria artistica non può
+essere vuoto.
+2. Il nome della categoria artistica deve essere univoco.
+Tabella 16: Scheda di dettaglio del Caso d’Uso Crea Categoria Artistica
+40
+
+--- PAGE 41 ---
+AF AM Connect RAD
+3.4.2.5.3 Seleziona Tipologia File
+Questo caso d’uso descrive la procedura con cui lo studente seleziona una tipologia di file
+da consultare.
+Caso d’uso
+Seleziona Tipologia File
+ID
+3.3
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata per la scelta della
+tipologia dei file.
+Flusso degli
+eventi 1. Lo studente seleziona la tipologia di file di interesse
+cliccando sul relativo pulsante.
+2. Il Sistema interroga il DBMS per recuperare i dati relativi
+ai file appartenenti alla tipologia selezionata.
+3. Il Sistema mostra a video la schermata contenente l’elenco
+dei file disponibili per la tipologia scelta.
+Postcondizioni
+1. Il Sistema ha mostrato a schermo la schermata contenente i
+file.
+Tabella 17: Scheda di dettaglio del Caso d’Uso Seleziona Tipologia File
+41
+
+--- PAGE 42 ---
+AF AM Connect RAD
+3.4.2.5.4 Upload File
+Questo caso d’uso descrive la procedura con cui lo studente carica un nuovo file nella
+tipologia selezionata.
+Caso d’uso
+Upload File
+ID
+3.4
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata contenente i file.
+Flusso degli eventi 1. Lo studente clicca sul pulsante “UPLOAD”.
+2. Il Sistema mostra a video la Schermata di Caricamento
+contenente i campi “Titolo”, “Descrizione”, il pulsante “Scegli
+File” e il pulsante “Conferma”.
+3. Lo studente compila i campi “Titolo” e “Descrizione”.
+4. Lo studente clicca su “Scegli File”, seleziona il file dal proprio
+dispositivo e lo allega.
+5. Lo studente clicca sul pulsante “Conferma”.
+6. Il Sistema verifica le dimensioni del file associato.
+7.SEsupera le dimensioni massime:
+7.1. Il Sistema mostra a schermo il messaggio di errore: “File
+troppo grande”.
+7.2. Lo studente clicca su “OK”.
+7.3. Il Sistema mostra a schermo la schermata contenente i file.
+8.ALTRIMENTI(dimensioni massime non superate):
+8.1. Il Sistema recupera dalla memoria temporanea
+l’identificativo dello studente.
+8.2. Il Sistema memorizza il contenuto all’interno del DBMS.
+8.3. Il Sistema mostra a schermo il messaggio: “File caricato
+con successo”.
+8.4. Lo studente clicca su “OK”.
+8.5. Il Sistema mostra la schermata contenente i file.
+Postcondizioni
+Il Sistema ha mostrato a schermo la schermata contenente i file.
+Requisiti speciali 1. Il campo di testo per il titolo non può essere vuoto.
+2. Il campo di testo per il titolo può contenere al massimo 200
+caratteri.
+3. I file caricati non devono superare 1 GB di dimensione.
+4. I file caricati devono avere formato idoneo alla categoria
+selezionata (es. MP4 per i video, PNG per le immagini, MP3 per
+i file audio).
+Tabella 18: Scheda di dettaglio del Caso d’Uso Upload File
+42
+
+--- PAGE 43 ---
+AF AM Connect RAD
+3.4.2.5.5 Elimina File
+Questo caso d’uso descrive la procedura con cui lo studente elimina un file dalla tipologia
+selezionata.
+Caso d’uso
+Elimina File
+ID
+3.5
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata contenente i file.
+Flusso degli
+eventi 1. Lo studente seleziona il file di interesse e clicca il tasto
+"opzioni".
+2. Il Sistema mostra a schermo una schermata contenente
+"Modifica file", "Privacy", "Elimina file".
+3. Lo studente seleziona la voce “ELIMINA FILE”.
+4. Il Sistema mostra a schermo una finestra contenente un
+messaggio in cui si richiede la conferma dell’azione,
+specificando che sarà irreversibile, e un pulsante
+“Conferma”.
+5. Lo studente clicca sul pulsante “Conferma”.
+6. Il Sistema recupera dalla memoria temporanea
+l’identificativo dello studente.
+7. Il Sistema aggiorna il DBMS eliminando il file.
+8. Il Sistema mostra a schermo il messaggio “File eliminato
+correttamente”.
+9. Lo studente clicca sul pulsante “OK”.
+10. Il Sistema mostra a schermo la schermata contenente i file.
+Postcondizioni
+Il Sistema ha mostrato a schermo la schermata contenente i file.
+Tabella 19: Scheda di dettaglio del Caso d’Uso Elimina File
+43
+
+--- PAGE 44 ---
+AF AM Connect RAD
+3.4.2.5.6 Modifica File
+Questo caso d’uso descrive la procedura con cui lo studente modifica un file già presente.
+Caso d’uso
+Modifica File
+ID
+3.6
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata contenente i file.
+Flusso degli
+eventi 1. Lo studente seleziona il file di interesse e clicca il tasto
+"opzioni".
+2. Il Sistema mostra a schermo una schermata contenente
+"Modifica file", "Privacy", "Elimina file".
+3. Lo studente seleziona la voce “MODIFICA FILE”.
+4. Il Sistema mostra a schermo il form contenente file,
+descrizione e titolo attuali del file selezionato e un pulsante
+“Conferma Modifica”.
+5. Lo studente effettua le modifiche desiderate all’interno del
+form.
+6. Lo studente clicca sul pulsante “CONFERMA
+MODIFICA”.
+7. Il Sistema recupera dalla memoria temporanea
+l’identificativo dello studente.
+8. Il Sistema invia i nuovi dati inseriti al DBMS.
+9. Il Sistema mostra a video il messaggio di conferma:
+“Modifica effettuata correttamente”.
+10. Lo studente clicca sul pulsante “OK”.
+11. Il Sistema mostra a schermo la schermata contenente i file.
+Postcondizioni
+Il Sistema ha mostrato a schermo la schermata contenente i file.
+Tabella 20: Scheda di dettaglio del Caso d’Uso Modifica File
+44
+
+--- PAGE 45 ---
+AF AM Connect RAD
+3.4.2.5.7 Gestisci Privacy Contenuti
+Questo caso d’uso descrive la procedura con cui lo studente modifica le impostazioni di
+privacy di un file.
+Caso d’uso
+Gestisci Privacy Contenuti
+ID
+3.7
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a schermo la schermata contenente i file.
+Flusso degli
+eventi 1. Lo studente seleziona il file di interesse e clicca il tasto
+"opzioni".
+2. Il Sistema mostra a schermo una schermata contenente
+"Modifica file", "Privacy", "Elimina file".
+3. Lo studente seleziona la voce “PRIVACY”.
+4. Il Sistema mostra a video la schermata “Modifica Privacy”
+contenente le opzioni di visualizzazione del file (Pubblico,
+Privato) e il pulsante “Conferma Modifica”.
+5. Lo studente seleziona l’opzione desiderata.
+6. Lo studente clicca sul pulsante “CONFERMA
+MODIFICA”.
+7. Il Sistema recupera dalla memoria temporanea
+l’identificativo dello studente.
+8. Il Sistema invia la nuova impostazione di privacy al DBMS.
+9. Il Sistema mostra a video il messaggio di conferma:
+“Impostazioni di privacy aggiornate correttamente”.
+10. Lo studente clicca sul pulsante “OK” per chiudere il
+messaggio.
+11. Il Sistema mostra a video la schermata contenente i file.
+Postcondizioni
+Il Sistema ha mostrato a schermo la schermata contenente i file.
+Tabella 21: Scheda di dettaglio del Caso d’Uso Gestisci Privacy Contenuti
+45
+
+--- PAGE 46 ---
+AF AM Connect RAD
+3.4.2.6 Caso d’uso: Gestione Condivisione con Link
+All’interno della suddetta macro-categoria sono presenti i seguenti casi d’uso di dettaglio:
+•Seleziona contenuti (4.1):
+•Genera link (4.2):
+•Visualizza Elenco Link (4.3):
+•Revoca Link (4.4):
+•Verifica Validità Link (4.5):
+DBMSStudente
+Seleziona contenuti
+Genera link
+Visualizza Elenco
+Link
+Gestione condivisione
+con link
+Tempo
+Verifica Validità Link
+Revoca Link
+Figura 6: Vista d’insieme di Gestione Condivisione con Link
+46
+
+--- PAGE 47 ---
+AF AM Connect RAD
+3.4.2.6.1 Selezione Contenuti
+Questo caso d’uso descrive la procedura con cui lo studente seleziona i contenuti da
+condividere tramite link.
+Caso d’uso
+Selezione Contenuti
+ID
+4.1
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a video la schermata “Home AFAM”.
+Flusso degli eventi 1. Lo studente clicca sulla sezione “Gestione condivisione tramite
+link”.
+2. Il Sistema mostra a video la schermata “Gestione Condivisione
+tramite Link”.
+3. Lo studente clicca sul pulsante “Seleziona Contenuti”.
+4. Il Sistema recupera dalla memoria temporanea l’identificativo
+dello studente.
+5. Il Sistema interroga il DBMS per recuperare la struttura di tutti
+i contenuti caricati dallo studente (strumenti e file), includendo
+sia quelli pubblici sia quelli privati.
+6.SElo studente non ha alcun contenuto caricato:
+6.1. Il Sistema mostra a video il messaggio di errore: “Nessun
+contenuto disponibile”.
+6.2. Lo studente clicca sul pulsante “OK” per chiuderlo.
+6.3. Il Sistema mostra nuovamente la schermata “Gestione
+Condivisione tramite Link”.
+7.ALTRIMENTI(ci sono contenuti disponibili):
+7.1. Il Sistema mostra a video la schermata “Seleziona
+Contenuti”, contenente l’elenco dei contenuti suddivisi per
+categoria e il pulsante “Conferma Selezione Finale”.
+7.2. Lo studente seleziona i contenuti desiderati.
+7.3. Lo studente clicca sul pulsante “Conferma Selezione
+Finale”.
+7.4. Il Sistema mostra a video la schermata “Generazione Link”.
+Postcondizioni 1. Il Sistema ha mostrato a video la schermata “Generazione Link”.
+2. Il Sistema ha mostrato la schermata “Gestione Condivisione
+tramite Link”.
+Note
+I contenuti selezionabili per il link comprendono tutti i file caricati dallo
+studente, indipendentemente dallo stato di privacy pubblico o privato, e
+sono organizzati secondo una struttura gerarchica a due livelli:
+1.Livello primario:raggruppamento per Argomento Artistico.
+2.Livello secondario:suddivisione per Tipologia di File.
+Tabella 22: Scheda di dettaglio del Caso d’Uso Selezione Contenuti
+47
+
+--- PAGE 48 ---
+AF AM Connect RAD
+3.4.2.6.2 Genera Link
+Questo caso d’uso descrive la procedura con cui lo studente genera un link univoco per i
+file selezionati.
+Caso d’uso
+Genera Link
+ID
+4.2
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a video la schermata “Generazione Link”.
+Flusso degli
+eventi 1. Lo studente clicca sul pulsante “Genera Link”.
+2. Il Sistema genera un link di condivisione univoco associato
+ai file selezionati.
+3. Il Sistema invia i dati del link generato, l’elenco dei file
+associati e l’identificativo dello studente al DBMS per la
+memorizzazione definitiva.
+4. Il Sistema mostra a video un messaggio di conferma: “Link
+generato con successo”, contenente il link testuale creato e i
+pulsanti “Copia Link” e “OK”.
+5. Lo studente clicca sul pulsante “Copia Link”.
+6. Il Sistema copia il link generato nel dispositivo dello
+studente.
+7. Lo studente clicca sul pulsante “OK” per chiudere il
+messaggio di conferma.
+8. Il Sistema mostra a video la schermata “Gestione
+Condivisione tramite Link”.
+Postcondizioni
+1. Il Sistema ha mostrato a video la schermata “Gestione
+Condivisione tramite Link”.
+Tabella 23: Scheda di dettaglio del Caso d’Uso Genera Link
+48
+
+--- PAGE 49 ---
+AF AM Connect RAD
+3.4.2.6.3 Visualizza Elenco Link
+Questo caso d’uso descrive la procedura con cui lo studente consulta l’elenco dei link
+generati.
+Caso d’uso
+Visualizza Elenco Link
+ID
+4.3
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a video la schermata “Gestione Condivisione
+Link”.
+Flusso degli eventi 1. Lo studente clicca sulla sezione “Gestisci link”.
+2. Il Sistema recupera dalla memoria temporanea l’identificativo
+dello studente.
+3. Il Sistema interroga il DBMS per recuperare la lista dei link
+generati dallo studente e il loro stato di visualizzazione.
+4.SElo studente non possiede alcun link generato:
+4.1. Il Sistema mostra a video un messaggio di errore: “Nessun
+link generato”.
+4.2. Lo studente clicca sul pulsante “OK”.
+4.3. Il Sistema mostra a video la schermata “Gestione
+Condivisione Link”.
+5.ALTRIMENTI(ci sono link generati):
+5.1. Il Sistema mostra a video la schermata “Elenco Link”,
+contenente l’elenco dei link con un indicatore di avvenuta
+visualizzazione (es. spunta) e il pulsante “Revoca”.
+Postcondizioni 1. Il Sistema ha mostrato a schermo la schermata “Elenco Link”.
+2. Il Sistema ha mostrato a video la schermata “Gestione
+Condivisione Link”.
+Tabella 24: Scheda di dettaglio del Caso d’Uso Visualizza Elenco Link
+49
+
+--- PAGE 50 ---
+AF AM Connect RAD
+3.4.2.6.4 Revoca Link
+Questo caso d’uso descrive la procedura con cui lo studente revoca un link specifico.
+Caso d’uso
+Revoca Link
+ID
+4.4
+Attori
+Studente (iniziatore), DBMS (partecipante)
+Precondizioni
+Il Sistema ha mostrato a video la schermata “Elenco Link”.
+Flusso degli
+eventi 1. Lo studente clicca sul pulsante “Revoca” in corrispondenza
+di un link specifico.
+2. Il Sistema mostra a video un messaggio di conferma: “Sei
+sicuro di voler revocare questo link?”, con i pulsanti
+“Conferma” e “Annulla”.
+3. Lo studente clicca su “Conferma”.
+4. Il Sistema invia la richiesta di revoca al DBMS per
+aggiornare lo stato del link.
+5. Il Sistema mostra nuovamente la schermata “Elenco Link”.
+Postcondizioni
+1. Il Sistema ha mostrato a schermo la schermata “Elenco
+Link”.
+Tabella 25: Scheda di dettaglio del Caso d’Uso Revoca Link
+50
+
+--- PAGE 51 ---
+AF AM Connect RAD
+3.4.2.6.5 Verifica Validità Link
+Questo caso d’uso descrive il controllo automatico della validità temporale dei link.
+Caso d’uso
+Verifica Validità Link
+ID
+4.5
+Attori
+Tempo (iniziatore), DBMS (partecipante)
+Precondizioni
+Flusso degli
+eventi 1. Il Tempo interroga il Sistema sulla data odierna.
+2.SEl’orario corrisponde alle 00:00:
+2.1. Il Sistema interroga il DBMS per recuperare la data
+di scadenza.
+2.2.SEla data odierna è maggiore della data di scadenza:
+2.2.1. Il Sistema aggiorna il DBMS rendendo il link
+disattivato.
+Postcondizioni
+Tabella 26: Scheda di dettaglio del Caso d’Uso Verifica Validità Link
+51
+
+--- PAGE 52 ---
+AF AM Connect RAD
+3.4.2.7 Caso d’uso: Consulta Profilo Studente
+All’interno della suddetta macro-categoria sono presenti i seguenti casi d’uso di dettaglio:
+•Cerca Studente (5.1):
+•Mostra Contenuti Pubblici (5.2):
+•Mostra Contenuti Privati (5.3):
+•Visualizza contenuto (5.4):
+DBMS
+Studente
+Cerca studente
+Consulta profilo studente
+Utente esterno
+Mostra Contenuti
+privati
+Mostra Contenuti
+pubblici
+Visualizza contenuto
+Utente
+Figura 7: Vista d’insieme di Consulta Profilo Studente
+52
+
+--- PAGE 53 ---
+AF AM Connect RAD
+3.4.2.7.1 Cerca Studente
+Caso d’uso
+Cerca Studente
+ID
+5.1
+Attori
+Utente, DBMS
+Precondizioni 1. Il Sistema ha mostrato a schermo la schermata Home AFAM.
+2. Il Sistema ha mostrato a schermo la schermata principale.
+Flusso degli eventi 1. L’utente clicca sul pulsante di ricerca .
+2. Il Sistema mostra a schermo la schermata di ricerca.
+3. L’utente digita il nome e il cognome dello studente da cercare.
+4. L’utente clicca sul pulsante “INVIO”.
+5. Il Sistema interroga il DBMS per cercare gli studenti
+corrispondenti.
+6.SEil DBMS restituisce uno o più risultati validi:
+6.1. Il Sistema mostra la schermata “Risultati Ricerca” con
+l’elenco degli studenti trovati.
+6.2. L’utente clicca sul nome dello studente desiderato.
+6.3. Il Sistema recupera dal DBMS i dati dello studente
+selezionato.
+6.4. Il Sistema mostra la schermata “Profilo Studente” con i
+relativi dettagli.
+7.ALTRIMENTI:
+7.1. Il Sistema mostra il messaggio “Nessun risultato trovato”.
+7.2. L’utente clicca sul pulsante “OK”.
+7.3. Il Sistema mostra nuovamente la schermata di ricerca.
+Postcondizioni 1. Il Sistema ha mostrato la schermata “Profilo Studente”.
+2. Il Sistema ha mostrato la schermata di ricerca.
+Requisiti speciali
+Nel campo di ricerca sono ammessi solo caratteri alfabetici. L’utente
+non autenticato può eseguire esclusivamente la ricerca e la consultazione
+dei profili pubblici; tutte le funzioni di gestione, caricamento, modifica e
+condivisione restano riservate allo studente autenticato.
+Nota
+La schermata “Profilo Studente” contiene sia i dati del profilo sia le
+informazioni relative al background artistico dello studente selezionato.
+Per l’utente non autenticato sono mostrati solo i contenuti pubblici.
+Tabella 27: Scheda di dettaglio del Caso d’Uso Cerca Studente
+53
+
+--- PAGE 54 ---
+AF AM Connect RAD
+3.4.2.7.2 Mostra Contenuti Pubblici
+Caso d’uso
+Mostra Contenuti Pubblici
+ID
+5.2
+Attori
+Utente, DBMS
+Precondizioni
+Il Sistema ha mostrato la schermata “Profilo Studente”.
+Flusso degli
+eventi
+1. L’utente clicca sul pulsante “Mostra Contenuti Pubblici”.
+2. Il Sistema mostra la schermata “Contenuti Pubblici”.
+3. Il Sistema recupera dalla memoria l’identificativo dello
+studente.
+4. L’utente clicca sulla categoria artistica della quale desidera
+visualizzare i file.
+5. Il Sistema interroga il DBMS per recuperare le tipologie di
+file disponibili.
+6. Il Sistema mostra la schermata “Categorie Contenuti”,
+elencando le tipologie disponibili.
+7. L’utente clicca sulla tipologia desiderata.
+8. Il Sistema interroga il DBMS per recuperare l’elenco dei file
+caricati per la tipologia selezionata.
+9. Il Sistema mostra la schermata “Elenco File” con i risultati.
+Postcondizioni
+Il Sistema ha mostrato la schermata “Elenco File”.
+Tabella 28: Scheda di dettaglio del Caso d’Uso Mostra Contenuti Pubblici
+54
+
+--- PAGE 55 ---
+AF AM Connect RAD
+3.4.2.7.3 Mostra Contenuti Privati
+Caso d’uso
+Mostra Contenuti Privati
+ID
+5.3
+Attori
+Utente, DBMS
+Precondizioni
+Il Sistema ha mostrato la schermata "Profilo Studente".
+Flusso degli
+eventi
+1. L’utente clicca sul pulsante “Visualizza Contenuti Privati”.
+2. Il Sistema recupera dalla memoria l’identificativo dello
+studente.
+3. Il Sistema mostra la schermata “Inserimento Codice”.
+4. L’utente inserisce il codice e clicca sul pulsante “Conferma”.
+5. Il Sistema interroga il DBMS per verificare la validità del
+codice.
+6.SEil codice non è valido:
+6.1. Il Sistema mostra il messaggio “Codice errato”.
+6.2. L’utente clicca sul pulsante “OK”.
+6.3. Il Sistema mostra nuovamente la schermata “Profilo
+Studente”.
+7.ALTRIMENTI:
+7.1. Il Sistema recupera dalla memoria l’identificativo
+dello studente.
+7.2. Il Sistema interroga il DBMS per recuperare l’elenco
+dei file privati.
+7.3. Il Sistema mostra la schermata “Elenco File” con i
+risultati.
+Postcondizioni 1. Il Sistema ha mostrato la schermata “Elenco File”.
+2. Il Sistema ha mostrato la schermata “Profilo Studente”.
+Tabella 29: Scheda di dettaglio del Caso d’Uso Mostra Contenuti Privati
+55
+
+--- PAGE 56 ---
+AF AM Connect RAD
+3.4.2.7.4 Visualizza Contenuto
+Caso d’uso
+Visualizza Contenuto
+ID
+5.4
+Attori
+Utente, DBMS
+Precondizioni
+Il Sistema ha mostrato la schermata “Elenco File” con i risultati.
+Flusso degli
+eventi
+1. L’utente clicca sul file che desidera visualizzare.
+2. Il Sistema interroga il DBMS per recuperare il file fisico.
+3. Il Sistema controlla il formato del file.
+4.SEil contenuto è multimediale (audio o video):
+4.1. Il Sistema mostra la schermata “Riproduttore
+Multimediale”, contenente il lettore e le informazioni
+del file.
+4.2. L’utente clicca sul pulsante “Chiudi Contenuto”.
+4.3. Il Sistema mostra nuovamente la schermata “Elenco
+File”.
+5.ALTRIMENTI, se il contenuto è un documento PDF o
+un’immagine:
+5.1. Il Sistema mostra la schermata “Visualizzatore
+Documenti”, contenente il file e le relative
+informazioni.
+5.2. L’utente clicca sul pulsante “Chiudi Contenuto”.
+5.3. Il Sistema mostra nuovamente la schermata “Elenco
+File”.
+Postcondizioni
+Il Sistema ha mostrato la schermata “Elenco File”.
+Tabella 30: Scheda di dettaglio del Caso d’Uso Visualizza Contenuto
+56
+
+--- PAGE 57 ---
+AF AM Connect RAD
+3.4.2.8 Caso d’uso: Visualizza Contenuto Tramite Link
+All’interno della suddetta macro-categoria sono presenti i seguenti casi d’uso di dettaglio:
+•Mostra Contenuti Tramite Link (6.1):
+•Apri Contenuto Tramite Link (6.2):
+Utente esterno
+Mostra Contenuti
+tramite Link
+Apri contenuto tramite
+link
+DBMS
+Visualizza contenuti tramite
+link
+Figura 8: Vista d’insieme di Visualizza Contenuto Tramite Link
+57
+
+--- PAGE 58 ---
+AF AM Connect RAD
+3.4.2.8.1 Mostra Contenuti Tramite Link
+Note
+Caso particolare. Questo caso d’uso rappresenta un sistema
+esterno che manda un messaggio al Sistema per trasmettere il
+link condiviso; per questo si suppone che non ci sia un attore
+iniziatore.
+Caso d’uso
+Mostra Contenuti Tramite Link
+ID
+6.1
+Attori
+DBMS
+Precondizioni
+Flusso degli
+eventi
+1. Il Sistema riceve una richiesta di accesso tramite un link
+condiviso (found message).
+2. Il Sistema estrae il codice univoco dal link.
+3. Il Sistema interroga il DBMS per verificarne lo stato.
+4.SEil link è valido:
+4.1. Il Sistema interroga il DBMS per recuperare l’elenco
+dei contenuti (file) associati a quel link specifico.
+4.2. Il Sistema aggiorna lo stato del link nel DBMS per
+segnalare l’avvenuta visualizzazione.
+4.3. Il Sistema mostra a video la schermata “Contenuti
+Condivisi”, visualizzando l’elenco dei file con i relativi
+titoli e descrizioni.
+Postcondizioni
+Il Sistema ha mostrato la schermata “Contenuti Condivisi”.
+Tabella 31: Scheda di dettaglio del Caso d’Uso Mostra Contenuti Tramite Link
+58
+
+--- PAGE 59 ---
+AF AM Connect RAD
+3.4.2.8.2 Apri Contenuto Tramite Link
+Caso d’uso
+Apri Contenuto Tramite Link
+ID
+6.2
+Attori
+Utente esterno, DBMS
+Precondizioni
+Il Sistema ha mostrato la schermata “Contenuti Condivisi”.
+Flusso degli
+eventi
+1. L’utente clicca su uno specifico file di interesse dall’elenco.
+2. Il Sistema interroga il DBMS per recuperare il file fisico.
+3. Il Sistema controlla il formato del file selezionato.
+4.SEil contenuto è un file multimediale riproducibile, ad
+esempio una traccia audio o un video:
+4.1. Il Sistema mostra a video la schermata “Riproduttore
+Multimediale”, contenente il player attivo e le
+informazioni descrittive del contenuto.
+4.2. L’utente clicca sul pulsante “Chiudi Contenuto”.
+4.3. Il Sistema mostra la schermata “Contenuti Condivisi”.
+5.ALTRIMENTI(file PDF o immagini):
+5.1. Il Sistema mostra a video la schermata
+“Visualizzatore Documenti”, contenente il file aperto e
+le informazioni descrittive del contenuto.
+5.2. L’utente clicca sul pulsante “Chiudi Contenuto”.
+5.3. Il Sistema mostra la schermata “Contenuti Condivisi”.
+Postcondizioni
+Il Sistema ha mostrato la schermata “Contenuti Condivisi”.
+Tabella 32: Scheda di dettaglio del Caso d’Uso Apri Contenuto Tramite Link
+59
+
+--- PAGE 60 ---
+AF AM Connect RAD
+3.4.2.9 Caso d’uso: Gestione Condivisione Interna
+All’interno della suddetta macro-categoria sono presenti i seguenti casi d’uso di dettaglio:
+•Selezione Contenuti Privati (7.1):
+•Genera Codice (7.2):
+•Visualizza Elenco Codici (7.3):
+•Revoca Codice (7.4):
+Studente
+Selezione contenuti
+privati
+DBMS
+Gestione condivisione
+interna
+Genera Codice
+Visualizza elenco codici
+Revoca codice
+Figura 9: Vista d’insieme di Gestione Condivisione Interna
+60
+
+--- PAGE 61 ---
+AF AM Connect RAD
+3.4.2.9.1 Selezione Contenuti Privati
+Caso d’uso
+Selezione Contenuti Privati
+ID
+7.1
+Attori
+Studente, DBMS
+Precondizioni
+Il Sistema ha mostrato a video la schermata “Home AFAM”.
+Flusso degli eventi 1. Lo studente clicca sulla sezione “Gestione Condivisione Interna”.
+2. Il Sistema mostra a video la schermata “Gestione Condivisione
+Interna”.
+3. Lo studente clicca sul pulsante “Seleziona Contenuti Privati”.
+4. Il Sistema recupera dalla memoria temporanea i dati dello
+studente.
+5. Il Sistema interroga il DBMS per recuperare i file privati.
+6.SElo studente non ha alcun contenuto caricato:
+6.1. Il Sistema mostra a video il messaggio di errore: “Nessun
+contenuto disponibile”.
+6.2. Lo studente clicca sul pulsante “OK” per chiuderlo.
+6.3. Il Sistema mostra nuovamente la schermata “Gestione
+Condivisione Interna”.
+7.ALTRIMENTI(ci sono contenuti disponibili):
+7.1. Il Sistema mostra a video la schermata “Seleziona
+Contenuti Privati”, contenente l’elenco dei file e il pulsante
+“Conferma Selezione Finale”.
+7.2. Lo studente seleziona i contenuti che desidera condividere.
+7.3. Lo studente clicca sul pulsante “Conferma Selezione
+Finale”.
+7.4. Il Sistema mostra a video la schermata “Generazione
+Codice”.
+Postcondizioni 1. Il Sistema ha mostrato a video la schermata “Generazione
+Codice”.
+2. Il Sistema ha mostrato la schermata “Gestione Condivisione
+Interna”.
+Tabella 33: Scheda di dettaglio del Caso d’Uso Selezione Contenuti Privati
+61
+
+--- PAGE 62 ---
+AF AM Connect RAD
+3.4.2.9.2 Genera Codice
+Caso d’uso
+Genera Codice
+ID
+7.2
+Attori
+Studente, DBMS
+Precondizioni
+Il Sistema ha mostrato a video la schermata “Generazione
+Codice”.
+Flusso degli
+eventi
+1. Lo studente clicca sul pulsante “Genera Codice”.
+2. Il Sistema genera un codice univoco associato ai file
+selezionati.
+3. Il Sistema invia i dati del codice generato, l’elenco dei file
+associati e l’identificativo dello studente al DBMS per la
+memorizzazione definitiva.
+4. Il Sistema mostra a video un messaggio di conferma:
+“Codice generato con successo”, contenente il codice
+testuale creato e i pulsanti “Copia Codice” e “OK”.
+5. Lo studente clicca sul pulsante “Copia Codice”.
+6. Il Sistema copia il codice generato nel dispositivo dello
+studente.
+7. Lo studente clicca sul pulsante “OK” per chiudere il
+messaggio di conferma.
+8. Il Sistema mostra a video la schermata “Gestione
+Condivisione Interna”.
+Postcondizioni
+Il Sistema ha mostrato a video la schermata “Gestione
+Condivisione Interna”.
+Tabella 34: Scheda di dettaglio del Caso d’Uso Genera Codice
+62
+
+--- PAGE 63 ---
+AF AM Connect RAD
+3.4.2.9.3 Visualizza Elenco Codici
+Caso d’uso
+Visualizza Elenco Codici
+ID
+7.3
+Attori
+Studente, DBMS
+Precondizioni
+Il Sistema ha mostrato a video la schermata “Gestione Condivisione
+Interna”.
+Flusso degli eventi 1. Lo studente clicca sulla sezione “Gestisci Codici”.
+2. Il Sistema recupera dalla memoria temporanea l’identificativo
+dello studente.
+3. Il Sistema interroga il DBMS per recuperare la lista dei codici
+generati dallo studente.
+4.SElo studente non possiede alcun codice generato:
+4.1. Il Sistema mostra a video il messaggio di errore: “Nessun
+codice generato”.
+4.2. Lo studente clicca sul pulsante “OK”.
+4.3. Il Sistema mostra a video la schermata “Gestione
+Condivisione Interna”.
+5.ALTRIMENTI(ci sono codici generati):
+5.1. Il Sistema mostra a video la schermata “Elenco Codici”,
+contenente l’elenco dei codici e il pulsante “Revoca”.
+Postcondizioni 1. Il Sistema ha mostrato a schermo la schermata “Elenco Codici”.
+2. Il Sistema ha mostrato a video la schermata “Gestione
+Condivisione Interna”.
+Tabella 35: Scheda di dettaglio del Caso d’Uso Visualizza Elenco Codici
+63
+
+--- PAGE 64 ---
+AF AM Connect RAD
+3.4.2.9.4 Revoca Codice
+Caso d’uso
+Revoca Codice
+ID
+7.4
+Attori
+Studente, DBMS
+Precondizioni
+Il Sistema ha mostrato a video la schermata “Elenco Codici”.
+Flusso degli
+eventi
+1. Lo studente clicca sul pulsante “Revoca” in corrispondenza
+di un codice specifico.
+2. Il Sistema mostra a video un messaggio di conferma: “Sei
+sicuro di voler revocare questo codice?”, con il pulsante
+“Conferma”.
+3. Lo studente clicca sul pulsante “Conferma”.
+4. Il Sistema invia la richiesta di revoca al DBMS per
+aggiornare lo stato del codice.
+5. Il Sistema mostra nuovamente la schermata “Elenco
+Codici”.
+Postcondizioni
+Il Sistema ha mostrato a schermo la schermata “Elenco Codici”.
+Tabella 36: Scheda di dettaglio del Caso d’Uso Revoca Codice
+64
+
+--- PAGE 65 ---
+AF AM Connect RAD
+3.4.3 Modello degli oggetti
+Ci serviamo dell’euristica di Abbot per identificare gli oggetti del sistema distinguendoli
+in :entity, boundary, control.
+3.4.3.1 Oggetti entity
+OGGETTI ENTITY DESCRIZIONE
+EntityStudente
+Entity che permette di salvare i dati dello studente che ha
+effettuato il login.
+Tabella 37: Oggetti entity
+3.4.3.2 Oggetti boundary
+OGGETTI BOUNDARY DESCRIZIONE
+SchermataPrincipale
+Rappresenta la pagina principale di atterraggio (landing
+page) del sistema. Funge da snodo per indirizzare l’utente
+verso le varie operazioni di accesso o iscrizione. Contiene i
+pulsanti: Login, Recupera Password e Registrazione.
+SchermataLogin
+Gestisce l’interfaccia di accesso al sistema permettendo
+l’autenticazione classica o quella federata. Contiene i campi
+di testo per l’inserimento di email e password e i pulsanti:
+Accedi, Entra con SPID e il menu a tendina per la selezione
+del Provider.
+SchermataRegistrazione
+Fornisce il modulo per la creazione di un nuovo profilo
+studente, raccogliendo i dati ed effettuandone una prima
+validazione locale. Contiene i campi per l’inserimento dei
+Dati Studente e il pulsante: Conferma Registrazione.
+SchermataAttivazione
+Account
+Interfaccia dedicata all’inserimento del codice di sicurezza
+(es. OTP) necessario per completare l’attivazione
+dell’account appena registrato. Contiene il campo di testo
+per l’inserimento del codice e il pulsante: Verifica.
+SchermataVerificaIdentita
+Interfaccia dedicata all’inserimento del codice di verifica
+dell’identità (es. OTP) richiesto durante l’accesso per
+completare l’autenticazione a due fattori. Contiene il campo
+di testo per l’inserimento del codice e il pulsante: Verifica.
+HomeAFAM
+Schermata che appare dopo che l’utente ha effettuato il
+login; contiene i pulsanti che permettono la navigazione nel
+software: Gestione Condivisione con Link, Gestione Profilo,
+Gestione Contenuti, Gestione Portfolio, Gestione
+Condivisione Interna, Ricerca e Logout.
+IdentitaDigitaleBoundary
+Rappresenta l’interfaccia verso il sistema di identità digitale
+(SPID/eIDAS), tramite cui il Sistema delega e riceve l’esito
+dell’autenticazione federata dell’utente.
+FormIdentitaDigitale
+Riproduce la pagina di autenticazione del Provider di
+identità digitale, nella quale l’utente inserisce le proprie
+credenziali federate. Contiene i campi per l’inserimento di
+codice fiscale, nome utente e password e il pulsante:
+Conferma.
+65
+
+--- PAGE 66 ---
+AF AM Connect RAD
+SchermataRecupero
+Password
+Consente allo studente di avviare la procedura di recupero
+della password inserendo la propria email. Contiene il campo
+di testo per l’inserimento dell’email e il pulsante: Conferma.
+SchermataNuovaPassword
+Consente allo studente di impostare la nuova password al
+termine della procedura di recupero delle credenziali.
+Contiene il campo di testo per l’inserimento della nuova
+password e il pulsante: Conferma.
+SchermataInserimento
+Codice
+Interfaccia dedicata all’inserimento del codice di sicurezza
+necessario per proseguire l’operazione richiesta (recupero
+password o accesso a contenuti privati). Contiene il campo
+di testo per l’inserimento del codice e i pulsanti: Conferma e
+Richiedi nuovo codice.
+SchermataGestioneProfilo
+Rappresenta la sezione di gestione del profilo dello studente e
+funge da snodo verso le operazioni sui dati personali.
+Contiene il pulsante: Dati Personali.
+SchermataDatiPersonali
+Mostra i dati personali dello studente e consente di avviarne
+la modifica. Contiene il pulsante: Modifica.
+FormModificaDatiPersonali
+Fornisce il modulo per la modifica dei dati personali dello
+studente. Contiene i campi per l’inserimento dei nuovi dati e
+il pulsante: Conferma Modifiche.
+SchermataGestionePortfolio
+Rappresenta la sezione di gestione del portfolio dello
+studente e funge da snodo verso le operazioni sul background
+artistico. Contiene il pulsante: Background Artistico.
+SchermataBackground
+Artistico
+Mostra le voci del background artistico dello studente e
+consente di gestirle. Contiene i pulsanti: Modifica Dati ed
+Elimina Dati.
+FormModificaBackground
+Artistico
+Fornisce il modulo per l’inserimento e la modifica delle
+informazioni relative al background artistico. Contiene i
+campi per l’inserimento dei nuovi dati e il pulsante:
+Conferma.
+SchermataGestione
+Contenuti
+Rappresenta la sezione di gestione dei contenuti e consente la
+selezione di una categoria artistica esistente o la creazione di
+una nuova. Contiene l’elenco delle categorie e il pulsante:
+Crea Categoria.
+SchermataNuovaCategoria
+Fornisce il modulo per la creazione di una nuova categoria
+artistica. Contiene il campo di testo per l’inserimento del
+nome e il pulsante: Salva.
+SchermataTipologiaFile
+Consente allo studente di selezionare la tipologia del file da
+gestire. Contiene gli elementi per la selezione della tipologia.
+SchermataElencoFile
+Mostra l’elenco dei file appartenenti alla categoria e alla
+tipologia selezionate e consente di operare su di essi.
+Contiene la lista dei file e i pulsanti: Upload e Menu.
+SchermataUpload
+Fornisce il modulo per il caricamento di un nuovo file.
+Contiene i campi per l’inserimento di titolo e descrizione, il
+selettore del file e il pulsante: Conferma.
+SchermataGestioneFile
+Consente di scegliere l’operazione da effettuare su un file
+selezionato. Contiene i pulsanti per l’eliminazione, la
+modifica e la gestione della privacy del contenuto.
+SchermataModifica
+Fornisce il modulo per la modifica dei dati di un file
+esistente. Contiene i campi per l’aggiornamento di titolo e
+descrizione e il pulsante: Conferma.
+SchermataPrivacy
+Consente di impostare il livello di privacy di un contenuto.
+Contiene gli elementi per la selezione della tipologia di
+privacy e il pulsante: Conferma.
+66
+
+--- PAGE 67 ---
+AF AM Connect RAD
+SchermataGestioneCond
+Link
+Rappresenta la sezione di gestione della condivisione tramite
+link e funge da snodo verso la selezione dei contenuti e la
+gestione dei link generati. Contiene il pulsante: Seleziona.
+SchermataSeleziona
+Contenuti
+Consente allo studente di selezionare i contenuti da
+condividere tramite link. Contiene l’elenco dei contenuti e il
+pulsante: Conferma Selezione.
+SchermataGenerazioneLink
+Consente di avviare la generazione di un link di condivisione
+per i contenuti selezionati. Contiene il pulsante: Genera
+Link.
+MessaggioConfermaLink
+Schermata che mostra il link di condivisione generato e ne
+consente la copia. Contiene il link generato e i pulsanti:
+Copia e OK.
+SchermataElencoLink
+Mostra l’elenco dei link generati dallo studente e consente di
+gestirli. Contiene la lista dei link e il pulsante: Revoca.
+BoundaryTempo
+Rappresenta l’interfaccia verso l’orologio di sistema, tramite
+cui il Sistema ottiene la data e l’ora correnti necessarie alla
+verifica della validità di un link.
+SchermataRicerca
+Consente allo studente di ricercare un altro studente
+all’interno del sistema. Contiene i campi per l’inserimento di
+nome e cognome e il pulsante per avviare la ricerca.
+SchermataRisultatoRicerca
+Mostra l’elenco degli studenti corrispondenti ai criteri di
+ricerca e ne consente la selezione. Contiene la lista degli
+studenti trovati.
+SchermataProfiloStudente
+Mostra il profilo di uno studente consultato e funge da snodo
+verso la visualizzazione dei suoi contenuti pubblici e privati.
+SchermataContenutiPubblici
+Mostra le categorie dei contenuti pubblici di uno studente e
+ne consente la selezione. Contiene l’elenco delle categorie.
+SchermataCategoria
+Contenuti
+Mostra le tipologie di file disponibili all’interno di una
+categoria selezionata e ne consente la selezione. Contiene
+l’elenco delle tipologie.
+SchermataVisualizzatore
+Documenti
+Consente la visualizzazione a schermo di un contenuto di
+tipo documentale. Contiene il pulsante: Chiudi.
+SchermataRiproduttore
+Multimediale
+Consente la riproduzione a schermo di un contenuto
+multimediale (audio/video). Contiene il pulsante: Chiudi.
+SchermataContenutiTramite
+Link
+Rappresenta la schermata di accesso ai contenuti condivisi
+tramite link, attraverso cui viene avviata la consultazione a
+partire dal link ricevuto.
+SchermataContenuti
+Condivisi
+Mostra l’elenco dei contenuti resi disponibili tramite link e
+ne consente la selezione per la visualizzazione. Contiene la
+lista dei contenuti condivisi.
+SchermataGestioneCond
+Interna
+Rappresenta la sezione di gestione della condivisione interna
+e funge da snodo verso la selezione dei contenuti privati e la
+generazione dei codici. Contiene i pulsanti: Seleziona
+Contenuti Privati e Genera Codice.
+SchermataSeleziona
+ContenutiPrivati
+Consente allo studente di selezionare i contenuti privati da
+condividere internamente. Contiene l’elenco dei contenuti
+privati e il pulsante: Conferma Selezione.
+SchermataGenerazione
+Codice
+Consente di avviare la generazione di un codice di
+condivisione per i contenuti privati selezionati. Contiene il
+pulsante: Genera Codice.
+SchermataCodice
+Schermata che mostra il codice di condivisione generato e ne
+consente la copia. Contiene il codice generato e i pulsanti:
+Copia e OK.
+67
+
+--- PAGE 68 ---
+AF AM Connect RAD
+SchermataElencoCodici
+Mostra l’elenco dei codici generati dallo studente e consente
+di gestirli. Contiene la lista dei codici e il pulsante: Revoca.
+MessaggioDiConferma
+Schermata che permette la visualizzazione di un messaggio a
+schermo che informa lo studente di un’operazione avvenuta
+con successo.
+MessaggioDiAvviso
+Schermata che permette la visualizzazione di un messaggio a
+schermo che avvisa lo studente di una situazione o
+condizione che richiede la sua attenzione prima di proseguire.
+MessaggioDiErrore
+Schermata che permette la visualizzazione di un messaggio a
+schermo che informa lo studente di un errore che si è
+verificato come conseguenza di un’azione effettuata.
+BoundaryDBMS
+Rappresenta l’interfaccia di comunicazione tra il Sistema e il
+DBMS. Inoltra le richieste di lettura e scrittura dei dati
+persistenti, gestendo il recupero, la memorizzazione e
+l’aggiornamento delle informazioni relative a studenti, file,
+contenuti, link e codici.
+Tabella 38: Oggetti boundary
+68
+
+--- PAGE 69 ---
+AF AM Connect RAD
+3.4.3.3 Oggetti control
+OGGETTI CONTROL DESCRIZIONE
+LoginControl
+Gestisce il caso d’uso “Login” e “Login tramite
+SPID/eIDAS”.
+RegistrazioneControl
+Gestisce il caso d’uso “Registrazione”.
+RecuperaPasswordControl
+Gestisce il caso d’uso “Recupera password”.
+LogoutControl
+Gestisce il caso d’uso “Logout”.
+GestioneProfiloControl
+Gestisce il caso d’uso “Modifica Dati Personali”, “Modifica
+Background Artistico”.
+CategoriaControl
+Gestisce il caso d’uso “Seleziona Categoria Artistica”, “Crea
+Categoria Artistica”.
+TipologiaFileControl
+Gestisce il caso d’uso “Seleziona Tipologia File”.
+UploadFileControl
+Gestisce il caso d’uso “Upload File”.
+GestioneFileControl
+Gestisce il caso d’uso “Elimina File”, “Modifica File”,
+“Gestisci Privacy Contenuti”.
+SelezionaContenutiControl
+Gestisce il caso d’uso “Seleziona Contenuti”, “Genera Link”.
+GestisciLinkControl
+Gestisce il caso d’uso “Visualizza Elenco Link”, “Revoca
+Link”.
+ControlValiditaLink
+Gestisce il caso d’uso “Verifica Validità Link”.
+CercaStudenteControl
+Gestisce il caso d’uso “Cerca Studente”.
+VisualizzaProfiloControl
+Gestisce il caso d’uso “Mostra Contenuti Pubblici”, “Mostra
+Contenuti Privati”, “Visualizza Contenuto”.
+MostraContenutiLink
+Control
+Gestisce il caso d’uso “Mostra Contenuti Tramite Link”,
+“Apri Contenuto Tramite Link”.
+SelezionaContenutiPrivati
+Control
+Gestisce il caso d’uso “Seleziona Contenuti Privati”, “Genera
+Codice”.
+GestisciCodiceControl
+Gestisce il caso d’uso “Visualizza Elenco Codici”, “Revoca
+Codice”.
+Tabella 39: Oggetti control
+69
+
+--- PAGE 70 ---
+AF AM Connect RAD
+3.4.4 Modelli Dinamici
+3.4.4.1 Gestione Autenticazione - Login
+Figura 10: Diagramma di sequenza - Gestione Autenticazione - Login
+70
+
+--- PAGE 71 ---
+AF AM Connect RAD
+3.4.4.2 Gestione Autenticazione - Login tramite SPID/eIDAS
+Figura 11: Diagramma di sequenza - Gestione Autenticazione - Login tramite
+SPID/eIDAS
+71
+
+--- PAGE 72 ---
+AF AM Connect RAD
+3.4.4.3 Gestione Autenticazione - Registrazione
+Figura 12: Diagramma di sequenza - Gestione Autenticazione - Registrazione
+72
+
+--- PAGE 73 ---
+AF AM Connect RAD
+3.4.4.4 Gestione Autenticazione - Recupera password
+Figura 13: Diagramma di sequenza - Gestione Autenticazione - Recupera password
+73
+
+--- PAGE 74 ---
+AF AM Connect RAD
+3.4.4.5 Gestione Autenticazione - Logout
+Figura 14: Diagramma di sequenza - Gestione Autenticazione - Logout
+74
+
+--- PAGE 75 ---
+AF AM Connect RAD
+3.4.4.6 Gestione Profilo - Modifica Dati Personali
+Figura 15: Diagramma di sequenza - Gestione Profilo - Modifica Dati Personali
+75
+
+--- PAGE 76 ---
+AF AM Connect RAD
+3.4.4.7 Gestione Profilo - Modifica Background Artistico
+Figura 16: Diagramma di sequenza - Gestione Profilo - Modifica Background Artistico
+76
+
+--- PAGE 77 ---
+AF AM Connect RAD
+3.4.4.8 Gestione Profilo - Aggiungi Background Artistico
+Figura 17: Diagramma di sequenza - Gestione Profilo - Aggiungi Background Artistico
+77
+
+--- PAGE 78 ---
+AF AM Connect RAD
+3.4.4.9 Gestione Profilo - Elimina Background Artistico
+Figura 18: Diagramma di sequenza - Gestione Profilo - Elimina Background Artistico
+78
+
+--- PAGE 79 ---
+AF AM Connect RAD
+3.4.4.10 Gestione Contenuti - Seleziona Categoria Artistica
+Figura 19: Diagramma di sequenza - Gestione Contenuti - Seleziona Categoria Artistica
+79
+
+--- PAGE 80 ---
+AF AM Connect RAD
+3.4.4.11 Gestione Contenuti - Crea Categoria Artistica
+Figura 20: Diagramma di sequenza - Gestione Contenuti - Crea Categoria Artistica
+80
+
+--- PAGE 81 ---
+AF AM Connect RAD
+3.4.4.12 Gestione Contenuti - Seleziona Tipologia File
+Figura 21: Diagramma di sequenza - Gestione Contenuti - Seleziona Tipologia File
+81
+
+--- PAGE 82 ---
+AF AM Connect RAD
+3.4.4.13 Gestione Contenuti - Upload File
+Figura 22: Diagramma di sequenza - Gestione Contenuti - Upload File
+82
+
+--- PAGE 83 ---
+AF AM Connect RAD
+3.4.4.14 Gestione Contenuti - Elimina File
+Figura 23: Diagramma di sequenza - Gestione Contenuti - Elimina File
+83
+
+--- PAGE 84 ---
+AF AM Connect RAD
+3.4.4.15 Gestione Contenuti - Modifica File
+Figura 24: Diagramma di sequenza - Gestione Contenuti - Modifica File
+84
+
+--- PAGE 85 ---
+AF AM Connect RAD
+3.4.4.16 Gestione Contenuti - Gestisci Privacy Contenuti
+Figura 25: Diagramma di sequenza - Gestione Contenuti - Gestisci Privacy Contenuti
+85
+
+--- PAGE 86 ---
+AF AM Connect RAD
+3.4.4.17 Gestione Condivisione con Link - Selezione Contenuti
+Figura26: Diagrammadisequenza-GestioneCondivisioneconLink-SelezioneContenuti
+86
+
+--- PAGE 87 ---
+AF AM Connect RAD
+3.4.4.18 Gestione Condivisione con Link - Genera Link
+Figura 27: Diagramma di sequenza - Gestione Condivisione con Link - Genera Link
+87
+
+--- PAGE 88 ---
+AF AM Connect RAD
+3.4.4.19 Gestione Condivisione con Link - Visualizza Elenco Link
+Figura 28: Diagramma di sequenza - Gestione Condivisione con Link - Visualizza Elenco
+Link
+88
+
+--- PAGE 89 ---
+AF AM Connect RAD
+3.4.4.20 Gestione Condivisione con Link - Revoca Link
+Figura 29: Diagramma di sequenza - Gestione Condivisione con Link - Revoca Link
+89
+
+--- PAGE 90 ---
+AF AM Connect RAD
+3.4.4.21 Gestione Condivisione con Link - Verifica Validità Link
+Figura 30: Diagramma di sequenza - Gestione Condivisione con Link - Verifica Validità
+Link
+90
+
+--- PAGE 91 ---
+AF AM Connect RAD
+3.4.4.22 Consulta Profilo Studente - Cerca Studente
+Figura 31: Diagramma di sequenza - Consulta Profilo Studente - Cerca Studente
+91
+
+--- PAGE 92 ---
+AF AM Connect RAD
+3.4.4.23 Consulta Profilo Studente - Mostra Contenuti Pubblici
+Figura 32: Diagramma di sequenza - Consulta Profilo Studente - Mostra Contenuti Pub-
+blici
+92
+
+--- PAGE 93 ---
+AF AM Connect RAD
+3.4.4.24 Consulta Profilo Studente - Mostra Contenuti Privati
+Figura 33: Diagramma di sequenza - Consulta Profilo Studente - Mostra Contenuti Privati
+93
+
+--- PAGE 94 ---
+AF AM Connect RAD
+3.4.4.25 Consulta Profilo Studente - Visualizza Contenuto
+Figura 34: Diagramma di sequenza - Consulta Profilo Studente - Visualizza Contenuto
+94
+
+--- PAGE 95 ---
+AF AM Connect RAD
+3.4.4.26 Visualizza Contenuto Tramite Link - Mostra Contenuti Tramite
+Link
+Figura 35: Diagramma di sequenza - Visualizza Contenuto Tramite Link - Mostra Con-
+tenuti Tramite Link
+95
+
+--- PAGE 96 ---
+AF AM Connect RAD
+3.4.4.27 Visualizza Contenuto Tramite Link - Apri Contenuto Tramite Link
+Figura 36: Diagramma di sequenza - Visualizza Contenuto Tramite Link - Apri Contenuto
+Tramite Link
+96
+
+--- PAGE 97 ---
+AF AM Connect RAD
+3.4.4.28 Gestione Condivisione Interna - Selezione Contenuti Privati
+Figura 37: Diagramma di sequenza - Gestione Condivisione Interna - Selezione Contenuti
+Privati
+97
+
+--- PAGE 98 ---
+AF AM Connect RAD
+3.4.4.29 Gestione Condivisione Interna - Genera Codice
+Figura 38: Diagramma di sequenza - Gestione Condivisione Interna - Genera Codice
+98
+
+--- PAGE 99 ---
+AF AM Connect RAD
+3.4.4.30 Gestione Condivisione Interna - Visualizza Elenco Codici
+Figura 39: Diagramma di sequenza - Gestione Condivisione Interna - Visualizza Elenco
+Codici
+99
+
+--- PAGE 100 ---
+AF AM Connect RAD
+3.4.4.31 Gestione Condivisione Interna - Revoca Codice
+Figura 40: Diagramma di sequenza - Gestione Condivisione Interna - Revoca Codice
+100
+
+--- PAGE 101 ---
+AF AM Connect RAD
+3.4.5 Modelli delle Classi
+3.4.5.1 Entity
+Figura 41: Diagramma delle classi - Entity
+101
+
+--- PAGE 102 ---
+AF AM Connect RAD
+3.4.5.2 Gestione Autenticazione - Login
+Figura 42: Diagramma delle classi - Gestione Autenticazione - Login
+102
+
+--- PAGE 103 ---
+AF AM Connect RAD
+3.4.5.3 Gestione Autenticazione - Login tramite SPID/eIDAS
+Figura 43: Diagramma delle classi - Gestione Autenticazione - Login tramite SPID/eIDAS
+103
+
+--- PAGE 104 ---
+AF AM Connect RAD
+3.4.5.4 Gestione Autenticazione - Registrazione
+Figura 44: Diagramma delle classi - Gestione Autenticazione - Registrazione
+104
+
+--- PAGE 105 ---
+AF AM Connect RAD
+3.4.5.5 Gestione Autenticazione - Recupera password
+Figura 45: Diagramma delle classi - Gestione Autenticazione - Recupera password
+105
+
+--- PAGE 106 ---
+AF AM Connect RAD
+3.4.5.6 Gestione Autenticazione - Logout
+Figura 46: Diagramma delle classi - Gestione Autenticazione - Logout
+106
+
+--- PAGE 107 ---
+AF AM Connect RAD
+3.4.5.7 Gestione Profilo - Modifica Dati Personali
+Figura 47: Diagramma delle classi - Gestione Profilo - Modifica Dati Personali
+107
+
+--- PAGE 108 ---
+AF AM Connect RAD
+3.4.5.8 Gestione Profilo - Modifica Background Artistico
+Figura 48: Diagramma delle classi - Gestione Profilo - Modifica Background Artistico
+108
+
+--- PAGE 109 ---
+AF AM Connect RAD
+3.4.5.9 Gestione Profilo - Aggiungi Background Artistico
+Figura 49: Diagramma delle classi - Gestione Profilo - Aggiungi Background Artistico
+109
+
+--- PAGE 110 ---
+AF AM Connect RAD
+3.4.5.10 Gestione Profilo - Elimina Background Artistico
+Figura 50: Diagramma delle classi - Gestione Profilo - Elimina Background Artistico
+110
+
+--- PAGE 111 ---
+AF AM Connect RAD
+3.4.5.11 Gestione Contenuti - Seleziona Categoria Artistica
+Figura 51: Diagramma delle classi - Gestione Contenuti - Seleziona Categoria Artistica
+111
+
+--- PAGE 112 ---
+AF AM Connect RAD
+3.4.5.12 Gestione Contenuti - Crea Categoria Artistica
+Figura 52: Diagramma delle classi - Gestione Contenuti - Crea Categoria Artistica
+112
+
+--- PAGE 113 ---
+AF AM Connect RAD
+3.4.5.13 Gestione Contenuti - Seleziona Tipologia File
+Figura 53: Diagramma delle classi - Gestione Contenuti - Seleziona Tipologia File
+113
+
+--- PAGE 114 ---
+AF AM Connect RAD
+3.4.5.14 Gestione Contenuti - Upload File
+Figura 54: Diagramma delle classi - Gestione Contenuti - Upload File
+114
+
+--- PAGE 115 ---
+AF AM Connect RAD
+3.4.5.15 Gestione Contenuti - Elimina File
+Figura 55: Diagramma delle classi - Gestione Contenuti - Elimina File
+115
+
+--- PAGE 116 ---
+AF AM Connect RAD
+3.4.5.16 Gestione Contenuti - Modifica File
+Figura 56: Diagramma delle classi - Gestione Contenuti - Modifica File
+116
+
+--- PAGE 117 ---
+AF AM Connect RAD
+3.4.5.17 Gestione Contenuti - Gestisci Privacy Contenuti
+Figura 57: Diagramma delle classi - Gestione Contenuti - Gestisci Privacy Contenuti
+117
+
+--- PAGE 118 ---
+AF AM Connect RAD
+3.4.5.18 Gestione Condivisione con Link - Selezione Contenuti
+Figura 58: Diagramma delle classi - Gestione Condivisione con Link - Selezione Contenuti
+118
+
+--- PAGE 119 ---
+AF AM Connect RAD
+3.4.5.19 Gestione Condivisione con Link - Genera Link
+Figura 59: Diagramma delle classi - Gestione Condivisione con Link - Genera Link
+119
+
+--- PAGE 120 ---
+AF AM Connect RAD
+3.4.5.20 Gestione Condivisione con Link - Visualizza Elenco Link
+Figura 60: Diagramma delle classi - Gestione Condivisione con Link - Visualizza Elenco
+Link
+120
+
+--- PAGE 121 ---
+AF AM Connect RAD
+3.4.5.21 Gestione Condivisione con Link - Revoca Link
+Figura 61: Diagramma delle classi - Gestione Condivisione con Link - Revoca Link
+121
+
+--- PAGE 122 ---
+AF AM Connect RAD
+3.4.5.22 Gestione Condivisione con Link - Verifica Validita Link
+Figura 62: Diagramma delle classi - Gestione Condivisione con Link - Verifica Validita
+Link
+122
+
+--- PAGE 123 ---
+AF AM Connect RAD
+3.4.5.23 Consulta Profilo Studente - Cerca Studente
+Figura 63: Diagramma delle classi - Consulta Profilo Studente - Cerca Studente
+123
+
+--- PAGE 124 ---
+AF AM Connect RAD
+3.4.5.24 Consulta Profilo Studente - Mostra Contenuti Pubblici
+Figura64: Diagrammadelleclassi-ConsultaProfiloStudente-MostraContenutiPubblici
+124
+
+--- PAGE 125 ---
+AF AM Connect RAD
+3.4.5.25 Consulta Profilo Studente - Mostra Contenuti Privati
+Figura 65: Diagramma delle classi - Consulta Profilo Studente - Mostra Contenuti Privati
+125
+
+--- PAGE 126 ---
+AF AM Connect RAD
+3.4.5.26 Consulta Profilo Studente - Visualizza Contenuto
+Figura 66: Diagramma delle classi - Consulta Profilo Studente - Visualizza Contenuto
+126
+
+--- PAGE 127 ---
+AF AM Connect RAD
+3.4.5.27 Visualizza Contenuto Tramite Link - Mostra Contenuti Tramite
+Link
+Figura 67: Diagramma delle classi - Visualizza Contenuto Tramite Link - Mostra Conte-
+nuti Tramite Link
+127
+
+--- PAGE 128 ---
+AF AM Connect RAD
+3.4.5.28 Visualizza Contenuto Tramite Link - Apri Contenuto Tramite Link
+Figura 68: Diagramma delle classi - Visualizza Contenuto Tramite Link - Apri Contenuto
+Tramite Link
+128
+
+--- PAGE 129 ---
+AF AM Connect RAD
+3.4.5.29 Gestione Condivisione Interna - Selezione Contenuti Privati
+Figura 69: Diagramma delle classi - Gestione Condivisione Interna - Selezione Contenuti
+Privati
+129
+
+--- PAGE 130 ---
+AF AM Connect RAD
+3.4.5.30 Gestione Condivisione Interna - Genera Codice
+Figura 70: Diagramma delle classi - Gestione Condivisione Interna - Genera Codice
+130
+
+--- PAGE 131 ---
+AF AM Connect RAD
+3.4.5.31 Gestione Condivisione Interna - Visualizza Elenco Codici
+Figura 71: Diagramma delle classi - Gestione Condivisione Interna - Visualizza Elenco
+Codici
+131
+
+--- PAGE 132 ---
+AF AM Connect RAD
+3.4.5.32 Gestione Condivisione Interna - Revoca Codice
+Figura 72: Diagramma delle classi - Gestione Condivisione Interna - Revoca Codice
+132
+
+--- PAGE 133 ---
+AF AM Connect RAD
+3.4.6 Interfacce
+Si premette che le interfacce riportate di seguito rappresentano schermate significative
+del Sistema allo stato attuale di implementazione. Le schermate sono state ricavate dal-
+l’applicazione JavaFX e possono presentare variazioni grafiche minori rispetto a eventuali
+versioni successive del prodotto.
+3.4.6.1 Schermata Principale
+Figura 73: Interfaccia - Schermata Principale
+3.4.6.2 Login
+Figura 74: Interfaccia - Login
+133
+
+--- PAGE 134 ---
+AF AM Connect RAD
+3.4.6.3 Registrazione
+Figura 75: Interfaccia - Registrazione
+3.4.6.4 Recupera Password
+Figura 76: Interfaccia - Recupera Password
+134
+
+--- PAGE 135 ---
+AF AM Connect RAD
+3.4.6.5 Verifica Identita
+Figura 77: Interfaccia - Verifica Identita
+3.4.6.6 Home AFAM
+Figura 78: Interfaccia - Home AFAM
+135
+
+--- PAGE 136 ---
+AF AM Connect RAD
+3.4.6.7 Gestione Profilo
+Figura 79: Interfaccia - Gestione Profilo
+3.4.6.8 Dati Personali
+Figura 80: Interfaccia - Dati Personali
+136
+
+--- PAGE 137 ---
+AF AM Connect RAD
+3.4.6.9 Background Artistico
+Figura 81: Interfaccia - Background Artistico
+3.4.6.10 Form Background Artistico
+Figura 82: Interfaccia - Form Background Artistico
+137
+
+--- PAGE 138 ---
+AF AM Connect RAD
+3.4.6.11 Gestione Contenuti
+Figura 83: Interfaccia - Gestione Contenuti
+3.4.6.12 Seleziona Tipologia File
+Figura 84: Interfaccia - Selezione Tipologia File
+138
+
+--- PAGE 139 ---
+AF AM Connect RAD
+3.4.6.13 Elenco File
+Figura 85: Interfaccia - Elenco File
+3.4.6.14 Upload File
+Figura 86: Interfaccia - Upload File
+139
+
+--- PAGE 140 ---
+AF AM Connect RAD
+3.4.6.15 Gestione Condivisione con Link
+Figura 87: Interfaccia - Gestione Condivisione con Link
+3.4.6.16 Seleziona Contenuti per Link
+Figura 88: Interfaccia - Selezione Contenuti per Link
+140
+
+--- PAGE 141 ---
+AF AM Connect RAD
+3.4.6.17 Generazione Link
+Figura 89: Interfaccia - Generazione Link
+3.4.6.18 Elenco Link
+Figura 90: Interfaccia - Elenco Link
+141
+
+--- PAGE 142 ---
+AF AM Connect RAD
+3.4.6.19 Gestione Condivisione Interna
+Figura 91: Interfaccia - Gestione Condivisione Interna
+3.4.6.20 Seleziona Contenuti Privati
+Figura 92: Interfaccia - Selezione Contenuti Privati
+142
+
+--- PAGE 143 ---
+AF AM Connect RAD
+3.4.6.21 Generazione Codice
+Figura 93: Interfaccia - Generazione Codice
+3.4.6.22 Elenco Codici
+Figura 94: Interfaccia - Elenco Codici
+143
+
+--- PAGE 144 ---
+AF AM Connect RAD
+3.4.6.23 Ricerca Studente
+Figura 95: Interfaccia - Ricerca Studente
+3.4.6.24 Risultato Ricerca
+Figura 96: Interfaccia - Risultato Ricerca
+144
+
+--- PAGE 145 ---
+AF AM Connect RAD
+3.4.6.25 Profilo Studente
+Figura 97: Interfaccia - Profilo Studente
+3.4.6.26 Contenuti Condivisi tramite Link
+Figura 98: Interfaccia - Contenuti Condivisi tramite Link
+145

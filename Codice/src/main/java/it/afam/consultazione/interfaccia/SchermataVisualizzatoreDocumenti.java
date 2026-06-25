@@ -1,5 +1,6 @@
 package it.afam.consultazione.interfaccia;
 
+import it.afam.utility.ArchivioFile;
 import it.afam.utility.ConnessioneException;
 import it.afam.utility.DatabaseManager;
 import it.afam.utility.SceneManager;
@@ -47,7 +48,7 @@ public class SchermataVisualizzatoreDocumenti {
             labelTitolo.setText(f.titolo());
             labelDescrizione.setText(f.descrizione() == null ? "" : f.descrizione());
 
-            File file = new File(f.percorso());
+            File file = ArchivioFile.risolvi(f.percorso());
             if (!file.exists()) {
                 mostraMessaggio("File non trovato.");
                 return;

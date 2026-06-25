@@ -1,5 +1,6 @@
 package it.afam.gestioneStudente.control;
 
+import it.afam.utility.ArchivioFile;
 import it.afam.entity.EntityStudente;
 import it.afam.gestioneStudente.interfaccia.MessaggioDiConferma;
 import it.afam.utility.DatabaseManager;
@@ -43,8 +44,9 @@ public class GestioneProfiloControl {
         if (!Utils.validaEmail(email) || !Utils.validaTelefono(telefono) || !validaFoto(percorsoFoto)) {
             return false;
         }
+        String percorsoArchiviato = ArchivioFile.archiviaFoto(percorsoFoto);
         DatabaseManager.getIstanza().aggiornaDatiPersonali(
-                SessioneCorrente.getIstanza().getIdStudente(), email, telefono, percorsoFoto);
+                SessioneCorrente.getIstanza().getIdStudente(), email, telefono, percorsoArchiviato);
         return true;
     }
 

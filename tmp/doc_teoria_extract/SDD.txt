@@ -1,0 +1,463 @@
+SOURCE: C:\Users\Simone\Desktop\DOC+teoria\SDD.pdf
+PAGES: 18
+
+
+--- PAGE 1 ---
+Università degli Studi di Palermo
+Dipartimento di Ingegneria — A.A. 2025/2026
+System Design Document
+Gruppo di lavoro
+Simone Sottile
+Matteo Duca
+Giuseppe Giacomarra
+Gilberto Mogavero
+1
+
+--- PAGE 2 ---
+AF AM Connect SDD
+Indice
+1 Obiettivo del sistema 3
+2 Architettura software attuale 3
+3 Architettura software proposta 3
+3.1 Panoramica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+3.2 Requisiti minimi per l’utilizzo del software proposto . . . . . . . . . . . . . 4
+3.3 Decomposizione in sottosistemi . . . . . . . . . . . . . . . . . . . . . . . . 5
+3.4 Suddivisione degli oggetti all’interno dei sottosistemi e dei componenti . . . 7
+3.5 Mappatura hardware e software . . . . . . . . . . . . . . . . . . . . . . . . 12
+4 Gestione dei dati persistenti 13
+4.1 Modello ER . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+4.2 Modello relazionale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+4.3 Struttura delle tabelle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+4.3.0.1 Tabella Studente . . . . . . . . . . . . . . . . . . . . . . . 15
+4.3.0.2 Tabella Background_Artistico . . . . . . . . . . . . . . . . 15
+4.3.0.3 Tabella Categoria_Artistica . . . . . . . . . . . . . . . . . 16
+4.3.0.4 Tabella Contenuto_File . . . . . . . . . . . . . . . . . . . 16
+4.3.0.5 Tabella Link_Condivisione . . . . . . . . . . . . . . . . . 17
+4.3.0.6 Tabella Dettaglio_Link . . . . . . . . . . . . . . . . . . . 17
+4.3.0.7 Tabella Codice_Sblocco . . . . . . . . . . . . . . . . . . . 18
+4.3.0.8 Tabella Dettaglio_Codice . . . . . . . . . . . . . . . . . . 18
+2
+
+--- PAGE 3 ---
+AF AM Connect SDD
+1 Obiettivo del sistema
+L’obiettivo del sistema e’ la progettazione di una piattaforma per la gestione dell’identita’
+digitale degli studenti appartenenti alle istituzioni AFAM. Il sistema deve fornire uno
+strumento digitale unico che permetta a ciascuno studente di rappresentare il proprio
+percorso artistico e formativo in modo moderno ed efficace, includendo non solo i dati
+anagrafici e accademici, ma anche la produzione artistica come registrazioni audio, video,
+spartiti e curriculum.
+Il fine principale e’ consentire agli studenti di organizzare i propri contenuti in maniera
+flessibile, decidere autonomamente cosa rendere visibile e condividere il profilo, o parti
+di esso, con soggetti esterni come commissioni di audizione, enti valutatori o collabo-
+ratori. La condivisione avviene tramite collegamenti temporizzati o codici di sblocco,
+mantenendo il controllo sui materiali e permettendo allo studente di verificare le effettive
+visualizzazioni.
+2 Architettura software attuale
+Attualmente non esiste una soluzione software unificata per questa specifica esigenza
+all’interno delle istituzioni AFAM. Gli studenti si trovano quindi a dover presentare il
+proprio profilo in modo manuale, utilizzando documenti separati, file sparsi e materiali
+inviati tramite email o altri canali esterni alla piattaforma.
+Questo approccio frammentato genera difficolta’ nel mantenere la coerenza, l’aggiorna-
+mento e il controllo su cio’ che viene condiviso in contesti critici quali audizioni, candi-
+dature, concorsi o collaborazioni. Inoltre, non e’ presente una repository centralizzata
+dei contenuti artistici: i materiali non sono organizzati in categorie persistenti, non di-
+spongono di uno stato di privacy gestito dal sistema e non sono associati a meccanismi
+strutturati di tracciamento, revoca o scadenza delle condivisioni.
+3 Architettura software proposta
+L’architettura software proposta introduce una piattaforma centralizzata basata su una
+repository applicativa dei dati e dei contenuti degli studenti. Tale repository e’ gestita
+tramite il DBMS e conserva in modo persistente le informazioni anagrafiche, il background
+artistico, le categorie, i file multimediali, i link di condivisione e i codici di sblocco.
+Il sistema viene organizzato in sottosistemi applicativi specializzati, ciascuno responsa-
+bile di un gruppo coerente di funzionalita’: Gestione Studente, Gestione Autenticazione,
+Gestione Condivisione, Consultazione e Gestione Operazioni Automatiche. La boundary
+DBMS rappresenta il punto di accesso ai dati persistenti e fornisce alle componenti di
+controllo i metodi necessari per recuperare, salvare e aggiornare gli oggetti di dominio.
+3
+
+--- PAGE 4 ---
+AF AM Connect SDD
+3.1 Panoramica
+Il software sara’ installato su un nodo di un’infrastruttura AFAM e sara’ progettato
+per gestire in modo affidabile i dati degli studenti e i contenuti multimediali caricati.
+L’architettura prevede un sistema con accesso sicuro tramite credenziali personali gestibili
+in autonomia dallo studente, includendo funzioni di base per la gestione dell’account come
+il recupero della password.
+L’interfaccia utente dovra’ essere chiara, intuitiva e orientata alla facilita’ d’uso, in modo
+da adattarsi anche a utenti non esperti dal punto di vista tecnico e provenienti da ambiti
+artistici. Dal punto di vista architetturale, la soluzione dovra’ poter essere estesa in futuro
+verso l’utilizzo di sistemi di identita’ digitale nazionali ed europei, come SPID ed eIDAS,
+tenendo conto dei relativi principi di affidabilita’ e sicurezza.
+In via opzionale, la progettazione potra’ valutare soluzioni per una futura interazione con
+sistemi analoghi utilizzati da altre istituzioni AFAM, mantenendo comunque il controllo
+locale sulla repository dei dati e dei contenuti.
+3.2 Requisiti minimi per l’utilizzo del software proposto
+Per funzionare correttamente e rispettare le specifiche minime del progetto, il sistema
+richiede:
+•Nodo infrastrutturale AF AM:un ambiente server su cui installare il sistema
+e archiviare in modo sicuro i dati personali e i materiali artistici, che possono
+rappresentare opere originali degli studenti.
+•Connessione di rete:una rete stabile che permetta agli studenti l’accesso sicuro
+tramite credenziali, la generazione di link esterni e il funzionamento del sistema di
+tracciamento delle visualizzazioni.
+•DBMS relazionale:un sistema di gestione dei dati persistenti per memoriz-
+zare studenti, background artistico, categorie, contenuti, link, codici e relative
+associazioni.
+•Storage dei contenuti:uno spazio di archiviazione per i file audio, video e PDF
+caricati dagli studenti, collegato ai record presenti nel DBMS tramite il percorso
+fisico del file.
+•Meccanismi di privacy e tutela dei contenuti:funzioni integrate per control-
+lare la visibilita’ dei file, limitarne la consultazione e riservare l’accesso a specifici
+destinatari tramite link temporizzati o codici di sblocco.
+4
+
+--- PAGE 5 ---
+AF AM Connect SDD
+3.3 Decomposizione in sottosistemi
+La decomposizione del sistema segue la seguente suddivisione. I sottosistemi individuati
+sono i seguenti:
+Figura 1: Decomposizione del sistema in sottosistemi
+5
+
+--- PAGE 6 ---
+AF AM Connect SDD
+•Gestione Studente:raccoglie le funzionalita’ con cui lo studente amministra il
+proprio profilo, il portfolio e i contenuti caricati. Include la gestione dei dati perso-
+nali e artistici, la creazione delle categorie, la selezione delle tipologie di file, l’upload,
+la modifica, l’eliminazione e la gestione della privacy dei contenuti.
+•Gestione Autenticazione:gestisce l’accesso alla piattaforma e le operazioni col-
+legate all’account. Comprende login, registrazione, recupero password, logout e
+l’interazione con eventuali boundary dedicate all’identita’ digitale.
+•Gestione Condivisione:governa la condivisione dei contenuti dello studente.
+Comprende la selezione dei file da condividere, la generazione e visualizzazione dei
+link temporizzati, la generazione dei codici di sblocco, la selezione dei contenuti
+privati e la revoca dei permessi di accesso.
+•Consultazione:consente la consultazione dei profili e dei contenuti autorizzati.
+Include la ricerca dello studente, la visualizzazione del profilo, la consultazione dei
+contenuti pubblici, lo sblocco dei contenuti privati tramite codice e la visualizzazione
+dei contenuti condivisi tramite link.
+•Gestione Operazioni Automatiche:contiene le funzionalita’ eseguite automa-
+ticamente dal sistema, in particolare il controllo temporale sulla validita’ dei link di
+condivisione e l’aggiornamento del relativo stato quando risultano scaduti.
+6
+
+--- PAGE 7 ---
+AF AM Connect SDD
+3.4 Suddivisione degli oggetti all’interno dei sottosistemi e dei
+componenti
+Gestione Studente:
+Figura 2: Interfaccia del sottosistema Gestione Studente
+Figura 3: Controller del sottosistema Gestione Studente
+7
+
+--- PAGE 8 ---
+AF AM Connect SDD
+Gestione Autenticazione:
+Figura 4: Interfaccia del sottosistema Gestione Autenticazione
+Figura 5: Controller del sottosistema Gestione Autenticazione
+8
+
+--- PAGE 9 ---
+AF AM Connect SDD
+Gestione Condivisione:
+Figura 6: Interfaccia del sottosistema Gestione Condivisione
+Figura 7: Controller del sottosistema Gestione Condivisione
+9
+
+--- PAGE 10 ---
+AF AM Connect SDD
+Consultazione:
+Figura 8: Interfaccia del sottosistema Consultazione
+Figura 9: Controller del sottosistema Consultazione
+10
+
+--- PAGE 11 ---
+AF AM Connect SDD
+Gestione Operazioni Automatiche:
+Figura 10: Interfaccia del sottosistema Gestione Operazioni Automatiche
+Figura 11: Controller del sottosistema Gestione Operazioni Automatiche
+11
+
+--- PAGE 12 ---
+AF AM Connect SDD
+3.5 Mappatura hardware e software
+La mappatura hardware e software descrive la distribuzione dei componenti logici del si-
+stema sui nodi fisici coinvolti nell’esecuzione della piattaforma. Il sistema AFAM Connect
+adotta un’architettura di tipo Repository: i sottosistemi applicativi non comunicano di-
+rettamente tra loro, ma accedono ai dati persistenti esclusivamente tramite il componente
+DatabaseManager, che rappresenta il punto di accesso centralizzato al DBMS.
+Il diagramma seguente mostra la collocazione dei sottosistemi sui nodi hardware previsti
+e il collegamento verso il DBMS. Le comunicazioni con il database avvengono secondo il
+modello Repository: i sottosistemi non comunicano direttamente tra loro, ma accedono
+ai dati tramite il livello di repository e il DBMS.
+Figura 12: Mappatura hardware e software del sistema AFAM Connect
+12
+
+--- PAGE 13 ---
+AF AM Connect SDD
+4 Gestione dei dati persistenti
+4.1 Modello ER
+DBMS:
+Modello E-R - AFAM Connect
+Studente
+Background Artistico
+Categoria Artistica Contenuto File
+Link Condivisione
+Codice Sblocco
+possiede
+crea
+contiene
+genera
+genera
+include
+autorizza
+0..*
+1
+1
+0..*
+1 0..*
+1
+0..*
+1
+0..*
+0..*
+1..*
+0..*
+1..*
+Figura 13: Modello E-R del database AFAM Connect
+13
+
+--- PAGE 14 ---
+AF AM Connect SDD
+4.2 Modello relazionale
+DBMS:
+Modello Relazionale - AFAM Connect
+STUDENTE
+PK id_studente
+nome
+cognome
+codice_fiscale UNIQUE
+email UNIQUE
+telefono
+percorso_foto
+password
+BACKGROUND_ARTISTICO
+PK id_background
+universita
+collaborazioni, autori
+partecipazioni
+FK id_studente
+CATEGORIA_ARTISTICA
+PK id_categoria
+nome_categoria
+FK id_studente
+LINK_CONDIVISIONE
+PK id_link
+token_url UNIQUE
+data_creazione, data_scadenza
+visualizzato, stato_link
+FK id_studente
+CODICE_SBLOCCO
+PK id_codice
+token_testuale UNIQUE
+stato_codice
+FK id_studente
+CONTENUTO_FILE
+PK id_file
+titolo, descrizione
+formato, dimensione
+stato_privacy
+percorso_fisico
+FK id_categoria
+DETTAGLIO_LINK
+PK/FK id_link
+PK/FK id_file
+DETTAGLIO_CODICE
+PK/FK id_codice
+PK/FK id_file
+1
+0..*
+1
+0..*
+1
+0..*
+1
+0..*
+1 0..*
+1 1..* 0..*
+1
+1 1..* 0..*
+1
+Figura 14: Modello relazionale del database AFAM Connect
+14
+
+--- PAGE 15 ---
+AF AM Connect SDD
+4.3 Struttura delle tabelle
+DBMS:
+4.3.0.1 Tabella Studente
+Nome Tipo Vincoli Descrizione
+id_studente
+INT PK, AUTO INC.,
+NOT NULL
+Identificativo dello
+studente.
+nome
+VARCHAR(100) NOT NULL Nome anagrafico.
+cognome
+VARCHAR(100) NOT NULL Cognome anagrafico.
+codice_fiscale
+CHAR(16) UNIQUE, NOT
+NULL
+Codice fiscale.
+email
+VARCHAR(255) UNIQUE, NOT
+NULL
+Email di accesso.
+telefono
+VARCHAR(10) NOT NULL Numero di telefono dello
+studente.
+percorso_foto
+VARCHAR(255) NULL Percorso del file della foto
+profilo.
+password
+VARCHAR(255) NOT NULL Password cifrata/hash.
+Tabella 1: Struttura della tabella Studente
+4.3.0.2 Tabella Background_Artistico
+Nome Tipo Vincoli Descrizione
+id_background
+INT PK, AUTO INC.,
+NOT NULL
+Identificativo del
+background.
+scuola_universita
+VARCHAR(255) NULL Istituto frequentato.
+collaborazioni_
+fatte
+TEXT NULL Collaborazioni artistiche.
+collaborazioni_
+autori
+TEXT NULL Autori o riferimenti.
+partecipazioni
+TEXT NULL Eventi e concorsi.
+id_studente
+INT FK, NOT NULL Studente proprietario.
+Tabella 2: Struttura della tabella Background_Artistico
+15
+
+--- PAGE 16 ---
+AF AM Connect SDD
+4.3.0.3 Tabella Categoria_Artistica
+Nome Tipo Vincoli Descrizione
+id_categoria
+INT PK, AUTO INC.,
+NOT NULL
+Identificativo categoria.
+nome_categoria
+VARCHAR(100) NOT NULL Nome della categoria.
+id_studente
+INT FK, NOT NULL Studente proprietario.
+Tabella 3: Struttura della tabella Categoria_Artistica
+4.3.0.4 Tabella Contenuto_File
+Nome Tipo Vincoli Descrizione
+id_file
+INT PK, AUTO INC.,
+NOT NULL
+Identificativo del file.
+titolo
+VARCHAR(150) NOT NULL Titolo del contenuto.
+descrizione
+TEXT NULL Descrizione breve.
+tipologia
+VARCHAR(30) NOT NULL Categoria tecnica usata
+per la navigazione e il
+filtro dei contenuti (audio,
+video, immagine,
+documento).
+formato
+VARCHAR(20) NOT NULL Formato specifico o
+estensione del file (ad
+esempio MP3, MP4, PNG,
+PDF).
+dimensione
+INT NOT NULL Dimensione in byte.
+stato_privacy
+ENUM NOT NULL Pubblico o privato.
+percorso_fisico
+VARCHAR(255) NOT NULL Percorso di storage.
+id_categoria
+INT FK, NOT NULL Categoria associata.
+Tabella 4: Struttura della tabella Contenuto_File
+16
+
+--- PAGE 17 ---
+AF AM Connect SDD
+4.3.0.5 Tabella Link_Condivisione
+Nome Tipo Vincoli Descrizione
+id_link
+INT PK, AUTO INC.,
+NOT NULL
+Identificativo del link.
+token_url
+VARCHAR(255) UNIQUE, NOT
+NULL
+Token del link.
+data_creazione
+DATETIME NOT NULL Data di generazione.
+data_scadenza
+DATETIME NOT NULL Termine di validita’.
+visualizzato
+BOOLEAN NOT NULL,
+DEFAULT FALSE
+Stato di lettura.
+stato_link
+ENUM NOT NULL Attivo, revocato o scaduto.
+id_studente
+INT FK, NOT NULL Studente creatore.
+Tabella 5: Struttura della tabella Link_Condivisione
+4.3.0.6 Tabella Dettaglio_Link
+La tabella rappresenta l’associazione molti-a-molti tra link di condivisione e file selezionati: uno stesso
+link puo’ essere associato a piu’ file, e uno stesso file puo’ comparire in piu’ link diversi.
+Nome Tipo Vincoli Descrizione
+id_link
+INT PK, FK, NOT NULL Link che raggruppa uno o
+piu’ file selezionati.
+id_file
+INT PK, FK, NOT NULL File incluso tra i contenuti
+resi disponibili dal link.
+Tabella 6: Struttura della tabella Dettaglio_Link
+17
+
+--- PAGE 18 ---
+AF AM Connect SDD
+4.3.0.7 Tabella Codice_Sblocco
+Nome Tipo Vincoli Descrizione
+id_codice
+INT PK, AUTO INC.,
+NOT NULL
+Identificativo codice.
+token_testuale
+VARCHAR(100) UNIQUE, NOT
+NULL
+Codice di sblocco.
+stato_codice
+ENUM NOT NULL Attivo o revocato.
+id_studente
+INT FK, NOT NULL Studente creatore.
+Tabella 7: Struttura della tabella Codice_Sblocco
+4.3.0.8 Tabella Dettaglio_Codice
+La tabella rappresenta l’associazione molti-a-molti tra codici di sblocco e file privati selezionati: uno
+stesso codice puo’ sbloccare piu’ file privati, e uno stesso file privato puo’ essere associato a piu’ codici
+diversi.
+Nome Tipo Vincoli Descrizione
+id_codice
+INT PK, FK, NOT NULL Codice che raggruppa uno
+o piu’ file privati
+selezionati.
+id_file
+INT PK, FK, NOT NULL File privato reso
+consultabile tramite il
+codice.
+Tabella 8: Struttura della tabella Dettaglio_Codice
+18

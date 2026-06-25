@@ -243,7 +243,7 @@ public class DatabaseManager {
                 + "VALUES (?, ?, ?, ?, ?, 'Privato', ?, ?)";
         boundaryDBMS.eseguiAggiornamento(sql, new Object[]{
                 titolo, descrizione, tipologia, estensione(percorsoFile),
-                new File(percorsoFile).length(), percorsoFile, idCategoria});
+                dimensione(percorsoFile), percorsoFile, idCategoria});
     }
 
     public DatiFile recuperaFilePerId(int idFile) {
@@ -260,7 +260,7 @@ public class DatabaseManager {
                 + "dimensione = ?, percorso_fisico = ? WHERE id_file = ?";
         boundaryDBMS.eseguiAggiornamento(sql, new Object[]{
                 titolo, descrizione, estensione(percorsoFile),
-                new File(percorsoFile).length(), percorsoFile, idFile});
+                dimensione(percorsoFile), percorsoFile, idFile});
     }
 
     public void eliminaFile(int idFile) {
@@ -510,7 +510,7 @@ public class DatabaseManager {
     /** Recupera il file fisico dato il suo identificativo. */
     public File recuperaFileFisico(int idFile) {
         DatiFile f = recuperaFilePerId(idFile);
-        return f == null ? null : new File(f.percorso());
+        return f == null ? null : ArchivioFile.risolvi(f.percorso());
     }
 
     private List<DatiFile> eseguiSelectFileToken(String sql, String token) {
@@ -571,6 +571,11 @@ public class DatabaseManager {
     private String estensione(String percorso) {
         int p = percorso.lastIndexOf('.');
         return p >= 0 ? percorso.substring(p + 1).toLowerCase() : "";
+    }
+
+    private long dimensione(String percorso) {
+        File file = ArchivioFile.risolvi(percorso);
+        return file == null ? 0L : file.length();
     }
 
     // ---- helper di mapping ----

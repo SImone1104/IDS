@@ -2,6 +2,7 @@ package it.afam.consultazione.interfaccia;
 
 import it.afam.consultazione.control.VisualizzaProfiloControl;
 import it.afam.entity.EntityStudente;
+import it.afam.utility.ArchivioFile;
 import it.afam.utility.ConnessioneException;
 import it.afam.utility.SceneManager;
 import it.afam.utility.dto.DatiBackground;
@@ -52,7 +53,7 @@ public class SchermataProfiloStudente {
         if (percorso == null || percorso.isEmpty()) {
             return;
         }
-        File f = new File(percorso);
+        File f = ArchivioFile.risolvi(percorso);
         if (f.exists()) {
             immagineFoto.setImage(new Image(f.toURI().toString()));
         }

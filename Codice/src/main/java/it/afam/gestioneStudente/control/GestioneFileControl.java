@@ -1,5 +1,6 @@
 package it.afam.gestioneStudente.control;
 
+import it.afam.utility.ArchivioFile;
 import it.afam.gestioneStudente.interfaccia.MessaggioDiConferma;
 import it.afam.utility.DatabaseManager;
 import it.afam.utility.dto.DatiFile;
@@ -46,7 +47,8 @@ public class GestioneFileControl {
         if (titolo == null || titolo.isBlank() || titolo.length() > 200) {
             return false;
         }
-        DatabaseManager.getIstanza().aggiornaFile(idFileCorrente, titolo, descrizione, percorsoFile);
+        String percorsoArchiviato = ArchivioFile.archiviaContenuto(percorsoFile);
+        DatabaseManager.getIstanza().aggiornaFile(idFileCorrente, titolo, descrizione, percorsoArchiviato);
         return true;
     }
 

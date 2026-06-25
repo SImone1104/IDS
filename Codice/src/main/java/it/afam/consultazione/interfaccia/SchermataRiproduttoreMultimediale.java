@@ -1,5 +1,6 @@
 package it.afam.consultazione.interfaccia;
 
+import it.afam.utility.ArchivioFile;
 import it.afam.utility.ConnessioneException;
 import it.afam.utility.DatabaseManager;
 import it.afam.utility.SceneManager;
@@ -48,7 +49,7 @@ public class SchermataRiproduttoreMultimediale {
             }
             labelTitolo.setText(dati.titolo());
             labelDescrizione.setText(dati.descrizione() == null ? "" : dati.descrizione());
-            File f = new File(dati.percorso());
+            File f = ArchivioFile.risolvi(dati.percorso());
             if (!f.exists()) {
                 labelTitolo.setText(dati.titolo() + " (file non trovato)");
                 return;

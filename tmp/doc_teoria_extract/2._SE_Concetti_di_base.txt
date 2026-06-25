@@ -1,0 +1,298 @@
+SOURCE: C:\Users\Simone\Desktop\DOC+teoria\slide\2. SE_Concetti di base.pdf
+PAGES: 30
+
+
+--- PAGE 1 ---
+Il primo passo indispensabile 
+per ottenere dalla vita ciò che 
+si vuole:
+1
+decidere cosa si vuole  
+(cit. Ben Stein)
+
+--- PAGE 2 ---
+Concetti di base*
+Ingegneria del software
+* parte del testo contenuto in queste slide è stato preso dai seguenti libri di testo: 
+I. Sommerville. Ingegneria del Software. Pearson 
+C. Ghezzi, M. Jazaheri, D. Mandrioli. Ingegneria del software fondamenti e principi. 
+Pearson 
+
+--- PAGE 3 ---
+3
+
+--- PAGE 4 ---
+Ingegneria del software:
+visione di insieme 
+L’ingegneria del software è il settore dell’informatica 
+che si occupa della creazione di sistemi software 
+talmente grandi o complessi da dover essere realizzati 
+da una o più squadre di ingegneri* 
+*C. Ghezzi, M. Jazaheri, D. Mandrilli - Ingegneria del 
+software fondamenti e principi
+4
+
+--- PAGE 5 ---
+Testi di riferimento
+B. Bruegge, A. H. Dutoit. Object-Oriented Software 
+Engineering: Using UML, Patterns and Java. Third 
+edition. International edition. ISBN: 0-13-606125-7. 
+Prentice Hall 
+Ian Sommerville Ingegneria del software 8-9-10/Ed. 
+2007 pp. 848 ISBN 9788871923543 
+5
+
+--- PAGE 6 ---
+Ingegneria del software:
+visione di insieme 
+Campi di applicazione dell’ingegneria al software 
+(vedere Sommerville) 
+generic 
+customized 
+IEEE standard 610.12-1990 “l’ingegneria del 
+software è l’applicazione di un approccio 
+sistematico, disciplinato e quantificabile nello 
+sviluppo, funzionamento e manutenzione del 
+software”
+6
+
+--- PAGE 7 ---
+Ingegneria del software:
+visione di insieme 
+Ingegneria del software è una disciplina il cui obiettivo è lo sviluppo di sistemi 
+software di alta qualità senza sprechi 
+Il termine ingegneria del software fu proposto nel 1968 durante una conferenza 
+per discutere quella che venne chiamata la crisi del software 
+La crisi del software era dovuta all'introduzione di hardware basato su circuiti 
+integrati, la cui potenza rese disponibili applicazioni informatiche fino ad 
+allora irrealizzabili. 
+Il software risultante fu più grande e più complesso, per diversi ordini di 
+grandezza rispetto sistemi precedenti.
+7
+
+--- PAGE 8 ---
+Ingegneria del software:
+visione di insieme 
+L'esperienza fatta nella costruzione di questi sistemi ha mostrato che lo sviluppo informale 
+del software non era una soluzione adatta 
+I progetti più grandi erano spesso in ritardo di anni, con costi molto superiori al previsto 
+Non erano affidabili 
+Erano difficili da mantenere 
+Avevano pessime prestazioni 
+Sviluppo del software in crisi 
+Il costo dell'hardware scendeva vertiginosamente 
+Il costo del software saliva a dismisura
+8
+
+--- PAGE 9 ---
+Ingegneria del software:
+visione di insieme 
+Ingegneria del software non è programmazione 
+programmatore - scrive un programma completo 
+Ing. del sw - scrive un componente sw che viene 
+combinato con altri componenti sw scritti da altri ing. 
+dello stesso team (o di team diversi) per creare un 
+sistema completo
+9
+
+--- PAGE 10 ---
+Ingegneria del software:
+visione di insieme 
+Programmare è un’ attività individuale 
+Progettare è (spesso) un’attività di gruppo
+10
+
+--- PAGE 11 ---
+Ingegneria del software:
+visione di insieme 
+Da Bruegge, Dutoit. Object Oriented Software Engineering using 
+UML, atterns and Java 
+The term software engineering was coined in 1968 as a response to the desolate state of the art of developing 
+quality software on time and within budget. 
+Software developers were not able to set concrete objectives, predict the resources necessary to attain those 
+objectives, and manage the customers’ expectations. 
+More often than not, the moon was promised, a lunar rover built, and a pair of square wheels delivered. 
+The emphasis in software engineering is on both words, software and engineering. 
+An engineer is able to build a high-quality product using off-the-shelf components and integrating them under 
+time and budget constraints. The engineer is often faced with ill-deﬁned problems and partial solutions, and has 
+to rely on empirical methods to evaluate solutions 
+11
+
+--- PAGE 12 ---
+Informatica e ingegneria del 
+software
+La principale differenza tra informatica e ingegneria del 
+software è: 
+Informatica - si occupa delle teorie e dei metodi che 
+stanno alla base dei sistemi software e di quelli 
+informatici 
+Ingegneria del software - si occupa dei problemi 
+pratici relativi alla produzione del software
+12
+
+--- PAGE 13 ---
+Ingegneria del software:
+visione di insieme 
+Il SW subisce uno sviluppo e un'evoluzione dall'idea iniziale di 
+un possibile prodotto o sistema software fino a quando viene 
+implementato e consegnato al cliente. 
+Il software ha un ciclo di vita composto da varie fasi 
+A ciascuna di queste è associato lo sviluppo di una parte del 
+sistema o di qualche elemento a questo legato come ad esempio un 
+manuale per l’utente o il piano di test
+13
+
+--- PAGE 14 ---
+Processo Software
+È l’ insieme delle attività e dei risultati che creano un prodotto software 
+Quattro attività fondamentali comuni a tutti processi 
+Specifica: il cliente e gli ingegneri definiscono cosa deve fare il 
+software e quali sono i vincoli per la sua progettazione 
+Sviluppo: progettazione programmazione 
+Convalida: si verifica che il software sia esattamente quello che il 
+cliente richiede 
+Evoluzione: si modifica il prodotto per adeguarlo ai requisiti dell’ 
+utente e del mercato che cambiano
+14
+
+--- PAGE 15 ---
+Seminario Vivere Ingegneria 
+23 novembre 2015
+ 15
+
+
+--- PAGE 16 ---
+Metodo di ingegneria del 
+software
+Un metodo di ingegneria del software è un approccio 
+strutturato allo sviluppo del software, che facilita una 
+produzione di alta qualità e a costi contenuti 
+Non c'è un metodo ideale e diversi metodi possono essere usati 
+in aree diverse 
+Per esempio i metodi orientati agli oggetti sono solitamente 
+adatti a sistemi interattivi ma non a sistemi che devono 
+essere strettamente real time
+16
+
+--- PAGE 17 ---
+CASE tool
+L'acronimo CASE significa Computer aided software 
+engineering 
+Comprende una vasta gamma di programmi diversi 
+usati per aiutare le attività di processo del software  
+dall’ analisi dei requisiti al debugging e testing
+17
+
+--- PAGE 18 ---
+Cosa è un modello
+Un artefatto che descrive il sistema/software 
+per esempio un diagramma o un insieme di 
+diagrammi 
+Un insieme di affermazioni su un sistema di 
+interesse o sotto studio
+18
+
+--- PAGE 19 ---
+Cosa è un modello
+Da Wikipedia, l'enciclopedia 
+libera. 
+Nell'uso scientiﬁco e tecnico-
+progettuale, un modello è una 
+rappresentazione di un oggetto o di 
+un fenomeno, che corrisponde alla 
+cosa modellata per il fatto di 
+riprodurne (evidentemente alla luce 
+di precisi riscontri fattuali ottenuti 
+a partire da un metodo che sia 
+garanzia di controllabilità) alcune 
+caratteristiche o comportamenti 
+fondamentali; in modo tale che 
+questi aspetti possano essere 
+mostrati, studiati, conosciuti 
+laddove l'oggetto modellato non sia 
+direttamente accessibile.
+19
+
+--- PAGE 20 ---
+Cosa è un modello
+© Thomas Kühne  23 
+Modelling 
+© Thomas Kühne  23 
+Modelling  
+20
+
+--- PAGE 21 ---
+Cosa è un modello
+© Thomas Kühne  24 
+Modelling  
+© Thomas Kühne  24 
+Modelling  
+21
+
+--- PAGE 22 ---
+Un modello cattura un aspetto 
+di interesse, fornisce una vista22
+
+--- PAGE 23 ---
+Viste differenti sullo stesso oggetto
+23
+
+--- PAGE 24 ---
+Viste e notazione
+24
+
+--- PAGE 25 ---
+Ancora sui modelli: la notazione
+25
+
+--- PAGE 26 ---
+Linguaggio di modellazione
+Un modello è sviluppato (disegnato) sulla base di una 
+notazione 
+La notazione dipende dal linguaggio di modellazione 
+Linguaggio: sintassi e semantica
+26
+
+--- PAGE 27 ---
+UML cenni
+•UML è un linguaggio di modellazione 
+•UML-unified modeling language  
+•Linguaggio di modellazione unificato 
+•Famiglia di notazioni grafiche che si basano su un 
+singolo meta modello 
+•Servono a supportare la descrizione e il progetto del 
+software, in particolare quelli costruiti seguendo il 
+paradigma orientato agli oggetti
+27
+
+--- PAGE 28 ---
+UML cenni
+UML non fornisce alcuna metodologia di 
+modellazione 
+Alcuni aspetti metodologici sono impliciti negli 
+elementi che costituiscono un modello UML 
+UML fornisce esclusivamente la sintassi visuale da 
+utilizzare per la costruzione dei modelli
+28
+
+--- PAGE 29 ---
+Uniﬁed Process-UP
+Una metodologia: indica le risorse, le attività e i 
+manufatti che dobbiamo utilizzare, effettuare e creare 
+per modellare un sistema software
+29
+
+--- PAGE 30 ---
+Progettazione e modellazione
+#EVKXKV[
+ #EVKXKV[
+ #EVKXKV[Ŏ
+#EVKXKV[ŎUVCTV GPF
+FGUKIPGTU
+FGRKEV
+OQFGNU
+HQNNQYFGUKIP
+RTQEGUU
+#EVKXKV[
+RTQFWEG
+30

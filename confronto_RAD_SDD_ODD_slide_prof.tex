@@ -1,0 +1,1300 @@
+﻿\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+\geometry{margin=2.2cm}
+\raggedbottom
+\setlength{\emergencystretch}{3em}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!55!black,
+  urlcolor=blue!55!black
+}
+\setlist[itemize]{leftmargin=1.2em}
+\setlist[enumerate]{leftmargin=1.4em}
+\titleformat{\section}{\Large\bfseries}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{0.6em}{}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+
+\newcommand{\doc}[1]{\textbf{#1}}
+\newcommand{\slide}[1]{\emph{#1}}
+\newcommand{\term}[1]{\textbf{#1}}
+
+\title{\textbf{Confronto teorico tra RAD, SDD, ODD e slide del corso}\\
+\large Preparazione all'esame orale di Ingegneria del Software}
+\author{AFAM Connect}
+\date{A.A. 2025/2026}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Obiettivo del documento}
+
+Questo documento mette in relazione i tre elaborati di progetto \doc{RAD}, \doc{SDD} e
+\doc{ODD} di AFAM Connect con gli argomenti teorici presenti nelle slide della professoressa.
+Lo scopo non e' riscrivere i documenti, ma preparare risposte da orale: per ogni blocco
+teorico viene spiegato dove compare nel progetto, perche' e' coerente con le slide e quale
+frase conviene usare in sede di esame.
+
+Fonti considerate:
+\begin{itemize}
+  \item \doc{Rad.pdf}: requisiti, casi d'uso, oggetti di analisi, diagrammi dinamici,
+  diagrammi delle classi e interfacce.
+  \item \doc{SDD.pdf}: architettura proposta, decomposizione in sottosistemi, repository,
+  mapping hardware/software e persistenza.
+  \item \doc{ODD\_AFAM\_Connect.pdf}: package, classi concrete, JavaFX/FXML, SQLite,
+  JDBC, Singleton, DTO e diagrammi UML di dettaglio.
+  \item Slide: raccolta requisiti, casi d'uso, requisiti non funzionali, classi e oggetti,
+  analisi, sequence diagram, class diagram, system design, object design, design pattern e
+  testing.
+\end{itemize}
+
+\section{Mappa sintetica: teoria e documenti}
+
+{\small
+\begin{longtable}{L{3.0cm}L{4.4cm}L{6.0cm}}
+\toprule
+\textbf{Tema teorico} & \textbf{Slide collegate} & \textbf{Dove compare nel progetto} \\
+\midrule
+\endhead
+Raccolta requisiti & \slide{3. Raccolta e modellazione dei requisiti};
+\slide{3.1 Descrivere i casi d'uso}; \slide{3.2 Requisiti non funzionali} &
+Nel \doc{RAD}: obiettivo generale, sistema attuale/proposto, requisiti funzionali,
+requisiti non funzionali, attori, casi d'uso e flussi. \\
+Modello funzionale & Slide sui casi d'uso e sulla descrizione del flusso degli eventi &
+Nel \doc{RAD}: vista degli attori, vista d'insieme dei casi d'uso, schede di dettaglio
+per login, registrazione, gestione profilo, gestione contenuti, condivisione e
+consultazione. \\
+Modello di analisi & \slide{5. Analisi} &
+Nel \doc{RAD}: oggetti \term{entity}, \term{boundary} e \term{control}; modelli dinamici;
+modelli delle classi. \\
+Sequence diagram & \slide{6. Diagrammi di Interazione} &
+Nel \doc{RAD}: una sequenza per ciascun caso d'uso significativo, usata per collegare
+attori, schermate, control e DBMS. \\
+Class diagram & \slide{4. Classi e oggetti}; \slide{7. Diagrammi delle Classi} &
+Nel \doc{RAD}: class diagram di analisi; nel \doc{ODD}: class diagram di dettaglio per
+package entity, utility, interfacce e control. \\
+System design & \slide{8. System Design} &
+Nel \doc{SDD}: obiettivi del sistema, architettura proposta, decomposizione in
+sottosistemi, mapping hardware/software, modello ER e modello relazionale. \\
+Object design & \slide{8.1 Object Design} &
+Nel \doc{ODD}: raffinamento verso classi Java, package, visibilita', interfacce, scelte
+di librerie, persistenza e trade-off implementativi. \\
+Repository architecture & \slide{8. System Design}, sezione sulle architetture repository &
+Nel \doc{SDD} e nel \doc{ODD}: i sottosistemi non comunicano direttamente tra loro ma
+passano dal \texttt{DatabaseManager}/DBMS. \\
+Design pattern & \slide{10-Design\_patterns} &
+Nel \doc{ODD}: uso esplicito di Singleton per \texttt{SceneManager},
+\texttt{SessioneCorrente} e \texttt{DatabaseManager}; struttura assimilabile a
+MVC/Boundary-Control-Entity e Repository. \\
+Testing & \slide{10. Testing} &
+Non e' un documento separato, ma il progetto fornisce basi testabili: requisiti, casi
+d'uso, sequence diagram e classi control/entity da trasformare in test di unita',
+integrazione, sistema e accettazione. \\
+\bottomrule
+\end{longtable}
+}
+
+\section{RAD e teoria dei requisiti}
+
+\subsection{RAD come specifica dei requisiti}
+
+Le slide sulla raccolta dei requisiti spiegano che la specifica dei requisiti descrive lo
+scopo del sistema dal punto di vista di clienti, utenti e sviluppatori, e che svolge il ruolo
+di contratto tra committente e team di sviluppo. Questo coincide direttamente con il
+\doc{RAD} di AFAM Connect: il documento dichiara l'obiettivo di creare una piattaforma
+per il portfolio multimediale certificato degli studenti AFAM, con gestione della privacy,
+condivisioni temporizzate, codici di sblocco e protezione anti-download.
+
+All'orale:
+\begin{quote}
+Il RAD rappresenta la vista utente del sistema. Non descrive ancora come il software sara'
+implementato, ma cosa deve fare, con quali vincoli e in quali scenari d'uso.
+\end{quote}
+
+\subsection{Sistema attuale e sistema proposto}
+
+Nelle slide la raccolta dei requisiti parte dal problema e dal sistema attuale: bisogna
+capire come gli utenti svolgono oggi le attivita' e quale miglioramento introduce il nuovo
+sistema. Il \doc{RAD} e lo \doc{SDD} fanno proprio questo:
+\begin{itemize}
+  \item il sistema attuale e' frammentato: documenti separati, file inviati via email,
+  mancanza di repository centralizzata e poca tracciabilita';
+  \item il sistema proposto centralizza profilo, contenuti artistici, privacy, link
+  temporizzati, codici di sblocco e consultazione controllata.
+\end{itemize}
+
+Il collegamento teorico e' importante: il progetto non parte dalla tecnologia, ma da un
+bisogno di dominio. La tecnologia appare dopo, nello \doc{SDD} e nell'\doc{ODD}.
+
+\subsection{Requisiti funzionali}
+
+Le slide distinguono i requisiti funzionali come servizi e comportamenti che il sistema
+deve offrire. Nel \doc{RAD}, i requisiti funzionali sono organizzati per macro-attori:
+\begin{itemize}
+  \item \term{Studente}: autenticazione, registrazione, recupero password, gestione
+  profilo, background artistico, categorie, upload file, modifica/eliminazione file,
+  gestione privacy, generazione e revoca di link/codici.
+  \item \term{Utente/Utente esterno}: ricerca studente, visualizzazione profilo,
+  consultazione contenuti pubblici, accesso a contenuti privati con codice o link,
+  fruizione protetta degli asset.
+\end{itemize}
+
+All'orale conviene sottolineare che un requisito funzionale in AFAM Connect non e' solo
+"caricare file", ma include l'interazione completa: selezione categoria, tipologia,
+memorizzazione, stato di privacy e successiva disponibilita' alla consultazione.
+
+\subsection{Requisiti non funzionali}
+
+Le slide sui requisiti non funzionali spiegano che essi non descrivono singoli servizi,
+ma vincoli e qualita' complessive: usabilita', affidabilita', prestazioni, sicurezza,
+privacy, standard, interoperabilita' e vincoli organizzativi. Il \doc{RAD} rispecchia questa
+classificazione:
+\begin{itemize}
+  \item \term{Requisiti del prodotto}: usabilita', tempi di risposta, disponibilita',
+  robustezza, protezione anti-download e gestione della privacy.
+  \item \term{Requisiti organizzativi}: uso in contesto AFAM, gestione centralizzata,
+  coerenza con flussi istituzionali.
+  \item \term{Requisiti esterni}: privacy, sicurezza, possibilita' futura di integrazione
+  con identita' digitali come SPID/eIDAS.
+\end{itemize}
+
+Punto da ricordare: nelle slide si dice che un requisito non funzionale puo' influenzare
+l'architettura. Nel progetto accade davvero: privacy, robustezza e tracciabilita' portano
+alla scelta di una repository centralizzata, alla gestione dei permessi nel DBMS, alla
+temporizzazione dei link e al controllo tramite \texttt{DatabaseManager}.
+
+\subsection{Attori, scenari e casi d'uso}
+
+Le slide sulla raccolta dei requisiti indicano una sequenza tipica:
+\begin{enumerate}
+  \item identificare gli attori;
+  \item identificare scenari;
+  \item derivare casi d'uso;
+  \item raffinare i casi d'uso;
+  \item individuare relazioni;
+  \item individuare requisiti non funzionali.
+\end{enumerate}
+
+Il \doc{RAD} segue questa logica. Gli attori principali sono lo Studente, l'Utente/Utente
+esterno, il DBMS e il Tempo. I casi d'uso coprono autenticazione, profilo, contenuti,
+condivisione tramite link, condivisione interna tramite codice, consultazione del profilo
+e visualizzazione tramite link.
+
+\subsection{Descrizione dei casi d'uso}
+
+Le slide \slide{3.1 Descrivere i casi d'uso} chiariscono che il diagramma dei casi d'uso non
+basta: ogni caso d'uso deve essere completato con nome, attori, precondizioni,
+flusso base, flussi alternativi/eccezioni e postcondizioni. Il \doc{RAD} applica questa idea
+nelle schede di dettaglio. Ad esempio:
+\begin{itemize}
+  \item \term{Login}: lo studente inserisce credenziali, il sistema interroga il DBMS,
+  verifica, gestisce esito positivo o errore.
+  \item \term{Gestisci Privacy Contenuti}: lo studente seleziona un file, sceglie
+  Pubblico/Privato, il sistema aggiorna il DBMS e mostra conferma.
+  \item \term{Caduta di connessione}: caso d'uso trasversale che descrive la gestione
+  delle anomalie quando serve un'interazione transazionale con la base dati.
+\end{itemize}
+
+All'orale:
+\begin{quote}
+I casi d'uso del RAD non sono solo ovali nel diagramma. Sono specifiche testuali
+verificabili: dicono quando il caso inizia, chi interagisce, quali passi avvengono e
+quando il caso termina.
+\end{quote}
+
+\section{RAD e teoria dell'analisi}
+
+\subsection{Il modello di analisi: funzionale, oggetti, dinamico}
+
+Le slide di analisi spiegano che il modello di analisi e' formato da tre parti:
+\begin{itemize}
+  \item \term{modello funzionale}: casi d'uso e scenari;
+  \item \term{modello degli oggetti}: classi, attributi, operazioni e relazioni visibili
+  nel dominio;
+  \item \term{modello dinamico}: sequence diagram e state machine, cioe' comportamento
+  nel tempo.
+\end{itemize}
+
+Il \doc{RAD} contiene tutti e tre:
+\begin{itemize}
+  \item casi d'uso e attori nella sezione dei modelli di sistema;
+  \item oggetti entity, boundary e control nella sezione del modello degli oggetti;
+  \item diagrammi di sequenza per i casi d'uso principali;
+  \item diagrammi delle classi per le funzionalita' individuate.
+\end{itemize}
+
+Questa e' una corrispondenza molto forte tra progetto e slide.
+
+\subsection{Entity, boundary e control}
+
+Le slide \slide{5. Analisi} distinguono tre tipi di oggetti:
+\begin{itemize}
+  \item \term{entity}: informazioni persistenti o concetti del dominio;
+  \item \term{boundary}: interazioni tra attori e sistema, spesso schermate o form;
+  \item \term{control}: coordinamento del caso d'uso, logica applicativa e passaggio tra
+  boundary ed entity.
+\end{itemize}
+
+Nel \doc{RAD}:
+\begin{itemize}
+  \item \term{EntityStudente} rappresenta lo studente e i suoi dati principali;
+  \item le \term{boundary} sono schermate come \texttt{SchermataLogin},
+  \texttt{SchermataUpload}, \texttt{SchermataPrivacy}, \texttt{SchermataElencoLink};
+  \item i \term{control} sono classi come \texttt{LoginControl},
+  \texttt{UploadFileControl}, \texttt{GestioneFileControl},
+  \texttt{GestisciLinkControl}, \texttt{CercaStudenteControl}.
+\end{itemize}
+
+Il punto teorico da dire bene e': il control non e' una schermata e non e' un dato del
+dominio; e' l'oggetto che coordina il flusso del caso d'uso. Questa separazione riduce
+l'accoppiamento e rende piu' chiara la responsabilita' di ciascuna classe.
+
+\subsection{Dai casi d'uso agli oggetti}
+
+Le slide mostrano che dagli scenari e dai casi d'uso si ricavano oggetti partecipanti.
+Nel progetto questo passaggio si vede cosi':
+\begin{itemize}
+  \item dal caso d'uso \term{Upload File} nascono boundary di upload, control per
+  gestire caricamento e dati/file persistiti;
+  \item dal caso d'uso \term{Genera Link} nascono schermate di selezione contenuti,
+  control di generazione link e dati persistenti del link;
+  \item dal caso d'uso \term{Consulta Profilo Studente} nascono schermate di ricerca,
+  control di consultazione e accesso ai dati dello studente e dei contenuti pubblici.
+\end{itemize}
+
+All'orale:
+\begin{quote}
+Abbiamo usato i casi d'uso come base per scoprire gli oggetti partecipanti. La vista
+funzionale produce il flusso; il modello degli oggetti assegna responsabilita' e struttura.
+\end{quote}
+
+\section{Diagrammi UML: classi e sequenze}
+
+\subsection{Sequence diagram}
+
+Le slide sui diagrammi di interazione spiegano che i sequence diagram rappresentano
+la sequenza temporale dei messaggi tra attori e oggetti. Sono usati in analisi per:
+\begin{itemize}
+  \item raffinare la descrizione dei casi d'uso;
+  \item trovare oggetti partecipanti mancanti;
+  \item distribuire il comportamento tra boundary, control ed entity;
+  \item assegnare responsabilita' sotto forma di operazioni.
+\end{itemize}
+
+Nel \doc{RAD}, ogni sequence diagram rende concreto un caso d'uso. Per esempio, nel
+login il flusso tipico e': Studente $\rightarrow$ schermata di login $\rightarrow$
+\texttt{LoginControl} $\rightarrow$ DBMS $\rightarrow$ esito e navigazione. Nel caso
+\term{Gestisci Privacy Contenuti}, il flusso mette in evidenza la schermata che raccoglie
+la scelta e il control che aggiorna il DBMS.
+
+Punto importante: nelle slide, nelle euristiche per disegnare i sequence diagram, viene
+detto che la prima colonna dovrebbe essere l'attore che inizia il caso d'uso, la seconda
+colonna una boundary e la terza un control object che gestisce il resto del caso d'uso.
+Questo corrisponde a una logica di \term{sequence diagram a controllo centralizzato}:
+dopo l'interazione iniziale dell'attore con la schermata, il flusso viene coordinato dal
+control object.
+
+Questa regola si ritrova nel progetto: l'attore non parla direttamente col DBMS, ma passa
+dalla schermata e poi dalla logica di controllo. Ad esempio:
+\begin{center}
+\texttt{Studente} $\rightarrow$ \texttt{SchermataPrivacy} $\rightarrow$
+\texttt{GestioneFileControl} $\rightarrow$ \texttt{DatabaseManager/DBMS}
+\end{center}
+In questo schema la boundary raccoglie l'input, mentre il control centralizza la gestione
+del caso d'uso, decide quali operazioni invocare e coordina l'accesso ai dati. Non va
+confuso con un unico controller globale dell'intero sistema: la centralizzazione e'
+locale al singolo caso d'uso.
+
+\subsection{Class diagram}
+
+Le slide sui class diagram spiegano che il diagramma delle classi rappresenta classi,
+attributi, operazioni, associazioni, molteplicita' e generalizzazioni. Nel progetto i
+class diagram compaiono in due livelli:
+\begin{itemize}
+  \item nel \doc{RAD}: class diagram di analisi, ancora collegati ai casi d'uso e ai
+  concetti del dominio;
+  \item nell'\doc{ODD}: class diagram di dettaglio, collegati a package Java,
+  interfacce grafiche, controller, utility e persistenza.
+\end{itemize}
+
+Esempio di collegamento teoria-progetto:
+\begin{itemize}
+  \item le slide dicono che gli attributi sono "piccole cose" interne alla classe, mentre le
+  associazioni rappresentano relazioni con classi importanti;
+  \item nel progetto, dati semplici come email, telefono, stato privacy o token sono
+  trattabili come attributi/record, mentre studente, contenuto, link e codice sono concetti
+  rilevanti della persistenza e vengono rappresentati nel modello dati.
+\end{itemize}
+
+\section{SDD e teoria del System Design}
+
+\subsection{Che cosa aggiunge il System Design}
+
+Le slide di System Design affermano che il modello di analisi descrive il sistema dal
+punto di vista degli attori, ma non dice ancora come il sistema sara' organizzato
+internamente. Il \doc{SDD} nasce proprio per colmare questo passaggio.
+
+Nel \doc{SDD} di AFAM Connect compaiono:
+\begin{itemize}
+  \item architettura software attuale;
+  \item architettura software proposta;
+  \item requisiti minimi per l'utilizzo;
+  \item decomposizione in sottosistemi;
+  \item mappatura hardware/software;
+  \item gestione dei dati persistenti;
+  \item modello ER, modello relazionale e struttura delle tabelle.
+\end{itemize}
+
+All'orale:
+\begin{quote}
+Il RAD risponde a "cosa deve fare il sistema"; lo SDD risponde a "come lo
+organizziamo a livello architetturale per soddisfare quei requisiti".
+\end{quote}
+
+\subsection{Design goals e requisiti non funzionali}
+
+Le slide dicono che i design goals derivano dai requisiti non funzionali e guidano i
+trade-off. In AFAM Connect i principali design goals sono:
+\begin{itemize}
+  \item \term{sicurezza e privacy}: accesso controllato a file pubblici/privati;
+  \item \term{tracciabilita'}: link e codici hanno stato, scadenza e revoca;
+  \item \term{semplicita' di distribuzione}: applicazione desktop locale;
+  \item \term{robustezza}: gestione degli errori DBMS e riduzione della corruzione dati;
+  \item \term{manutenibilita'}: sottosistemi separati per coesione funzionale.
+\end{itemize}
+
+Questi obiettivi spiegano le scelte successive: repository centralizzata, DBMS relazionale,
+SQLite embedded, \texttt{DatabaseManager} centralizzato e package separati.
+
+\subsection{Decomposizione in sottosistemi}
+
+Le slide presentano la decomposizione in sottosistemi come prodotto centrale del System
+Design. Lo \doc{SDD} suddivide AFAM Connect in cinque sottosistemi:
+\begin{itemize}
+  \item \term{Gestione Studente}: profilo, background, categorie, file, privacy;
+  \item \term{Gestione Autenticazione}: login, registrazione, recupero password, logout,
+  SPID/eIDAS come estensione possibile;
+  \item \term{Gestione Condivisione}: link temporizzati, codici di sblocco, revoca;
+  \item \term{Consultazione}: ricerca, profili, contenuti pubblici, contenuti con codice
+  o link;
+  \item \term{Gestione Operazioni Automatiche}: controllo della validita' temporale dei
+  link.
+\end{itemize}
+
+Questa divisione segue la coesione funzionale: ogni sottosistema raggruppa oggetti e
+operazioni che collaborano per una stessa area di responsabilita'.
+
+\subsection{Architettura Repository}
+
+Il legame piu' forte tra \doc{SDD}, \doc{ODD} e slide e' l'architettura Repository. Le slide
+descrivono il Repository come uno stile in cui tutti i dati sono gestiti in un archivio
+centrale accessibile ai componenti; i componenti non interagiscono direttamente tra loro,
+ma tramite repository.
+
+Nel progetto:
+\begin{itemize}
+  \item i sottosistemi applicativi non comunicano direttamente tra loro;
+  \item il DBMS e il \texttt{DatabaseManager} sono il punto centrale di accesso ai dati;
+  \item dati di studenti, contenuti, categorie, link, codici e associazioni vengono gestiti
+  in modo persistente;
+  \item il repository consente coerenza e separazione tra funzionalita'.
+\end{itemize}
+
+Vantaggi, secondo le slide, applicati al progetto:
+\begin{itemize}
+  \item sottosistemi piu' indipendenti;
+  \item dati gestiti in modo consistente;
+  \item minore necessita' di conoscenza reciproca tra moduli.
+\end{itemize}
+
+Svantaggi/rischi da citare:
+\begin{itemize}
+  \item il repository diventa un punto critico;
+  \item errori o indisponibilita' del DBMS influenzano tutto il sistema;
+  \item per questo il \doc{RAD} include il caso d'uso \term{Caduta di connessione} e
+  l'\doc{ODD} prevede gestione di \texttt{SQLException} tramite messaggi di avviso.
+\end{itemize}
+
+\subsection{Mapping hardware/software}
+
+Le slide indicano che lo SDD deve descrivere come i sottosistemi sono assegnati
+all'hardware e alla piattaforma software. Nel progetto il sistema e' pensato come
+applicazione desktop locale installata su un nodo AFAM, con:
+\begin{itemize}
+  \item interfaccia JavaFX/FXML;
+  \item logica applicativa Java;
+  \item SQLite embedded;
+  \item storage locale dei contenuti, collegato ai record del database tramite percorso.
+\end{itemize}
+
+La scelta e' coerente con il requisito di semplicita' distributiva: SQLite non richiede un
+server separato e riduce dipendenze di rete. Se la prof chiede il trade-off, la risposta e':
+la soluzione attuale e' semplice e adatta a un'app desktop locale, ma, cosi' com'e',
+e' meno adatta a scenari multiutente distribuiti o con alta concorrenza.
+
+Questo limite riguarda pero' il \term{deployment attuale}, non l'idea di architettura
+Repository in se'. La stessa logica Repository potrebbe essere mantenuta come architettura
+interna di una soluzione piu' esterna di tipo client-server: i client, desktop o web,
+invierebbero richieste a un server applicativo; il server conterrebbe i sottosistemi di
+controllo e il livello repository; il DBMS sarebbe centralizzato e gestirebbe persistenza,
+concorrenza e accesso multiutente. In questo scenario cambierebbe la mappatura
+hardware/software, ma resterebbe valida l'idea centrale dello SDD: i sottosistemi non
+comunicano direttamente tra loro, bensi' accedono ai dati tramite un punto di persistenza
+comune.
+
+All'orale si puo' dire:
+\begin{quote}
+Nel progetto attuale la repository e' locale, quindi la soluzione e' pensata per una
+distribuzione desktop semplice. Se volessimo supportare pienamente la multiutenza,
+potremmo mantenere il pattern Repository, ma collocarlo lato server dentro
+un'architettura client-server, usando un DBMS centralizzato e politiche di concorrenza
+adeguate.
+\end{quote}
+
+\subsection{Gestione della persistenza}
+
+Le slide dicono che i dati persistenti sono quelli che sopravvivono alla singola esecuzione
+del sistema e che la loro gestione influenza l'architettura. Lo \doc{SDD} dedica una sezione
+alla persistenza:
+\begin{itemize}
+  \item modello ER;
+  \item modello relazionale;
+  \item tabelle \texttt{Studente}, \texttt{Background\_Artistico},
+  \texttt{Categoria\_Artistica}, \texttt{Contenuto\_File},
+  \texttt{Link\_Condivisione}, \texttt{Dettaglio\_Link},
+  \texttt{Codice\_Sblocco}, \texttt{Dettaglio\_Codice}.
+\end{itemize}
+
+Il collegamento col \doc{RAD} e' diretto: i dati persistenti derivano dai requisiti e dai casi
+d'uso. Se esiste un caso d'uso per generare link, deve esistere un dato persistente per
+rappresentare link, scadenza, stato e contenuti associati.
+
+\section{ODD e teoria dell'Object Design}
+
+\subsection{Che cosa aggiunge l'Object Design}
+
+Le slide di Object Design spiegano che questa fase raffina analisi e system design
+aggiungendo dettagli implementativi: attributi mancanti, operazioni, tipi, visibilita',
+eccezioni, librerie, mapping verso codice. L'\doc{ODD} di AFAM Connect fa esattamente
+questo:
+\begin{itemize}
+  \item definisce package Java;
+  \item descrive librerie e tecnologie concrete;
+  \item documenta interfacce grafiche JavaFX/FXML;
+  \item specifica SQLite e JDBC;
+  \item introduce Singleton e DTO;
+  \item collega i diagrammi UML alle classi effettive.
+\end{itemize}
+
+All'orale:
+\begin{quote}
+L'ODD traduce le scelte architetturali dello SDD in classi, package, librerie e
+decisioni implementative. E' il ponte tra modello e codice.
+\end{quote}
+
+\subsection{Package e coerenza con i sottosistemi}
+
+L'\doc{ODD} organizza il codice nel package principale \texttt{it.afam} e nei package:
+\begin{itemize}
+  \item \texttt{entity};
+  \item \texttt{utility};
+  \item \texttt{gestioneAutenticazione};
+  \item \texttt{gestioneStudente};
+  \item \texttt{gestioneCondivisione};
+  \item \texttt{consultazione};
+  \item \texttt{gestioneOperazioniAutomatiche}.
+\end{itemize}
+
+Questo e' coerente con lo \doc{SDD}: i package dell'ODD riflettono i sottosistemi del
+System Design. La teoria dice che la decomposizione deve ridurre complessita' e
+accoppiamento; qui ogni area funzionale ha le proprie boundary e i propri control.
+
+\subsection{Boundary, control, entity nel codice}
+
+Nel \doc{RAD} boundary/control/entity sono oggetti di analisi. Nell'\doc{ODD} diventano
+struttura concreta:
+\begin{itemize}
+  \item le boundary sono realizzate dalla coppia formata da file FXML e classe controller
+  JavaFX associata: il file FXML descrive il layout della schermata, mentre il controller
+  JavaFX gestisce gli eventi dell'interfaccia, come click, input e navigazione;
+  \item i control BCE veri e propri, come \texttt{LoginControl},
+  \texttt{GestioneFileControl} o \texttt{UploadFileControl}, contengono invece la logica
+  applicativa dei casi d'uso;
+  \item \texttt{EntityStudente} rappresenta il dato principale caricato in sessione;
+  \item \texttt{DatabaseManager} e DTO gestiscono l'accesso ai dati senza esporre
+  direttamente tutta la persistenza alle interfacce.
+\end{itemize}
+
+Va quindi evitata una confusione terminologica: un \term{controller JavaFX} non coincide
+con un \term{control object} del modello Boundary-Control-Entity. Il controller JavaFX fa
+parte della boundary, perche' serve a gestire la schermata; il control object BCE coordina
+invece il caso d'uso e dialoga con il livello dati.
+
+Questa e' una buona risposta se viene chiesto come si passa dall'analisi al codice:
+\begin{quote}
+Abbiamo mantenuto la separazione boundary-control-entity anche nel design di dettaglio:
+le boundary sono realizzate con FXML e controller JavaFX, i control BCE coordinano il
+caso d'uso, il database conserva i dati persistenti.
+\end{quote}
+
+\subsection{JavaFX, FXML e SceneManager}
+
+L'\doc{ODD} motiva l'uso di JavaFX e FXML per le interfacce. In termini teorici:
+\begin{itemize}
+  \item le schermate sono boundary object;
+  \item FXML separa descrizione grafica e codice Java;
+  \item \texttt{SceneManager} centralizza la navigazione tra schermate;
+  \item la navigazione coerente mantiene allineati i flussi descritti nel \doc{RAD}.
+\end{itemize}
+
+Il \texttt{SceneManager} e' indicato come Singleton: mantiene un unico \texttt{Stage} e
+cambia la \texttt{Scene} corrente. Questo evita che ogni schermata gestisca autonomamente
+la finestra principale.
+
+\subsection{SQLite, JDBC e DatabaseManager}
+
+L'\doc{ODD} specifica SQLite come DBMS embedded e JDBC come tecnologia di accesso. Il
+\texttt{DatabaseManager} centralizza le operazioni CRUD e funge da punto di accesso alla
+repository. Questa scelta collega tre livelli:
+\begin{itemize}
+  \item \doc{RAD}: servono privacy, link, codici, contenuti e robustezza;
+  \item \doc{SDD}: si sceglie una repository e si modellano dati persistenti;
+  \item \doc{ODD}: si implementa la repository con SQLite, JDBC e \texttt{DatabaseManager}.
+\end{itemize}
+
+Risposta da orale:
+\begin{quote}
+SQLite e' coerente con l'applicazione desktop locale: semplifica distribuzione e
+installazione. JDBC mantiene l'accesso al DBMS standardizzato dal lato Java.
+\end{quote}
+
+\subsection{Singleton e DTO}
+
+Le slide sui design pattern danno un catalogo di soluzioni ricorrenti. Nel progetto si
+riconoscono almeno:
+\begin{itemize}
+  \item \term{Singleton}: \texttt{SceneManager}, \texttt{SessioneCorrente},
+  \texttt{DatabaseManager};
+  \item \term{Repository}: architettura dei dati centralizzata;
+  \item \term{MVC/BCE}: separazione tra interfaccia, controllo e dati;
+  \item \term{DTO}: oggetti/record per trasferire solo i dati necessari tra DBMS, control
+  e interfaccia.
+\end{itemize}
+
+Il Singleton serve quando deve esistere un solo punto di accesso a una risorsa globale:
+la finestra principale, la sessione corrente o la connessione/punto di accesso al database.
+Il rischio teorico da citare e' che un Singleton puo' aumentare dipendenza globale se usato
+male; nel progetto e' giustificato per risorse naturalmente uniche.
+
+\subsection{Trade-off dell'ODD}
+
+Le slide di Object Design parlano di trade-off e raffinamento. Nel progetto i trade-off piu'
+difendibili sono:
+\begin{itemize}
+  \item \term{SQLite embedded}: facile da distribuire, ma meno adatto a forte concorrenza.
+  \item \term{Repository centralizzata}: coerenza e disaccoppiamento, ma punto critico
+  in caso di errore DBMS.
+  \item \term{JavaFX/FXML}: separazione UI/codice e sviluppo rapido, ma dipendenza dal
+  framework JavaFX.
+  \item \term{DTO}: meno esposizione della persistenza alle UI, ma piu' classi/record da
+  mantenere.
+\end{itemize}
+
+\section{Dal documento al codice: cosa mostrare se la prof chiede evidenza pratica}
+
+Una domanda possibile all'orale e': ``Questa cosa che avete scritto nel RAD, SDD o ODD
+dove si vede nel codice?''. In quel caso bisogna rispondere facendo sempre lo stesso
+ragionamento:
+\begin{enumerate}
+  \item prima nomino il concetto nel documento;
+  \item poi indico il package o la classe in cui e' realizzato;
+  \item infine spiego il ruolo di quel codice nel flusso.
+\end{enumerate}
+
+\subsection{Mappa rapida documento-codice}
+
+{\footnotesize
+\begin{longtable}{L{3.0cm}L{5.4cm}L{5.7cm}}
+\toprule
+\textbf{Cosa dice il documento} & \textbf{Dove mostrarlo nel codice} & \textbf{Come spiegarlo all'orale} \\
+\midrule
+\endhead
+ODD: package coerenti con i sottosistemi &
+\path{Codice/src/main/java/it/afam/gestioneAutenticazione},
+\path{gestioneStudente}, \path{gestioneCondivisione},
+\path{consultazione}, \path{gestioneOperazioniAutomatiche} &
+I package Java riflettono la decomposizione in sottosistemi dello SDD: ogni area
+funzionale ha interfacce e control dedicati. \\
+RAD/Analisi: boundary-control-entity &
+\path{interfaccia/SchermataLogin.java}, \path{SchermataLogin.fxml},
+\path{control/LoginControl.java}, \path{entity/EntityStudente.java} &
+La boundary e' realizzata da FXML piu' controller JavaFX; il control BCE e'
+\texttt{LoginControl}; l'entity e' \texttt{EntityStudente}. \\
+RAD: caso d'uso Login &
+\path{SchermataLogin.fxml}, \path{SchermataLogin.java},
+\path{LoginControl.java}, \path{DatabaseManager.java} &
+Il flusso del caso d'uso si vede nel codice: click su Accedi, chiamata al control,
+verifica credenziali sul repository, invio OTP e passaggio alla schermata di verifica. \\
+SDD: architettura Repository &
+\path{utility/DatabaseManager.java} e \path{utility/BoundaryDBMS.java} &
+\texttt{DatabaseManager} e' il punto unico di accesso ai dati; \texttt{BoundaryDBMS}
+incapsula la connessione JDBC/SQLite. \\
+SDD: dati persistenti e modello relazionale &
+\path{Codice/src/main/resources/schema.sql} &
+Le tabelle dello SDD sono realizzate nello schema SQL: \texttt{Studente},
+\texttt{Contenuto\_File}, \texttt{Link\_Condivisione}, \texttt{Codice\_Sblocco} e tabelle
+di dettaglio. \\
+ODD: Singleton &
+\path{DatabaseManager.getIstanza()}, \path{SceneManager.getIstanza()},
+\path{SessioneCorrente.getIstanza()} &
+Queste classi hanno costruttore privato e metodo statico di accesso all'istanza:
+gestiscono risorse uniche come repository, stage JavaFX e sessione corrente. \\
+ODD: DTO &
+\path{utility/dto/DatiStudente.java}, \path{DatiFile.java},
+\path{DatiLink.java}, \path{DatiCodice.java} &
+I DTO trasportano solo i dati necessari tra repository, control e boundary, senza
+esporre direttamente tutta la struttura del database o l'entity completa. \\
+RAD: caduta di connessione &
+\path{ConnessioneException.java}, \path{BoundaryDBMS.java},
+gestione \texttt{ConnessioneException} nelle schermate &
+Il caso d'uso trasversale di errore DBMS viene tradotto in eccezione applicativa e in
+messaggi di avviso all'utente, ad esempio nel login se il database non risponde. \\
+RAD/SDD: scadenza temporale dei link &
+\path{DatabaseManager.java}, \path{BoundaryTempo.java},
+\path{ControlValiditaLink.java}, \path{Main.java} &
+La scadenza a 14 giorni e' calcolata con \path{LocalDate.now().plusDays(14)};
+poi un controllo automatico confronta la data corrente con la data di scadenza e marca
+come scaduti i link non piu' validi. \\
+RAD/SDD: SPID/eIDAS come estensione &
+\path{SchermataLogin.java} e \path{LoginControl.java} &
+Il codice mostra il pulsante e il messaggio di funzionalita' non disponibile: e' coerente
+con l'idea di estensione futura, non con una funzionalita' gia' completata. \\
+\bottomrule
+\end{longtable}
+}
+
+\subsection{Struttura del progetto e posizione dei file}
+
+Se la prof non si ferma ai documenti e chiede di vedere dove le scelte sono state
+realizzate nel codice, conviene partire dalla struttura fisica del progetto. La cartella
+principale del codice e':
+\begin{center}
+\path{C:/Users/Simone/Desktop/IDS/Codice}
+\end{center}
+Dentro questa cartella, la parte piu' importante per l'orale e':
+\begin{itemize}
+  \item \path{src/main/java/it/afam}: contiene le classi Java dell'applicazione;
+  \item \path{src/main/resources/fxml}: contiene le schermate JavaFX in formato FXML;
+  \item \path{src/main/resources/css}: contiene lo stile grafico dell'interfaccia;
+  \item \path{src/main/resources/schema.sql}: contiene lo schema del database SQLite;
+  \item \path{src/main/resources/email.properties}: contiene la configurazione tecnica
+  usata per l'invio delle email.
+\end{itemize}
+
+Questa divisione e' utile da spiegare perche' separa il codice applicativo dalle risorse.
+Le classi Java descrivono comportamento, logica e accesso ai dati; i file FXML descrivono
+le schermate; lo schema SQL descrive la parte persistente del sistema. Quindi, quando
+all'orale dici che il progetto segue una logica a livelli, puoi mostrarlo anche nella
+struttura delle cartelle.
+
+\subsubsection{Package Java principali}
+
+Sotto \path{src/main/java/it/afam} ci sono i package che corrispondono alle aree
+funzionali del sistema:
+\begin{itemize}
+  \item \path{gestioneAutenticazione}: contiene login, registrazione, recupero password,
+  attivazione account e verifica dell'identita'. Qui si trovano classi come
+  \texttt{LoginControl} e le schermate JavaFX collegate all'autenticazione.
+  \item \path{gestioneStudente}: contiene profilo, dati personali, background artistico,
+  gestione categorie, upload, privacy e gestione dei contenuti caricati dallo studente.
+  \item \path{gestioneCondivisione}: contiene la logica dei link temporizzati, dei codici
+  di sblocco e delle schermate per generare, visualizzare o revocare condivisioni.
+  \item \path{consultazione}: contiene ricerca studenti, consultazione profili e
+  visualizzazione dei contenuti pubblici o condivisi.
+  \item \path{gestioneOperazioniAutomatiche}: contiene la logica automatica legata alla
+  validita' dei link, cioe' operazioni non avviate direttamente da un click dell'utente.
+  \item \path{entity}: contiene le entity principali, in particolare
+  \texttt{EntityStudente}.
+  \item \path{utility}: contiene classi trasversali usate da piu' sottosistemi, come
+  \texttt{DatabaseManager}, \texttt{BoundaryDBMS}, \texttt{SceneManager},
+  \texttt{SessioneCorrente}, \texttt{Utils} e i DTO.
+\end{itemize}
+
+La frase chiave e':
+\begin{quote}
+I package non sono casuali: riprendono la decomposizione in sottosistemi dello SDD e la
+raffinano nell'ODD in classi concrete. Per questo posso passare dal documento al codice
+seguendo i nomi delle responsabilita' funzionali.
+\end{quote}
+
+\subsubsection{Sottocartelle \texttt{interfaccia} e \texttt{control}}
+
+Nei package funzionali ricorre spesso una divisione interna:
+\begin{itemize}
+  \item \path{interfaccia}: contiene le classi JavaFX che fanno da controller delle
+  schermate FXML;
+  \item \path{control}: contiene i control BCE, cioe' le classi che coordinano la logica
+  dei casi d'uso.
+\end{itemize}
+
+Questa distinzione e' molto importante. Una classe dentro \path{interfaccia}, ad esempio
+\texttt{SchermataLogin.java}, non e' il control BCE anche se in JavaFX viene chiamata
+``controller'' della schermata. E' una boundary, perche' legge input dalla schermata,
+mostra messaggi e reagisce agli eventi grafici. La logica applicativa vera, invece, sta in
+classi come \texttt{LoginControl.java}, dentro \path{control}.
+
+Quindi, se la prof chiede dove sta Boundary-Control-Entity nel codice, puoi rispondere
+cosi':
+\begin{quote}
+Nel codice JavaFX la boundary e' composta dal file FXML piu' la classe JavaFX in
+\texttt{interfaccia}; il control BCE sta invece nel package \texttt{control}; le entity e
+i dati persistenti stanno in \texttt{entity}, nei DTO e nel livello repository/database.
+\end{quote}
+
+\subsubsection{Cartella \texttt{resources}: FXML, CSS e database}
+
+La cartella \path{src/main/resources} raccoglie file che non sono classi Java ma sono
+essenziali per l'esecuzione:
+\begin{itemize}
+  \item in \path{fxml} si trovano schermate come \texttt{SchermataLogin.fxml},
+  \texttt{SchermataRegistrazione.fxml}, \texttt{SchermataUpload.fxml},
+  \texttt{SchermataGenerazioneLink.fxml}, \texttt{SchermataRicerca.fxml} e molte altre;
+  \item in \path{css} si trova \texttt{afam-theme.css}, cioe' la parte di presentazione
+  grafica;
+  \item \texttt{schema.sql} contiene la struttura delle tabelle del database;
+  \item \texttt{email.properties} contiene parametri di configurazione per il servizio
+  email.
+\end{itemize}
+
+I file FXML si collegano alle classi Java tramite l'attributo \texttt{fx:controller}. Ad
+esempio, \texttt{SchermataLogin.fxml} dichiara quale classe JavaFX deve gestire gli eventi
+della schermata. Questo e' il punto concreto in cui si vede l'unione tra risorsa grafica e
+boundary Java.
+
+\subsubsection{Percorso consigliato da mostrare alla prof}
+
+Se durante l'orale devi mostrare rapidamente la struttura senza perderti, puoi seguire
+questo ordine:
+\begin{enumerate}
+  \item apri \path{src/main/java/it/afam} e mostra i package principali, collegandoli ai
+  sottosistemi dello SDD;
+  \item apri un package semplice, ad esempio \path{gestioneAutenticazione}, e mostra la
+  separazione tra \path{interfaccia} e \path{control};
+  \item apri \path{src/main/resources/fxml/SchermataLogin.fxml} per mostrare la boundary
+  grafica;
+  \item apri \path{SchermataLogin.java} per mostrare il controller JavaFX della schermata;
+  \item apri \path{LoginControl.java} per mostrare il control BCE del caso d'uso;
+  \item apri \path{DatabaseManager.java} e \path{schema.sql} per mostrare repository e
+  persistenza;
+  \item apri \path{SessioneCorrente.java} per spiegare lo stato temporaneo della sessione.
+\end{enumerate}
+
+Questo percorso e' efficace perche' segue lo stesso ragionamento dei documenti: dal caso
+d'uso del RAD si passa al sottosistema dello SDD, poi alle classi dell'ODD, e infine
+all'implementazione concreta in Java, FXML e SQL.
+
+\subsection{Come leggere questa mappa all'orale}
+
+La tabella precedente non va studiata come un elenco di file da citare a memoria, ma come
+una traccia per dimostrare che i documenti non sono scollegati dal codice. La risposta
+piu' convincente e' sempre costruita su tre livelli:
+\begin{itemize}
+  \item \term{livello documentale}: nel RAD, SDD o ODD abbiamo dichiarato un requisito,
+  una scelta architetturale o una scelta di object design;
+  \item \term{livello strutturale}: nel codice questa scelta si ritrova nei package, nelle
+  classi, negli FXML, nello schema SQL o nelle utility;
+  \item \term{livello comportamentale}: durante l'esecuzione, quelle classi collaborano
+  per realizzare un caso d'uso concreto.
+\end{itemize}
+
+Per esempio, se la prof chiede dove si vede il modello Boundary-Control-Entity, non basta
+dire ``nel package interfaccia e nel package control''. Bisogna spiegare il percorso:
+\begin{quote}
+Nel RAD abbiamo modellato i casi d'uso con boundary, control ed entity. Nel codice questa
+separazione si vede perche' la schermata FXML e il suo controller JavaFX rappresentano la
+boundary, la classe \texttt{LoginControl} rappresenta il control BCE del caso d'uso Login,
+mentre \texttt{EntityStudente} e il livello di persistenza rappresentano i dati gestiti dal
+sistema.
+\end{quote}
+
+Quindi il codice va mostrato come una realizzazione progressiva dei documenti:
+\begin{center}
+\textbf{RAD} \(\rightarrow\) \textbf{SDD} \(\rightarrow\) \textbf{ODD}
+\(\rightarrow\) \textbf{codice}
+\end{center}
+Il RAD identifica cosa deve accadere, lo SDD decide l'organizzazione architetturale,
+l'ODD raffina in classi e tecnologie, il codice implementa quelle decisioni.
+
+\subsection{Spiegazione dettagliata dei collegamenti principali}
+
+\subsubsection{Boundary realizzate con FXML e controller JavaFX}
+
+Nel RAD, una boundary e' un oggetto concettuale che rappresenta il punto di interazione
+tra attore e sistema. Nel codice JavaFX, pero', questa boundary viene realizzata da due
+elementi:
+\begin{itemize}
+  \item il file \texttt{.fxml}, che descrive il layout grafico;
+  \item la classe JavaFX associata tramite \texttt{fx:controller}, che gestisce gli eventi
+  della schermata.
+\end{itemize}
+
+Per esempio, \texttt{SchermataLogin.fxml} contiene campi, pulsanti e collegamento al
+controller; \texttt{SchermataLogin.java} contiene il metodo \texttt{cliccaAccedi()}, cioe'
+la reazione al click dell'utente. Questa classe appartiene ancora alla boundary:
+\texttt{LoginControl.java} e' invece il control BCE, perche' coordina la logica del caso
+d'uso.
+
+Frase pronta:
+\begin{quote}
+Nel codice JavaFX la boundary non e' solo il file FXML: e' la coppia FXML piu' controller
+JavaFX. Il controller JavaFX gestisce eventi dell'interfaccia, mentre il control BCE
+gestisce la logica applicativa del caso d'uso.
+\end{quote}
+
+\subsubsection{Control BCE e logica applicativa}
+
+I control BCE sono le classi nei package \texttt{control}, ad esempio
+\texttt{LoginControl}, \texttt{UploadFileControl}, \texttt{GestioneFileControl} e
+\texttt{GestisciLinkControl}. Il loro compito non e' disegnare schermate, ma coordinare
+il caso d'uso. Nel Login, \texttt{LoginControl}:
+\begin{itemize}
+  \item riceve email e password dalla boundary;
+  \item usa \texttt{Utils.hashPassword()} per confrontare la password hashata;
+  \item chiama \texttt{DatabaseManager.verificaCredenziali()};
+  \item genera e invia il codice OTP;
+  \item dopo la verifica del codice, aggiorna \texttt{SessioneCorrente}.
+\end{itemize}
+
+Questo e' un esempio concreto di sequence a controllo centralizzato: la boundary avvia il
+flusso, ma il control coordina il resto.
+
+\subsubsection{Repository e DatabaseManager}
+
+Lo \doc{SDD} descrive una architettura Repository. Nel codice questa scelta si vede in
+\texttt{DatabaseManager.java}, che funge da punto unico di accesso ai dati. I control non
+scrivono direttamente query JDBC sparse nel codice dell'interfaccia: chiamano metodi del
+\texttt{DatabaseManager}. Questo rende piu' chiara la separazione:
+\begin{itemize}
+  \item i control decidono cosa fare nel caso d'uso;
+  \item \texttt{DatabaseManager} sa come leggere e aggiornare i dati;
+  \item \texttt{BoundaryDBMS} incapsula il dettaglio tecnico della connessione JDBC a
+  SQLite.
+\end{itemize}
+
+Il collegamento con lo SDD e' quindi forte: i sottosistemi non comunicano tra loro in modo
+diretto, ma condividono lo stato persistente attraverso il repository. In una futura
+architettura client-server, questa stessa idea potrebbe rimanere valida spostando il
+repository lato server.
+
+\subsubsection{Schema SQL e modello relazionale}
+
+La parte dello SDD relativa al modello relazionale si vede in \texttt{schema.sql}. Qui non
+ci sono solo tabelle generiche, ma le tabelle che corrispondono ai concetti del progetto:
+\texttt{Studente}, \texttt{Background\_Artistico}, \texttt{Categoria\_Artistica},
+\texttt{Contenuto\_File}, \texttt{Link\_Condivisione}, \texttt{Codice\_Sblocco} e le tabelle
+di dettaglio per collegare link/codici ai file.
+
+Questo e' utile se la prof chiede se il modello ER/relazionale dello SDD e' stato davvero
+implementato. La risposta e':
+\begin{quote}
+Si', lo schema relazionale e' realizzato nel file \texttt{schema.sql}; il
+\texttt{DatabaseManager} inizializza lo schema al primo avvio e poi usa quelle tabelle
+attraverso metodi DAO.
+\end{quote}
+
+\subsubsection{Utilizzo concreto di EntityStudente}
+
+\texttt{EntityStudente} va introdotta nel documento perche' e' l'entity principale del
+progetto: rappresenta lo studente come oggetto del dominio applicativo. Nel codice si trova
+in:
+\begin{center}
+\path{src/main/java/it/afam/entity/EntityStudente.java}
+\end{center}
+e contiene attributi coerenti con la tabella \texttt{Studente} dello \doc{SDD}, come
+\texttt{id}, \texttt{nome}, \texttt{cognome}, \texttt{codiceFiscale}, \texttt{email},
+\texttt{password}, \texttt{telefono}, \texttt{percorsoFoto} e la lista dei dati di
+background artistico.
+
+Il punto importante da dire all'orale e' che \texttt{EntityStudente} non e' semplicemente
+una tabella e non e' nemmeno un local storage. E' la rappresentazione a oggetti dello
+studente quando il sistema deve lavorare sui suoi dati in memoria. La fonte persistente
+rimane il database SQLite, mentre \texttt{EntityStudente} viene creata, riempita o letta
+dal \texttt{DatabaseManager}.
+
+Nel codice l'utilizzo si vede soprattutto in questi punti:
+\begin{itemize}
+  \item in \texttt{RegistrazioneControl.java}, durante la registrazione, viene creato uno
+  \texttt{studenteProvvisorio} di tipo \texttt{EntityStudente}; dopo la verifica, viene
+  salvato tramite \texttt{DatabaseManager.salvaStudente()};
+  \item in \texttt{LoginControl.java}, il repository restituisce un
+  \texttt{EntityStudente} quando le credenziali sono corrette; dopo l'OTP, pero', in
+  \texttt{SessioneCorrente} viene salvato soprattutto l'\texttt{id} dello studente, non
+  l'intera entity;
+  \item in \texttt{GestioneProfiloControl.java}, \texttt{EntityStudente} viene usata per
+  caricare e aggiornare i dati personali dello studente autenticato;
+  \item in \texttt{VisualizzaProfiloControl.java} e nelle schermate di consultazione, puo'
+  essere usata per mostrare il profilo di uno studente cercato;
+  \item in \texttt{DatabaseManager.java}, il metodo interno di mapping costruisce un
+  \texttt{EntityStudente} a partire dal \texttt{ResultSet} del database.
+\end{itemize}
+
+Questa distinzione e' utile per evitare una risposta imprecisa. Se la prof chiede se
+\texttt{EntityStudente} funge da local storage, la risposta migliore e':
+\begin{quote}
+No, non proprio. \texttt{EntityStudente} e' l'entity del dominio che rappresenta i dati
+dello studente quando vengono caricati dal database o preparati per il salvataggio. Lo
+stato temporaneo della sessione e' invece in \texttt{SessioneCorrente}, mentre la
+persistenza vera resta nel database gestito da \texttt{DatabaseManager}.
+\end{quote}
+
+Il ruolo di \texttt{EntityStudente} e' quindi quello di fare da ponte tra il modello dati
+persistente e la logica applicativa: il database conserva i record, il repository li mappa
+in oggetti, i control li usano per realizzare i casi d'uso, e le boundary mostrano solo le
+informazioni necessarie all'utente.
+
+\texttt{SessioneCorrente} va tenuta distinta: non modella lo studente completo, ma conserva
+solo lo stato temporaneo utile durante la navigazione, come id dello studente autenticato,
+categoria corrente, file corrente e profilo consultato. Anche per questo non va presentata
+come local storage persistente: viene azzerata al logout e si perde alla chiusura
+dell'applicazione.
+
+\subsubsection{Scadenza temporale dei link}
+
+Un punto molto utile da mostrare nel codice riguarda la scadenza dei link dopo 14 giorni.
+Qui si collegano bene RAD, SDD, ODD e implementazione:
+\begin{itemize}
+  \item nel \doc{RAD} il sistema prevede link temporizzati e quindi un vincolo funzionale
+  sulla validita' nel tempo;
+  \item nello \doc{SDD} questa scelta richiede dati persistenti, perche' il sistema deve
+  memorizzare data di creazione, data di scadenza e stato del link;
+  \item nell'\doc{ODD} la responsabilita' viene tradotta in classi concrete:
+  \texttt{DatabaseManager}, \texttt{BoundaryTempo} e \texttt{ControlValiditaLink};
+  \item nel codice la scadenza viene implementata usando le API \texttt{java.time}, in
+  particolare \texttt{LocalDate}.
+\end{itemize}
+
+Nel file \texttt{DatabaseManager.java}, il metodo \texttt{salvaLink()} inserisce il link
+nella tabella \texttt{Link\_Condivisione}. In quel momento salva:
+\begin{itemize}
+  \item \texttt{data\_creazione} come data corrente;
+  \item \texttt{data\_scadenza} come data corrente piu' 14 giorni;
+  \item \texttt{stato\_link} inizialmente uguale ad \texttt{Attivo}.
+\end{itemize}
+
+La parte chiave e':
+\begin{center}
+\path{LocalDate.now().plusDays(14)}
+\end{center}
+Quindi non e' una scadenza scritta a mano: viene calcolata dal sistema a partire dalla
+data corrente.
+
+Non e' stata introdotta una classe \texttt{Time} custom perche' non era necessaria:
+Java fornisce gia' le API \texttt{java.time}, che sono piu' adatte e piu' sicure rispetto
+a una gestione manuale delle date. Nel progetto, quindi, la responsabilita' del calcolo
+temporale e' affidata a \texttt{LocalDate}, mentre \texttt{BoundaryTempo} serve solo a
+isolare l'accesso alla data corrente e a rappresentare in modo chiaro l'interazione con
+l'attore concettuale Tempo. Questa scelta e' coerente con il design: si evita di creare
+una classe inutile e si mantiene comunque separato il punto in cui il sistema legge
+l'orologio.
+
+Poi entra in gioco il package \texttt{gestioneOperazioniAutomatiche}. La classe
+\texttt{BoundaryTempo} rappresenta l'interfaccia verso l'attore concettuale Tempo, cioe'
+l'orologio del sistema, e restituisce la data corrente con \texttt{LocalDate.now()}.
+\texttt{ControlValiditaLink} recupera dal repository i link ancora attivi, legge la loro
+data di scadenza e confronta:
+\begin{center}
+\texttt{oggi.isAfter(scadenza)}
+\end{center}
+Se la data corrente e' successiva alla scadenza, il control chiama
+\texttt{DatabaseManager.disattivaLink()} e il link viene marcato come \texttt{Scaduto}.
+
+Infine, in \texttt{Main.java}, il controllo viene avviato all'apertura dell'applicazione e
+poi pianificato ogni giorno tramite \texttt{ScheduledExecutorService}. Questo significa che
+la validita' del link non viene controllata solo quando lo studente guarda la lista dei
+link, ma anche tramite un'operazione automatica periodica.
+
+Frase pronta:
+\begin{quote}
+La scadenza dei link e' implementata con le API \texttt{java.time}. Quando genero un link,
+\texttt{DatabaseManager} salva la data corrente e la data di scadenza calcolata con
+\texttt{LocalDate.now().plusDays(14)}. Non abbiamo creato una classe \texttt{Time} custom
+perche' Java offre gia' \texttt{java.time}; \texttt{BoundaryTempo} serve solo a isolare la
+lettura della data corrente. Poi \texttt{ControlValiditaLink} confronta la data corrente
+con la scadenza e marca il link come \texttt{Scaduto} se i 14 giorni sono stati superati.
+\end{quote}
+
+\subsubsection{DTO}
+
+I DTO, come \texttt{DatiStudente}, \texttt{DatiFile}, \texttt{DatiLink} e
+\texttt{DatiCodice}, servono a trasferire solo le informazioni necessarie tra database,
+control e boundary. Sono utili perche' evitano di esporre sempre l'intera entity o tutta la
+struttura della tabella. Per esempio, in una schermata di ricerca puo' bastare
+\texttt{DatiStudente} con id, nome e cognome, senza caricare password, telefono o altri
+dati non necessari.
+
+Frase pronta:
+\begin{quote}
+I DTO sono oggetti di trasferimento dati: rendono piu' pulito il passaggio di informazioni
+tra repository, control e boundary, mantenendo separati database, logica applicativa e
+interfaccia.
+\end{quote}
+
+\subsection{Esempio guidato: dal caso d'uso Login al codice}
+
+Se la prof chiede di mostrare un caso d'uso nel codice, il Login e' uno degli esempi piu'
+chiari.
+
+\begin{enumerate}
+  \item Nel \doc{RAD}, il Login e' un caso d'uso della Gestione Autenticazione.
+  \item Nel file \texttt{SchermataLogin.fxml} si vede la boundary grafica: campi email e
+  password, pulsante Accedi e collegamento \texttt{fx:controller} alla classe JavaFX.
+  \item In \texttt{SchermataLogin.java}, il metodo \texttt{cliccaAccedi()} gestisce l'evento
+  dell'interfaccia: prende email/password, avvia il task e invoca il control.
+  \item In \texttt{LoginControl.java}, il metodo \texttt{accedi()} contiene la logica del
+  caso d'uso: hash della password, verifica credenziali, generazione OTP e invio email.
+  \item In \texttt{DatabaseManager.java}, il metodo \texttt{verificaCredenziali()} interroga
+  la tabella \texttt{Studente}.
+  \item In \texttt{SessioneCorrente.java}, dopo verifica OTP, viene salvato l'id dello
+  studente autenticato.
+\end{enumerate}
+
+Risposta pronta:
+\begin{quote}
+Il caso d'uso Login del RAD si ritrova nel codice attraversando boundary, control e
+repository: la schermata FXML raccoglie i dati, il controller JavaFX gestisce il click,
+\texttt{LoginControl} coordina la logica applicativa, \texttt{DatabaseManager} verifica le
+credenziali sul DBMS e \texttt{SessioneCorrente} mantiene lo stato dello studente
+autenticato.
+\end{quote}
+
+\subsection{Altri esempi rapidi da mostrare}
+
+Dopo il Login, gli altri collegamenti da mostrare senza ripetere tutta la teoria sono:
+\begin{itemize}
+  \item \term{Repository}: partire da \texttt{DatabaseManager}; la catena da spiegare e'
+  \texttt{Control BCE} $\rightarrow$ \texttt{DatabaseManager} $\rightarrow$
+  \texttt{BoundaryDBMS} $\rightarrow$ \texttt{SQLite/schema.sql}.
+  \item \term{Modello dati}: aprire \texttt{schema.sql}; le tabelle piu' importanti sono
+  \texttt{Studente}, \texttt{Contenuto\_File}, \texttt{Link\_Condivisione},
+  \texttt{Codice\_Sblocco} e le relative tabelle di dettaglio.
+  \item \term{Singleton}: citare \texttt{SceneManager}, \texttt{DatabaseManager} e
+  \texttt{SessioneCorrente}; sono risorse uniche per navigazione, repository e stato
+  temporaneo della sessione.
+\end{itemize}
+
+Questi esempi vanno usati come conferma pratica di concetti gia' spiegati: repository,
+persistenza e pattern non sono solo nel documento, ma hanno classi e file precisi nel
+codice.
+
+\subsection{Domande pronte sul codice}
+
+\subsubsection*{Dove si vede la separazione Boundary-Control-Entity?}
+
+Nel Login: \texttt{SchermataLogin.fxml} e \texttt{SchermataLogin.java} sono boundary,
+\texttt{LoginControl.java} e' il control BCE, \texttt{EntityStudente.java} rappresenta
+l'entity, mentre \texttt{DatabaseManager.java} gestisce la persistenza.
+
+\subsubsection*{\texttt{EntityStudente} e' una specie di local storage?}
+
+No. \texttt{EntityStudente} e' il modello a oggetti dello studente quando i dati vengono
+caricati dal database o preparati per il salvataggio. La persistenza vera resta in SQLite;
+lo stato temporaneo della navigazione e' in \texttt{SessioneCorrente}. Quindi non e' un
+local storage, ma una entity del dominio applicativo.
+
+\subsubsection*{Dove si vede il Repository?}
+
+In \texttt{DatabaseManager.java}. I control non accedono direttamente a JDBC o SQLite,
+ma usano i metodi del \texttt{DatabaseManager}. La connessione tecnica e' incapsulata in
+\texttt{BoundaryDBMS.java}.
+
+\subsubsection*{Dove si vede la mappatura dello SDD in codice?}
+
+Nei package sotto \texttt{it.afam}: i nomi dei package corrispondono ai sottosistemi dello
+SDD, mentre \texttt{schema.sql} corrisponde alla parte di gestione dei dati persistenti.
+
+\subsubsection*{Dove si vede che SPID/eIDAS non e' completo?}
+
+In \texttt{SchermataLogin.java}, il metodo associato al pulsante SPID/eIDAS mostra un
+messaggio di funzionalita' non disponibile. In \texttt{LoginControl.java} il commento
+specifica che il login federato e' un'estensione futura. Quindi va detto chiaramente:
+il progetto lo prevede come estensione, ma non lo implementa completamente.
+
+\subsubsection*{Dove si vede la gestione della caduta di connessione?}
+
+In \texttt{BoundaryDBMS.java}, gli errori JDBC vengono convertiti in
+\texttt{ConnessioneException}; nelle schermate, ad esempio \texttt{SchermataLogin.java},
+l'eccezione viene intercettata e trasformata in messaggio di avviso per l'utente.
+
+\subsubsection*{Dove si vede la scadenza dei link dopo 14 giorni?}
+
+In \texttt{DatabaseManager.java}, nel metodo \texttt{salvaLink()}, la data di scadenza
+viene calcolata con \texttt{LocalDate.now().plusDays(14)} e salvata nella tabella
+\texttt{Link\_Condivisione}. \texttt{BoundaryTempo} fornisce la data corrente e
+\texttt{ControlValiditaLink} confronta oggi con la scadenza: se i 14 giorni sono superati,
+chiama \texttt{DatabaseManager.disattivaLink()}. In \texttt{Main.java} il controllo viene
+eseguito all'avvio e poi pianificato ogni giorno.
+
+\section{Testing: come collegare il progetto alle slide}
+
+Il testing non e' uno dei tre documenti principali, ma le slide sono molto collegabili al
+progetto. Le slide dicono che:
+\begin{itemize}
+  \item i test dimostrano la presenza di difetti, non la loro assenza;
+  \item per software personalizzato deve esserci almeno una prova per ogni requisito;
+  \item i casi d'uso possono essere base per i test di sistema;
+  \item i sequence diagram documentano componenti e interazioni da testare;
+  \item i test automatici hanno setup, chiamata e asserzione.
+\end{itemize}
+
+\subsection{Test basati su requisiti}
+
+Dal \doc{RAD} si possono derivare test per ogni requisito:
+\begin{itemize}
+  \item login con credenziali corrette e errate;
+  \item registrazione con dati validi/non validi;
+  \item upload di file ammessi/non ammessi;
+  \item modifica privacy da Pubblico a Privato;
+  \item generazione link con scadenza;
+  \item revoca link/codice;
+  \item accesso a contenuto privato con codice valido/non valido;
+  \item tentativo di fruizione con link scaduto.
+\end{itemize}
+
+\subsection{Test basati su casi d'uso e sequence diagram}
+
+Le slide dicono che i use case testing sono utili per forzare l'interazione tra componenti.
+Nel progetto, un test di sistema su \term{Genera Link} dovrebbe verificare:
+\begin{enumerate}
+  \item lo studente seleziona contenuti;
+  \item il control genera token e scadenza;
+  \item il DBMS salva link e dettagli;
+  \item la schermata mostra conferma;
+  \item il link consente accesso ai contenuti selezionati fino alla scadenza.
+\end{enumerate}
+
+Questo deriva direttamente dal sequence diagram e dal flusso del caso d'uso.
+
+\subsection{Test di unita', componenti, sistema e accettazione}
+
+Applicazione al progetto:
+\begin{itemize}
+  \item \term{Test di unita'}: metodi di \texttt{Utils}, generazione token/codici, validazione
+  email/password, hashing, metodi DAO isolati.
+  \item \term{Test di componenti}: interazione tra control e \texttt{DatabaseManager}, ad
+  esempio upload o modifica privacy.
+  \item \term{Test di sistema}: flussi completi come registrazione, login, upload,
+  condivisione e consultazione.
+  \item \term{Test di accettazione}: scenari reali con studente AFAM e valutatore esterno,
+  per decidere se il sistema soddisfa il bisogno operativo.
+\end{itemize}
+
+\section{Domande orali probabili e risposte pronte}
+
+\subsection*{1. Che differenza c'e' tra RAD, SDD e ODD?}
+
+Il \doc{RAD} descrive il problema e i requisiti dal punto di vista degli utenti: attori,
+casi d'uso, requisiti funzionali/non funzionali, oggetti di analisi e modelli dinamici.
+Lo \doc{SDD} descrive la soluzione architetturale: sottosistemi, repository, mapping
+hardware/software e persistenza. L'\doc{ODD} raffina la soluzione in classi, package,
+librerie, pattern e scelte implementative.
+
+\subsection*{2. Perche' il RAD e' collegato alle slide sui requisiti?}
+
+Perche' segue la struttura teorica della specifica dei requisiti: scopo del sistema, sistema
+attuale, sistema proposto, requisiti funzionali, requisiti non funzionali, attori, casi d'uso
+e modelli di sistema. Inoltre usa il linguaggio dell'utente e non descrive ancora i dettagli
+interni dell'implementazione.
+
+\subsection*{3. Perche' i requisiti non funzionali sono importanti nel progetto?}
+
+Perche' guidano le scelte architetturali. Privacy, robustezza, sicurezza, tempi di risposta
+e protezione anti-download non sono semplici funzioni: influenzano repository, DBMS,
+gestione dei link temporizzati, codici di sblocco, visualizzatore protetto e gestione degli
+errori.
+
+\subsection*{4. Che ruolo hanno entity, boundary e control?}
+
+Sono una classificazione di analisi. Le entity rappresentano dati e concetti persistenti,
+le boundary rappresentano l'interazione con l'utente, i control coordinano i casi d'uso.
+Nel progetto questa separazione appare prima nel \doc{RAD} e poi viene mantenuta
+nell'\doc{ODD} tramite package di interfaccia e package di controllo.
+
+\subsection*{5. Perche' avete scelto una repository?}
+
+Perche' il sistema ruota attorno a dati condivisi e persistenti: studenti, contenuti,
+privacy, link, codici e categorie. La repository consente ai sottosistemi di non parlarsi
+direttamente e di accedere ai dati tramite un punto centralizzato. Il vantaggio e'
+disaccoppiamento e coerenza; lo svantaggio e' che il DBMS diventa un punto critico,
+percio' e' stata prevista la gestione della caduta di connessione.
+
+\subsection*{6. Come si passa dai casi d'uso ai sequence diagram?}
+
+Il caso d'uso descrive il flusso testuale. Il sequence diagram lo rende operativo nel tempo:
+mostra attore, boundary, control, DBMS e messaggi. In questo modo si scoprono oggetti
+partecipanti, responsabilita' e operazioni necessarie.
+
+\subsection*{7. Come si passa dallo SDD all'ODD?}
+
+Lo \doc{SDD} dice quali sottosistemi esistono e come sono collegati; l'\doc{ODD} li traduce
+in package e classi concrete. Ad esempio, il sottosistema Gestione Studente diventa un
+package con interfacce FXML e control Java; la repository dello SDD diventa
+\texttt{DatabaseManager}, SQLite, JDBC e DTO.
+
+\subsection*{8. Dove compaiono i design pattern?}
+
+Il progetto usa Singleton per \texttt{SceneManager}, \texttt{SessioneCorrente} e
+\texttt{DatabaseManager}. Inoltre l'architettura complessiva richiama Repository e la
+separazione Boundary-Control-Entity/MVC. Questi pattern aiutano a comunicare scelte
+ricorrenti e a giustificare la struttura.
+
+\subsection*{9. Come testereste il sistema usando le slide sul testing?}
+
+Partirei dai requisiti e dai casi d'uso del \doc{RAD}. Ogni requisito deve avere almeno un
+test. I sequence diagram aiutano a costruire test di sistema per le interazioni tra
+schermate, control e database. I metodi di utilita' e DAO sono adatti a test di unita';
+flussi come login, upload, privacy e generazione link sono adatti a test di integrazione
+e sistema; gli scenari con studente e valutatore sono test di accettazione.
+
+\section{Schema finale da memorizzare}
+
+\begin{center}
+\begin{tabular}{p{3cm}p{9.8cm}}
+\toprule
+\textbf{Documento} & \textbf{Frase chiave da orale} \\
+\midrule
+RAD & Specifica cosa deve fare il sistema dal punto di vista degli utenti: requisiti,
+casi d'uso, attori e modelli di analisi. \\
+SDD & Decide l'organizzazione architetturale: sottosistemi, repository, mapping
+hardware/software e dati persistenti. \\
+ODD & Raffina l'architettura in classi, package, pattern, tecnologie e scelte
+implementative. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Conclusione}
+
+Il progetto AFAM Connect segue in modo abbastanza lineare il percorso presentato nelle
+slide: dalla raccolta dei requisiti si passa all'analisi con casi d'uso, oggetti e sequence
+diagram; dall'analisi si passa al system design con sottosistemi, repository e persistenza;
+dal system design si passa all'object design con package Java, JavaFX, SQLite, JDBC,
+Singleton e DTO. Per l'orale conviene quindi non studiare RAD, SDD e ODD come tre
+documenti separati, ma come tre livelli successivi dello stesso ragionamento progettuale.
+
+\end{document}

@@ -1,0 +1,464 @@
+SOURCE: C:\Users\Simone\Desktop\DOC+teoria\slide\3.1 Descrivere i casi d'uso.pdf
+PAGES: 20
+
+
+--- PAGE 1 ---
+Descrivere i casi d’uso
+Ingegneria del Software 
+parte di queste slide sono state tratte dal libro di testo e dal materiale del Prof. Ciancarini, Dott. Favini e Di 
+Iorio, Dott.ssa Zuppiroli 
+ 
+
+--- PAGE 2 ---
+Il ﬂusso degli eventi
+Il diagramma dei casi d’uso non basta per descrivere un modello 
+funzionale 
+Completare i diagrammi dei casi d’uso con la descrizione di ogni singolo 
+caso d’uso 
+si può fare eccezione per il casi d’uso della vista d’insieme 
+Non esiste un modo standard per descrivere un caso d’uso 
+Importante: punto di vista dell’utente e interazione con il software
+2
+
+--- PAGE 3 ---
+Come speciﬁcare un caso d’uso
+Nome del caso d'uso 
+Attori  
+Descrizione degli attori coinvolti nel caso d'uso 
+Condizione di ingresso  
+Usare una frase sintattica come "Questo caso d'uso inizia quando..." 
+Flusso degli eventi  
+Forma libera, linguaggio naturale informale 
+Condizione di uscita  
+Iniziare con "Questo caso d'uso termina quando..." 
+Eccezioni  
+Descrivere cosa succede se le cose vanno male 
+Requisiti speciali  
+Elencare requisiti e vincoli non funzionali
+3
+
+--- PAGE 4 ---
+Come speciﬁcare un caso d’uso
+Pre-condizioni 
+Post-condizioni 
+Extension points
+4
+
+--- PAGE 5 ---
+Esempio
+5
+ 
+  
+8 
+ 
+ 
+Autenticazione  
+Questo caso d’uso permette ad un Impiegato di accedere al sistema e nello specifico al suo Account 
+utilizzando le sue credenziali univoche, di seguito  “Matricola ” e “Passwor d”. I l sistema interroga  il 
+DBMS per il recupero e il successivo confronto con le  credenziali già presenti nel DB.  
+Caso d’uso   Autenticazione  
+ID   LOGIN  
+Attori    • Impiegato  
+• DBMS  
+Precondizioni   Il sistema ha mostrato a schermo il form di autenticazione  
+Fl usso degli 
+eventi   
+1. L'impiegato inserisce matricola e password nel form  
+2. L’impiegato preme il tasto "Login ” 
+3. Il sistema trasmette la matricola al DBMS  
+4. Il DBMS trasmette la password associata a quella matricola al 
+sistema  
+5. Il sistema confronta la password inse rita con quella rec uperata dal 
+DBMS  
+6. SE le credenziali non corrispondono  
+6.1. Il sistema mostra a schermo un messaggio di errore  
+ 
+  
+9 
+ 
+6.2. L’impiegato clicca il pulsante  "OK " del messaggio di 
+errore  
+6.3. Il sistema mostra la pagina di login  
+7. ALTRIMENTI  
+7.1. Il sistema mostra la pagi na di  gestione dell’account  
+Postcondizioni   6.3 Il sistema ha mostrato la pagina di login   
+7.1 Il sistema ha mostrato la pagina di gestione dell’account  
+Disconnessione  utente  
+Questo caso d’uso permette ad un Impiegato di terminare la propria sessione di  lavo ro all’interno del 
+sistema. Dopo aver effettuato la disconnessione, il sistema mostra la schermata di autenticazione.  
+Caso d’uso   Disconnessione utente  
+ID   LOGOUT  
+Attori    • Impiegato  
+Precondizioni   Il sistema ha mostrato a schermo la schermata di ge stion e dell’account  
+Flusso degli 
+eventi   
+ 
+ 
+ 
+ 
+1. L’impiegato clicca il tasto “ Logout ” 
+2. Il sistema mostra a schermo un messaggio di avvenuta 
+disconnessione  
+3. L’impiegato clicca il pulsante “OK”  per chiudere il messaggio  
+4. Il sistema chiude la sessione corrente  
+5. Il s istem a mostra la schermata di login  
+Postcondizioni  Il sistema ha mostrato la schermata di login  
+Recupero password  
+Questo caso d’uso permette ad un Impiegato di recuperare la propria password nel caso in cui non 
+dovesse ricordarsi della propr ia password. Verrà  generata una password temporanea con cui 
+l’impiegato effettuerà l'autenticazione.  
+Caso d’uso   Recupero password  
+ID   RECUPERO_PASS  
+Attori    • Impiegato  
+• DBMS  
+Precondizioni   Il sistema ha mostrato a schermo la schermata di login  
+Flusso degli 
+eventi   
+1. L’imp iegato clicca il tasto “Password dimenticata?”  
+2. Il sistema mostra a schermo il form di recupero password  
+3. L’impiegato inserisce la matricola nel form  
+4. L’impiegato clicca  il ta sto "recupera”  
+5. Il sistema interroga il DBMS sull’esistenza della matricola  
+6. SE il ri scontro è negativo  
+6.1. Il sistema mostra un messaggio di errore di "Impiegato non 
+trovato"        
+6.2. L’impiegato clicca il tasto “OK”  per chiudere il messaggio 
+di errore  
+6.3. Il sistema mostra il form di recupero password  
+7. ALTRIMENTI  
+7.1. Il sistema genera una passwor d 
+7.2. Il sistema trasmette la password generata al DBMS  
+7.3. Il DBMS aggiorna la password  
+7.4. Il sistema interroga il DBMS per recuperare l’emai l 
+7.5. Il sistema invia la password generata all’email  
+
+--- PAGE 6 ---
+Esempio
+6
+15 
+ 
+EPMQMREAGGSYRX 
+CEWS HƅYWS: EPMQMREAGGSYRX 
+ID: ELIMACC  
+AXXSVM: AHHIXXSPIVWSREPI, DBMS 
+PVIGSRHM^MSRM: 
+1. Il Sistema ha stampato su schermo il PannelloControllo di un AddettoPersonale. 
+SIUYIR^E HIKPM IZIRXM: 
+1. LƅAddettoPersonale sele^iona lƅop^ione ƈGestione account a^iendaliƉ presente sul 
+suo PannelloControllo. 
+2. Viene invocato il caso dƅuso incluso ƈAcquisisciDatiAccountƉ. 
+3. Se lƅAddettoPersonale sele^iona un Ruolo dal menu a tendina presente sul 
+PannelloGestioneAccount 
+3.1 Il Sistema filtra la ListaAccount mantenendo i dati relativi agli Impiegati 
+che ricoprono lo specifico ruolo sele^ionato. 
+4. LƅAddettoPersonale sele^iona un Account dalla ListaAccount presente nel 
+PannelloGestioneAccount e preme il pulsante ƈElimina accountƉ. 
+5. Il Sistema richiede allƅAddettoPersonale, tramite un messaggio pop-up, di 
+confermare lƅopera^ione. 
+6. LƅAddettoPersonale conferma lƅopera^ione. 
+7. Il Sistema richiede lƅaggiornamento delle tabelle al DBMS per riflettere la modifica 
+effettuata. 
+8. Il DBMS aggiorna la tabella ed invia al Sistema la notifica dellƅavvenuto 
+aggiornamento. 
+PSWXGSRHM^MSRM: 
+1. Il Sistema ʢ tornato sul PannelloGestioneAccount ed ha aggiornato la 
+ListaAccount rimuovendo lƅaccount appena eliminato. 
+ 
+MSHMJMGEPEWW[SVH 
+CEWS HƅYWS: MSHMJMGEPEWW[SVH 
+ID: MODPASS  
+AXXSVM: IQTMIKEXS, DBMS 
+PVIGSRHM^MSRM: 
+1. Il Sistema ha stampato su schermo il PannelloControllo di un Impiegato. 
+2. LƅImpiegato ha premuto il pulsante ƈModifica passwordƉ presente sul suo 
+PannelloControllo. 
+SIUYIR^E HIKPM IZIRXM: 
+1. Il Sistema mostra a schermo il PannelloModificaPassword, richiedendo di inserire 
+la vecchia password, e due volte la nuova password desiderata.  
+2. LƅImpiegato inserisce le informa^ioni richieste dal Sistema, e preme il pulsante 
+ƈConfermaƉ. 
+3. Il Sistema richiede lƅaggiornamento delle tabelle al DBMS per riflettere la modifica 
+effettuata. 
+4. Il DBMS aggiorna la tabella ed invia al Sistema la notifica dellƅavvenuto 
+aggiornamento. 
+PSWXGSRHM^MSRM: 
+1. Il Sistema ʢ tornato sul PannelloControllo. 
+!!!
+
+--- PAGE 7 ---
+Esempio
+7
+
+
+--- PAGE 8 ---
+Flusso degli eventi
+Descrivere il flusso degli eventi principale 
+Ogni caso d’uso 
+ha una sequenza di transizioni (eventi) normale o di base 
+Può avere varie sequenze alternative 
+Ha varie sequenze di transizioni eccezionali per la gestione di errori o casi 
+particolari
+8
+
+--- PAGE 9 ---
+Flusso degli eventi
+Per descrivere correttamente il flusso di eventi quindi:  
+Descrivere solo gli eventi relativi al caso d’uso, e non quel che avviene in 
+altri casi d’uso 
+Descrivere come e quando il caso d’uso inizia e finisce  
+Descrivere il flusso base degli eventi  
+Descrivere ogni flusso alternativo 
+9
+
+--- PAGE 10 ---
+Flusso degli eventi
+UML usa parole chiave per esprimere queste variazioni alla sequenza 
+principale.  
+Parola chiave Se: indica una ramificazione della sequenza degli eventi nel 
+caso si verifichi una condizione.  
+Ripetizioni all’interno di una sequenza:  
+parola chiave Per (For) 
+parola chiave Fintantoché (While)  
+È bene non eccedere con le ramificazioni! 
+10
+
+--- PAGE 11 ---
+Flusso degli eventi
+Ipotizziamo un caso d’uso “aggiorna carrello” nel software di gestione di un negozio 
+online 
+Dopo aver aggiunto un articolo al carrello, possibili ramificazioni possono essere 
+se il cliente richiede una nuova quantità il sistema aggiorna la quantità di 
+quell’articolo 
+se il cliente seleziona rimuovi articolo il sistema elimina quell’articolo dal carrello  
+Le sequenze alternative sono invece ramificazioni che non possono essere espresse 
+utilizzando il Se.  
+Ad esempio dovute a condizioni che si possono verificare in un qualunque momento 
+-> nota: il cliente abbandona la pagina del carrello 
+11
+
+--- PAGE 12 ---
+Flusso degli eventi
+La sequenza alternativa rappresenta in genere una alternativa alla 
+sequenza principale 
+A volte la differenza con un extend è molto sottile 
+Suggerimenti:  
+rappresentare con sequenze alternative le alternative ad un flusso 
+principale (le alternative condividono lo stesso obiettivo)  
+usare gli extend per i casi in cui il flusso principale deve essere esteso 
+quando può avvenire qualcosa di anomalo (ricordare che l’anomalia spesso 
+non è nelle specifiche) 
+12
+
+--- PAGE 13 ---
+13
+Esempio ramiﬁcazioni
+UML 69
+Sequenza degli eventi•La sequenza degli eventi elenca i passi checompongono il caso d'uso•Comincia sempre con un attore che fa qualcosa perdare inizio al caso d'uso•Un buon modo per iniziare la sequenza degli eventi è:1.Il caso d'uso inizia quando un <attore> <funzione>
+•Ogni passo del caso d'uso dovrebbe avere lastruttura:<numero> Il <qualcosa> <qualche azione>
+UML 70
+Esempio: sequenza degli eventi
+Pensiamo al caso d'uso NuovoOrdine. I seguenti passidella sequenza degli eventi sono corretti?1.Incomincia quando si seleziona la funzione “ordinalibro”2.Il caso d'uso inizia quando il cliente seleziona lafunzione “ordina libro”3.Vengono inseriti i dati del cliente4.Il cliente inserisce nel form il suo nome e indirizzo5. Il sistema verifica i dati del Cliente
+sbagliato
+correttosbagliato
+corretto corretto
+UML 71
+•UML usa parole chiave per esprimere ramificazione,ripetizione o sequenze alternative•È bene non eccedere con le ramificazioni•parola chiave Se: indica una ramificazione dellasequenza degli eventi•Sequenze alternative: ramificazioni che non possonoessere espresse utilizzando il Se. Ad esempioramificazioni dovute a condizioni che si possonoverificare in un qualunque momento•Ripetizioni all'interno di una sequenza:–Parola chiave Per (For)–Parola chiave Fintantoché (While)
+Ramificazione di una sequenza
+UML 72
+EsempioCaso d'uso: AggiornaCarrello
+ID: UC2
+Attori: Cliente
+Precondizioni:1.Il contenuto del carrello è visibile
+Sequenza degli eventi:1.Il caso d'uso inizia quando il Clienteseleziona un articolo nel carrello.2.Se il Cliente seleziona “rimuovi articolo”2.1Il Sistema elimina l'articolodal carrello.3.Se il Cliente digita una nuova quantità3.1Il Sistema aggiorna la quantitàdell'articolo presente nel carrello
+Postcondizioni:1.Il contenuto del carrello è stato aggiornato
+Sequenza alternativa 1:1.In qualunque momento il Clientepuò abbandonare la pagina del carrello
+Postcondizioni:
+Ingegneria del Software () Il diagramma dei casi d’uso A.A. 2015-2016 35 / 1
+
+--- PAGE 14 ---
+Dai casi d’uso agli oggetti 
+14
+Top Level Use Case
+Level 2 Use Cases
+Level 3 Use Cases
+Operations
+Participating
+Objects
+Level 2
+Level 1
+Level 2
+Level 3 Level 3
+Level 4 Level 4
+Level 3
+A B
+
+--- PAGE 15 ---
+Software Engineering Development Activities 17
+Figure 1-2 An overview of object-oriented software engineering development activities and their
+products. This diagram depicts only logical dependencies among work products. Object-oriented software
+engineering is iterative ; that is, activities can occur in parallel and more than once.
+Requirements
+elicitation (Ch.4)
+Analysis (Ch.5)
+System design
+Object design
+Implementation
+problem
+functionalnonfunctional
+analysis object
+object design
+design goals
+dynamic model
+subsystem
+class diagram
+use case diagram
+source code
+Test (Ch.11)
+deliverable system
+class diagram
+system design
+(Ch.6 & 7)
+(Ch.8 & 9)
+sequence diagram
+(Ch. 10)
+state machine
+statement
+requirements model
+model
+diagram
+decomposition
+object model
+model
+
+--- PAGE 16 ---
+Analisi - un overview
+L’analisi si focalizza sulla produzione di un modello del sistema: 
+Il modello di analisi, o analysis model 
+Corretto 
+Completo  
+Consistente 
+Verificabile 
+L'analisi è diversa dalla identificazione dei requisiti 
+Durante l'analisi lo sviluppatore si occupa di strutturare e formalizzare i requisiti ottenuti 
+dall'utente
+16
+
+--- PAGE 17 ---
+Analisi - un overview
+Il modello di analisi composto da tre differenti modelli: 
+Il modello funzionale - casi d'uso e scenari 
+Il modello degli oggetti di analisi- rappresentato da un diagramma delle 
+classi degli oggetti 
+Il modello dinamico - rappresentato da un diagramma di sequenza 
+(sequence diagram) e da una macchina a stati (state machine diagram) 
+17
+
+--- PAGE 18 ---
+An Overview of Analysis 175
+requirements. As the analysis model may not be understandable to the users and the client,
+developers need to update th e requirements specification to reflect in sights gained during
+analysis, then review the changes with the client and the users. In the end, the requirements,
+however large, should be understandable by the client and the users.
+There is a natural tendency for users and developers to postpone difficult decisions until
+later in the project. A decision may be difficult because of lack of domain knowledge, lack of
+technological knowledge, or simply because of disagreements among users and developers.
+Postponing decisions enables the project to move on smoothly and avoids confrontation with
+reality or peers. Unfortunately, difficult decisions eventu ally must be made, often at higher cost
+when intrinsic problems are discovered during testing, or worse, during user evaluation.
+Translating a requirements specification into a formal or semiformal model forces developers to
+identify and resolve difficult issues early in the development.
+The analysis model  i s  c o m p o s e d  o f  t h r e e  i n d i v i d u a l  m o d e l s :  t h e  functional model ,
+represented by use cases and scenarios, the analysis object model , represented by class and
+object diagrams, and the dynamic model , represented by state machine and sequence diagrams
+(Figure 5-3). In the previous chapter, we described how to elicit requirements from the users and
+describe them as use cases and scenarios. In this chapter, we describe how to refine the
+functional model and derive the object and the dynamic model. This leads to a more precise and
+complete specification as details are added to the analysis model. We conclude the chapter by
+describing management activities related to analysi s. In the next section, we define the main
+concepts of analysis.
+Figure 5-2 Products of requirements elicitation and analysis (UML activity diagram).
+Requirements
+Analysis 
+functional
+nonfunctional
+analysis object
+elicitation
+dynamic model
+Requirements
+Analysis Model
+Specification
+System design
+Object design
+requirements
+model
+model
+
+--- PAGE 19 ---
+176 Chapter 5  •  Analysis
+5.3 Analysis Concepts
+In this section, we describe the main analysis concepts used in this chapter. In particular, we
+describe
+• Analysis Object Models and Dynamic Models (Section 5.3.1)
+• Entity, Boundary, and Control Objects (Section 5.3.2)
+• Generalization and Specialization (Section 5.3.3).
+5.3.1 Analysis Object Mode ls and Dynamic Models
+The analysis model represents the system under development from the user’s point of view. The
+analysis object model  is a part of the analysis model and focuses on the individual concepts that
+are manipulated by the system, their properties and their relationships. The analysis object
+model, depicted with UML class diagrams, includes classes, attributes, and operations. The
+analysis object model is a visual dictionary of the main concepts visible to the user.
+The dynamic model  f o c u s e s  o n  t h e  b e h a v i o r  o f  t h e  s y s t e m .  T h e  d y n a m i c  m o d e l  i s
+depicted with sequence diagrams and with state machines. Sequence diagrams represent the
+interactions among a set of objects during a single use case. State machines represent the
+behavior of a single object (or a group of ve ry tightly coupled objects). The dynamic model
+serves to assign responsibilities to individual classes and, in the process, to identify new classes,
+associations, and attributes to be added to the analysis object model.
+When working with either the analysis object model or the dynamic model, it is essential
+to remember that these models represent user-level concepts, not actual software classes or
+Figure 5-3 The analysis model is composed of the functional model, the object model, and the dynamic
+model. In UML, the functional model is represented with use case  diagrams, the object  model with class
+diagrams, and the dynamic model with state machine and sequence diagrams.
+analysis
+dynamicobjectfunctional
+use case class state machine sequence
+diagram:View diagram:View diagram:View diagram:View
+model:Model model:Model model:Model
+model:Model
+
+--- PAGE 20 ---
+Software Engineering Development Activities 17
+Figure 1-2 An overview of object-oriented software engineering development activities and their
+products. This diagram depicts only logical dependencies among work products. Object-oriented software
+engineering is iterative ; that is, activities can occur in parallel and more than once.
+Requirements
+elicitation (Ch.4)
+Analysis (Ch.5)
+System design
+Object design
+Implementation
+problem
+functionalnonfunctional
+analysis object
+object design
+design goals
+dynamic model
+subsystem
+class diagram
+use case diagram
+source code
+Test (Ch.11)
+deliverable system
+class diagram
+system design
+(Ch.6 & 7)
+(Ch.8 & 9)
+sequence diagram
+(Ch. 10)
+state machine
+statement
+requirements model
+model
+diagram
+decomposition
+object model
+model

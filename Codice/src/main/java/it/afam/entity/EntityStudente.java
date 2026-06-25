@@ -1,6 +1,6 @@
 package it.afam.entity;
 
-import it.afam.utility.dto.DatiBackground;
+import it.afam.utility.dto.DatiBackground; //permette di avere una lista di tipo datiBackground
 
 import java.util.ArrayList;
 import java.util.List;

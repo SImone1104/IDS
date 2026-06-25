@@ -2,6 +2,7 @@ package it.afam.gestioneStudente.interfaccia;
 
 import it.afam.entity.EntityStudente;
 import it.afam.gestioneStudente.control.GestioneProfiloControl;
+import it.afam.utility.ArchivioFile;
 import it.afam.utility.ConnessioneException;
 import it.afam.utility.SceneManager;
 import javafx.fxml.FXML;
@@ -52,7 +53,7 @@ public class SchermataDatiPersonali {
             return;
         }
 
-        File file = new File(percorsoFoto);
+        File file = ArchivioFile.risolvi(percorsoFoto);
         if (!file.exists()) {
             labelFoto.setText("Foto non disponibile");
             fotoProfilo.setImage(null);
